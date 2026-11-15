@@ -187,8 +187,9 @@ A bespoke, war-room grade interactive analytics platform built with custom CSS, 
 - **02 // ROUND 1 CLUTCH LEADERBOARD**: Live dynamic RPI calculation across all 216 players with real-time sliders and `st.column_config.ProgressColumn`.
 - **03 // PLAN A vs PLAN B SIMULATOR**: Direct quantitative side-by-side comparison of the ₹22.50 Cr marquee batter trap vs the Henry + Suyash surgical rebalance (+₹8.4 Cr CSV).
 - **04 // PLAYER INTELLIGENCE & MATCHUP DOSSIER**: 6-axis Plotly Radar Chart, Jaipur aerodynamic altitude metrics (431m MSL, 1.161 kg/m³ density, 68m boundary), and Head-to-Head comparison.
-- **05 // LIVE 2027 AUCTION WAR ROOM SIMULATOR**: Real-time ascending bidding simulation against PBKS, KKR, SRH, and CSK with live purse tracker, overseas validation, and CSV export.
-- **06 // KUMAR SANGAKKARA AI ORACLE**: Real-time tactical cricket reasoning engine powered by Groq's ultra-fast LPU inference (`qwen/qwen3.8-27b` @ ~0.35s / `openai/gpt-oss-120b`), with 5 tactical quick-consult presets.
+- **05 // OPPONENT & VENUE BLUEPRINTS (HOW TO TACKLE THEM)**: Team-wise tactical masterplans for all 9 IPL rivals (blindspots, 20-over spell allocations, spatial fielding geometry, win prob lift) + Stadium-wise venue aerodynamics across all 9 league venues (altitude, drag reduction, carry boost, dew timelines, pitch degradation) + Cross-Matrix Team vs Stadium Battle Simulator.
+- **06 // LIVE 2027 AUCTION WAR ROOM SIMULATOR**: Real-time ascending bidding simulation against PBKS, KKR, SRH, and CSK with live purse tracker, overseas validation, and CSV export.
+- **07 // KUMAR SANGAKKARA AI ORACLE**: Real-time tactical cricket reasoning engine powered by Groq's ultra-fast LPU inference (`qwen/qwen3.8-27b` @ ~0.35s / `openai/gpt-oss-120b`), with tactical quick-consult presets.
 
 ```bash
 # Launch Master Streamlit War Room

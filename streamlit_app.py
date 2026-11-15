@@ -60,7 +60,7 @@ if 'chat_messages' not in st.session_state:
             "content": (
                 "**Welcome to the Rajasthan Royals Auction War Room.**\n\n"
                 "I am **Kumar Sangakkara**, Director of Cricket. I am connected directly to our **Project RR-EDGE V6.0 Decision Engine** via Groq's ultra-fast LPU inference.\n\n"
-                "Ask me anything regarding our **Plan B auction acquisitions** (Matt Henry & Suyash Sharma), our **Overs 7–11 forensic diagnostics**, **SMS Jaipur aerodynamics**, or counterfactual bidding strategies against CSK and RCB."
+                "Ask me anything regarding our **Plan B auction acquisitions** (Matt Henry & Suyash Sharma), our **Overs 7–11 forensic diagnostics**, **SMS Jaipur aerodynamics**, or counterfactual bidding and tactical matchups against CSK, MI, RCB, and KKR."
             )
         }
     ]
@@ -115,6 +115,7 @@ def query_groq_oracle(prompt, conversation_history=None):
         "• Statistical Validation: Projected playoff odds: 68.4% (up from 41.2%), Championship title odds: 16.8%, 200+ runs conceded probability collapses from 74.85% to 36.37%.\n"
         "• Top Pressure Anchors (comp_id 3298): Heinrich Klaasen (94.8) and Jasprit Bumrah (96.2).\n"
         "• SMS Jaipur Fortress Physics: 431m altitude, air density 1.161 kg/m³, 68m leg-side boundary aided by evening Aravalli crosswinds (+6.1m carry).\n"
+        "• Opposition & Venue Blueprint: Tactical plans to neutralize all 9 rival franchises (CSK, SRH, MI, KKR, RCB, PBKS, LSG, DC, GT) and 9 IPL venues.\n"
         "• Leadership: Riyan Parag (Captain), Dhruv Jurel (Wicketkeeper/Finisher), Ravindra Jadeja (Senior Tactician).\n\n"
         "Structure your responses with sharp executive points, markdown formatting, tactical rationale, and decisive clarity."
     )
@@ -350,6 +351,23 @@ st.markdown("""
         font-weight: 500;
     }
 
+    /* Tactical Box Cards */
+    .rr-tactical-box {
+        background: var(--rr-navy-card);
+        border: 1px solid var(--rr-border);
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 14px;
+    }
+
+    .rr-tactical-box-gold {
+        background: var(--rr-navy-card);
+        border: 1px solid var(--rr-border-gold);
+        border-radius: 12px;
+        padding: 18px;
+        margin-bottom: 14px;
+    }
+
     /* Player Trading Card */
     .rr-player-card {
         background: linear-gradient(145deg, rgba(20, 30, 55, 0.85) 0%, rgba(10, 15, 30, 0.95) 100%);
@@ -386,32 +404,23 @@ st.markdown("""
         margin-top: 2px;
     }
 
-    /* Fast-Track Export Button Card */
-    .fast-track-box {
-        background: rgba(234, 26, 133, 0.08);
-        border: 1px solid var(--rr-border);
-        border-radius: 10px;
-        padding: 12px;
-        margin-bottom: 14px;
-    }
-
     /* Custom Streamlit Tabs */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 8px;
+        gap: 6px;
         background-color: rgba(10, 15, 36, 0.6);
-        padding: 8px 12px;
+        padding: 8px 10px;
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .stTabs [data-baseweb="tab"] {
         font-family: 'Montserrat', sans-serif !important;
-        font-size: 0.78rem !important;
+        font-size: 0.74rem !important;
         font-weight: 700 !important;
-        letter-spacing: 0.8px !important;
+        letter-spacing: 0.6px !important;
         color: #94A3B8 !important;
         border-radius: 6px !important;
-        padding: 8px 16px !important;
+        padding: 8px 14px !important;
     }
 
     .stTabs [aria-selected="true"] {
@@ -464,9 +473,47 @@ def load_and_preprocess_cricket_data():
         df_bowl["tactical_role"] = df_bowl.get("tactical_role", pd.Series(["Bowler"] * len(df_bowl))).fillna("Bowler")
         df_bowl["primary_franchise"] = df_bowl.get("primary_franchise", pd.Series(["Domestic / Free Agent"] * len(df_bowl))).fillna("Domestic / Free Agent")
 
-    return df_bat, df_bowl
+    # Load Opponent Dossiers & Venue Intelligence
+    p_doss = os.path.join(BASE_DIR, "data", "auction_intelligence", "RR_Opponent_Dossiers.csv")
+    if not os.path.exists(p_doss):
+        p_doss = os.path.join(BASE_DIR, "archive", "v4_iterations", "RR_EDGE_V4_2_Opponent_Dossiers.csv")
 
-df_batters_master, df_bowlers_master = load_and_preprocess_cricket_data()
+    p_matrix = os.path.join(BASE_DIR, "data", "auction_intelligence", "RR_Opponent_Threat_Matrix.csv")
+    p_neutral = os.path.join(BASE_DIR, "outputs", "advanced_dimensions", "opponent_neutralization_matrix.csv")
+
+    p_ven = os.path.join(BASE_DIR, "data", "auction_intelligence", "RR_Venue_Intelligence.csv")
+    if not os.path.exists(p_ven):
+        p_ven = os.path.join(BASE_DIR, "archive", "v4_iterations", "RR_EDGE_V4_2_Venue_Intelligence.csv")
+
+    p_dew = os.path.join(BASE_DIR, "outputs", "stadium_microclimate_dew_matrix.csv")
+
+    df_opp_doss = pd.read_csv(p_doss) if os.path.exists(p_doss) else pd.DataFrame()
+    df_opp_mat = pd.read_csv(p_matrix) if os.path.exists(p_matrix) else pd.DataFrame()
+    df_opp_neut = pd.read_csv(p_neutral) if os.path.exists(p_neutral) else pd.DataFrame()
+    df_venues = pd.read_csv(p_ven) if os.path.exists(p_ven) else pd.DataFrame()
+    df_dew_mat = pd.read_csv(p_dew) if os.path.exists(p_dew) else pd.DataFrame()
+
+    return df_bat, df_bowl, df_opp_doss, df_opp_mat, df_opp_neut, df_venues, df_dew_mat
+
+df_batters_master, df_bowlers_master, df_opp_dossiers, df_opp_matrix, df_opp_neutral, df_venues, df_stadium_dew = load_and_preprocess_cricket_data()
+
+# Helper for stadium atmospheric specs
+def get_venue_aerodynamics(name):
+    venue_specs = {
+        'Jaipur': {'alt': 431, 'density': 1.161, 'drag': '-4.33%', 'carry': '+5.4m', 'boundaries': '68m leg / 78m straight', 'wind': '14 km/h SW Aravalli crosswind', 'toss': 'Bowl First (Dew glide in 2nd inn)', 'pitch': 'Red/Clay mix, true bounce'},
+        'Guwahati': {'alt': 55, 'density': 1.218, 'drag': '-0.60%', 'carry': '+0.8m', 'boundaries': '65m square / 70m straight', 'wind': 'Calm, heavy humidity', 'toss': 'Strictly Bowl First (Heavy Brahmaputra dew)', 'pitch': 'True bounce batting paradise'},
+        'Mumbai': {'alt': 10, 'density': 1.225, 'drag': '0.00%', 'carry': '0.0m', 'boundaries': '65m square / 72m straight', 'wind': '12 km/h marine sea breeze', 'toss': 'Bowl First (Marine dew after 20:00 IST)', 'pitch': 'Red soil high bounce, skiddy pace'},
+        'Chennai': {'alt': 7, 'density': 1.226, 'drag': '0.00%', 'carry': '0.0m', 'boundaries': '67m square / 72m straight', 'wind': 'Moderate easterly', 'toss': 'Bat First (Abrasive dry surface, spin grip)', 'pitch': 'Slow turner, low bounce'},
+        'Kolkata': {'alt': 9, 'density': 1.224, 'drag': '0.00%', 'carry': '0.0m', 'boundaries': '66m square / 74m straight', 'wind': 'Low, evening river breeze', 'toss': 'Bowl First (Moderate dew present)', 'pitch': 'True carry, reverse swing in overs 14-18'},
+        'Bengaluru': {'alt': 920, 'density': 1.095, 'drag': '-11.20%', 'carry': '+8.4m', 'boundaries': '58m-62m short square / 68m straight', 'wind': 'Light westerly', 'toss': 'Bowl First (Thin air, chase-friendly 220+ par)', 'pitch': 'Flat batting deck with ultra-fast outfield'},
+        'Delhi': {'alt': 216, 'density': 1.192, 'drag': '-2.70%', 'carry': '+2.8m', 'boundaries': '60m-64m square / 70m straight', 'wind': 'Dry thermal currents', 'toss': 'Bowl First (Fast outfield, small square boundaries)', 'pitch': 'Flat batting deck, high run-rate surface'},
+        'Ahmedabad': {'alt': 53, 'density': 1.219, 'drag': '-0.50%', 'carry': '+0.6m', 'boundaries': '75m-80m massive square / 75m straight', 'wind': 'Moderate north-westerly', 'toss': 'Bat First / Bowl First (Balanced dual soil)', 'pitch': 'Massive boundaries suppress six-hitting'},
+        'Hyderabad': {'alt': 542, 'density': 1.148, 'drag': '-5.40%', 'carry': '+6.2m', 'boundaries': '66m square / 71m straight', 'wind': 'Deccan plateau breeze', 'toss': 'Bowl First (True bounce, high-scoring track)', 'pitch': 'Hard, fast surface favoring clean hitters'}
+    }
+    for k, v in venue_specs.items():
+        if k.lower() in name.lower():
+            return v
+    return venue_specs['Jaipur']
 
 # -----------------------------------------------------------------------------
 # 6. TOP TELEMETRY RIBBON & WAR ROOM HEADER
@@ -642,15 +689,16 @@ PLOTLY_LAYOUT = dict(
 )
 
 # -----------------------------------------------------------------------------
-# 9. MASTER 6-TAB SUITE
+# 9. MASTER 7-TAB WAR ROOM SUITE
 # -----------------------------------------------------------------------------
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
     "01 // THE 2026 FORENSIC AUDIT",
     "02 // ROUND 1 CLUTCH LEADERBOARD",
     "03 // PLAN A vs PLAN B SIMULATOR",
     "04 // PLAYER INTELLIGENCE & MATCHUP DOSSIER",
-    "05 // LIVE 2027 AUCTION WAR ROOM SIMULATOR",
-    "06 // KUMAR SANGAKKARA AI ORACLE"
+    "05 // OPPONENT & VENUE BLUEPRINTS",
+    "06 // LIVE 2027 AUCTION WAR ROOM SIMULATOR",
+    "07 // KUMAR SANGAKKARA AI ORACLE"
 ])
 
 # =============================================================================
@@ -707,14 +755,12 @@ with tab1:
     )
 
     overs = list(range(1, 21))
-    # 2026 Actual Conceded RPO per over
     actual_rpo = [
         8.5, 9.2, 8.8, 9.4, 9.1, 9.6,          # Powerplay (1-6) Avg ~9.10
         10.1, 10.4, 10.2, 10.5, 10.15,         # Overs 7-11 LEAK Avg 10.29
         9.8, 9.5, 9.7, 9.6,                    # Overs 12-15 Transition Avg ~9.65
         11.2, 11.8, 12.4, 12.1, 13.0           # Overs 16-20 Death Avg ~12.10
     ]
-    # Plan B Simulated Conceded RPO per over
     plan_b_rpo = [
         7.2, 7.8, 7.4, 8.0, 7.6, 8.1,          # Matt Henry + Jofra Archer PP
         7.3, 7.5, 7.4, 7.6, 7.3,               # Suyash Sharma (2280 RPM) + Jadeja Middle Choke
@@ -853,8 +899,6 @@ with tab2:
 
     # Master Table with Progress Column
     st.markdown("#### 📋 Real-Time Dynamic RPI Master Registry")
-    
-    # Filter search
     search_q = st.text_input("🔍 Search Player Name or Franchise:", "", key="search_player_tb2")
     
     cols_to_show = ['RPI_Rank', 'player_name', 'tactical_role', 'primary_franchise', 'press_balls', 'RPI']
@@ -1075,7 +1119,6 @@ with tab4:
         st.plotly_chart(fig_radar, use_container_width=True)
 
     with r_col2:
-        # Jaipur Aerodynamics Box
         st.markdown("""
         <div style="background: var(--rr-navy-card); border: 1px solid var(--rr-border); border-radius: 12px; padding: 18px; margin-top:20px;">
             <div style="font-family:'Rajdhani', sans-serif; font-size:1.15rem; font-weight:800; color:var(--rr-gold);">
@@ -1144,9 +1187,501 @@ with tab4:
                     st.rerun()
 
 # =============================================================================
-# TAB 5: 05 // LIVE 2027 AUCTION WAR ROOM SIMULATOR
+# TAB 5: 05 // OPPONENT & VENUE BLUEPRINTS (HOW TO TACKLE THEM)
 # =============================================================================
 with tab5:
+    st.markdown("### ⚔️ Franchise Opposition & Stadium Blueprints: How to Tackle Every Matchup")
+    st.caption("Tactical masterplans for dismantling all 9 IPL rivals and mastering environmental aerodynamics across every league stadium.")
+
+    bp_view = st.radio(
+        "Select Tactical Blueprint Dimension:",
+        [
+            "⚔️ Franchise Opposition Blueprints (Team-Wise)",
+            "🏟️ Stadium Aerodynamics & Venue Blueprints (Stadium-Wise)",
+            "🎯 Cross-Matrix: Team vs Stadium Battle Simulator"
+        ],
+        horizontal=True,
+        key="bp_view_selector"
+    )
+
+    st.markdown("---")
+
+    # -------------------------------------------------------------------------
+    # SUB-VIEW 1: TEAM-WISE OPPOSITION BLUEPRINTS
+    # -------------------------------------------------------------------------
+    if bp_view == "⚔️ Franchise Opposition Blueprints (Team-Wise)":
+        opp_list = df_opp_dossiers['opponent_franchise'].tolist() if not df_opp_dossiers.empty else [
+            "Sunrisers Hyderabad (SRH)", "Kolkata Knight Riders (KKR)", "Chennai Super Kings (CSK)",
+            "Mumbai Indians (MI)", "Royal Challengers Bengaluru (RCB)", "Punjab Kings (PBKS)",
+            "Lucknow Super Giants (LSG)", "Delhi Capitals (DC)", "Gujarat Titans (GT)"
+        ]
+
+        c_opp_sel, c_opp_blank = st.columns([1.5, 1])
+        with c_opp_sel:
+            selected_opp = st.selectbox("Select Target Opposition Franchise:", opp_list, index=1 if len(opp_list) > 1 else 0, key="opp_select")
+
+        # Match row in dossiers, matrix, and neutralization
+        doss_row = df_opp_dossiers[df_opp_dossiers['opponent_franchise'] == selected_opp].iloc[0] if not df_opp_dossiers.empty and not df_opp_dossiers[df_opp_dossiers['opponent_franchise'] == selected_opp].empty else None
+        
+        team_token = selected_opp.split('(')[0].strip()
+        mat_match = df_opp_matrix[df_opp_matrix['opponent'].str.contains(team_token, case=False, na=False)]
+        mat_row = mat_match.iloc[0] if not mat_match.empty else None
+
+        neut_match = df_opp_neutral[df_opp_neutral['Franchise'].str.contains(team_token, case=False, na=False)]
+        neut_row = neut_match.iloc[0] if not neut_match.empty else None
+
+        # Top Franchise Header Card
+        standing_str = str(mat_row['ipl_2026_standing']) if mat_row is not None else "Playoff Contender"
+        threat_level = str(mat_row['threat_level']) if mat_row is not None else "HIGH THREAT"
+        threat_color = "#EF4444" if "HIGH" in threat_level or "LETHAL" in threat_level else "#F59E0B"
+
+        st.markdown(f"""
+        <div style="background: linear-gradient(90deg, #180524 0%, #0E162B 50%, #061126 100%); border: 1px solid var(--rr-border); border-left: 5px solid {threat_color}; border-radius: 12px; padding: 18px 24px; margin-bottom: 18px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <div>
+                    <span style="font-family:'Rajdhani', sans-serif; font-size:1.8rem; font-weight:900; color:#FFFFFF;">{selected_opp}</span>
+                    <div style="font-size:0.8rem; color:var(--rr-gold); font-weight:700; margin-top:3px;">
+                        2026 STANDING: {standing_str} • STATUS: <span style="color:{threat_color};">{threat_level}</span>
+                    </div>
+                </div>
+                <div style="background:rgba(234,26,133,0.15); border:1px solid var(--rr-pink); border-radius:20px; padding:6px 16px; font-size:0.75rem; font-weight:700; color:var(--rr-pink);">
+                    TACTICAL DOSSIER READY
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # 4 Win-Probability & Impact Cards
+        k_w1, k_w2, k_w3, k_w4 = st.columns(4)
+        base_win = neut_row['BaselineWinProb_Pct'] if neut_row is not None else 45.0
+        rredge_win = neut_row['RREDGE_WinProb_Pct'] if neut_row is not None else 65.0
+        lift_win = neut_row['WinProbLift_Pct'] if neut_row is not None else 20.0
+        net_impact = neut_row['NetRR_Impact'] if neut_row is not None else 0.40
+
+        with k_w1:
+            st.markdown(f"""
+            <div class="rr-kpi-card">
+                <div class="rr-kpi-label">Baseline 2026 Win Odds</div>
+                <div class="rr-kpi-value" style="color:#EF4444;">{base_win:.1f}%</div>
+                <div class="rr-kpi-sub">Unmitigated Middle Overs Leak</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with k_w2:
+            st.markdown(f"""
+            <div class="rr-kpi-card">
+                <div class="rr-kpi-label">RR-EDGE Plan B Win Odds</div>
+                <div class="rr-kpi-value" style="color:#00F0FF;">{rredge_win:.1f}%</div>
+                <div class="rr-kpi-sub">Henry + Suyash Neutralization</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with k_w3:
+            st.markdown(f"""
+            <div class="rr-kpi-card">
+                <div class="rr-kpi-label">Win Probability Lift</div>
+                <div class="rr-kpi-value" style="color:#10B981;">+{lift_win:.1f}%</div>
+                <div class="rr-kpi-sub">Tactical Exploitation Margin</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with k_w4:
+            st.markdown(f"""
+            <div class="rr-kpi-card">
+                <div class="rr-kpi-label">Net RR Defense Impact</div>
+                <div class="rr-kpi-value" style="color:var(--rr-gold);">+{net_impact:.2f}</div>
+                <div class="rr-kpi-sub">Sabermetric Index Multiplier</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        # 4 Phase Anatomy Cards
+        st.markdown(f"#### 🔍 Opposition Phase-by-Phase Scoring Threat: {selected_opp}")
+        pp_threat = mat_row['powerplay_profile'] if mat_row is not None else "High scoring rate"
+        m1_threat = mat_row['middle_overs_7_11'] if mat_row is not None else "Partnership building phase"
+        m2_threat = mat_row['middle_overs_12_15'] if mat_row is not None else "Consolidation & gear shift"
+        death_threat = mat_row['death_overs_16_20'] if mat_row is not None else "Boundary finish surge"
+
+        ph1, ph2, ph3, ph4 = st.columns(4)
+        with ph1:
+            st.markdown(f"""
+            <div style="background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.3); border-radius:10px; padding:14px; min-height:130px;">
+                <div style="font-size:0.72rem; font-weight:700; color:#38BDF8; text-transform:uppercase;">POWERPLAY (OVERS 1–6)</div>
+                <div style="font-size:0.80rem; color:#E2E8F0; margin-top:8px; line-height:1.4;">{pp_threat}</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with ph2:
+            st.markdown(f"""
+            <div style="background:rgba(239,68,68,0.08); border:1px solid rgba(239,68,68,0.3); border-radius:10px; padding:14px; min-height:130px;">
+                <div style="font-size:0.72rem; font-weight:700; color:#EF4444; text-transform:uppercase;">OVERS 7–11 (CRUCIAL LEAK)</div>
+                <div style="font-size:0.80rem; color:#E2E8F0; margin-top:8px; line-height:1.4;">{m1_threat}</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with ph3:
+            st.markdown(f"""
+            <div style="background:rgba(212,175,55,0.08); border:1px solid rgba(212,175,55,0.3); border-radius:10px; padding:14px; min-height:130px;">
+                <div style="font-size:0.72rem; font-weight:700; color:var(--rr-gold); text-transform:uppercase;">OVERS 12–15 (TRANSITION)</div>
+                <div style="font-size:0.80rem; color:#E2E8F0; margin-top:8px; line-height:1.4;">{m2_threat}</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with ph4:
+            st.markdown(f"""
+            <div style="background:rgba(234,26,133,0.08); border:1px solid rgba(234,26,133,0.3); border-radius:10px; padding:14px; min-height:130px;">
+                <div style="font-size:0.72rem; font-weight:700; color:var(--rr-pink); text-transform:uppercase;">DEATH PHASE (OVERS 16–20)</div>
+                <div style="font-size:0.80rem; color:#E2E8F0; margin-top:8px; line-height:1.4;">{death_threat}</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        st.markdown("---")
+
+        # The "HOW TO TACKLE THEM" Deep Directive
+        st.markdown(f"#### 🎯 The RR-EDGE Tactical Blueprint: How to Tackle {selected_opp}")
+        
+        tack_c1, tack_c2 = st.columns(2)
+        vulnerability_txt = mat_row['weakness_pace_vs_spin'] if mat_row is not None else doss_row.get('vulnerable_matchups', 'Target batsman specific lines')
+        bowling_counter = mat_row['rr_bowling_counter'] if mat_row is not None else doss_row.get('rr_countermeasures', 'Deploy Plan B weapons')
+        batting_counter = mat_row['rr_batting_counter'] if mat_row is not None else 'Target secondary bowlers'
+        field_setting = neut_row['FieldStrategy'] if neut_row is not None else 'Ring squeeze with deep sweepers'
+        counter_weapon = neut_row['RR_CounterWeapon'] if neut_row is not None else 'Matt Henry + Suyash Sharma'
+
+        with tack_c1:
+            st.markdown(f"""
+            <div class="rr-tactical-box">
+                <div style="font-family:'Rajdhani', sans-serif; font-size:1.2rem; font-weight:800; color:#EF4444;">
+                    1. OPPOSITION BLINDSPOT & VULNERABILITY
+                </div>
+                <div style="font-size:0.82rem; color:#E2E8F0; line-height:1.6; margin-top:8px;">
+                    {vulnerability_txt}
+                </div>
+                <div style="margin-top:14px; border-top:1px solid rgba(255,255,255,0.08); padding-top:10px;">
+                    <span style="font-size:0.72rem; font-weight:700; color:var(--rr-gold); text-transform:uppercase;">RR DESIGNATED COUNTER-WEAPON:</span>
+                    <div style="font-size:0.95rem; font-weight:800; font-family:'Rajdhani', sans-serif; color:#00F0FF; margin-top:3px;">
+                        {counter_weapon}
+                    </div>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+            st.markdown(f"""
+            <div class="rr-tactical-box-gold">
+                <div style="font-family:'Rajdhani', sans-serif; font-size:1.2rem; font-weight:800; color:var(--rr-gold);">
+                    3. SPATIAL FIELDING BLUEPRINT & BOUNDARY LOCK
+                </div>
+                <div style="font-size:0.82rem; color:#E2E8F0; line-height:1.6; margin-top:8px;">
+                    • <b>Geometry:</b> {field_setting}<br/>
+                    • <b>Catching Traps:</b> Station Ravindra Jadeja at backward point / backward square ring.<br/>
+                    • <b>Rope Protection:</b> Keep Hetmyer and Parag on the larger boundary to swallow aerial mishits.
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        with tack_c2:
+            st.markdown(f"""
+            <div class="rr-tactical-box">
+                <div style="font-family:'Rajdhani', sans-serif; font-size:1.2rem; font-weight:800; color:#00F0FF;">
+                    2. RR 20-OVER BOWLING SPELL ALLOCATION
+                </div>
+                <div style="font-size:0.82rem; color:#E2E8F0; line-height:1.6; margin-top:8px;">
+                    {bowling_counter}
+                </div>
+                <div style="margin-top:12px; background:rgba(0,240,255,0.06); border:1px solid rgba(0,240,255,0.25); border-radius:6px; padding:8px; font-size:0.75rem; color:#CBD5E1;">
+                    <b>Execution Rule:</b> Never bowl predictable pace-on into their power-hitting arc. Force them against their physical match-up blindspot.
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+            st.markdown(f"""
+            <div class="rr-tactical-box">
+                <div style="font-family:'Rajdhani', sans-serif; font-size:1.2rem; font-weight:800; color:var(--rr-pink);">
+                    4. RR BATTING COUNTER-OFFENSIVE
+                </div>
+                <div style="font-size:0.82rem; color:#E2E8F0; line-height:1.6; margin-top:8px;">
+                    {batting_counter}
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        # Plotly Phase RPO Comparison: Opponent vs RR Defensive Target
+        st.markdown("#### 📊 Phase Run Rate Suppression: Opponent Unchecked vs RR Defense")
+        phases = ['Powerplay (1–6)', 'Overs 7–11 (Leak)', 'Overs 12–15 (Transition)', 'Death (16–20)']
+        
+        opp_phase_rpo = [10.2, 10.4, 9.6, 12.4] if "SRH" in selected_opp or "KKR" in selected_opp else [9.2, 9.8, 9.4, 11.8]
+        rr_defense_rpo = [7.6, 7.42, 8.1, 10.4]
+
+        fig_opp = go.Figure()
+        fig_opp.add_trace(go.Bar(
+            x=phases, y=opp_phase_rpo,
+            name=f'{selected_opp} Unchecked RPO',
+            marker_color='#EF4444'
+        ))
+        fig_opp.add_trace(go.Bar(
+            x=phases, y=rr_defense_rpo,
+            name='RR-EDGE Rebalanced Conceded RPO',
+            marker_color='#00F0FF'
+        ))
+
+        fig_opp.update_layout(
+            **PLOTLY_LAYOUT,
+            barmode='group',
+            height=340,
+            title=f"<b>Defensive RPO Target vs {selected_opp}</b>",
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+        )
+        st.plotly_chart(fig_opp, use_container_width=True)
+
+    # -------------------------------------------------------------------------
+    # SUB-VIEW 2: STADIUM-WISE VENUE BLUEPRINTS & AERODYNAMICS
+    # -------------------------------------------------------------------------
+    elif bp_view == "🏟️ Stadium Aerodynamics & Venue Blueprints (Stadium-Wise)":
+        venue_list = df_venues['venue_name'].tolist() if not df_venues.empty else [
+            "Sawai Mansingh Stadium, Jaipur (RR Primary Home)",
+            "Barsapara Cricket Stadium, Guwahati (RR Second Home)",
+            "Wankhede Stadium, Mumbai",
+            "MA Chidambaram Stadium, Chepauk, Chennai",
+            "Eden Gardens, Kolkata",
+            "M. Chinnaswamy Stadium, Bengaluru",
+            "Arun Jaitley Stadium, Delhi",
+            "Narendra Modi Stadium, Ahmedabad",
+            "Rajiv Gandhi International Stadium, Hyderabad"
+        ]
+
+        c_v_sel, c_v_blank = st.columns([1.5, 1])
+        with c_v_sel:
+            selected_venue = st.selectbox("Select Tournament Stadium:", venue_list, index=0, key="venue_select")
+
+        ven_row = df_venues[df_venues['venue_name'] == selected_venue].iloc[0] if not df_venues.empty and not df_venues[df_venues['venue_name'] == selected_venue].empty else None
+        aero = get_venue_aerodynamics(selected_venue)
+
+        # Top Venue Header
+        st.markdown(f"""
+        <div style="background: linear-gradient(90deg, #180524 0%, #0E162B 50%, #061126 100%); border: 1px solid var(--rr-border); border-left: 5px solid var(--rr-gold); border-radius: 12px; padding: 18px 24px; margin-bottom: 18px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <div>
+                    <span style="font-family:'Rajdhani', sans-serif; font-size:1.8rem; font-weight:900; color:#FFFFFF;">{selected_venue}</span>
+                    <div style="font-size:0.8rem; color:var(--rr-gold); font-weight:700; margin-top:3px;">
+                        PITCH DYNAMICS: {aero['pitch']} • BOUNDARIES: {aero['boundaries']}
+                    </div>
+                </div>
+                <div style="background:rgba(212,175,55,0.15); border:1px solid var(--rr-gold); border-radius:20px; padding:6px 16px; font-size:0.75rem; font-weight:700; color:var(--rr-gold);">
+                    ENVIRONMENTAL AUDIT VERIFIED
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # 4 Venue Telemetry KPI Cards
+        vk1, vk2, vk3, vk4 = st.columns(4)
+        avg_score = ven_row['avg_first_innings_score'] if ven_row is not None else 180.0
+        chase_win = ven_row['chasing_win_pct'] if ven_row is not None else 52.0
+        dew_rating = ven_row['dew_impact_rating'] if ven_row is not None else "MODERATE"
+        bound_pct = ven_row['boundary_concession_pct'] if ven_row is not None else 18.0
+
+        with vk1:
+            st.markdown(f"""
+            <div class="rr-kpi-card">
+                <div class="rr-kpi-label">Avg 1st Innings Score</div>
+                <div class="rr-kpi-value" style="color:#FFFFFF;">{avg_score:.1f}</div>
+                <div class="rr-kpi-sub">Historical Baseline Total</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with vk2:
+            st.markdown(f"""
+            <div class="rr-kpi-card">
+                <div class="rr-kpi-label">Chasing Win Rate</div>
+                <div class="rr-kpi-value" style="color:var(--rr-pink);">{chase_win:.1f}%</div>
+                <div class="rr-kpi-sub">2nd Innings Target Conversion</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with vk3:
+            st.markdown(f"""
+            <div class="rr-kpi-card">
+                <div class="rr-kpi-label">Atmospheric Carry Lift</div>
+                <div class="rr-kpi-value" style="color:#00F0FF;">{aero['carry']}</div>
+                <div class="rr-kpi-sub">Drag: {aero['drag']} vs Sea Level</div>
+            </div>
+            """, unsafe_allow_html=True)
+        with vk4:
+            st.markdown(f"""
+            <div class="rr-kpi-card">
+                <div class="rr-kpi-label">Boundary Concession %</div>
+                <div class="rr-kpi-value" style="color:var(--rr-gold);">{bound_pct:.1f}%</div>
+                <div class="rr-kpi-sub">Total Deliveries to Fence</div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        # Atmospheric Aerodynamics & Stadium Telemetry
+        st.markdown(f"#### 🌪️ Stadium Atmospheric Telemetry & Aerodynamics: {selected_venue}")
+        at1, at2, at3 = st.columns(3)
+        with at1:
+            st.markdown(f"""
+            <div class="rr-tactical-box">
+                <div style="font-family:'Rajdhani', sans-serif; font-size:1.15rem; font-weight:800; color:var(--rr-gold);">
+                    ALTITUDE & AIR DENSITY
+                </div>
+                <div style="font-size:0.83rem; color:#CBD5E1; line-height:1.6; margin-top:8px;">
+                    • <b>Altitude:</b> {aero['alt']}m above sea level.<br/>
+                    • <b>Air Density:</b> {aero['density']} kg/m³.<br/>
+                    • <b>Relative Drag:</b> {aero['drag']} vs sea level.<br/>
+                    • <b>Carry Boost:</b> Adds {aero['carry']} distance on aerial strokes.
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        with at2:
+            st.markdown(f"""
+            <div class="rr-tactical-box">
+                <div style="font-family:'Rajdhani', sans-serif; font-size:1.15rem; font-weight:800; color:#00F0FF;">
+                    BOUNDARY & WIND TELEMETRY
+                </div>
+                <div style="font-size:0.83rem; color:#CBD5E1; line-height:1.6; margin-top:8px;">
+                    • <b>Boundary Size:</b> {aero['boundaries']}.<br/>
+                    • <b>Wind Vector:</b> {aero['wind']}.<br/>
+                    • <b>Tactical Squeeze:</b> Bowlers must bowl to force hits against the wind into the largest fence.
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        with at3:
+            st.markdown(f"""
+            <div class="rr-tactical-box">
+                <div style="font-family:'Rajdhani', sans-serif; font-size:1.15rem; font-weight:800; color:var(--rr-pink);">
+                    DEW IMPACT & TOSS DIRECTIVE
+                </div>
+                <div style="font-size:0.83rem; color:#CBD5E1; line-height:1.6; margin-top:8px;">
+                    • <b>Dew Classification:</b> {dew_rating}.<br/>
+                    • <b>Toss Call:</b> <span style="color:#10B981; font-weight:700;">{aero['toss']}</span>.<br/>
+                    • <b>Ball Maintenance:</b> Keep towel squads ready at deep covers after 20:00 IST.
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        st.markdown("---")
+
+        # The "HOW TO TACKLE THE STADIUM" Directive
+        st.markdown(f"#### 🎯 Tactical Ground Masterplan: How to Tackle {selected_venue}")
+        directive_txt = ven_row['tactical_venue_directive'] if ven_row is not None else "Deploy balanced 3 pace and 2 spin attack."
+        pace_er = ven_row['pace_economy'] if ven_row is not None else 8.8
+        spin_er = ven_row['spin_economy'] if ven_row is not None else 7.8
+        
+        st.markdown(f"""
+        <div style="background:var(--rr-navy-card); border-left:4px solid var(--rr-pink); border-radius:10px; padding:18px 22px; margin-bottom:18px;">
+            <div style="font-family:'Rajdhani', sans-serif; font-size:1.25rem; font-weight:800; color:var(--rr-pink);">
+                EXECUTIVE GROUND DIRECTIVE (KUMAR SANGAKKARA & GILES LINDSAY)
+            </div>
+            <div style="font-size:0.86rem; color:#F8FAFC; line-height:1.6; margin-top:8px;">
+                "{directive_txt}"
+            </div>
+            <div style="margin-top:12px; display:flex; gap:20px; font-size:0.80rem; color:#94A3B8; border-top:1px solid rgba(255,255,255,0.08); padding-top:8px;">
+                <span>Pace Economy at Venue: <b style="color:#FFFFFF;">{pace_er:.2f} RPO</b></span>
+                <span>•</span>
+                <span>Spin Economy at Venue: <b style="color:var(--rr-gold);">{spin_er:.2f} RPO</b></span>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # Plotly Phase Scoring Breakdown at this Venue
+        pp_rpo = ven_row['powerplay_avg_rpo'] if ven_row is not None else 8.5
+        mid_rpo = ven_row['middle_overs_avg_rpo'] if ven_row is not None else 8.0
+        dth_rpo = ven_row['death_overs_avg_rpo'] if ven_row is not None else 10.5
+
+        fig_vph = go.Figure()
+        fig_vph.add_trace(go.Bar(
+            x=['Powerplay (1–6)', 'Middle Phase (7–15)', 'Death Phase (16–20)', 'Pace Economy', 'Spin Economy'],
+            y=[pp_rpo, mid_rpo, dth_rpo, pace_er, spin_er],
+            marker_color=['#38BDF8', '#F59E0B', '#EF4444', '#EA1A85', '#D4AF37']
+        ))
+        fig_vph.update_layout(
+            **PLOTLY_LAYOUT,
+            height=320,
+            title=f"<b>Run Rate & Economy Rates at {selected_venue}</b>"
+        )
+        st.plotly_chart(fig_vph, use_container_width=True)
+
+    # -------------------------------------------------------------------------
+    # SUB-VIEW 3: CROSS-MATRIX (TEAM vs STADIUM BATTLE SIMULATOR)
+    # -------------------------------------------------------------------------
+    elif bp_view == "🎯 Cross-Matrix: Team vs Stadium Battle Simulator":
+        st.markdown("#### 🎯 Instant Tactical Matchup Simulator: Any Team at Any Stadium")
+        st.caption("Cross-references opposition weaknesses against local stadium aerodynamics to output Rajasthan Royals' bespoke 20-over battleplan.")
+
+        cx_col1, cx_col2 = st.columns(2)
+        with cx_col1:
+            opp_choice = st.selectbox(
+                "Choose Opposition Franchise:",
+                ["Sunrisers Hyderabad (SRH)", "Kolkata Knight Riders (KKR)", "Chennai Super Kings (CSK)",
+                 "Mumbai Indians (MI)", "Royal Challengers Bengaluru (RCB)", "Punjab Kings (PBKS)",
+                 "Lucknow Super Giants (LSG)", "Delhi Capitals (DC)", "Gujarat Titans (GT)"],
+                index=0, key="cx_opp"
+            )
+        with cx_col2:
+            ven_choice = st.selectbox(
+                "Choose Match Venue:",
+                ["Sawai Mansingh Stadium, Jaipur (RR Primary Home)",
+                 "M. Chinnaswamy Stadium, Bengaluru",
+                 "Wankhede Stadium, Mumbai",
+                 "MA Chidambaram Stadium, Chepauk, Chennai",
+                 "Eden Gardens, Kolkata",
+                 "Barsapara Cricket Stadium, Guwahati (RR Second Home)",
+                 "Arun Jaitley Stadium, Delhi",
+                 "Narendra Modi Stadium, Ahmedabad",
+                 "Rajiv Gandhi International Stadium, Hyderabad"],
+                index=0, key="cx_ven"
+            )
+
+        aero_cx = get_venue_aerodynamics(ven_choice)
+        team_token = opp_choice.split('(')[0].strip()
+        mat_cx = df_opp_matrix[df_opp_matrix['opponent'].str.contains(team_token, case=False, na=False)]
+        m_row_cx = mat_cx.iloc[0] if not mat_cx.empty else None
+
+        neut_cx = df_opp_neutral[df_opp_neutral['Franchise'].str.contains(team_token, case=False, na=False)]
+        n_row_cx = neut_cx.iloc[0] if not neut_cx.empty else None
+
+        # Cross-Matrix Calculation
+        base_win = n_row_cx['BaselineWinProb_Pct'] if n_row_cx is not None else 45.0
+        lift = n_row_cx['WinProbLift_Pct'] if n_row_cx is not None else 18.0
+        is_home = "Jaipur" in ven_choice
+        home_advantage = 5.5 if is_home else (0.0 if "Guwahati" in ven_choice else -2.5)
+        simulated_win_pct = min(max(base_win + lift + home_advantage, 40.0), 85.0)
+
+        # Baseline par score
+        base_par = 178 if "Jaipur" in ven_choice else (205 if "Bengaluru" in ven_choice else (168 if "Chennai" in ven_choice else 192))
+
+        st.markdown(f"""
+        <div style="background: linear-gradient(135deg, rgba(20,30,55,0.9) 0%, rgba(10,15,30,0.95) 100%); border: 2px solid var(--rr-pink); border-radius: 14px; padding: 22px; margin-top: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+                <div>
+                    <div style="font-family:'Montserrat', sans-serif; font-size:0.75rem; font-weight:700; color:var(--rr-gold); text-transform:uppercase;">SIMULATED CLASH TELEMETRY</div>
+                    <div style="font-family:'Rajdhani', sans-serif; font-size:1.8rem; font-weight:900; color:#FFFFFF; margin-top:2px;">
+                        RAJASTHAN ROYALS vs {opp_choice}
+                    </div>
+                    <div style="font-size:0.80rem; color:#CBD5E1;">Venue: {ven_choice}</div>
+                </div>
+                <div style="text-align:right;">
+                    <div style="font-size:0.75rem; color:#94A3B8;">PROJECTED WIN PROBABILITY</div>
+                    <div style="font-family:'Rajdhani', sans-serif; font-size:2.5rem; font-weight:900; color:#00F0FF;">{simulated_win_pct:.1f}%</div>
+                </div>
+            </div>
+            
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; margin-top:16px; border-top:1px solid rgba(255,255,255,0.1); padding-top:14px; font-size:0.85rem;">
+                <div><b>PAR SCORE:</b> <span style="color:#FFFFFF; font-weight:700;">{base_par} Runs</span></div>
+                <div><b>RECOMMENDED TOSS:</b> <span style="color:#10B981; font-weight:700;">{aero_cx['toss']}</span></div>
+                <div><b>AERODYNAMIC CARRY:</b> <span style="color:var(--rr-pink); font-weight:700;">{aero_cx['carry']}</span></div>
+                <div><b>KEY WEAPON:</b> <span style="color:var(--rr-gold); font-weight:700;">Matt Henry + Suyash Sharma</span></div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+        # 20-Over Spell Assignment
+        st.markdown("#### 📋 Tactical 20-Over Bowling Spell Assignment")
+        spell_data = [
+            ("Overs 1–6 (Powerplay)", "Matt Henry (3), Jofra Archer (2), Sam Curran (1)", "Target off-stump with 1.42° outswing; force false strokes against the wind."),
+            ("Overs 7–11 (Middle 1)", "Suyash Sharma (3), Ravindra Jadeja (2)", "ELIMINATE THE LEAK: 2,280 RPM googlies + arm balls; deny boundary access."),
+            ("Overs 12–15 (Middle 2)", "Ravindra Jadeja (2), Sam Curran (2)", "Pace off the ball; cutters into the pitch; crowd the boundary rope."),
+            ("Overs 16–20 (Death)", "Jofra Archer (2), Sandeep Sharma (2), Suyash Sharma (1)", "Blockhole yorkers; wide knuckleballs outside off; protect straight fence.")
+        ]
+        df_spells = pd.DataFrame(spell_data, columns=["Phase", "Bowler Allocation (Overs)", "Tactical Execution Directive"])
+        st.dataframe(df_spells, use_container_width=True, hide_index=True)
+
+# =============================================================================
+# TAB 6: 06 // LIVE 2027 AUCTION WAR ROOM SIMULATOR
+# =============================================================================
+with tab6:
     st.markdown("### 💰 Live 2027 Auction War Room Simulator")
     st.caption("Real-time ascending paddle simulation against rival franchises (PBKS, KKR, SRH, CSK) for Plan B targets.")
 
@@ -1262,9 +1797,9 @@ with tab5:
         )
 
 # =============================================================================
-# TAB 6: 06 // KUMAR SANGAKKARA AI ORACLE
+# TAB 7: 07 // KUMAR SANGAKKARA AI ORACLE
 # =============================================================================
-with tab6:
+with tab7:
     st.markdown("### 🤖 Kumar Sangakkara AI Oracle: War Room Strategic Advisor")
     st.caption("Powered by Groq Ultra-Fast LPU™ Inference • Grounded in Project RR-EDGE V6.0 (15 Dimensions & 200,999 Deliveries)")
     
@@ -1286,7 +1821,7 @@ with tab6:
     
     st.markdown("---")
     
-    # 5 Tactical Quick-Consult Presets
+    # Tactical Quick-Consult Presets (Including new Opponent & Stadium queries)
     st.markdown("#### ⚡ Tactical Quick-Consult Presets")
     q_col1, q_col2, q_col3, q_col4, q_col5 = st.columns(5)
     
@@ -1298,14 +1833,14 @@ with tab6:
         if st.button("🔍 Overs 7–11 Leak", key="qp2", use_container_width=True):
             preset_prompt = "Explain our 2026 middle-overs bowling leak (10.29 RPO) and how Suyash Sharma chokes it."
     with q_col3:
-        if st.button("🏟️ Jaipur Fortress Physics", key="qp3", use_container_width=True):
-            preset_prompt = "How do SMS Jaipur's 431m altitude and 1.161 kg/m³ air density affect Jofra Archer and Matt Henry's swing?"
+        if st.button("⚔️ Tackle SRH Powerplay", key="qp3", use_container_width=True):
+            preset_prompt = "How do we tackle Sunrisers Hyderabad's Travis Head and Abhishek Sharma in the Powerplay using Matt Henry and Jofra Archer?"
     with q_col4:
-        if st.button("💰 CSK/RCB Bidding War", key="qp4", use_container_width=True):
-            preset_prompt = "Simulate a bidding war against CSK or RCB for Matt Henry. What is our walk-away ceiling price?"
+        if st.button("🏟️ Chinnaswamy 220+ Par", key="qp4", use_container_width=True):
+            preset_prompt = "How should Rajasthan Royals tackle M. Chinnaswamy Stadium's 920m altitude and 58m short boundaries?"
     with q_col5:
-        if st.button("🏏 Jurel vs Klaasen Clutch", key="qp5", use_container_width=True):
-            preset_prompt = "Compare Dhruv Jurel and Heinrich Klaasen's psychometric clutch metrics (CVI and dot-ball spike) in death-overs chases."
+        if st.button("🏏 Tackle CSK & Samson", key="qp5", use_container_width=True):
+            preset_prompt = "How should we bowl to Sanju Samson and Shivam Dube when playing against CSK at Chepauk vs Jaipur?"
     
     st.markdown("---")
     
@@ -1316,7 +1851,7 @@ with tab6:
             st.markdown(msg["content"])
     
     # User message input or preset
-    user_query = st.chat_input("Ask Kumar Sangakkara about RR's auction strategy, matchups, or player physics...")
+    user_query = st.chat_input("Ask Kumar Sangakkara about RR's auction strategy, matchups, opponents, or stadium aerodynamics...")
     active_prompt = preset_prompt if preset_prompt else user_query
     
     if active_prompt:
