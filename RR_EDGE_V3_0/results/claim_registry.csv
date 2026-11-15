@@ -1,0 +1,7 @@
+claim_id,claim_statement,evidence_classification,data_provenance,uncertainty_bounds
+CLM-001,Nuwan Thushara executes yorkers on 34.2% of death deliveries vs 21.5% for Mustafizur Rahman.,REPRODUCED,"Ball-by-ball delivery log (184 Thushara balls, 492 Mustafizur balls)","Thushara [30.1%, 38.4%], Mustafizur [18.2%, 24.8%]"
+CLM-002,Acquiring Nuwan Thushara at ₹2.50 Cr delivers +1.09 marginal season wins.,MODEL ESTIMATE,Counterfactual Replacement Engine (12.72 runs saved/match over Deshpande),"[+0.72, +1.46] wins"
+CLM-003,Rajasthan Royals proposed retained commitments total ₹88.85 Cr across 12 players.,PROPOSED SCENARIO,Audited 2026 squad ledger and official player mapping,Subject to official BCCI Nov 17 announcements
+CLM-004,Strategy B2 achieves a calibrated 18.40% Championship Win Probability in IPL 2027.,MODEL ESTIMATE,"10,000 Monte Carlo Page Playoff simulations backtested on 2022-2026 IPL tables","95% CI: [6, 11] wins, Title CI [14.2%, 22.8%]"
+CLM-005,All 5 recommended playing XIs field strictly <= 4 overseas players.,VERIFIED,Squad Constraint Audit (Master XI fields exactly 3 overseas starters),Deterministic (Zero violations)
+CLM-006,Pressure collapse hazard model achieves 0.768 ROC-AUC on unseen 2025-2026 test partition.,REPRODUCED,"Chronological test partition of 48,214 deliveries",ECE = 0.028 (Well calibrated)

@@ -1,0 +1,5 @@
+priority_rank,target_player,base_planned_price_cr,plus20pct_price_cr,plus30pct_price_cr,plus50pct_price_cr,walk_away_ceiling_cr,fallback_target_1,fallback_target_2,trade_off_impact
+1,Prince Yadav,1.75,2.1,2.28,2.63,2.5,Yash Dayal (Direct focus),Akash Deep / Mohsin Khan,"If Prince exceeds ₹2.5 Cr, pivot immediately to bilateral trade inquiry with LSG or bid on Mohsin Khan at ₹2.5-3.0 Cr."
+2,Yash Dayal,5.0,6.0,6.5,7.5,6.0,Mohsin Khan (₹3.5 Cr),Akash Deep (₹4.5 Cr),"If Dayal exceeds ₹6.0 Cr, walk away immediately. Mohsin Khan offers left-arm angle at 40% lower cost."
+3,Nuwan Thushara,2.0,2.4,2.6,3.0,2.5,Mustafizur Rahman (₹7-8 Cr),Fazalhaq Farooqi / Spencer Johnson,"If Thushara exceeds ₹2.5 Cr, pivot to Mustafizur Rahman (KKR release) up to ₹8.0 Cr, or Farooqi at ₹4.5 Cr."
+4,Shahrukh Khan,3.75,4.5,4.88,5.63,4.5,Shubham Dubey (Internal zero-cost),Abhinav Manohar / Abdul Samad,"If Shahrukh exceeds ₹4.5 Cr, walk away. Retained Shubham Dubey (+75.9 SR Delta) provides elite domestic finishing at ₹0 incremental cost."

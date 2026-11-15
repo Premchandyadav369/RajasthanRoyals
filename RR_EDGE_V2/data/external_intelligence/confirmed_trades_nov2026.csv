@@ -1,0 +1,11 @@
+player_name,from_team,to_team,fee_cr,status,type
+Hardik Pandya,Mumbai Indians,Punjab Kings,18.0,Confirmed (Nov 11),Cash/Swap Trade
+Arshdeep Singh,Punjab Kings,Mumbai Indians,18.0,Confirmed (Nov 11),Cash/Swap Trade
+Nathan Ellis,Chennai Super Kings,Sunrisers Hyderabad,2.0,Confirmed (Nov 9),Multi-player Swap
+Khaleel Ahmed,Chennai Super Kings,Sunrisers Hyderabad,4.8,Confirmed (Nov 9),Multi-player Swap
+Liam Livingstone,Sunrisers Hyderabad,Chennai Super Kings,6.0,Confirmed (Nov 9),Multi-player Swap
+Jack Edwards,Sunrisers Hyderabad,Chennai Super Kings,3.0,Confirmed (Nov 9),Multi-player Swap
+T. Natarajan,Delhi Capitals,Sunrisers Hyderabad,5.0,Confirmed (Nov 8),Player Trade
+Zeeshan Ansari,Sunrisers Hyderabad,Delhi Capitals,0.5,Confirmed (Nov 8),Player Trade
+Rishabh Pant,Lucknow Super Giants,Delhi Capitals,15.0,Confirmed (Nov 7),Direct Trade
+Kuldeep Yadav,Delhi Capitals,Lucknow Super Giants,13.5,Confirmed (Nov 7),Direct Trade

@@ -1,0 +1,12 @@
+ledger_component,amount_cr,player_count,description
+Retained Core Commitments (12 Players),83.85,12,"Guaranteed salaries for 12 retained players (Jaiswal, Samson, Parag, Jurel, Archer, Sandeep, Sooryavanshi, Ferreira, Yudhvir, Punja, Brijesh, Ashok)"
+Freed Purse from Releases (13 Players),43.0,13,"Uncapped/capped salaries released (Hetmyer 11.0, Bishnoi 7.2, Deshpande 6.5, Dubey 5.8, Burger 3.5, Milne 2.4, Curran 2.4, Shanaka 1.0, Maphaka 1.5, Mishra 0.5, Sen 0.5, Chahal 0.35, Puthur 0.35)"
+Total 2026 Registered Squad Outlay,126.85,25,Reconciled 25-man registered squad baseline (100% exact mathematical balance: 83.85 + 43.50 = 127.35 Cr)
+BCCI Official 2027 Total Salary Cap,157.0,25,"Total maximum player expenditure permitted by BCCI (includes auction purse, performance pay, and mandatory match fees)"
+BCCI Mandatory Match Fees Reserve,12.6,25,Mandatory BCCI match fee reserve (12 playing XII players x 14 matches x Rs 7.5 Lakh = Rs 12.60 Cr)
+Base Auction Purse Scenario A (Conservative),125.0,N/A,Conservative base auction purse available for auction table bidding
+Available Auction Purse Scenario A,41.15,13,Base 125.00 Cr minus 83.85 Cr retained commitments = Rs 41.15 Cr available purse
+Base Auction Purse Scenario B (Central Planning),130.0,N/A,Central planning auction purse based on BCCI salary cap expansion
+Available Auction Purse Scenario B,46.15,13,Base 130.00 Cr minus 83.85 Cr retained commitments = Rs 46.15 Cr available purse
+Base Auction Purse Scenario C (Upper Bound),135.0,N/A,Upper bound auction purse scenario
+Available Auction Purse Scenario C,51.15,13,Base 135.00 Cr minus 83.85 Cr retained commitments = Rs 51.15 Cr available purse

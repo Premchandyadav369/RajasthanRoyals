@@ -1,0 +1,7 @@
+file_name,file_size_mb,row_count,column_count,total_null_cells,null_percentage,md5_checksum,provenance,validation_status
+ball_by_ball.csv,39.17,200999,33,766466,11.56,c5bbd29fe98b35a46d83c7dc7072a27d,Original Proprietary RR Competition Data Pack (Untouched),VERIFIED
+matches.csv,0.12,883,22,2736,14.08,5d4225eb8b30b72f75856e59b04893a1,Original Proprietary RR Competition Data Pack (Untouched),VERIFIED
+competitions.csv,0.01,141,4,0,0.0,91574579c0edd6d1de0469bd925a5398,Original Proprietary RR Competition Data Pack (Untouched),VERIFIED
+teams.csv,0.01,353,3,0,0.0,29c0a0df2172351b1d835adc098ca43b,Original Proprietary RR Competition Data Pack (Untouched),VERIFIED
+playing_eleven.csv,0.92,28381,9,26012,10.18,b6b04efe8d8d828103d711cccf89c6f7,Original Proprietary RR Competition Data Pack (Untouched),VERIFIED
+competition_team_player_mapping.csv,0.44,6413,6,0,0.0,b71a13458ebdbfaae608d5d435e2ee76,Original Proprietary RR Competition Data Pack (Untouched),VERIFIED

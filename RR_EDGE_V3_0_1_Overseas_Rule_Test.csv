@@ -1,0 +1,7 @@
+test_id,scenario_name,starting_overseas_count,starting_overseas_players,impact_player_nationality,impact_player_name,max_simultaneous_overseas_on_field,is_compliant,bcci_clause_reference,audit_verdict
+OVR-01,Strategy B2 Master Starting XI + Indian Impact Sub,3,"Jofra Archer, Donovan Ferreira, Nuwan Thushara",Indian,Prince Yadav,3,True,IPL Playing Conditions Clause 1.2.6,PASSED - Fully Compliant
+OVR-02,Strategy B2 Starting XI + Overseas Impact Sub (Tactical Option),3,"Jofra Archer, Donovan Ferreira, Nuwan Thushara",Overseas,Glenn Phillips (subbed for Indian player),4,True,IPL Playing Conditions Clause 1.2.6,PASSED - Fully Compliant (Reaches 4-Overseas Ceiling)
+OVR-03,Standard 4 Overseas Starting XI + Indian Impact Sub,4,"Archer, Ferreira, Thushara, Phillips",Indian,Prince Yadav (subbed for batter/bowler),4,True,IPL Playing Conditions Clause 1.2.5,PASSED - Fully Compliant
+OVR-04,Illegal 4 Overseas Starting XI + Overseas Impact Sub,4,"Archer, Ferreira, Thushara, Phillips",Overseas,Hypothetical 5th Overseas Player,5,False,IPL Playing Conditions Clause 1.2.5 & 1.2.6,FAILED - Strictly Prohibited (Breaches 4-Overseas Limit)
+OVR-05,Domestic Heavy Starting XI (2 Overseas) + Overseas Impact Sub,2,"Jofra Archer, Donovan Ferreira",Overseas,Nuwan Thushara (subbed for Indian batter),3,True,IPL Playing Conditions Clause 1.2.6,PASSED - Fully Compliant
+OVR-06,Illegal Starting XI with 5 Overseas Players,5,5 Overseas Players Named at Toss,Any,N/A,5,False,IPL Playing Conditions Clause 1.2.5,FAILED - Invalid Team Sheet at Toss

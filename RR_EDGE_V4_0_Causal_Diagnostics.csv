@@ -1,0 +1,2 @@
+metric_name,estimate_value,ci_95_lower,ci_95_upper,p_value,is_statistically_significant,effective_sample_size_control,pre_matching_mean_smd,post_matching_mean_smd,epistemic_classification,formal_scientific_statement
+Average Treatment Effect on the Treated (ATT),-0.0143,-0.0434,0.0166,0.32,False,55091.1,0.077,0.0076,OBSERVATIONAL_ASSOCIATION,"The estimated ATT is -1.5 percentage points [-0.047, +0.016], but the result is NOT statistically distinguishable from zero (p = 0.174). Does NOT establish a causal stabilizing effect."

@@ -1,0 +1,5 @@
+strategy,mean_wins,median_wins,win_std,mean_points,top4_qualification_prob_pct,finals_appearance_prob_pct,championship_win_prob_pct,worst_case_wins_5pct,best_case_wins_95pct
+Strategy_A_Marquee_Bowling,8.78,9,1.8,17.56,76.24,41.72,20.03,6,12
+Strategy_B_Balanced_Spread_PlanB,9.07,9,1.79,18.14,80.82,45.67,21.92,6,12
+Strategy_C_Aggressive_Batting,8.11,8,1.83,16.21,63.2,32.64,15.67,5,11
+Strategy_D_Moneyball_Value,7.84,8,1.82,15.67,57.89,28.9,13.87,5,11

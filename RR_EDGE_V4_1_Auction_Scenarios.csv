@@ -1,0 +1,5 @@
+scenario_case,target_player,estimated_base_price_cr,rr_max_rational_bid_cr,projected_clearing_price_cr,simulated_acquisition_prob,rival_bidder_threat,fallback_if_lost
+Auction Case 1: Spencer Johnson Released by GT,Spencer Johnson,2.0,5.5,4.8,0.42,"RCB, PBKS (seeking overseas left-arm express)",Pivot immediately to Chetan Sakariya (domestic) + Matt Henry (OS)
+Auction Case 2: Mustafizur Released by KKR,Mustafizur Rahman,2.0,7.5,7.4,0.15,"CSK, DC (intense bidding war)",Walk away immediately at Rs 7.50 Cr; save purse for domestic balance
+Auction Case 3: Chetan Sakariya Registered in Auction,Chetan Sakariya,1.0,2.5,2.2,0.65,"LSG, GT (modest domestic interest)",Pivot to Sandeep Warrier or Kartik Tyagi
+Auction Case 4: Nehal Wadhera in Auction,Nehal Wadhera,1.5,4.0,3.6,0.38,"MI, KKR (seeking domestic middle order)",Rely on Donovan Ferreira + Shubham Dubey re-acquisition at base

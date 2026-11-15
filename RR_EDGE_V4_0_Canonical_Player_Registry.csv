@@ -1,0 +1,1218 @@
+player_id,player_name,batting_type,bowling_type,pace_or_spin,batting_hand,bowling_style,primary_discipline,canonical_source
+478,Eoin Morgan,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+479,Adil Rashid,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+722,Liam Dawson,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+786,Chris Jordan,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+1187,Jason Roy,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1210,James Vince,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1556,David Payne,RHB,Left-arm fast-medium,Pace,RHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+1596,Moeen Ali,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+1924,Sam Billings,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2304,Tymal Mills,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+2315,Reece Topley,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+4391,Liam Livingstone,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4499,Saqib Mahmood,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+4826,George Garton,LHB,Left-arm Fast,Pace,LHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+5553,Phil Salt,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6273,Tom Banton,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6280,Harry Brook,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+494,Kieron Pollard,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+778,Darren Bravo,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1772,Sheldon Cottrell,,Left-arm fast-medium,Pace,Unknown,Left-arm fast-medium,Bowler,Data Pack & Official Scorecards
+2416,Kyle Mayers,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+2417,Akeal Hosein,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+2633,Jason Holder,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+2687,Roston Chase,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3125,Nicholas Pooran,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3272,Fabian Allen,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3622,Hayden Walsh,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+3639,Brandon King,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4369,Shai Hope,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4840,Odean Smith,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+4986,Rovman Powell,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6726,Romario Shepherd,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+6797,Dominic Drakes,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+47,Virat Kohli,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+126,Rohit Sharma,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+360,Bhuvneshwar Kumar,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+953,Lokesh Rahul,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1612,Yuzvendra Chahal,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+1699,Suryakumar Yadav,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+1813,Deepak Chahar,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+2261,Harshal Patel,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+2847,Shardul Thakur,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+2876,Axar Patel,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3644,Kuldeep Yadav,LHB,Left-arm Chinaman,Spin,LHB,Left-arm Chinaman,All-Rounder,Data Pack & Official Scorecards
+3647,Shreyas Iyer,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3648,Deepak Hooda,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3653,Avesh Khan,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4117,Ishan Kishan,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4703,Rishabh Pant,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4823,Washington Sundar,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+5944,Mohammed Siraj,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6059,Ruturaj Gaikwad,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7503,Ravi Bishnoi,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+7544,Venkatesh Iyer,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+223,Steven Smith,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+224,Moises Henriques,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+250,Aaron Finch,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+286,Kane Richardson,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+796,Matthew Wade,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+829,Mitchell Starc,LHB,Left-arm Fast,Pace,LHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+830,Josh Hazlewood,LHB,Right-arm fast-medium,Pace,LHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+838,Glenn Maxwell,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+1758,Patrick Cummins,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+2364,Ashton Agar,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+2367,Travis Head,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+2636,Adam Zampa,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+2639,Marcus Stoinis,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+3539,Ben McDermott,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4505,Jhye Richardson,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4736,Josh Inglis,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6518,Daniel Sams,RHB,Left-arm fast-medium,Pace,RHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+1100,Dinesh Chandimal,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2351,Danushka Gunathilaka,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+2399,Dushmantha Chameera,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+2436,Dasun Shanaka,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+3664,Binura Fernando,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3672,Kusal Mendis,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3673,Ramesh Mendis,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4460,Jeffrey Vandersay,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4895,Charith Asalanka,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4900,Wanindu Hasaranga,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4902,Avishka Fernando,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4903,Lahiru Kumara,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+6160,Chamika Karunaratne,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6180,Praveen Jayawickrama,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+6931,Pathum Nissanka,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7049,Kamil Mishara,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+19312,Nuwan Thushara,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+19316,Maheesh Theekshana,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+22515,Shiran Fernando,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+26519,Janith Liyanage,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+8,Mahendra Singh Dhoni,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+35,Nathan Bracken,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+152,Ravindra Jadeja,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+161,Dwayne Bravo,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+169,Robin Uthappa,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+535,Ambati Rayudu,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1487,Adam Milne,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+1941,Devon Conway,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2334,Dwaine Pretorius,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+4101,Mitchell Santner,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+4755,Shivam Dube,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+5608,Narayan Jagadeesan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+5668,Hari Nishaanth,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6408,Subhranshu Senapati,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6591,KM Asif,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+6806,Tushar Deshpande,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7250,Mukesh Choudhary,LHB,Left-arm medium,Pace,LHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+7533,Simarjeet Singh,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+8661,Matheesha Pathirana,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+19998,Rajvardhan Hangargekar,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+20694,Bhagath Varma,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+27956,Prashant Solanki,,Right-arm Leg-Break,Spin,Unknown,Right-arm Leg-Break,Bowler,Data Pack & Official Scorecards
+1071,Jaydev Unadkat,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+2933,Jasprit Bumrah,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+3298,Jofra Archer,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+4276,Basil Thampi,,Right-arm fast-medium,Pace,Unknown,Right-arm fast-medium,Bowler,Data Pack & Official Scorecards
+4817,Anmolpreet Singh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+5034,Murugan Ashwin,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+5665,Sanjay Yadav,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+5940,Riley Meredith,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+6396,Tim David,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6492,Aryan Juyal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6683,Mayank Markande,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+7060,Arjun Tendulkar,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7574,Kumar Kartikeya Singh,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7897,Namboori Tilak Varma,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+8177,Akash Madhwal,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+20005,Arshad Khan,LHB,Left-arm medium,Pace,LHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+20006,Ramandeep Singh,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+20029,Rahul Buddhi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+20702,Tristan Stubbs,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+25213,Dewald Brevis,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+27959,Hrithik Shokeen,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+305,Ravichandran Ashwin,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+813,Jos Buttler,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+820,Nathan Coulter Nile,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+930,Karun Nair,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2258,Sanju Samson,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2320,Trent Boult,RHB,Left-arm fast-medium,Pace,RHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+2930,Rassie van der Dussen,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3297,Shimron Hetmyer,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3323,Jimmy Neesham,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3629,Corbin Bosch,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+4080,KC Cariappa,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4106,Daryl Mitchell,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4288,Navdeep Saini,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4489,Prasidh Krishna,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+4837,Obed McCoy,LHB,Left-arm fast-medium,Pace,LHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+6036,Tejas Baroka,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6314,Devdutt Padikkal,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6423,Riyan Parag,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6819,Yashasvi Jaiswal,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+7260,Dhruv Jurel,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7545,Kuldeep Sen,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+20693,Kuldip Yadav,,Left-arm medium-fast,Pace,Unknown,Left-arm medium-fast,Bowler,Data Pack & Official Scorecards
+25667,Anunay Singh,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+28020,Shubham Garhwal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+34118,Irfan Taufiq,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+142,Shikhar Dhawan,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+992,Mayank Agarwal,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1205,Jonny Bairstow,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1600,Benny Howell,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+1617,Rishi Dhawan,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+2003,Bhanuka Rajapaksa,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2411,Sandeep Sharma,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3462,Writtick Chatterjee,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3628,Kagiso Rabada,LHB,Right-arm Fast,Pace,LHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+3782,M Shahrukh Khan,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3916,Jitesh Sharma,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4250,Baltej Singh,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5029,Prerak Mankad,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6048,Ishan Porel,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6161,Rahul Chahar,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+6464,Arshdeep Singh,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6466,Atharwa Taide,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7216,Prabhsimran Singh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7325,Harpreet Brar,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7920,Nathan Ellis,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+8746,Vaibhav Arora,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+20114,Ansh Patel,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+26834,Raj Bawa,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+88,Faf du Plessis,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+143,Dinesh Karthik,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+395,Karn Sharma,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+1219,David Willey,LHB,Left-arm fast-medium,Pace,LHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+2054,Jason Behrendorff,RHB,Left-arm fast-medium,Pace,RHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+2872,Siddarth Kaul,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+3479,Chama Milind,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4821,Mahipal Lomror,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+4847,Finn Allen,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+5039,Rajat Patidar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6467,Anuj Rawat,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6725,Sherfane Rutherford,LHB,Right-arm fast-medium,Pace,LHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+7134,Luvnith Sisodia,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7472,Shahbaz Ahmed,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7473,Akash Deep,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+8085,Suyash Prabhudessai,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+26832,Aneeshwar Gautam Narendra,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+220,David Warner,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+818,Mitchell Marsh,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+1039,Mandeep Singh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2790,Praveen Dubey,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+2860,KS Bharat,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3645,Sarfaraz Khan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3700,Tim Seifert,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4325,Ashwin Hebbar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4373,Mustafizur Rahman,LHB,Left-arm medium,Pace,LHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+4641,Lungi Ngidi,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4816,Khaleel Ahmed,RHB,Left-arm medium,Pace,RHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+5928,Prithvi Shaw,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6285,Kamlesh Nagarkoti,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+6671,Lalit Yadav,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6772,Chetan Sakariya,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7270,Anrich Nortje,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+8040,Ripal Patel,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+26836,Vicky Ostwal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+26909,Yash Dhull,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+167,Ajinkya Rahane,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+278,Tim Southee,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+344,Sheldon Jackson,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+403,Umesh Yadav,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+781,Sunil Narine,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+1107,Mohammad Nabi,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+1183,Alex Hales,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1318,Andre Russell,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+3451,Baba Indrajith,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4246,Nitish Rana,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4708,Rinku Singh,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6038,Pratham Sing,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6256,Varun Chakravarthy,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+6284,Anukul Roy,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6286,Shivam Mavi,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+7327,Rasikh Salam,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7498,Abhijeet Tomar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+20894,Aman Khan,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+27380,Harshit Kaushik,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+28018,Ashok Sharma,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+28019,Ramesh Kumar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+29888,Harshit Rana,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+1389,Sean Abbott,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+1440,Rahul Tripathi,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1568,Kane Williamson,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2756,Shashank Singh,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+2781,Ravikumar Samarth,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2852,Jagadeesha Suchith,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3469,Shreyas Gopal,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+3605,Aiden Markram,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4211,Vishnu Vinod,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4265,T Natarajan,LHB,Left-arm medium,Pace,LHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+4853,Glenn Phillips,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6281,Abhishek Sharma,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6487,Priyam Garg,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7240,FazalHaq Farooqi,RHB,Left-arm medium,Pace,RHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+7269,Sushant Mishra,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7446,Abdul Samad,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+7808,Marco Jansen,RHB,Left-arm Fast,Pace,RHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+8530,Kartik Tyagi,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+25048,Umran Malik,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+28021,Saurabh Dubey,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+109,Wriddhiman Saha,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+147,Pradeep Sangwan,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+1028,Varun Aaron,,Right-arm fast-medium,Pace,Unknown,Right-arm fast-medium,Bowler,Data Pack & Official Scorecards
+1077,David Miller,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1566,Mohammed Shami,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+2299,Gurkeerat Singh Mann,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2877,Vijay Shankar,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+3275,Alzarri Joseph,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3320,Jayant Yadav,,Right-arm offbreak,Spin,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+3330,Hardik Pandya,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3926,Rahul Tewatia,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4494,Abhinav Manohar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4692,Lockie Ferguson,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4722,Rashid Khan,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+5577,Sai Kishore,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6288,Shubman Gill,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6489,Darshan Nalkande,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+6674,Rahmanullah Gurbaz,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7322,Yash Dayal,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7967,Noor Ahmad,RHB,Left-arm Chinaman,Spin,RHB,Left-arm Chinaman,All-Rounder,Data Pack & Official Scorecards
+23450,Sai Sudharsan,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+198,Manish Pandey,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+914,Krishnappa Gowtham,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+1829,Shahbaz Nadeem,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2101,Quinton de Kock,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2573,Evin Lewis,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2869,Ankit Rajpoot,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2884,Manan Vohra,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2985,Mark Wood,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+3299,Andrew Tye,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+4219,Krunal Pandya,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6460,Ayush Badoni,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6669,Mohsin Khan,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+20023,Karan Sharma,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+27960,Mayank Yadav,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4604,Mitchell Swepson,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+2442,Lahiru Madushanka,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4947,Kasun Rajitha,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+5953,Lakshan Sandakan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6473,Nuwanidu Fernando,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+295,Wayne Parnell,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+768,Reeza Hendricks,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+1944,Keshav Maharaj,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+2361,Temba Bavuma,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4237,Tabraiz Shamsi,RHB,Left-arm Chinaman,Spin,RHB,Left-arm Chinaman,All-Rounder,Data Pack & Official Scorecards
+4260,Heinrich Klaasen,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+499,Shakib Al Hasan,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+507,Mohammad Mahmudullah,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+2218,Anamul Haque,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2671,Liton Das,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2680,Nurul Hasan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2681,Taskin Ahmed,LHB,Right-arm fast-medium,Pace,LHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+3281,Mosaddek Hossain,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3304,Munim Shahriar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4658,Nasum Ahmed,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+5837,Mahedi Hasan,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+5838,Shohidul Islam,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5839,Yasir Ali Chowdhury,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+5882,Afif Hossain,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7344,Shoriful Islam,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+38855,Mohammad Saifuddin,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+1810,Devon Thomas,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2661,Shamarh Brooks,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4838,Keemo Paul,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+985,Brendan Taylor,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1116,Craig Ervine,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1159,Tendai Chatara,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+1541,Sean Williams,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+1649,Regis Chakabva,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2463,Ryan Burl,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+2983,Richmond Mutumbami,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2984,Sikandar Raza,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3995,Donald Tiripano,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+4639,Wellington Masakadza,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+4867,Wesley Madhevere,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4871,Brandon Mavuta,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4874,Richard Ngarava,LHB,Left-arm fast-medium,Pace,LHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+4876,Milton Shumba,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6523,Blessing Muzarabani,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+6664,Dion Myers,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7046,Tinashe Kamunhukamwe,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7709,Ainsley Ndlovu,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7894,Tony Munyonga,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8600,Tadiwanashe Marumani,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8664,Victor Nyauchi,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+21780,Ernest Masuku,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+21781,Clive Madande,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+21784,Brad Evans,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+21786,Tanaka Chivanga,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+21787,Takudzwanashe Kaitano,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+22134,Luke Jongwe,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+24887,Innocent Kaia,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+2533,Najibullah Zadran,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3306,Afsar Zazai,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3544,Usman Ghani,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3545,Ihsanullah Janat,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3550,Sharafuddin Ashraf,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+4201,Fareed Malik,LHB,Left-arm fast-medium,Pace,LHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+5808,Karim Janat,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+6433,Darwish Rasooli,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6676,Azmatullah Omarzai,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7152,Hazratullah Zazai,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7227,Nijat Masood,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+443,Paul Stirling,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1101,George Dockrell,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3595,Andy McBrine,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3720,Craig Young,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+3954,Andrew Balbirnie,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4802,Stephen Doheny,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4807,Joshua Little,RHB,Left-arm Fast,Pace,RHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4812,Harry Tector,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4814,Lorcan Tucker,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+5379,Mark Adair,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+5441,Barry McCarthy,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7094,Curtis Campher,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7741,Gareth Delany,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+17430,Conor Olphert,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+728,Dawid Malan,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4409,Sam Curran,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+5562,Richard Gleeson,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+6297,Matthew Parkinson,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+274,Martin Guptill,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2526,Ish Sodhi,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+3374,Mark Chapman,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+4684,Dane Cleaver,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4856,Benjamin Sears,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+5892,Blair Tickner,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+6512,Michael Bracewell,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+22920,Jacob Duffy,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+25541,Michael Rippon,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+22137,Fionn Hand,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+772,Rilee Rossouw,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3627,Andile Phehlukwayo,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+6628,Gerald Coetzee,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+3280,Nazmul Hossain Shanto,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3282,Mehidy Hasan Miraz,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6643,Hasan Mahmud,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+7901,Parvez Emon,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+28911,John Masara,,Right-arm Leg-Break,Spin,Unknown,Right-arm Leg-Break,Bowler,Data Pack & Official Scorecards
+6188,Simi Singh,,Right-arm offbreak,Pace,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+17424,Graham Hume,LHB,Right-arm fast-medium,Pace,LHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+505,Mushfiqur Rahim,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2210,Sabbir Rahman,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+5844,Ebadot Hossain,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+6645,Mohammad Sheikh,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2485,Babar Azam,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2490,Mohammad Nawaz,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+2892,Asif Ali,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2921,Fakhar Zaman,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3024,Mohammad Rizwan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3033,Usman Qadir,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+3056,Iftikhar Ahmed,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3623,Hasan Ali,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+4111,Khushdil Shah,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+4926,Shadab Khan,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+6355,Shaheen Afridi,LHB,Left-arm Fast,Pace,LHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+6677,Mohammad Hasnain,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+7338,Haider Ali,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7364,Haris Rauf,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+7696,Mohammad Wasim,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+8049,Naseem Shah,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+19530,Shahnawaz Dhani,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+2407,Dhananjaya de Silva,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4901,Asitha Fernando,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6176,Ashen Bandara,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6932,Pramod Madushan,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7689,Dilshan Madushanka,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+1109,Samiullah Shinwari,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3260,Hashmatullah Shahidi,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+5809,Naveen ul Haq,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6436,Qais Ahmad,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+6448,Ibrahim Zadran,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6450,Mujeeb Ur Rahman,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+2972,Yasim Murtaza,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3373,Aizaz Khan,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3377,Babar Hayat,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3382,Nizakat Khan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3383,Kinchit Shah,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+5750,Ehsan Khan,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6101,Devang Bulsara,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6705,Scott McKechnie,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6712,Hamed Khan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6784,Hassan Mohammad,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7200,Aftab Hussain,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7201,Haroon Arshad,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7935,Mohammad Ghazanfar,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+19012,Zeeshan Ali,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+19016,Aliyaan Zahir Mohammad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+19020,Ateeq Iqbal,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+19043,Dhananjay Rao,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+19125,Ayush Shukla,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+21192,Ahan Trivedi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+21194,Bilal Akhtar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+21196,Mohammad Waheed,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+21197,Wajid Shah,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+232,Tom Cooper,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+456,Pieter Seelaar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2996,Stephanus Myburgh,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2997,Paul van Meekeren,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+3771,Vivian Kingma,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+3772,Logan van Beek,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+4412,Max ODowd,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6034,Shane Snater,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6226,Fred Klaassen,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6514,Anil Nidamanuru,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6881,Scott Edwards,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6985,Bas de Leede,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7710,Brandon Glover,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+7909,Philippe Boissevain,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7910,Antonius Staal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7912,Vikramjit Singh,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7914,Clayton Floyd,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+19902,Tim Pringle,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+22187,Ryan Klein,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+22188,Aryan Dutt,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+22189,Musa Ahmad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24381,Shariz Ahmad,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+2246,Tom Latham,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3174,Matt Henry,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+3040,Kashif Daud,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3253,Rohan Mustafa,,Right-arm offbreak,Spin,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+3255,Ahmed Raza 1,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+6035,Chirag Suri,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6497,Muhammad Usman,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6502,Mohammad Boota,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6503,Zahoor Khan,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+7194,Rahul Bhatia,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7406,Rizwan CP,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8005,Zawar Farid,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+8007,Waheed Ahmed,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8009,Junaid Siddique,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+8010,Darius D Silva,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8301,Asif Khan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8637,Vriitya Aravind,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8638,Basil Hameed,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+8639,Kartik Meiyappan,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+8719,Aryan Lakra,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+8726,Alishan Sharafu,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+8727,Sanchit Sharma,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+16498,Sultan Ahmad,LHB,Slow left-arm orthodox,Pace,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+19754,Raja Khan,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+22565,Muhammad Waseem,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+27391,Vishnu Sukumaran,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+27464,Aayan Afzal Khan,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+33442,Fahad Choudhary,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+33443,Sabir Ali,,Left-arm Fast,Pace,Unknown,Left-arm Fast,Bowler,Data Pack & Official Scorecards
+3371,Jamie Atkinson,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5749,Shahid Wasif,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6085,Dan Pascoe,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+19050,Adit Gorawara,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+21283,Vikas Sharma,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3831,Arjun Mutreja,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3832,Rezza Gaznavi,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3835,Anish Param,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3839,Amjad Mahboob,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+6199,Navin Param,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6202,Anantha Krishna,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6203,Surendran Chandramohan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7925,Rohan Rangarajan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7926,Manpreet Singh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7927,Janak Prakash,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7928,Vinoth Baskaran,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7929,Aryaman Sunil Uchil,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7931,Aritra Dutta,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8014,Avi Dixit,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+31834,Neil Anant Karnik,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+31835,Akshay Roopak Puri,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+31836,Aman Desai,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+33351,Vikas Puri,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+33437,Jeevan Santhanam,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+33438,Vihaan Maheshwar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+33439,Aryaveer Chaudhry,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+33440,Adwitya Bhargava,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+33441,Abdul Rahman Bhadelia,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3849,Ali Zaheer,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+15269,Mohammed Aslam,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+15271,Usmangani Ibrahim Patel,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+15274,Ravija Sandaruwan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+15275,Mohammad Amin,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+15278,Muhammad Kashif,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+15279,Shiraz Khan,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+15280,Sayed Monib,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+15303,Bilal Tahir,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+24346,Mohamed Shafeeq,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+25501,Meet Bhavsar,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+25502,Adnan Idrees,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+25503,Nawaf Ahmed,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25507,Edson Silva,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+31107,Yasin Patel,LHB,Slow left-arm orthodox,Pace,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+31156,Shahrukh Quddus,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+34694,Haroon Shahid,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5939,Cameron Green,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+1171,Chris Woakes,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+2321,Olly Stone,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+2379,Ben Duckett,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3660,Luke Wood,LHB,Left-arm medium,Pace,LHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+3955,Tom Helm,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6272,William Jacks,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7744,Jordan Cox,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3097,Shan Masood,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+5979,Abrar Ahmed,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+8741,Mohammad Haris,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+19145,Aamer Jamal,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4636,Bjorn Fortuin,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+2213,Soumya Sarkar,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+8380,Mohammad Rishad Hossain,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+7195,Fahad Nawaz,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+27462,Adhitya Shetty,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+1327,Johnson Charles,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2650,Raymon Reifer,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3135,Yannic Cariah,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+1195,Ben Stokes,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+5041,Mukesh Kumar,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+3669,Sadeera Samarawickrama,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7052,Dunith Wellalage,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6025,Henry Shipley,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+6515,Benjamin Lister,RHB,Left-arm medium,Pace,RHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+4815,Benjamin White,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+6919,Tyrone Kane,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+17413,Neil Rock,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+17432,Ross Adair,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1233,Gary Ballance,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8662,Kevin Kasuza,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3697,Kyle Jamieson,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4235,Sisanda Magala,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+7553,Ajay Mandal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7896,Akash Singh,,Left-arm medium-fast,Pace,Unknown,Left-arm medium-fast,Bowler,Data Pack & Official Scorecards
+26830,Nishant Kumar Sindhu,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+26913,Shaik Rasheed,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+23,Piyush Chawla,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+2863,Sandeep Warrier,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+6697,Shams Mulani,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7059,Nehal Wadhera,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+8763,Duan Jansen,,Left-arm Fast,Pace,Unknown,Left-arm Fast,Bowler,Data Pack & Official Scorecards
+36984,Raghav Goyal,,Left-arm Chinaman,Spin,Unknown,Left-arm Chinaman,Bowler,Data Pack & Official Scorecards
+2531,Joe Root,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+5071,Akash Vasisht,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8182,Donovan Ferreira,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+20802,Abdul Basith,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+35071,Kunal Rathore,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1040,Harpreet Bhatia,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3727,Matthew Short,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+27970,Gurnoor Brar,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+31227,Vidhwath Kaverappa,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+36983,Mohit Rathee,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+43774,Shivam Singh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+393,Kedar Jadhav,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4487,Vyshak Kumar,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+5680,R Sonu Yadav,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6494,Manoj Bhandage,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+26197,Avinash Singh,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+34991,Rajan Kumar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+36981,Himanshu Sharma,,Right-arm Leg-Break,Spin,Unknown,Right-arm Leg-Break,Bowler,Data Pack & Official Scorecards
+28,Ishant Sharma,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+19714,Abishek Porel,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1045,David Wiese,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6162,Kulwant Khejroliya,,Left-arm medium-fast,Pace,Unknown,Left-arm medium-fast,Bowler,Data Pack & Official Scorecards
+36982,Suyash Sharma,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+39672,Aarya Desai,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4716,Mayank Dagar,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6428,Upendra Yadav,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6774,Samarth Vyas,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7304,Sanvir Singh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8221,Nitish Reddy,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+20989,Vivrant Sharma,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+2878,Mohit Sharma,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6457,Urvil Patel,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+158,Amit Mishra,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+1701,Swapnil Singh,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6287,Yash Thakur,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7575,Arpit Guleria,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7625,Suryansh Shedge,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+8580,Yudhvir Singh,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+2523,Will Young,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4854,Rachin Ravindra,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+25534,Chad Bowes,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1481,Kusal Perera,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6172,Lasith Croospulle,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4372,Rony Talukder,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6389,Tanvir Islam,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6651,Towhid Hridoy,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7903,Shamim Hossain,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+19535,Rejaur Rahman Raja,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+741,Garry Park,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5566,Tom Abell,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+18824,Faran Afzal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24475,Rehan Ahmed,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+24754,Atif Mehmood,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25554,Darren Walker,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4773,Jaker Ali Anik,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+22471,Matthew Humphreys,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3578,Imad Wasim,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+5189,Faheem Ashraf,LHB,Right-arm Fast,Pace,LHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+6441,Abdullah Shafique,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6783,Azam Khan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7355,Tayyab Tahir,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7690,Saim Ayub,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+25030,Zaman Khan,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+27516,Ihsanullah Ihsanullah,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+2214,Gulbadin Naib,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+8647,Sediqullah Atal,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4662,Cole McConchie,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+1104,Mohammad Shahzad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6449,Wafadar Momand,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+5231,Oshane Thomas,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+4793,Dean Foxcroft,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+8611,Adithya Ashok,,Right-arm Leg-Break,Spin,Unknown,Right-arm Leg-Break,Bowler,Data Pack & Official Scorecards
+8217,Ansh Tandon,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8723,Mohammed Faraazuddin,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+17315,Lovepreet bajwa,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+27460,Ali Naseer,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+27469,Aryansh Sharma,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+27471,Jash Giyanani,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+31513,Ethan Dsouza,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+42548,Muhammad Jawadullah,LHB,Left-arm medium,Pace,LHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+19892,Theo van Woerkom,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+6097,Brydon Carse,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+6196,Josh Tongue,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+7008,Gus Atkinson,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+33009,John Turner,,Right-arm fast-medium,Pace,Unknown,Right-arm fast-medium,Bowler,Data Pack & Official Scorecards
+2483,Lizaad Williams,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6342,Matthew Breetzke,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2373,Ashton Turner,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6354,Spencer Johnson,LHB,Left-arm fast-medium,Pace,LHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+6398,Aaron Hardie,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+8424,Tanveer Sangha,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+3641,Ben Dwarshuis,LHB,Left-arm fast-medium,Pace,LHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+4221,Chris Green,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+6395,Josh Philippe,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2343,Beuran Hendricks,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7312,Nandre Burger,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+8805,Ottneil Baartman,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6926,Matty Potts,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+3276,Gudakesh Motie,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+8295,Matthew Forde,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4663,Henry Nicholls,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4665,Tom Blundell,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4686,Joshua Clarkson,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+8614,William ORourke,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+7905,Tanzim Sakib,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+2534,Rahmat Shah,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6432,Ikram Khil,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+17919,Mohammad Saleem Safi,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+3077,Usama Mir,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+3091,Sahibzada Farhan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7699,Abbas Afridi,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+26839,Haseebullah Khan,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+5738,Xavier Bartlett,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+5827,Wes Agar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7341,Jake McGurk,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+50226,Luke Watson,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5835,Carl Mumba,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24017,Brian Bennett,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+28915,Trevor Gwandu,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+8238,Sameer Rizvi,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+48551,Aravelly Avanish,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6488,Harvik Desai,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7548,Shivalik Sharma,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+26663,Kwena Maphaka,LHB,Left-arm Fast,Pace,LHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+27964,Anshul Kamboj,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+37052,Naman Dhir,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3967,Tom Kohler,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6486,Tanush Kotian,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8140,Abid Mangnoo,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25139,Shubham Dubey,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6654,Tanay Thyagarajan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8101,Ashutosh Sharma,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+43967,Vishwanath Singh,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+49665,Prince Choudhary,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3144,Thomas Curran,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+27962,Saurav Chauhan,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3651,Ricky Bhui,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8251,Kumar Kushagra,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8266,Sumit Kumar 1,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+45989,Swastik Chikara,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+26906,Angkrish Raghuvanshi,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+32862,Allah Ghazanfar,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+35318,Sakib Hussain,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7197,Jhatavedh Subramanyan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+19315,Vijayakanth Viyaskanth,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4486,BR Sharath,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+31529,Robin Minz,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+34969,Manav Suthar,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6237,Manimaran Siddharth,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+42845,Arshin Kulkarni,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+47050,Shamar Joseph,LHB,Right-arm Fast,Pace,LHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+332,Angelo Mathews,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+2439,Akila Dananjaya,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4904,Kamindu Mendis,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+21791,J Gumbie,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8652,Mohammad Ishaq,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4251,Peter Moor,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7456,James McCollum,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+17418,Matthew Foster,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+1102,Noor Ali Zadran,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3543,Shahidullah Kamal,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3546,Nasir Jamal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3562,Zia-ur-Rehman Akbar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3563,Zahir Khan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6675,Bahir Mehboob,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8032,Abdul Malik,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+17898,Bilal Sami,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+17909,Riaz Hassan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+17911,Nangeyalia Kharote,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+24775,M.Naveed Zadran,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24779,Ijaz Ahmadzai,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+25369,Hashim Khalil Gurbaz,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+44003,Mohammad Ibrahim,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2249,Taijul Islam,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7354,Al Alis,,Right-arm offbreak,Spin,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+2386,Niroshan Dickwella,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+28967,Tim Robinson,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+29066,Zakary Foulkes,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+470,Mohammad Amir,LHB,Left-arm Fast,Pace,LHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+3083,Mohammad Ali,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3489,Salman Agha,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+8739,Muhammad Irfan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+20327,Usman Khan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+18206,Tom Hartley,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+20229,Mohammad Ali,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7900,Tanzid Hasan,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7978,Johnathan Campbell,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+19147,Faraz Akram,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+21978,Amir Naqvi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8654,Cooper Connolly,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6440,Omair Yousuf,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+34466,Arafat Minhas,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+34485,Sufiyan Muqeem,LHB,Left-arm Chinaman,Spin,LHB,Left-arm Chinaman,All-Rounder,Data Pack & Official Scorecards
+47724,Jahandad Khan,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+757,Sybrand Engelbrecht,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+1791,Wesley Barresi,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+27743,DT Doram,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+42811,Michael Levitt,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+46378,Kyle Klein,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+418,Richard Berrington,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2296,Safyaan Sharif,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+3361,Michael Leask,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3415,Matthew Cross,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+3683,Gavin Main,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+3686,CB Sole,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+3689,Mark Watt,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+4102,George Munsey,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6900,Michael Jones,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7911,Oliver Hairs,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+24812,Chris Greaves,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+24978,Jack Jarvis,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+24982,Charlie Tear,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+30925,Bradley Currie,RHB,Left-arm fast-medium,Pace,RHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+34522,Brandon McMullen,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+34527,Jasper John Davidson,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+3637,Dayyaan Galiem,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+4007,Ryan Rickelton,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4229,George Linde,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+5866,Patrick Kruger,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+25128,Nqabayomzi Peter,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+25216,Andile Simelane,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4779,Pieter Willem Mulder,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+492,Andre Fletcher,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6574,Alick Athanaze,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3635,Jason Smith,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2382,Jamie Overton,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+8311,Dan Mousley,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+23311,Jacob Bethell,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+34957,Jafer Chohan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4830,Keacy Carty,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4842,Shamar Springer,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+6795,Terrance Hinds,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+8326,Jayden Seales,LHB,Right-arm fast-medium,Pace,LHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+37201,Jewel Andrew,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+24767,Ripon Mondol,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+37939,Nahid Rana,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+2418,Justin Greaves,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7906,Rakibul Hasan,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7044,Jamie Smith,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7702,Chamindu Wickramasinghe,LHB,Right-arm Fast,Pace,LHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+2750,Alex Carey,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4227,Marnus Labuschagne,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+41863,Josh Hull,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5561,Brad Wheal,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+57747,Charlie Cassell,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+23195,Gavin Hoey,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6984,Saqib Zulfiqar,,Right-arm Leg-Break,Spin,Unknown,Right-arm Leg-Break,Bowler,Data Pack & Official Scorecards
+25017,Olivier Elenbaas,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+42810,Noah Croes,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+45457,Zach Lion Cachet,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+2293,Junaid Siddiqui,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3337,Jeremy Gordon,,Right-arm fast-medium,Pace,Unknown,Right-arm fast-medium,Bowler,Data Pack & Official Scorecards
+4248,Pargat Singh,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4588,Navneet Dhaliwal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6263,Aaditya AVaradarajan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6995,Saad Zafar,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7001,Dilon Heyliger,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7002,Nicholas Kirton,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7003,Rayyan Pathan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7755,Harsh Thaker,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7756,Kaleem Sana,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7761,Ravinderpal Singh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8405,Kanwarpal Tathgur,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8408,Shreyas Movva,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+27987,Rishiv Joshi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+32399,Aaron Johnson,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+32401,Akhil Kumar,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+39991,Parveen Kumar,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+43250,Dilpreet Singh Bajwa,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+773,Shadley Van Schalkwyk,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+1801,Nitish Kumar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2412,Smit Patel,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2887,Harmeet Singh,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3238,Milind Kumar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3882,Steven Taylor,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4438,Jasdeep Singh,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4730,Ali Khan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5547,Nosthush Kenjige,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+5877,Andries Gous,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7634,Aaron Jones,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+7915,Monank Patel,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+15629,Shayan Jahangir,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+21182,Utkarsh Srivastava,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24489,Abhishek Paradkar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25809,Juanoy Drysdale,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+26916,Yasir Mohammad,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+30927,Saiteja Mukkamalla,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7140,Senuran Muthusamy,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+43798,Lhuan Pretorius,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8632,Aaqib Khan,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+8729,Haider Shah,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+26646,Rahul Chopra,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+27373,Muhammad Farooq,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+27465,Nilansh Keswani,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+27466,Dhruv Parashar,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+28788,Tanish Suri,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+28978,Muhammad Farooq,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+36153,Syed Haider,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+39444,Basil Hameed,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+41110,Mayank Kumar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+47694,Omid Rahman,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+3802,Anshuman Rath,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7945,Nasrulla Rana,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+19124,Anas Khan,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+21388,Martin Coetzee,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+29862,Ali Hassan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+34543,Darsh Vora,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+37621,Rajab Hussain,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3445,Khalid Kail,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3613,Shakeel Ahmed,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3856,Zeeshan Maqsood,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+3858,Jatinder Singh,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+3871,Aamir Kaleem,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+3876,Sufyan Mehmood,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+4450,Mehran Khan,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+4974,Mohammad Nadeem,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+6764,Bukkapatnam Siddharth,,Right-arm offbreak,Spin,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+7937,Wasim Ali,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+7938,Sandeep Goud 1,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7940,Aqib Ilyas,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7942,Jay Odedara,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+8015,Kaleemullah,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24239,Rafiullah,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24245,Shoaib Khan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24366,Kashyap Prajapati,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24372,Muzahir Raza,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+25091,Ayan Khan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25231,Samay Shrivastava,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+27057,Pratik Athavale,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+27059,Karan Sonavale,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+27137,Hammad Mirza,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6443,Rohail Nazir,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6922,Abdul Samad,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7692,Qasim Akram,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+20310,Ahmed Daniyal,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+26845,Mehran Mumtaz,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+27517,Yasir Khan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+47017,Mohammad Jnr,RHB,Left-arm Fast,Pace,RHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+3285,Abu Haider,RHB,Left-arm fast-medium,Pace,RHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+4780,Mohammad Saif Hassan,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7908,Mohammad Akbar Ali,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+25341,Mahfuzur Rabby,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+27259,Jishan Alam,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+39455,Maruf Mridha,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+39461,Wasi Sddiquee,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2001,Yashodha Lanka,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6179,Nipun Ransika,LHB,Right-arm fast-medium,Pace,LHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+7155,Sahan Arachchige,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7704,Pavan Rathnayake,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7708,Kavindu Nadeeshan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8388,Ahan Wickramasinghe,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+19309,Lahiru Udara,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+26514,Nimesh Vimukthi,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+27504,Dushan Hemantha,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+38050,Isitha Wijesundera,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+39630,Dinura Kalupahana,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+39657,Eshan Malinga,LHB,Right-arm fast-medium,Pace,LHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+8029,Sadiqullah Pacha,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8033,Abdul Rahmani,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+17937,Zubaid Akbari,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+25353,Numan Shah,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+32705,Faridoon Dawoodzai,RHB,Left-arm Fast,Pace,RHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+34910,Hassan Eisakhil,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+39479,Bashir Ahmad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+47314,Wafiullah Tarakhil,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4857,Nathan Smith,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+19894,Mitchell Hay,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4790,Lutho Sipamla,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+8852,Mihlal Mpongwana,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+21790,Tashinga Musekiwa,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+33969,Tinotenda Maposa,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+23467,Gurjapneet Singh,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+35072,Ramakrishna Ghosh,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+48504,Ayush Mhatre,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+48555,Andre Siddharth,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+49670,Vansh Bedi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4077,KL Shrijith,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6359,Raghu Sharma,,Right-arm Leg-Break,Spin,Unknown,Right-arm Leg-Break,Bowler,Data Pack & Official Scorecards
+8634,Ashwani Kumar,LHB,Left-arm medium,Pace,LHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+45381,PV Satyanarayan Raju,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+48557,Vignesh Puthur,,Left-arm Chinaman,Spin,Unknown,Left-arm Chinaman,Bowler,Data Pack & Official Scorecards
+49027,Bevon Jacobs,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+50284,Vaibhav Sooryavanshi,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+19098,Pyla Avinash,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+19781,Mitchell Owen,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+25669,Priyansh Arya,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+26911,Harnoor Pannu,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+37731,Musheer Khan,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+58727,Abhinandan Singh,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+32244,Tripurana Vijay,,Right-arm offbreak,Spin,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+44491,L Manvanth Kumar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+46066,Vipraj Nigam,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+56830,Madhav Tiwari,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+56800,Shivam Shukla,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+2862,Sachin Baby,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4824,Zeeshan Ansari,,Right-arm Leg-Break,Spin,Unknown,Right-arm Leg-Break,Bowler,Data Pack & Official Scorecards
+25138,Harsh Dubey,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+33067,Ravichandran Smaran,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+47370,Aniket Verma,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6526,Himmat Singh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+20077,Yuvraj Chaudhary,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+58134,Digvesh Rathi,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+58246,Prince Yadav,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+47403,Newman Nyamhuri,RHB,Left-arm medium-fast,Pace,RHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+49003,Hasan Nawaz,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+17419,Tim Tector,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2467,NP Mayavo,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25011,Liam Mccarthy,LHB,Right-arm Fast,Pace,LHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4833,Jyd Goolie,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6350,Matthew Kuhnemann,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+36553,Jediah Blades,RHB,Left-arm Fast,Pace,RHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+3038,Hussain Talat,LHB,Right-arm Fast,Pace,LHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+8771,Rubin Hermann,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+35506,Quentin Sampson,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2359,Prenelan Subrayen,,Right-arm offbreak,Spin,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+4784,Tony de Zorzi,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+38044,Mahli Beardman,,Right-arm fast-medium,Pace,Unknown,Right-arm fast-medium,Bowler,Data Pack & Official Scorecards
+6356,Khaled Ahmed,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+27364,Simranjeet Kang,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+27390,Matiullah Khan,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+28756,Haider Ali,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+29080,Muhammad Khan,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+39374,Muhammad Zohaib,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+47371,Zuhaid Zubair,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+20704,Salman Mirza,RHB,Left-arm medium,Pace,RHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+24473,Sonny Baker,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+24479,James Coles,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+4458,AHT Donald,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+19307,Tharindu Rathnayake,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+6644,Mahidul Ankon,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+24772,Suliman Safi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24773,Bilal Ahmad Tarin,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+29833,Bashir Ahmad,LHB,Left-arm Fast,Pace,LHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+56685,Abdullah Ahmadzai,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+28655,Muhammad Rohid,RHB,Left-arm Fast,Pace,RHB,Left-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4970,Adil Mehmood,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+64604,Kalhan Challu,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+26922,Ashish Odedra,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+26988,Jitenkumar Ramanandi,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+27004,Hassnain Shah,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+27071,Vinayak Shukla,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+27146,Imran Muhammad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+34546,Aryan Bisht,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+35102,Zikria Islam,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+35122,Shah Faisal,LHB,Left-arm medium,Pace,LHB,Left-arm medium,All-Rounder,Data Pack & Official Scorecards
+35133,Sufyan Yousuf,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+37559,Nadeem Khan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+39638,Vishen Halambage,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4983,Sikander Zulfiqar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+24217,Sebastiaan Braat,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+45022,Cedric De Lange,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+59853,Ben Fletcher,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8329,Scott Currie,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+44293,Jordan Neill,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+55747,Benjamin Calitz,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6739,Amir Jangoo,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7916,Karima Gore,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+8298,Ramon Simmonds,LHB,Left-arm fast-medium,Pace,LHB,Left-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+15551,Ackeem Auguste,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+36551,Zishan Motara,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+60609,Navin Bidaisee,LHB,Right-arm Leg-Break,Spin,LHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+3775,Sompal Kami,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4417,Karan KC,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+4880,Aarif Sheikh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4881,Dipendra Airee,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4882,Kushal Bhurtel,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+4887,Sandeep Lamichhane,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7120,Rohit Paudel,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+7403,Lalit Rajbanshi,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+7409,Sundeep Jora,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7924,Kushal Malla,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8241,Lokesh Bam,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+20163,Aasif Sheikh,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+20175,Nandan Yadav,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+20316,Shahab Alam,RHB,Slow left-arm orthodox,Spin,RHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+24803,Gulshan Jha,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+29075,Aadil Ansari,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+52338,Usman Tariq,,Right-arm offbreak,Spin,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+6727,Zak Crawley,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+5977,Khary Pierre,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+988,Graeme Cremer,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+28664,Zahid Ali,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+29558,Muhammad Arfan,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+40391,Mohammad Faraz Jafri,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+41509,Yayin Rai,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+49265,Ahmed Tariq,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+49268,Sohaib Khan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+37311,Shiv Mathur,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+24243,Ubaid Ullah,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24370,Pruthvikumar Damubhai,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+35120,Narayan Saishiv,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+37572,Shafiq Jan,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+47291,Md Yousuf,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+60208,Shuaib Balushi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8743,Muhammad Shehzad,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+19132,Khurram Shehzad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+19969,Mubasir Khan,,Right-arm offbreak,Spin,Unknown,Right-arm offbreak,Bowler,Data Pack & Official Scorecards
+26843,Maaz Sadaqat,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+26848,Ghazi Ghouri,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+33675,Mohammad Naeem,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+34880,Saad Masood,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+46982,Shahid Aziz,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+46996,Mohammad Faiq,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+48278,Ubaid Shah,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+69806,Mohammad Salman,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+5872,Habibur Rahman,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7904,Mohammad Chowdhury,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+16284,Habibur Rahman Sohan,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+22870,Abdul Gaffar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+26854,SM Meherob Hasan,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+26858,Ariful Islam,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+48616,Abdul Saqlain,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+53426,Tofael Ahmed,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+60689,Zawad Abrar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+63136,Shadhin Islam,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6483,Nishan Madushka,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+26530,Treveen Mathew,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+33114,Milan Rathnayake,LHB,Right-arm Fast,Pace,LHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+39637,Garuka Sanketh,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+39648,Sohan de Livera,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+63779,Kavindu Dilhara,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+71107,Nimnaka Ratnayake,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7966,Farmanullah Safi,LHB,Right-arm medium-fast,Pace,LHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+7981,Imran Mir,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8653,Rahmanullah Zadran,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+18592,Ijaz Ahmad Mehri,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+24780,Yama Arab,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+66103,Noor Rahman,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+68410,Rahmatullah Zadran,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+33095,Macneil Noronha,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+45966,Prashant Veer,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+46137,Kartik Sharma,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+46929,Dian Forrester,LHB,Right-arm medium,Pace,LHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+6461,Mayank Rawat,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7279,Atharva Ankolekar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+31205,Ruchit Ahir,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+43917,Krish Bhagat,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+48953,Danish Malewar,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+71311,Mohd Izhar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+41503,Yash Punja,,Right-arm Leg-Break,Spin,Unknown,Right-arm Leg-Break,Bowler,Data Pack & Official Scorecards
+43965,Emanjot Singh Chahal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+47523,Aman Rao Perala,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+60700,Ravi Singh,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+67036,Brijesh Sharma,RHB,Right-arm Fast,Pace,RHB,Right-arm Fast,All-Rounder,Data Pack & Official Scorecards
+58864,Vishal Nishad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+36328,Mangesh Yadav,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+43996,Vihaan Malhotra,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+66540,Kanishk Chouhan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+68280,Satvik Deswal,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+7095,Gideon Peters,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8141,Auqib Nabi,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+48575,Sahil Parakh,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7534,Sarthak Ranjan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+58135,Tejasvi Dahiya,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+71016,Daksh Kamra,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6166,Jack Edwards,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+23408,Amit Kumar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25132,Praful Hinge,RHB,Right-arm medium-fast,Pace,RHB,Right-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+25679,Salil Arora,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+56817,Shivang Kumar,RHB,Left-arm Chinaman,Spin,RHB,Left-arm Chinaman,All-Rounder,Data Pack & Official Scorecards
+62526,Krains Fuletra,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+63497,RS Ambrish,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+66513,Omkar Tarmale,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6351,Yarra Prithviraj,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+28970,Connor Esterhuizen,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+31518,Akshat Raghuwanshi,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+45749,Mukul Choudhary,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+45965,Naman Tiwari,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+37879,Khawaja Nafay,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8623,Kristian Clarke,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+7241,Ziaur Rahman,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+3986,Matthew Renshaw,LHB,Right-arm offbreak,Spin,LHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+4695,Nick Kelly,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+6565,Katene Clarke,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+8389,Jayden Lennox,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+6402,Eathan Bosch,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+26728,Jordan Hermann,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+50062,Nqobani Mokoena,RHB,Right-arm fast-medium,Pace,RHB,Right-arm fast-medium,All-Rounder,Data Pack & Official Scorecards
+6566,Matthew John Fisher,,Right-arm medium-fast,Pace,Unknown,Right-arm medium-fast,Bowler,Data Pack & Official Scorecards
+26861,Reuben Wilson,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+59045,Jai Moondra,LHB,Left-arm medium-fast,Pace,LHB,Left-arm medium-fast,All-Rounder,Data Pack & Official Scorecards
+67864,Matt Hollard,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards
+28185,Kamil Pooran,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+7566,Ben Curran,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+21777,Tafadzwa Tsiga,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+2410,Akshdeep Nath,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25787,Khuzaima Tanvir,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+36033,Muhammad Shahdad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+47259,Adeeb Usmani,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+66056,Ajay Kumar,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8244,Pratish GC,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8249,Sher Malla,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+20172,Rashid Khan,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+20187,Narayan Joshi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+20192,Hemanta Dhami,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+25063,Santosh Yadav,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+29834,Basir Ahamad,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+33523,Arjun Saud,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+8093,Nikhil Chaudhary,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+26795,Joel Davies,LHB,Slow left-arm orthodox,Spin,LHB,Slow left-arm orthodox,All-Rounder,Data Pack & Official Scorecards
+16536,Makoto Taniyama,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+16559,Alexander Patmore,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+16565,Kohei Kubota,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+16606,Tsuyoshi Takada,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+29699,Ibrahim Takahashi,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+29706,Wataru Miyauchi,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+29709,Reo Sakurano,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+34928,Kendel Fleming,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+34929,Lachlan Lake,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+41541,Declan Suzuki,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+47542,Charles Hinze,,Slow left-arm orthodox,Spin,Unknown,Slow left-arm orthodox,Bowler,Data Pack & Official Scorecards
+54404,Benjamin Ito,RHB,Right-arm offbreak,Spin,RHB,Right-arm offbreak,All-Rounder,Data Pack & Official Scorecards
+54476,Jake Nairn,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+54518,Alester Fleming,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+65598,Shoma Slater,,,,Unknown,Non-Bowler,Batter,Data Pack & Official Scorecards
+6506,Mohammad Imran Randhawa,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+71727,Razaullah Razaullah,RHB,Right-arm medium,Pace,RHB,Right-arm medium,All-Rounder,Data Pack & Official Scorecards
+39640,Sineth Jayawardena,LHB,,,LHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+4870,Kundai Matigimu,,Right-arm Fast,Pace,Unknown,Right-arm Fast,Bowler,Data Pack & Official Scorecards
+28908,Vincent Masekesa,RHB,Right-arm Leg-Break,Spin,RHB,Right-arm Leg-Break,All-Rounder,Data Pack & Official Scorecards
+17910,Mohammad Akram,RHB,,,RHB,Non-Bowler,Batter,Data Pack & Official Scorecards
+17918,Abdullah Tarakhail,,Right-arm medium,Pace,Unknown,Right-arm medium,Bowler,Data Pack & Official Scorecards

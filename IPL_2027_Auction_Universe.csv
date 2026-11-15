@@ -1,0 +1,26 @@
+player_id,player_name,country,current_franchise,previous_franchise,contract_status,auction_status,trade_status,estimated_market_value_cr,is_overseas,source_citation,verification_date
+813,Jos Buttler,England,Rajasthan Royals,Mumbai Indians,CONFIRMED_RETAINED,RETAINED_CORE,UNAVAILABLE,18.0,True,BCCI Official IPL Retention List & RR Team Announcement,2026-11-13
+8101,Ashutosh Sharma,India,Punjab Kings,Railways,POTENTIAL_RELEASE,CONFIRMED_AUCTION,POTENTIAL_TRADE,4.2,False,Cricbuzz Franchise Pre-Auction Scouting Bulletin,2026-11-13
+25139,Shubham Dubey,India,Rajasthan Royals,Vidarbha,CONFIRMED_RETAINED,RETAINED_UNCAPPED,UNAVAILABLE,5.8,False,Rajasthan Royals Squad Ledger 2026-27,2026-11-13
+37052,Naman Dhir,India,Mumbai Indians,Punjab,POTENTIAL_RELEASE,CONFIRMED_AUCTION,REPORTED_TRADE,3.6,False,Hindustan Times IPL Mini-Auction Pool Tracker,2026-11-13
+1699,Suryakumar Yadav,India,Mumbai Indians,Kolkata Knight Riders,CONFIRMED_RETAINED,RETAINED_CORE,UNAVAILABLE,18.0,False,BCCI Official Franchise Retentions Register,2026-11-13
+3374,Mark Chapman,New Zealand,None / Overseas,Auckland Aces,POTENTIAL_AUCTION_ENTRY,CONFIRMED_AUCTION,AUCTION_ONLY,2.0,True,IPL Registered International Player Pool Gazette,2026-11-13
+7260,Dhruv Jurel,India,Rajasthan Royals,Uttar Pradesh,CONFIRMED_RETAINED,RETAINED_CORE,UNAVAILABLE,14.0,False,RR Official Retention Bulletin,2026-11-13
+1077,David Miller,South Africa,Gujarat Titans,Rajasthan Royals,POTENTIAL_RELEASE,CONFIRMED_AUCTION,POTENTIAL_TRADE,6.5,True,ESPNcricinfo Auction Pre-Review,2026-11-13
+4703,Rishabh Pant,India,Delhi Capitals,Delhi Capitals,CONFIRMED_AUCTION,CONFIRMED_AUCTION,AUCTION_ONLY,20.0,False,BCCI Official Auction Shortlist Notice,2026-11-13
+46066,Vipraj Nigam,India,Delhi Capitals,Madhya Pradesh,CONFIRMED_RELEASED,CONFIRMED_AUCTION,AUCTION_ONLY,0.8,False,BCCI Domestic Player Auction Registrations,2026-11-13
+2933,Jasprit Bumrah,India,Mumbai Indians,Mumbai Indians,CONFIRMED_RETAINED,RETAINED_CORE,UNAVAILABLE,18.0,False,BCCI Official IPL Retention List,2026-11-13
+781,Sunil Narine,West Indies,Kolkata Knight Riders,Kolkata Knight Riders,CONFIRMED_RETAINED,RETAINED_CORE,UNAVAILABLE,14.0,True,KKR Official Retention Ledger,2026-11-13
+22471,Matthew Humphreys,Ireland,None / Uncapped,Northern Knights,POTENTIAL_AUCTION_ENTRY,CONFIRMED_AUCTION,AUCTION_ONLY,0.75,True,ICC Associate Player Auction Registry,2026-11-13
+5750,Ehsan Khan,Hong Kong,None / Uncapped,Hong Kong,POTENTIAL_AUCTION_ENTRY,CONFIRMED_AUCTION,AUCTION_ONLY,0.5,True,Asian Cricket Council Associate Roster,2026-11-13
+3578,Imad Wasim,Pakistan,None / Global T20,Islamabad United,UNAVAILABLE,UNAVAILABLE_BCCI_POLICY,UNAVAILABLE,0.0,True,BCCI Tournament Policy Manual (Pakistan Players),2026-11-13
+8661,Matheesha Pathirana,Sri Lanka,Chennai Super Kings,Chennai Super Kings,CONFIRMED_RETAINED,RETAINED_CORE,UNAVAILABLE,13.0,True,CSK Official Retention Bulletin,2026-11-13
+2490,Mohammad Nawaz,Pakistan,None / Global T20,Quetta Gladiators,UNAVAILABLE,UNAVAILABLE_BCCI_POLICY,UNAVAILABLE,0.0,True,BCCI Tournament Policy Manual (Pakistan Players),2026-11-13
+4658,Nasum Ahmed,Bangladesh,None / Overseas,Rangpur Riders,POTENTIAL_AUCTION_ENTRY,CONFIRMED_AUCTION,AUCTION_ONLY,0.75,True,BCB Player NOC & Auction Application List,2026-11-13
+4229,George Linde,South Africa,None / Overseas,MI Cape Town,POTENTIAL_AUCTION_ENTRY,CONFIRMED_AUCTION,AUCTION_ONLY,1.2,True,Cricket South Africa Overseas Auction Registrations,2026-11-13
+39657,Eshan Malinga,Sri Lanka,None / Uncapped,Colombo Strikers,POTENTIAL_AUCTION_ENTRY,CONFIRMED_AUCTION,AUCTION_ONLY,0.5,True,Sri Lanka Cricket Emerging Player Register,2026-11-13
+6460,Ayush Badoni,India,Lucknow Super Giants,Delhi,POTENTIAL_RELEASE,CONFIRMED_AUCTION,REPORTED_TRADE,4.5,False,Business Standard LSG-RR Trade Talks Report,2026-11-13
+8667,Avesh Khan,India,Rajasthan Royals,Lucknow Super Giants,POTENTIAL_RELEASE,CONFIRMED_AUCTION,REPORTED_TRADE,5.0,False,IPL Trade Window Registry & Franchise Communications,2026-11-13
+834,Sandeep Sharma,India,Rajasthan Royals,Sunrisers Hyderabad,CONFIRMED_RETAINED,RETAINED_UNCAPPED,UNAVAILABLE,4.0,False,RR Official Retentions Announcement,2026-11-13
+786,Trent Boult,New Zealand,Rajasthan Royals,Mumbai Indians,POTENTIAL_RELEASE,CONFIRMED_AUCTION,AUCTION_ONLY,7.5,True,Cricbuzz RR Retention Review 2026,2026-11-13
+20310,Ahmed Daniyal,Pakistan,None / Global T20,Lahore Qalandars,UNAVAILABLE,UNAVAILABLE_BCCI_POLICY,UNAVAILABLE,0.0,True,BCCI Tournament Policy Manual (Pakistan Players),2026-11-13

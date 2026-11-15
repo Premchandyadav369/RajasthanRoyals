@@ -1,0 +1,15 @@
+competition,match_format,quality_factor,league_tier,bowling_par_sr,par_econ,wickets_per_inn
+Indian Premier League (IPL),T20,1.0,Tier 1 Elite,136.5,8.42,6.8
+T20 International (ICC Tier 1 Members),T20I,0.965,Tier 1 Elite,132.0,7.95,7.1
+SA20 (South Africa),T20,0.915,Tier 2 Premium,134.2,8.12,6.9
+Big Bash League (BBL Australia),T20,0.895,Tier 2 Premium,130.5,7.88,6.7
+Pakistan Super League (PSL),T20,0.885,Tier 2 Premium,135.0,8.25,7.0
+The Hundred (ECB Men),T20-equiv,0.87,Tier 2 Premium,138.0,8.5,6.5
+Caribbean Premier League (CPL),T20,0.85,Tier 3 Major,129.0,7.75,7.2
+International League T20 (ILT20 UAE),T20,0.84,Tier 3 Major,133.5,8.1,6.8
+Major League Cricket (MLC USA),T20,0.835,Tier 3 Major,135.2,8.2,6.7
+Vitality Blast (T20 Blast UK),T20,0.81,Tier 3 Major,137.0,8.35,6.6
+Bangladesh Premier League (BPL),T20,0.785,Tier 4 Regional,124.0,7.45,7.4
+Lanka Premier League (LPL),T20,0.775,Tier 4 Regional,128.0,7.8,7.0
+Super Smash (New Zealand),T20,0.76,Tier 4 Regional,132.5,8.05,6.8
+T20 International (ICC Associate Members),T20I,0.65,Tier 5 Emerging,118.0,7.1,7.5

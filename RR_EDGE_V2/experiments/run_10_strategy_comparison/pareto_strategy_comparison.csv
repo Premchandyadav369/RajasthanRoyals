@@ -1,0 +1,5 @@
+strategy,sporting_strength,pressure_reliability,phase_coverage,batting_depth,player_availability,squad_resilience,auction_value,commercial_pmi,pareto_rank,recommendation_role
+Strategy A: Marquee Bowling-First (Pathirana + Green),9.5,9.6,9.4,8.8,7.6,7.8,7.5,9.4,2,Best Bowling-First High-Ceiling Plan
+Strategy B: Balanced Spread Plan B (Phillips + Mustafizur/Thushara + Dayal + Shahrukh),9.6,9.5,9.7,9.6,9.5,9.7,9.6,8.8,1,MASTER RECOMMENDED STRATEGY (Best Overall & Most Robust)
+Strategy C: Aggressive Batting (Green + Rachin + Mukesh),8.6,8.4,7.8,9.8,8.5,8.0,7.8,9.1,3,Batting-Heavy Alternative
+Strategy D: Moneyball Value-for-Money (Thushara + Phillips + Mohsin + Dubey),8.8,8.9,8.9,8.9,9.2,9.0,9.9,7.9,2,Best Value & Maximum Purse Savings (₹18 Cr Surplus)

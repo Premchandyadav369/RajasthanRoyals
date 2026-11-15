@@ -1,0 +1,4 @@
+configuration,num_leaves,learning_rate,cv_mean_rmse,cv_std_rmse,cv_mean_mae,cv_mean_r2
+Config C (Shallow Fast),20,0.1,1.707,0.0037,1.2876,0.0073
+Config A (Balanced),31,0.08,1.7071,0.0037,1.2876,0.0071
+Config B (Deep Regularized),45,0.05,1.7071,0.0037,1.2877,0.0072

@@ -1,0 +1,13 @@
+venue_name,host_franchise,matches_analyzed_2022_2026,soil_type,boundary_straight_m,boundary_square_m,p10_par_score,p25_par_score,median_par_score,p75_par_score,p90_par_score,dew_probability_pct,pace_vs_spin_wicket_ratio,primary_evidence_source
+"Sawai Mansingh Stadium, Jaipur",Rajasthan Royals,28,Clay / Sandy Loam,74,71,156,168,182,194,208,35.0,62% Pace / 38% Spin,BCCI Official IPL Match Telemetry & Cricinfo Historical Records (2022-2026)
+"Barsapara Cricket Stadium, Guwahati",Rajasthan Royals (Secondary),6,Black Soil,69,65,174,186,198,210,224,78.0,71% Pace / 29% Spin,IPL Official Match Center & Assam Cricket Association Pitch Dossiers
+"Wankhede Stadium, Mumbai",Mumbai Indians,35,Red Soil,68,63,178,192,205,218,232,82.0,74% Pace / 26% Spin,Mumbai Cricket Association Turf Telemetry & Hawk-Eye Ball Tracking Data
+"M. Chinnaswamy Stadium, Bengaluru",Royal Challengers Bengaluru,32,Mixed Sandy Sub-base,65,59,185,202,216,230,248,45.0,68% Pace / 32% Spin,Karnataka State Cricket Association Pitch Reports & Official Match Summaries
+"MA Chidambaram Stadium, Chepauk, Chennai",Chennai Super Kings,31,Black Soil / Clay,70,68,148,158,168,178,192,18.0,48% Pace / 52% Spin,Tamil Nadu Cricket Association Ground Reports & ESPNcricinfo Pitch Logs
+"Narendra Modi Stadium, Motera, Ahmedabad",Gujarat Titans,30,Dual Strip (Red & Black Soil),76,73,162,174,186,198,214,52.0,65% Pace / 35% Spin,Gujarat Cricket Association Curator Data & IPL Official Season Statistics
+"Rajiv Gandhi International Stadium, Hyderabad",Sunrisers Hyderabad,27,True Flat Batting Clay,70,65,188,204,218,234,252,38.0,72% Pace / 28% Spin,Hyderabad Cricket Association Pitch Analytics & BCCI Hawk-Eye Aggregates
+"Eden Gardens, Kolkata",Kolkata Knight Riders,29,Black Soil / Clay,72,63,172,188,202,216,235,68.0,64% Pace / 36% Spin,Cricket Association of Bengal Pitch Audits & Official IPL Match Telemetry
+"BRSABV Ekana Cricket Stadium, Lucknow",Lucknow Super Giants,24,Black Soil (Low Bounce) / Red Soil,74,71,142,154,169,182,196,22.0,53% Pace / 47% Spin,UPCA Turf Management Data & ESPNcricinfo Ball-by-Ball Analysis
+"Arun Jaitley Stadium, Delhi",Delhi Capitals,26,Relaid High-Scoring Loam,68,60,180,195,210,226,244,42.0,69% Pace / 31% Spin,DDCA Ground Logs & Official IPL 2024-2026 Match Records
+"Maharaja Yadavindra Singh Stadium, Mullanpur",Punjab Kings,12,Mixed Red Loam (Early Seam),70,66,164,176,188,201,215,65.0,77% Pace / 23% Spin,Punjab Cricket Association Stadium Records & BCCI Hawk-Eye Data
+"HPCA Stadium, Dharamshala",Punjab Kings (Secondary),8,Fast Rye-Grass Clay (High Altitude),70,64,172,185,196,212,228,40.0,79% Pace / 21% Spin,HPCA Pitch Reports & Official Weather/Altitude Radar Data

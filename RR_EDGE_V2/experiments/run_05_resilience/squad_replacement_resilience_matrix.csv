@@ -1,0 +1,7 @@
+absent_player,role,replacement_option,delta_win_prob,marginal_points_lost,vulnerability_phase,resilience_priority
+Jofra Archer,Overseas Strike Seamer & Death Leader,Nandre Burger / Romario Shepherd / Domestic Seamer,-0.165,4.62,Death Overs (16-20) & Powerplay Wickets,CRITICAL #1
+Yashasvi Jaiswal,Elite Explosive Indian Opener,Shubham Dubey (promoted) / Domestic Backup Opener,-0.138,3.86,Powerplay Run Rate (11.67 drops to 9.20),CRITICAL #2
+Ravindra Jadeja,"Elite Spin Controller, Lower-Order Anchor, Fielder",Yash Raj Punja (increased overs) + Domestic All-Rounder,-0.115,3.22,Middle Overs Choke (Overs 7-15) & No. 7 Batting,HIGH #3
+Vaibhav Sooryavanshi,Orange Cap Indian Opener,Backup Indian Opener / Riyan Parag moved up,-0.108,3.02,Top Order Parity & Boundary Percentage,HIGH #4
+Dhruv Jurel,Clutch Middle-Order Wicketkeeper-Batter,Donovan Ferreira (takes gloves) + Domestic Batter,-0.092,2.58,Middle-Over Consolidation & Chasing Pressure,MEDIUM-HIGH #5
+Donovan Ferreira,Dedicated Finisher (179+ SR),Shahrukh Khan / Abhinav Manohar / Dubey,-0.075,2.1,Death-Over Strike Rate Escalation,MEDIUM #6

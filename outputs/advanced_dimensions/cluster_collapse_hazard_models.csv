@@ -1,0 +1,6 @@
+MatchPhase,BallRange,ScenarioType,BaselineCollapseRisk_Pct,RREDGE_Risk_Pct,RiskDelta_Pct,KeyStabilizer_or_Weapon,Mechanism
+Powerplay (Chasing >190),Balls 1-36,Batting Survival,34.2,18.5,-15.7,Jaiswal + Buttler,"Strict off-stump discipline, maximizing 68m Aravalli downwind leg-side boundary."
+Middle Overs 7-11 (Defending),Balls 37-66,Bowling Wicket Induction,18.5,49.2,30.7,Matt Henry + Suyash Sharma,Seam cross-seam skid + googly variation induces 2-wicket clusters within 10 balls.
+Middle Consolidation (Chasing >190),Balls 37-96,Batting Stability,48.6,21.4,-27.2,Parag + Jadeja,Jadeja (CVI 0.14) eliminates dot-ball panic; rotating strike prevents pressure build-up.
+Death Acceleration (Chasing >190),Balls 97-120,Batting Finishing Survival,58.8,28.2,-30.6,Dhruv Jurel (CVI 0.19),Lowest dot-ball spike in death overs (12.4%); boundary conversion under high pressure.
+Death Overs 16-20 (Defending),Balls 91-120,Bowling Chokehold,28.0,56.4,28.4,Jofra Archer + Sandeep Sharma,Archer 148 km/h yorkers + Sandeep knuckleballs induce collapse in chasing opposition.

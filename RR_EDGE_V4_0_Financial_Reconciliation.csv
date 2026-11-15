@@ -1,0 +1,14 @@
+ledger_item,amount_cr,squad_slots,accounting_status,reconciliation_formula
+Retained Core Commitments (12 Players),79.85,12,VERIFIED_FACT,Exact sum of slots 1-12 (Jadeja @ Rs 14.0 Cr trade fee)
+Released Funds (13 Registered Squad Players),42.9,13,VERIFIED_FACT,Exact sum of slots 13-25
+Official Registered 25-Man Squad Baseline Outlay,122.75,25,VERIFIED_FACT,79.85 + 42.90 = 122.75 Cr (Exact to the penny)
+Supplementary Reserve Pool Mappings (2 Players),0.6,2,REPRODUCED_EMPIRICAL_RESULT,Slots 26 & 27 (Pretorius 0.30 + Perala 0.30)
+Total Expanded 27-Player Competition Outlay,123.35,27,VERIFIED_FACT,122.75 + 0.60 = 123.35 Cr
+BCCI Official 2027 Total Salary Cap,157.0,25,VERIFIED_FACT,Announced BCCI Total Expenditure Cap
+Mandatory Match Fees Reserve (14 matches x 12 players x Rs 7.5L),12.6,25,MODEL_ESTIMATE,Participation-dependent variable reserve
+Scenario A: Conservative Base Purse (Rs 125 Cr),125.0,N/A,SCENARIO_ASSUMPTION,Conservative auction purse assumption
+Scenario A Available Auction Purse,45.15,13,MODEL_ESTIMATE,125.00 - 79.85 = 45.15 Cr
+Scenario B: Central Planning Base Purse (Rs 130 Cr),130.0,N/A,SCENARIO_ASSUMPTION,Central auction purse assumption
+Scenario B Available Auction Purse,50.15,13,MODEL_ESTIMATE,130.00 - 79.85 = 50.15 Cr
+Scenario C: Upper Bound Base Purse (Rs 135 Cr),135.0,N/A,SCENARIO_ASSUMPTION,Upper bound purse assumption
+Scenario C Available Auction Purse,55.15,13,MODEL_ESTIMATE,135.00 - 79.85 = 55.15 Cr

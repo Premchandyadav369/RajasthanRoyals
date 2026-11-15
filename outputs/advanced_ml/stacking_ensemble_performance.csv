@@ -1,0 +1,4 @@
+model_architecture,rmse,mae,r2
+Base LightGBM (Tuned),1.7558,1.3324,0.0065
+Base XGBoost (Tuned),1.7548,1.3312,0.0077
+Super Learner (Stacked Blending),1.7537,1.3323,0.0089

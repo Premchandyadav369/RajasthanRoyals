@@ -1,0 +1,4 @@
+partnership_type,avg_strike_rate,dot_ball_pct,boundary_pct,field_adjustment_pressure
+LHB - RHB (Complementary),158.4,29.2,21.4,High (Constant Field Shift)
+LHB - LHB (Homogeneous Left),141.2,36.5,17.8,Low (Fixed Off-Side Ring)
+RHB - RHB (Homogeneous Right),144.6,35.1,18.2,Low (Fixed Leg-Side Ring)

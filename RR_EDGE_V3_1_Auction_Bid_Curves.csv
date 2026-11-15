@@ -1,0 +1,235 @@
+player_name,bid_ceiling_cr,win_probability,expected_clearing_price_cr,marginal_wins,efficiency_wins_per_cr,fallback_alternative
+Nuwan Thushara,0.5,0.0,0.0,0.65,0.0,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,0.75,0.0,0.0,0.65,0.0,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,1.0,0.0,0.0,0.65,0.0,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,1.25,0.0,0.0,0.65,0.0,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,1.5,0.0024,1.48,0.65,0.44,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,1.75,0.0437,1.67,0.65,0.39,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,2.0,0.2321,1.85,0.65,0.351,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,2.25,0.5125,2.0,0.65,0.325,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,2.5,0.7353,2.11,0.65,0.308,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,2.75,0.8792,2.2,0.65,0.296,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,3.0,0.9453,2.24,0.65,0.29,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,3.25,0.978,2.27,0.65,0.286,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,3.5,0.9918,2.29,0.65,0.284,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,3.75,0.9967,2.29,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,4.0,0.9988,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,4.25,0.9995,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,4.5,0.9997,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,4.75,0.9999,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,5.0,0.9999,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,5.25,0.9999,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,5.5,0.9999,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,5.75,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,6.0,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,6.25,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,6.5,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,6.75,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,7.0,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,7.25,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,7.5,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,7.75,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,8.0,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,8.25,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,8.5,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,8.75,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,9.0,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,9.25,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,9.5,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,9.75,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Nuwan Thushara,10.0,1.0,2.3,0.65,0.283,Nathan Ellis / Spencer Johnson
+Mustafizur Rahman,0.5,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,0.75,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,1.0,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,1.25,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,1.5,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,1.75,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,2.0,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,2.25,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,2.5,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,2.75,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,3.0,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,3.25,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,3.5,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,3.75,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,4.0,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,4.25,0.0,0.0,0.95,0.0,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,4.5,0.0001,4.34,0.95,0.219,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,4.75,0.0001,4.34,0.95,0.219,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,5.0,0.0012,4.86,0.95,0.196,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,5.25,0.0042,5.06,0.95,0.188,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,5.5,0.0116,5.28,0.95,0.18,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,5.75,0.0257,5.47,0.95,0.174,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,6.0,0.0516,5.68,0.95,0.167,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,6.25,0.0935,5.88,0.95,0.161,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,6.5,0.1492,6.07,0.95,0.157,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,6.75,0.2163,6.24,0.95,0.152,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,7.0,0.2945,6.41,0.95,0.148,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,7.25,0.3782,6.57,0.95,0.145,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,7.5,0.4636,6.72,0.95,0.141,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,7.75,0.5408,6.85,0.95,0.139,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,8.0,0.6166,6.97,0.95,0.136,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,8.25,0.6795,7.08,0.95,0.134,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,8.5,0.7362,7.18,0.95,0.132,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,8.75,0.7836,7.26,0.95,0.131,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,9.0,0.8235,7.34,0.95,0.129,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,9.25,0.8595,7.42,0.95,0.128,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,9.5,0.8894,7.48,0.95,0.127,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,9.75,0.9128,7.54,0.95,0.126,Nuwan Thushara (Value Pivot)
+Mustafizur Rahman,10.0,0.9311,7.58,0.95,0.125,Nuwan Thushara (Value Pivot)
+Yash Dayal,0.5,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,0.75,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,1.0,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,1.25,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,1.5,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,1.75,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,2.0,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,2.25,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,2.5,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,2.75,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,3.0,0.0,0.0,0.67,0.0,Chetan Sakariya / Rasikh Salam
+Yash Dayal,3.25,0.0004,3.16,0.67,0.212,Chetan Sakariya / Rasikh Salam
+Yash Dayal,3.5,0.0018,3.36,0.67,0.199,Chetan Sakariya / Rasikh Salam
+Yash Dayal,3.75,0.0074,3.59,0.67,0.187,Chetan Sakariya / Rasikh Salam
+Yash Dayal,4.0,0.0263,3.81,0.67,0.176,Chetan Sakariya / Rasikh Salam
+Yash Dayal,4.25,0.0743,4.02,0.67,0.167,Chetan Sakariya / Rasikh Salam
+Yash Dayal,4.5,0.1514,4.21,0.67,0.159,Chetan Sakariya / Rasikh Salam
+Yash Dayal,4.75,0.2477,4.37,0.67,0.153,Chetan Sakariya / Rasikh Salam
+Yash Dayal,5.0,0.3626,4.53,0.67,0.148,Chetan Sakariya / Rasikh Salam
+Yash Dayal,5.25,0.4858,4.68,0.67,0.143,Chetan Sakariya / Rasikh Salam
+Yash Dayal,5.5,0.5943,4.81,0.67,0.139,Chetan Sakariya / Rasikh Salam
+Yash Dayal,5.75,0.6896,4.92,0.67,0.136,Chetan Sakariya / Rasikh Salam
+Yash Dayal,6.0,0.7684,5.02,0.67,0.134,Chetan Sakariya / Rasikh Salam
+Yash Dayal,6.25,0.832,5.1,0.67,0.131,Chetan Sakariya / Rasikh Salam
+Yash Dayal,6.5,0.8778,5.17,0.67,0.13,Chetan Sakariya / Rasikh Salam
+Yash Dayal,6.75,0.9141,5.23,0.67,0.128,Chetan Sakariya / Rasikh Salam
+Yash Dayal,7.0,0.9402,5.27,0.67,0.127,Chetan Sakariya / Rasikh Salam
+Yash Dayal,7.25,0.9585,5.31,0.67,0.126,Chetan Sakariya / Rasikh Salam
+Yash Dayal,7.5,0.9718,5.34,0.67,0.126,Chetan Sakariya / Rasikh Salam
+Yash Dayal,7.75,0.9809,5.36,0.67,0.125,Chetan Sakariya / Rasikh Salam
+Yash Dayal,8.0,0.9863,5.37,0.67,0.125,Chetan Sakariya / Rasikh Salam
+Yash Dayal,8.25,0.9907,5.38,0.67,0.124,Chetan Sakariya / Rasikh Salam
+Yash Dayal,8.5,0.9936,5.39,0.67,0.124,Chetan Sakariya / Rasikh Salam
+Yash Dayal,8.75,0.9957,5.4,0.67,0.124,Chetan Sakariya / Rasikh Salam
+Yash Dayal,9.0,0.9971,5.4,0.67,0.124,Chetan Sakariya / Rasikh Salam
+Yash Dayal,9.25,0.9981,5.41,0.67,0.124,Chetan Sakariya / Rasikh Salam
+Yash Dayal,9.5,0.9991,5.41,0.67,0.124,Chetan Sakariya / Rasikh Salam
+Yash Dayal,9.75,0.9992,5.41,0.67,0.124,Chetan Sakariya / Rasikh Salam
+Yash Dayal,10.0,0.9994,5.41,0.67,0.124,Chetan Sakariya / Rasikh Salam
+Prince Yadav,0.5,0.0,0.0,0.76,0.0,Trade Window Negotiation
+Prince Yadav,0.75,0.0,0.0,0.76,0.0,Trade Window Negotiation
+Prince Yadav,1.0,0.0,0.0,0.76,0.0,Trade Window Negotiation
+Prince Yadav,1.25,0.0026,1.2,0.76,0.631,Trade Window Negotiation
+Prince Yadav,1.5,0.0927,1.41,0.76,0.539,Trade Window Negotiation
+Prince Yadav,1.75,0.3841,1.58,0.76,0.481,Trade Window Negotiation
+Prince Yadav,2.0,0.699,1.71,0.76,0.444,Trade Window Negotiation
+Prince Yadav,2.25,0.8756,1.79,0.76,0.424,Trade Window Negotiation
+Prince Yadav,2.5,0.9571,1.84,0.76,0.413,Trade Window Negotiation
+Prince Yadav,2.75,0.9853,1.86,0.76,0.408,Trade Window Negotiation
+Prince Yadav,3.0,0.9948,1.87,0.76,0.406,Trade Window Negotiation
+Prince Yadav,3.25,0.9983,1.87,0.76,0.405,Trade Window Negotiation
+Prince Yadav,3.5,0.9995,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,3.75,0.9999,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,4.0,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,4.25,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,4.5,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,4.75,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,5.0,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,5.25,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,5.5,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,5.75,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,6.0,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,6.25,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,6.5,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,6.75,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,7.0,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,7.25,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,7.5,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,7.75,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,8.0,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,8.25,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,8.5,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,8.75,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,9.0,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,9.25,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,9.5,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,9.75,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Prince Yadav,10.0,1.0,1.88,0.76,0.405,Trade Window Negotiation
+Shahrukh Khan,0.5,0.0,0.0,0.57,0.0,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,0.75,0.0,0.0,0.57,0.0,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,1.0,0.0,0.0,0.57,0.0,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,1.25,0.0,0.0,0.57,0.0,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,1.5,0.0,0.0,0.57,0.0,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,1.75,0.0,0.0,0.57,0.0,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,2.0,0.0,0.0,0.57,0.0,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,2.25,0.0001,2.2,0.57,0.259,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,2.5,0.0028,2.43,0.57,0.235,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,2.75,0.0222,2.63,0.57,0.217,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,3.0,0.0857,2.82,0.57,0.202,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,3.25,0.2018,3.0,0.57,0.19,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,3.5,0.3597,3.17,0.57,0.18,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,3.75,0.5154,3.31,0.57,0.172,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,4.0,0.6572,3.43,0.57,0.166,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,4.25,0.7596,3.52,0.57,0.162,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,4.5,0.8402,3.6,0.57,0.158,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,4.75,0.8949,3.66,0.57,0.156,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,5.0,0.9303,3.71,0.57,0.154,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,5.25,0.9577,3.75,0.57,0.152,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,5.5,0.9744,3.78,0.57,0.151,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,5.75,0.9869,3.8,0.57,0.15,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,6.0,0.9921,3.81,0.57,0.15,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,6.25,0.9949,3.82,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,6.5,0.9975,3.82,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,6.75,0.9985,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,7.0,0.999,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,7.25,0.9994,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,7.5,0.9999,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,7.75,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,8.0,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,8.25,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,8.5,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,8.75,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,9.0,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,9.25,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,9.5,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,9.75,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Shahrukh Khan,10.0,1.0,3.83,0.57,0.149,Nehal Wadhera / Swapnil Singh
+Glenn Phillips,0.5,0.0,0.0,0.53,0.0,Michael Bracewell / Rovman Powell
+Glenn Phillips,0.75,0.0,0.0,0.53,0.0,Michael Bracewell / Rovman Powell
+Glenn Phillips,1.0,0.0,0.0,0.53,0.0,Michael Bracewell / Rovman Powell
+Glenn Phillips,1.25,0.0,0.0,0.53,0.0,Michael Bracewell / Rovman Powell
+Glenn Phillips,1.5,0.0,0.0,0.53,0.0,Michael Bracewell / Rovman Powell
+Glenn Phillips,1.75,0.0004,1.72,0.53,0.307,Michael Bracewell / Rovman Powell
+Glenn Phillips,2.0,0.0148,1.92,0.53,0.277,Michael Bracewell / Rovman Powell
+Glenn Phillips,2.25,0.103,2.12,0.53,0.25,Michael Bracewell / Rovman Powell
+Glenn Phillips,2.5,0.2941,2.29,0.53,0.232,Michael Bracewell / Rovman Powell
+Glenn Phillips,2.75,0.5069,2.43,0.53,0.218,Michael Bracewell / Rovman Powell
+Glenn Phillips,3.0,0.6903,2.55,0.53,0.208,Michael Bracewell / Rovman Powell
+Glenn Phillips,3.25,0.8154,2.63,0.53,0.201,Michael Bracewell / Rovman Powell
+Glenn Phillips,3.5,0.8976,2.7,0.53,0.196,Michael Bracewell / Rovman Powell
+Glenn Phillips,3.75,0.9458,2.75,0.53,0.193,Michael Bracewell / Rovman Powell
+Glenn Phillips,4.0,0.9723,2.78,0.53,0.191,Michael Bracewell / Rovman Powell
+Glenn Phillips,4.25,0.9865,2.8,0.53,0.19,Michael Bracewell / Rovman Powell
+Glenn Phillips,4.5,0.993,2.81,0.53,0.189,Michael Bracewell / Rovman Powell
+Glenn Phillips,4.75,0.9967,2.81,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,5.0,0.9983,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,5.25,0.9993,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,5.5,0.9996,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,5.75,0.9999,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,6.0,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,6.25,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,6.5,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,6.75,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,7.0,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,7.25,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,7.5,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,7.75,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,8.0,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,8.25,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,8.5,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,8.75,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,9.0,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,9.25,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,9.5,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,9.75,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell
+Glenn Phillips,10.0,1.0,2.82,0.53,0.188,Michael Bracewell / Rovman Powell

@@ -1,0 +1,6 @@
+lineup_id,total_players,overseas_count,overseas_players,compliance_status,wk_compliant,bowling_options_count,overs_capacity
+Master XI (Strategy B2 with Thushara),11,3,"Jofra Archer, Donovan Ferreira, Nuwan Thushara",COMPLIANT (3 <= 4 OS limit),YES (Dhruv Jurel),6,24
+Variant A (Strategy B2 with Mustafizur),11,3,"Jofra Archer, Donovan Ferreira, Mustafizur Rahman",COMPLIANT (3 <= 4 OS limit),YES (Dhruv Jurel),6,24
+Alternative B3 (with Glenn Phillips),11,4,"Jofra Archer, Donovan Ferreira, Glenn Phillips, Nuwan Thushara",COMPLIANT (4 <= 4 OS limit),YES (Dhruv Jurel),7,28
+Spin-Heavy XI (Chepauk/Lucknow),11,3,"Jofra Archer, Donovan Ferreira, Nuwan Thushara",COMPLIANT (3 <= 4 OS limit),YES (Dhruv Jurel),6,24
+Pace-Heavy XI (Wankhede/Dharamshala),11,4,"Jofra Archer, Donovan Ferreira, Nandre Burger, Nuwan Thushara",COMPLIANT (4 <= 4 OS limit),YES (Dhruv Jurel),6,24

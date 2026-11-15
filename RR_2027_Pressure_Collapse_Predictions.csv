@@ -1,0 +1,5 @@
+scenario_name,phase,wickets_fallen,rr_required,dot_streak,p_wicket_next_6_balls,p_wicket_next_12_balls,p_wicket_next_18_balls,expected_runs_next_12_balls,recommended_rr_stabilizer
+Powerplay Crisis (2 Wickets in first 3 overs),Overs 1-6,2,8.5,4,0.384,0.582,0.714,11.2,"Riyan Parag (Anchor SR 138.5, Low Dismissal Hazard)"
+"Middle Phase Squeeze (Overs 7-11, Par Deficit)",Overs 7-11,3,10.2,3,0.286,0.468,0.612,14.8,"Dhruv Jurel (High Strike Rotation, PBRS #7)"
+Extreme Run Chase Escalation (RRR > 12.0 in Death),Overs 16-20,5,13.5,2,0.442,0.685,0.824,21.6,Donovan Ferreira + Shubham Dubey (+75.9 SR Delta)
+Opposition Collapse Trigger (Defending with Thushara),Overs 16-20,4,11.5,3,0.428,0.64,0.795,13.4,Nuwan Thushara (34.2% Yorker rate forces tail collapses)

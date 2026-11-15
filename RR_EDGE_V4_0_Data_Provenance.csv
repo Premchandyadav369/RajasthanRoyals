@@ -1,0 +1,7 @@
+file_name,exact_row_count,column_count,file_size_mb,md5_checksum,missing_value_pct,data_source_tier,epistemic_status
+ball_by_ball.csv,200999,33,39.17,c5bbd29fe98b35a46d83c7dc7072a27d,11.56,Tier 2 (Structured Competition Data Pack),VERIFIED_FACT
+matches.csv,883,22,0.12,5d4225eb8b30b72f75856e59b04893a1,14.08,Tier 2 (Structured Competition Data Pack),VERIFIED_FACT
+competitions.csv,141,4,0.01,91574579c0edd6d1de0469bd925a5398,0.0,Tier 2 (Structured Competition Data Pack),VERIFIED_FACT
+teams.csv,353,3,0.01,29c0a0df2172351b1d835adc098ca43b,0.0,Tier 2 (Structured Competition Data Pack),VERIFIED_FACT
+playing_eleven.csv,28381,9,0.92,b6b04efe8d8d828103d711cccf89c6f7,10.18,Tier 2 (Structured Competition Data Pack),VERIFIED_FACT
+competition_team_player_mapping.csv,6413,6,0.44,b71a13458ebdbfaae608d5d435e2ee76,0.0,Tier 2 (Structured Competition Data Pack),VERIFIED_FACT

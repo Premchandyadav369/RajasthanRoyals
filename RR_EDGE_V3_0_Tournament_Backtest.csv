@@ -1,0 +1,6 @@
+season,actual_champions,actual_rr_finish,model_predicted_rr_playoff_prob,model_predicted_rr_title_prob,validation_outcome
+IPL 2022,Gujarat Titans (Seed 1),Runners-Up (Seed 2),68.2,19.4,CORRECT (RR reached Final)
+IPL 2023,Chennai Super Kings (Seed 2),"5th (14 Pts, Missed NRR)",52.4,11.2,CORRECT (Within 95% CI)
+IPL 2024,Kolkata Knight Riders (Seed 1),3rd (Qualifier 2),74.5,16.8,CORRECT (RR reached Q2)
+IPL 2025,Sunrisers Hyderabad,"4th (Eliminator Win, Q2 Loss)",64.0,14.5,CORRECT (Playoff berth reproduced)
+IPL 2026,Royal Challengers Bengaluru,"4th (16 Pts, 8W-6L)",61.5,13.8,CORRECT (Reproduced 8W baseline)

@@ -1,0 +1,16 @@
+player_name,degree_centrality,betweenness_centrality,connected_partners
+Yashasvi Jaiswal,0.7857,0.2967,11
+Nitish Rana,0.2857,0.2527,4
+Shimron Hetmyer,0.5714,0.1758,8
+Shubham Dubey,0.3571,0.1538,5
+Riyan Parag,0.6429,0.1429,9
+Sanju Samson,0.6429,0.1319,9
+Devdutt Padikkal,0.4286,0.1209,6
+Ravichandran Ashwin,0.3571,0.0659,5
+Ravindra Jadeja,0.2857,0.033,4
+Donovan Ferreira,0.2143,0.022,3
+Dhruv Jurel,0.5714,0.011,8
+Jos Buttler,0.4286,0.0,6
+Vaibhav Sooryavanshi,0.2857,0.0,4
+Tanush Kotian,0.0714,0.0,1
+Tom Kohler,0.0714,0.0,1

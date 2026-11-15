@@ -1,0 +1,8 @@
+model_name,category,rmse,mae,r2,latency_ms_per_1k
+Naive Mean Baseline,Baseline,1.8636,1.1599,-0.083,0.232
+Ridge Regression (L2 GLM),Linear / Regularized,1.7804,1.3473,0.0116,4.437
+Bayesian Ridge Regressor,Bayesian Probabilistic,1.7804,1.3472,0.0116,4.371
+Random Forest Regressor,Ensemble (Bagging),1.7784,1.347,0.0138,34.89
+LightGBM Regressor (Production),Gradient Boosting,1.7769,1.3449,0.0155,43.99
+XGBoost Regressor,Gradient Boosting,1.7765,1.3439,0.0159,26.969
+Deep Learning MLP (PyTorch),Neural Network,1.7766,1.3452,0.0158,638.131

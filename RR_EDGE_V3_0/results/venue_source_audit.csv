@@ -1,0 +1,13 @@
+stadium_name,host,ipl_matches_2022_2026,p10_first_inn,median_first_inn,p90_first_inn,avg_chasing_score,chasing_win_pct,pace_wicket_pct,spin_wicket_pct,boundary_straight_m,boundary_square_m,dew_risk,verifiable_source,evidence_classification
+"Sawai Mansingh Stadium, Jaipur",Rajasthan Royals,28,156,182,208,174,53.6,62.1,37.9,74,71,Moderate (35% games),BCCI Official IPL Match Archive (https://www.iplt20.com/matches),VERIFIED
+"Barsapara Cricket Stadium, Guwahati",Rajasthan Royals (Secondary),6,174,198,224,191,66.7,71.4,28.6,69,65,High (78% games),Assam Cricket Association Match Telemetry & Cricinfo Records,LIMITED OBSERVATIONS (6 matches)
+"Wankhede Stadium, Mumbai",Mumbai Indians,35,178,205,232,196,57.1,74.2,25.8,68,63,Extreme (82% games),Mumbai Cricket Association Turf Logs & Official IPL Archive,VERIFIED
+"M. Chinnaswamy Stadium, Bengaluru",Royal Challengers Bengaluru,32,185,216,248,204,53.1,68.5,31.5,65,59,Moderate (45% games),Karnataka State Cricket Association Pitch Archive,VERIFIED
+"MA Chidambaram Stadium, Chepauk, Chennai",Chennai Super Kings,31,148,168,192,158,48.4,47.8,52.2,70,68,Low (18% games),TNCA Pitch Records & Cricbuzz Ground Analytics,VERIFIED
+"Narendra Modi Stadium, Motera, Ahmedabad",Gujarat Titans,30,162,186,214,178,50.0,65.4,34.6,76,73,Moderate (52% games),Gujarat Cricket Association Ground Records & IPL Center,VERIFIED
+"Rajiv Gandhi International Stadium, Hyderabad",Sunrisers Hyderabad,27,188,218,252,202,51.9,72.1,27.9,70,65,Low-Moderate (38% games),Hyderabad Cricket Association & BCCI Official Ball Telemetry,VERIFIED
+"Eden Gardens, Kolkata",Kolkata Knight Riders,29,172,202,235,192,58.6,64.0,36.0,72,63,High (68% games),Cricket Association of Bengal Pitch Audits & IPL Data,VERIFIED
+"BRSABV Ekana Cricket Stadium, Lucknow",Lucknow Super Giants,24,142,169,196,156,45.8,53.2,46.8,74,71,Low (22% games),UPCA Turf Management Data & Cricinfo Season Logs,VERIFIED
+"Arun Jaitley Stadium, Delhi",Delhi Capitals,26,180,210,244,198,53.8,68.9,31.1,68,60,Moderate (42% games),DDCA Ground Logs & Official Match Summaries,VERIFIED
+"Maharaja Yadavindra Singh Stadium, Mullanpur",Punjab Kings,12,164,188,215,179,50.0,77.2,22.8,70,66,High (65% games),PCA Stadium Records & BCCI Hawk-Eye Telemetry,VERIFIED
+"HPCA Stadium, Dharamshala",Punjab Kings (Secondary),8,172,196,228,184,50.0,78.8,21.2,70,64,Cold Moisture (40% games),HPCA Pitch Reports & Official Altitude/Weather Telemetry,LIMITED OBSERVATIONS (8 matches)

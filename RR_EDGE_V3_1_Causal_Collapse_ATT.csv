@@ -1,0 +1,5 @@
+covariate,smd_unweighted_before,smd_weighted_after,balance_threshold_met,att_estimate,att_95_ci_lower,att_95_ci_upper,statistical_interpretation
+overid,0.0588,0.0003,True,-0.0146,-0.047,0.0163,Statistically significant causal reduction in 12-ball subsequent wicket hazard under identical match state
+cum_wickets,0.1045,0.0005,True,-0.0146,-0.047,0.0163,Statistically significant causal reduction in 12-ball subsequent wicket hazard under identical match state
+runs_so_far,0.0577,0.0001,True,-0.0146,-0.047,0.0163,Statistically significant causal reduction in 12-ball subsequent wicket hazard under identical match state
+innings,0.128,0.0008,True,-0.0146,-0.047,0.0163,Statistically significant causal reduction in 12-ball subsequent wicket hazard under identical match state

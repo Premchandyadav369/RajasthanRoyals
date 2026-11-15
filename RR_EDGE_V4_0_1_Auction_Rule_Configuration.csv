@@ -1,0 +1,5 @@
+price_slab,price_range_cr,bid_increment_cr,bid_increment_display,rule_source,rule_authority_level,applicability_notes
+Slab 1: Below Rs 1.00 Cr,Rs 0.00 - Rs 1.00 Cr,0.05,Rs 5 Lakh,Official IPL Auction Historical Rulebook (2025-2026),Historical Verified Standard,Standard minimum increment during opening lot bidding
+Slab 2: Rs 1.00 Cr to Rs 2.00 Cr,Rs 1.00 - Rs 2.00 Cr,0.1,Rs 10 Lakh,Official IPL Auction Historical Rulebook (2025-2026),Historical Verified Standard,Step-up increment once player crosses the Rs 1 Cr threshold
+Slab 3: Rs 2.00 Cr to Rs 3.00 Cr,Rs 2.00 - Rs 3.00 Cr,0.2,Rs 20 Lakh,Official IPL 2026 Auction Operating Procedure / Media Reporting,Verified Historical Reporting,Reported rule in 2026 auction: Rs 20 Lakh increments between Rs 2 Cr and Rs 3 Cr
+Slab 4: Above Rs 3.00 Cr,Above Rs 3.00 Cr,0.25,Auctioneer Discretion (Min Rs 20L - Rs 25L),Official IPL Auction Operating Procedure,Discretionary Operating Standard,Auctioneer has full discretion; typically sets Rs 25 Lakh or Rs 50 Lakh jumps during intense marquee bidding

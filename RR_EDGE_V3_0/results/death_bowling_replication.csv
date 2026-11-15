@@ -1,0 +1,9 @@
+bowler_name,legal_death_balls,death_matches,runs_conceded,wickets,raw_death_economy,shrunk_death_economy,economy_95pct_ci,bowling_strike_rate,dot_ball_pct,boundary_pct,yorker_rate_pct,wide_ball_pct,sample_size_confidence,replication_verdict
+Nuwan Thushara,184,22,269,16,8.77,8.91,"[7.48, 10.13]",11.5,41.3,14.67,34.24,5.43,MODERATE (150-299 balls),REPRODUCED WITH UNCERTAINTY
+Mustafizur Rahman,492,54,731,38,8.91,8.96,"[8.06, 9.7]",12.95,38.62,15.24,21.54,4.07,HIGH (>=300 balls),REPRODUCED WITH UNCERTAINTY
+Matheesha Pathirana,389,38,509,38,7.85,8.0,"[6.98, 8.64]",10.24,44.22,12.85,38.56,8.74,HIGH (>=300 balls),REPRODUCED WITH UNCERTAINTY
+Jofra Archer,342,36,531,25,9.32,9.34,"[8.32, 10.41]",13.68,37.43,16.37,23.98,3.8,HIGH (>=300 balls),REPRODUCED WITH UNCERTAINTY
+Yash Dayal,216,26,329,15,9.14,9.2,"[7.95, 10.38]",14.4,36.11,16.2,19.44,4.63,MODERATE (150-299 balls),REPRODUCED WITH UNCERTAINTY
+Prince Yadav,114,14,170,10,8.95,9.1,"[7.27, 10.7]",11.4,39.47,15.79,21.93,5.26,SMALL (<150 balls),REPRODUCED WITH UNCERTAINTY
+Tushar Deshpande,248,25,494,14,11.95,11.65,"[10.88, 13.07]",17.71,29.84,22.58,12.1,6.85,MODERATE (150-299 balls),REPRODUCED WITH UNCERTAINTY
+Jasprit Bumrah,821,86,927,84,6.77,6.89,"[6.24, 7.31]",9.77,48.6,9.38,41.53,2.92,HIGH (>=300 balls),REPRODUCED WITH UNCERTAINTY

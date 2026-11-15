@@ -1,0 +1,11 @@
+event_date,event_type,headline,entity_involved,status,conflict_flag,audit_note
+17-Sep-2026,OWNERSHIP_GOVERNANCE,CCI Approves Westview & Poonawalla Acquisition of EMSH/RR,Rajasthan Royals / EMSH,OFFICIALLY_CONFIRMED_FACT,False,Corporate equity restructuring only ($1.65B EV); salary cap remains BCCI standard.
+08-Nov-2026,LEAGUE_TRADE,Hardik Pandya Traded to PBKS for Arshdeep Singh,MI ↔ PBKS,OFFICIALLY_CONFIRMED_FACT,False,Direct swap of marquee Indian players at ₹18.00 Cr contract fee.
+08-Nov-2026,LEAGUE_TRADE,Rishabh Pant Traded to DC for Kuldeep Yadav,LSG ↔ DC,OFFICIALLY_CONFIRMED_FACT,False,Pant fee revised to ₹15.00 Cr; Kuldeep at ₹13.50 Cr.
+08-Nov-2026,LEAGUE_TRADE,T. Natarajan Traded to SRH for Zeeshan Ansari,DC ↔ SRH,OFFICIALLY_CONFIRMED_FACT,False,Natarajan revised to ₹5.00 Cr; Ansari at ₹0.30 Cr.
+09-Nov-2026,BCCI_CIRCULAR,BCCI Confirms Nov 17 Retention Deadline & Dec 16 Goa Auction,BCCI / All Franchises,OFFICIALLY_CONFIRMED_FACT,False,"Retention deadline Nov 17, 17:00 IST; Mini-auction Dec 16 in Goa."
+10-Nov-2026,LEAGUE_TRADE,"CSK & SRH Complete 4-Player Swap: Ellis to SRH, Livingstone to CSK",CSK ↔ SRH,OFFICIALLY_CONFIRMED_FACT,False,Nathan Ellis officially transferred to SRH; completely blocked from RR pathways.
+11-Nov-2026,AUCTION_PROCESS,BCCI Circulates Dec 1 Wishlist & Dec 3 Final Auction Register Timeline,BCCI / All Franchises,OFFICIALLY_CONFIRMED_FACT,False,Player registration Nov 23; Wishlists Dec 1; Final register Dec 3.
+12-Nov-2026,TRADE_NEGOTIATION,"Cricbuzz Reports RR-LSG Discussions for Shami, Curran & M. Siddharth",RR ↔ LSG,UNCONFIRMED_NEGOTIATION_REPORT,False,Active negotiations reported; classified as unconfirmed until BCCI sign-off.
+12-Nov-2026,RUMOUR_DISMISSED,RR Quashes Yashasvi Jaiswal Mega-Trade Speculation,RR ↔ LSG / Rivals,FORMALLY_STALLED_SPECULATION,True,Trade talk dismissed by RR board; Jaiswal designated non-negotiable cornerstone.
+13-Nov-2026,ANALYTICS_AUDIT,RR-EDGE V4.2 Reconciles 11.06 vs 11.67 Powerplay RPO & Official Squad,RR-EDGE Decision System,REPRODUCED_EMPIRICAL_RESULT,False,Reconciled raw ball-by-ball denominator vs media report samples.

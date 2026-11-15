@@ -1,0 +1,26 @@
+slot,player_id,player_name,role,nationality,status,contract_cr,contract_source
+1,6819,Yashasvi Jaiswal,Top-Order Batter,Indian,Retained Core,18.00,BCCI Retained Marquee
+2,152,Ravindra Jadeja,Spin All-Rounder,Indian,Retained Core (Traded from CSK),14.00,Official Trade at revised Rs 14.0 Cr fee
+3,6423,Riyan Parag,Middle-Order Batter / Captain,Indian,Retained Core,14.00,BCCI Retained Core
+4,7260,Dhruv Jurel,Wicketkeeper-Finisher,Indian,Retained Core,14.00,BCCI Retained Core
+5,3298,Jofra Archer,Express Fast Bowler,Overseas,Retained Core,12.50,Auction Marquee Contract
+6,2411,Sandeep Sharma,Medium-Fast Bowler,Indian,Retained Depth,4.00,Uncapped Retention Provision
+7,50284,Vaibhav Sooryavanshi,Top-Order Batter,Indian,Retained Core,1.10,Auction Contract (Orange Cap)
+8,8182,Donovan Ferreira,Finisher / Backup WK,Overseas,Retained Core,1.00,Auction Base + Retention Increment
+9,8580,Yudhvir Singh,Seam All-Rounder,Indian,Retained Depth,0.35,Uncapped Domestic Contract
+10,41503,Yash Raj Punja,Leg-Spin Bowler,Indian,Retained Depth,0.30,Uncapped Domestic Base
+11,67036,Brijesh Sharma,Medium-Fast Bowler,Indian,Retained Depth,0.30,Uncapped Domestic Base
+12,60700,Ashok Sharma,Fast Bowler,Indian,Retained Depth,0.30,Uncapped Domestic Base
+13,3297,Shimron Hetmyer,Middle-Order Batter,Overseas,Proposed Release,11.00,Auction Marquee Contract
+14,7503,Ravi Bishnoi,Leg-Spin Bowler,Indian,Proposed Release,7.20,Auction Key Starter
+15,6806,Tushar Deshpande,Fast Bowler,Indian,Proposed Release,6.50,Auction Key Starter
+16,25139,Shubham Dubey,Middle-Order Finisher,Indian,Proposed Release / Re-auction,5.80,Auction Contract
+17,7312,Nandre Burger,Left-Arm Fast Bowler,Overseas,Proposed Release,3.50,Auction Contract
+18,1487,Adam Milne,Fast Bowler,Overseas,Proposed Release,2.40,Auction Contract
+19,4409,Sam Curran,All-Rounder,Overseas,Proposed Release,2.40,Auction Contract
+20,26663,Kwena Maphaka,Left-Arm Fast Bowler,Overseas,Proposed Release,1.50,Auction Contract
+21,2436,Dasun Shanaka,All-Rounder,Overseas,Proposed Release,1.00,Auction Contract
+22,7269,Sushant Mishra,Left-Arm Fast Bowler,Indian,Proposed Release,0.50,Uncapped Domestic Contract
+23,7545,Kuldeep Sen,Fast Bowler,Indian,Proposed Release,0.50,Uncapped Domestic Contract
+24,43965,Emanjot Singh Chahal,All-Rounder,Indian,Proposed Release,0.30,Uncapped Domestic Base
+25,48557,Vignesh Puthur,Bowler,Indian,Proposed Release,0.30,Uncapped Domestic Base

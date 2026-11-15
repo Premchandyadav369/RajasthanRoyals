@@ -1,0 +1,11 @@
+player_name,role,projected_war,injury_fragility_risk,direct_replacement,replacement_war_delta,contingency_priority
+Yashasvi Jaiswal,Opening Batsman,3.8,Low (12%),Vaibhav Suryavanshi / Domestic Scout,-1.9,CRITICAL
+Riyan Parag,Captain / No. 4 Bat,3.4,Low (10%),Shubham Dubey / Nitish Rana (Reserve),-1.5,CRITICAL
+Dhruv Jurel,Wicketkeeper / Finisher,2.9,Low (14%),Kunal Rathore (Reserve WK),-1.4,HIGH
+Ravindra Jadeja,All-Rounder / Spin,3.2,Moderate (22%),Sam Curran (Internal Shift) / Tanush Kotian,-1.1,HIGH
+Jofra Archer,Express Fast Bowler,3.6,HIGH (38%),Matt Henry / Nandre Burger / Navdeep Saini,-0.8,EXTREME (Biomechanical Schedule Active)
+Matt Henry (Target),Powerplay Strike Bowler,2.6,Low (15%),Nandre Burger / Yudhvir Singh,-0.9,MEDIUM
+Suyash Sharma (Target),Middle Wrist-Spinner,2.4,Low (8%),Shreyas Gopal (Base Price ₹50L),-0.7,MEDIUM
+Sandeep Sharma,Death Overs Specialist,2.2,Moderate (18%),Avesh Khan / Kuldeep Sen,-0.8,MEDIUM
+Sam Curran,Pace All-Rounder,2.1,Moderate (20%),Rovman Powell / Domestic All-Rounder,-0.6,MEDIUM
+Shimron Hetmyer,Overseas Finisher,2.3,Low (12%),Donovan Ferreira / Tom Kohler-Cadmore,-0.8,MEDIUM

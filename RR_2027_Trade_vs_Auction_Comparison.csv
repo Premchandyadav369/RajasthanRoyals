@@ -1,0 +1,8 @@
+player_name,acquisition_route,mechanism,expected_compensation,contract_risk,strategic_feasibility
+Prince Yadav,Trade,Direct Trade with LSG,Player Swap or Cash ₹0.30 - 1.50 Cr,Low (Current ₹30L salary),VERY HIGH (Best value move)
+Prince Yadav,Auction,Goa Mini-Auction,Winning Bid ₹1.00 - 2.50 Cr,Subject to bidding war with GT/MI,HIGH (Hard cap ₹2.50 Cr)
+Yash Dayal,Trade,Trade inquiry with RCB,Match fee / Cash ₹5.00 Cr,High salary retention,MEDIUM (RCB may refuse to trade)
+Yash Dayal,Auction,Auction if RCB releases,Winning Bid ₹4.00 - 6.00 Cr,Bidding war with CSK/GT,HIGH (Walk-away ₹6.00 Cr)
+Mustafizur Rahman,Auction,Auction if KKR releases,Winning Bid ₹6.00 - 8.00 Cr,Overseas spot commitment,HIGH (Walk-away ₹8.00 Cr)
+Nuwan Thushara,Auction,Auction if RCB releases,Winning Bid ₹1.50 - 2.50 Cr,Low financial risk,VERY HIGH (Walk-away ₹2.50 Cr)
+Shahrukh Khan,Auction,Auction if GT releases,Winning Bid ₹3.00 - 4.50 Cr,Moderate salary,MEDIUM (Optional pickup)

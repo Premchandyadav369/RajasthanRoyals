@@ -1,0 +1,20 @@
+{
+  "finisher": {
+    "name": "Ashutosh Sharma",
+    "cost_cr": 4.2,
+    "pbrs": 95.08
+  },
+  "pace_bowler": {
+    "name": "Eshan Malinga",
+    "cost_cr": 0.5,
+    "pbwrs": 80.07
+  },
+  "spinner": {
+    "name": "Naman Dhir",
+    "cost_cr": 3.6,
+    "pbwrs": 92.37
+  },
+  "total_cost_cr": 8.3,
+  "surplus_purse_cr": 1.7,
+  "portfolio_value": 241.18
+}

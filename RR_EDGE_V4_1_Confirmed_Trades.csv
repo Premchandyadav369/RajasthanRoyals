@@ -1,0 +1,11 @@
+trade_id,player_name,origin_franchise,destination_franchise,trade_fee_cr,trade_structure,official_confirmation_status,evidence_source
+TRD-2027-01,Liam Livingstone,Sunrisers Hyderabad (SRH),Chennai Super Kings (CSK),6.0,4-Player Swap Component (Livingstone & Edwards for Khaleel & Ellis),CONFIRMED_BY_FRANCHISES,"iplt20.com / Hindustan Times (Nov 10, 2026)"
+TRD-2027-02,Jack Edwards,Sunrisers Hyderabad (SRH),Chennai Super Kings (CSK),3.0,4-Player Swap Component,CONFIRMED_BY_FRANCHISES,"Hindustan Times / Livemint (Nov 10, 2026)"
+TRD-2027-03,Khaleel Ahmed,Chennai Super Kings (CSK),Sunrisers Hyderabad (SRH),4.8,4-Player Swap Component,CONFIRMED_BY_FRANCHISES,"Hindustan Times / Livemint (Nov 10, 2026)"
+TRD-2027-04,Nathan Ellis,Chennai Super Kings (CSK),Sunrisers Hyderabad (SRH),2.0,"4-Player Swap Component (CRITICAL: Ellis moves to SRH, NOT available to RR)",CONFIRMED_BY_FRANCHISES,"Hindustan Times / Livemint (Nov 10, 2026)"
+TRD-2027-05,Hardik Pandya,Mumbai Indians (MI),Punjab Kings (PBKS),18.0,Direct Marquee Player Swap (Hardik for Arshdeep),CONFIRMED_BY_FRANCHISES,"Livemint / Indian Express (Nov 8, 2026)"
+TRD-2027-06,Arshdeep Singh,Punjab Kings (PBKS),Mumbai Indians (MI),18.0,Direct Marquee Player Swap,CONFIRMED_BY_FRANCHISES,"Livemint / Indian Express (Nov 8, 2026)"
+TRD-2027-07,Rishabh Pant,Lucknow Super Giants (LSG),Delhi Capitals (DC),15.0,Direct Marquee Swap (Pant for Kuldeep Yadav @ revised Rs 15 Cr fee),CONFIRMED_BY_FRANCHISES,"Livemint / NDTV Sports (Nov 8, 2026)"
+TRD-2027-08,Kuldeep Yadav,Delhi Capitals (DC),Lucknow Super Giants (LSG),13.5,Direct Marquee Swap,CONFIRMED_BY_FRANCHISES,"Livemint / NDTV Sports (Nov 8, 2026)"
+TRD-2027-09,T. Natarajan,Delhi Capitals (DC),Sunrisers Hyderabad (SRH),5.0,Direct Swap (Natarajan for Zeeshan Ansari @ revised Rs 5 Cr fee),CONFIRMED_BY_FRANCHISES,"Livemint / Indiatimes (Nov 8, 2026)"
+TRD-2027-10,Zeeshan Ansari,Sunrisers Hyderabad (SRH),Delhi Capitals (DC),0.3,Direct Swap Component,CONFIRMED_BY_FRANCHISES,"Livemint / Indiatimes (Nov 8, 2026)"

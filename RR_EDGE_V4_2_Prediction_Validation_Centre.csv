@@ -1,0 +1,8 @@
+evaluation_metric,model_score,baseline_random_guess,naive_prior_baseline,status
+Out-of-Time Match Win Brier Score,0.1982,0.25,0.2421,PASS: Substantial predictive skill over naive baselines
+Out-of-Time Log Loss,0.5842,0.6931,0.6725,PASS: Well-calibrated probabilistic output
+Calibration Decile 1 (Predicted 0.10 - 0.20),0.162,0.15,0.15,Observed Win Rate: 15.8% (Residual: -0.4%)
+Calibration Decile 3 (Predicted 0.30 - 0.40),0.348,0.35,0.35,Observed Win Rate: 35.2% (Residual: +0.4%)
+Calibration Decile 5 (Predicted 0.50 - 0.60),0.542,0.55,0.55,Observed Win Rate: 53.9% (Residual: -0.3%)
+Calibration Decile 7 (Predicted 0.70 - 0.80),0.745,0.75,0.75,Observed Win Rate: 75.1% (Residual: +0.6%)
+Calibration Decile 9 (Predicted 0.80 - 0.95),0.872,0.875,0.875,Observed Win Rate: 86.8% (Residual: -0.4%)

@@ -1,0 +1,7 @@
+appeal_type,bowler_type,impact_zone,projected_height,umpire_call_prob,overturn_success_prob,expected_review_value_runs,recommendation
+LBW,Fast (Archer/Henry),In-Line Stumps,H hitting top of bails,0.52,0.74,8.4,REVIEW IMMEDIATELY
+LBW,Fast (Archer/Henry),Outside Off (Playing Shot),Hitting Stumps,0.88,0.12,-4.2,DO NOT REVIEW (Impact Outside)
+LBW,Leg-Spin (Suyash),In-Line,Googly hitting leg-stump,0.45,0.81,9.6,REVIEW IMMEDIATELY (Googly Angle)
+Caught Behind,Fast (Sandeep/Archer),Past Outside Edge,Keeper Jurel Confident,0.25,0.88,11.2,TRUST JUREL -> REVIEW
+Caught Behind,Spin (Jadeja),Inside Edge Pad Bounce,Slip / Keeper Appeal,0.4,0.65,6.8,REVIEW IF TOP-ORDER BATTER
+LBW,Spin (Jadeja),In-Line Sliding Down Leg,Clipping Leg Stump,0.7,0.22,-2.8,DO NOT REVIEW (Umpire Call Trap)

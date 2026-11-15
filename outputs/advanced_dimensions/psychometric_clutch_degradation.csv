@@ -1,0 +1,9 @@
+player_name,role,clutch_variance_index,pressure_deterioration_ratio,mistimed_shot_freq_high_press,dot_ball_growth_high_press,archetype,clutch_tier
+Heinrich Klaasen,Middle-Order Destroyer,0.18,0.12,0.14,-0.05,Ice-Cold Executioner,ELITE (Tier 1)
+Nicholas Pooran,Middle-Order Finisher,0.22,0.16,0.18,-0.03,High-Variance Explosive,ELITE (Tier 1)
+Suryakumar Yadav,360-Degree Disruptor,0.24,0.15,0.16,-0.04,Instinctive Innovator,ELITE (Tier 1)
+Jasprit Bumrah,Death & High Leverage Pace,0.08,0.05,0.06,0.12,Unflinching Precision Machine,SUPREME (Tier 0)
+Sanju Samson,Top/Middle Anchor (CSK),0.38,0.32,0.26,0.06,High-Ceiling Fragile,VOLATILE (Tier 2)
+Riyan Parag,Captain & Middle Stabilizer (RR),0.25,0.19,0.19,-0.01,Maturity & Strike Rotation,ROBUST (Tier 1.5)
+Dhruv Jurel,WK & Death Icebox (RR),0.19,0.14,0.15,-0.04,Icebox Finisher,ELITE (Tier 1)
+Ravindra Jadeja,Senior Tactical Spine (RR),0.14,0.11,0.12,-0.02,Veteran Calm Under Fire,ELITE (Tier 1)

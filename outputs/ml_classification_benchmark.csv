@@ -1,0 +1,6 @@
+model_name,category,roc_auc,log_loss,brier_score
+Prior Baseline (4.8% Wickets),Baseline,0.5,0.209,0.0507
+Logistic Regression (Balanced),Linear Classifier,0.571,0.6834,0.2449
+Random Forest Classifier,Ensemble (Bagging),0.5789,0.6642,0.235
+LightGBM Classifier (Production),Gradient Boosting,0.5787,0.2776,0.0677
+XGBoost Classifier,Gradient Boosting,0.5809,0.2774,0.0677

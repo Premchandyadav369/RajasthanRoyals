@@ -1,0 +1,6 @@
+strategy,mean_wins,median_wins,95pct_win_ci,mean_points,calibrated_playoff_prob_pct,calibrated_title_prob_pct,historical_baseline_lift_pct
+Strategy_B2_Value_Bowling (Thushara Variant),8.54,9,"[5, 12]",17.09,67.18,18.71,10.31
+Strategy_B2_Value_Bowling (Mustafizur Variant),8.66,9,"[5, 12]",17.32,69.01,19.26,10.86
+Strategy_A_Marquee_Spending,8.29,8,"[5, 12]",16.58,62.62,17.37,8.97
+Strategy_D_Moneyball_Value,7.59,8,"[4, 11]",15.17,48.27,13.26,4.86
+Baseline_RR_2026_Squad,7.43,7,"[4, 11]",14.86,44.67,12.34,3.94

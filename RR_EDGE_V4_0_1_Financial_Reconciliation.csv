@@ -1,0 +1,15 @@
+ledger_category,item_name,amount_cr,squad_slots,epistemic_classification,formal_accounting_definition
+A. Official IPL 2026 Baseline,Official 2026 Pre-Auction Retained Expenditure (16 Players),108.95,16,VERIFIED_FACT,Actual BCCI verified expenditure for 16 retained players prior to IPL 2026 auction
+A. Official IPL 2026 Baseline,Official 2026 Pre-Auction Remaining Purse,16.05,9,VERIFIED_FACT,Actual available auction purse heading into IPL 2026 auction (Rs 125.00 Cr Total Cap - Rs 108.95 Cr)
+A. Official IPL 2026 Baseline,Official 2026 Total Salary Cap Baseline,125.0,25,VERIFIED_FACT,Exact balance: Rs 108.95 Cr + Rs 16.05 Cr = Rs 125.00 Cr
+B. Hypothetical 2027 Planning Scenario,Hypothetical Proposed Retained Commitments (12 Players),79.85,12,SCENARIO_ASSUMPTION,Strategy B planning model: Retaining 12 players (including Jadeja at Rs 14.00 Cr revised league trade fee)
+B. Hypothetical 2027 Planning Scenario,Hypothetical Released Funds (13 Registered Players),42.9,13,SCENARIO_ASSUMPTION,Sum of 13 proposed releases from 2026 squad to create auction purchasing power
+B. Hypothetical 2027 Planning Scenario,Reconstructed 25-Man Squad Baseline Outlay,122.75,25,REPRODUCED_EMPIRICAL_RESULT,Exact Decimal sum: Rs 79.85 Cr + Rs 42.90 Cr = Rs 122.75 Cr (hypothetical planning model)
+B. Hypothetical 2027 Planning Scenario,Supplementary Reserve Pool Mappings (2 Players),0.6,2,REPRODUCED_EMPIRICAL_RESULT,Slots 26 & 27: Pretorius (0.30) + Perala (0.30) from competition dataset
+B. Hypothetical 2027 Planning Scenario,Expanded 27-Player Competition Dataset Outlay,123.35,27,REPRODUCED_EMPIRICAL_RESULT,Exact Decimal sum: Rs 122.75 Cr + Rs 0.60 Cr = Rs 123.35 Cr
+B. Hypothetical 2027 Planning Scenario,Alternative Samson Branch Roster Mapping,127.35,27,SCENARIO_ASSUMPTION,Under Samson @ Rs 18 Cr: Rs 83.85 Cr (retained) + Rs 42.90 Cr + Rs 0.60 Cr = Rs 127.35 Cr
+C. 2027 Salary Cap & Participation Scenarios,Official BCCI 2027 Total Salary Cap,157.0,25,VERIFIED_FACT,Official maximum franchise total expenditure limit for IPL 2027 season
+C. 2027 Salary Cap & Participation Scenarios,Match Fee Participation Scenario (Full 14 Matches x 12 Players),12.6,25,SCENARIO_ASSUMPTION,Planning scenario (NOT fixed reserve): 14 league games x 12 participating members x Rs 7.5L. Variable based on actual appearances
+C. 2027 Salary Cap & Participation Scenarios,Hypothetical Base Purse Scenario A (Rs 125 Cr Base),45.15,13,SCENARIO_ASSUMPTION,Available auction purse: Rs 125.00 Cr - Rs 79.85 Cr retained commitments = Rs 45.15 Cr
+C. 2027 Salary Cap & Participation Scenarios,Hypothetical Base Purse Scenario B (Rs 130 Cr Base),50.15,13,SCENARIO_ASSUMPTION,Available auction purse: Rs 130.00 Cr - Rs 79.85 Cr retained commitments = Rs 50.15 Cr
+C. 2027 Salary Cap & Participation Scenarios,Hypothetical Base Purse Scenario C (Rs 135 Cr Base),55.15,13,SCENARIO_ASSUMPTION,Available auction purse: Rs 135.00 Cr - Rs 79.85 Cr retained commitments = Rs 55.15 Cr

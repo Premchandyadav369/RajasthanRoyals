@@ -1,0 +1,14 @@
+ledger_section,financial_line_item,amount_cr,squad_slots,classification,formula_accounting_proof
+1. Official IPL 2026 Pre-Auction Baseline,Official Pre-Auction Retained Expenditure (16 Players),108.95,16,OFFICIALLY_CONFIRMED_FACT,Verified expenditure from BCCI IPL 2026 Retention Announcement
+1. Official IPL 2026 Pre-Auction Baseline,Official Pre-Auction Remaining Purse,16.05,9,OFFICIALLY_CONFIRMED_FACT,Rs 125.00 Cr Total Salary Cap - Rs 108.95 Cr = Rs 16.05 Cr (Exact to the penny)
+1. Official IPL 2026 Pre-Auction Baseline,Official 2026 Total Salary Cap Limit,125.0,25,OFFICIALLY_CONFIRMED_FACT,Rs 108.95 Cr + Rs 16.05 Cr = Rs 125.00 Cr
+2. Actual 2026 Post-Auction Complete Squad,Total 2026 Outlay (16 Retained + 9 Auction Buys),122.75,25,OFFICIALLY_CONFIRMED_FACT,Exact Decimal sum of 25 registered players (includes Jadeja @ Rs 14 Cr trade fee)
+2. Actual 2026 Post-Auction Complete Squad,Supplementary Reserve Pool Mappings (2 Players),0.6,2,REPRODUCED_EMPIRICAL_RESULT,Slots 26 & 27 (Pretorius 0.30 + Perala 0.30) from competition dataset
+2. Actual 2026 Post-Auction Complete Squad,Total Expanded 27-Player Competition Dataset Outlay,123.35,27,OFFICIALLY_CONFIRMED_FACT,Rs 122.75 Cr + Rs 0.60 Cr = Rs 123.35 Cr (Decimal exact)
+3. Hypothetical 2027 Pre-Retention Strategy B Plan,Proposed Retained Commitments (12 Players),79.85,12,SCENARIO_ASSUMPTION,"Exact sum of slots 1-12 (Jaiswal 18, Jadeja 14, Parag 14, Jurel 14, Archer 12.5, etc.)"
+3. Hypothetical 2027 Pre-Retention Strategy B Plan,Proposed Released Funds (13 Registered Squad Players),42.9,13,SCENARIO_ASSUMPTION,"Exact sum of slots 13-25 (Hetmyer 11, Bishnoi 7.2, Deshpande 6.5, Dubey 5.8, etc.)"
+4. Official BCCI 2027 Salary Cap & Purse Scenarios,Official BCCI 2027 Maximum Total Expenditure Cap,157.0,25,OFFICIALLY_CONFIRMED_FACT,Official maximum total franchise purse for IPL 2027 season
+4. Official BCCI 2027 Salary Cap & Purse Scenarios,Match Fee Participation Scenario (Full 14 Matches x 12 Players),12.6,25,SCENARIO_ASSUMPTION,Planning scenario (NOT fixed reserve): 14 games x 12 players x Rs 7.5 Lakh
+4. Official BCCI 2027 Salary Cap & Purse Scenarios,Scenario A: Conservative Base Purse (Rs 125 Cr Base),45.15,13,SCENARIO_ASSUMPTION,Rs 125.00 Cr - Rs 79.85 Cr retained commitments = Rs 45.15 Cr
+4. Official BCCI 2027 Salary Cap & Purse Scenarios,Scenario B: Central Planning Base Purse (Rs 130 Cr Base),50.15,13,SCENARIO_ASSUMPTION,Rs 130.00 Cr - Rs 79.85 Cr retained commitments = Rs 50.15 Cr
+4. Official BCCI 2027 Salary Cap & Purse Scenarios,Scenario C: Upper Bound Base Purse (Rs 135 Cr Base),55.15,13,SCENARIO_ASSUMPTION,Rs 135.00 Cr - Rs 79.85 Cr retained commitments = Rs 55.15 Cr

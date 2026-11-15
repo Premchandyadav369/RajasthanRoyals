@@ -1,0 +1,217 @@
+player_name,cluster_id,archetype_name,press_sr,press_avg,press_boundary_pct,press_dot_pct,pca_x,pca_y
+Jos Buttler,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",197.78,38.14,28.15,26.67,4.515,0.077
+Ashutosh Sharma,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",174.01,21.94,25.11,35.24,3.154,-0.378
+Shubham Dubey,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",192.59,26.0,27.16,27.16,2.905,-1.892
+Naman Dhir,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",190.6,27.88,28.21,27.35,3.843,-0.125
+Suryakumar Yadav,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",178.32,36.56,28.46,30.89,4.653,-0.148
+Mark Chapman,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",171.35,38.12,23.03,29.78,3.306,-0.692
+Dhruv Jurel,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",170.09,26.0,25.23,33.64,2.615,-0.062
+David Miller,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",161.75,33.32,21.17,31.07,3.305,-0.282
+Rishabh Pant,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",167.47,27.8,25.9,37.35,2.263,-0.134
+Vipraj Nigam,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",179.73,33.25,28.38,32.43,2.845,-1.195
+Liam Livingstone,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",169.76,23.2,24.39,35.12,2.17,-0.038
+Sikandar Raza,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",158.82,30.38,19.61,31.05,2.024,-0.695
+Tristan Stubbs,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",161.74,41.75,20.58,27.36,3.276,-0.323
+Ayush Badoni,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",156.05,48.09,19.76,29.5,2.517,-1.007
+Rovman Powell,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",157.84,27.38,21.08,36.58,2.501,-0.747
+Matthew Wade,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",164.97,129.5,20.38,27.39,4.915,-1.839
+Shamar Springer,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",169.84,35.67,25.4,31.75,2.498,-1.376
+Tim David,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",174.33,34.32,24.06,33.69,3.485,0.282
+Rinku Singh,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",160.27,48.75,23.01,35.62,2.945,-0.157
+Moeen Ali,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",153.77,27.17,20.28,35.85,1.518,-0.437
+M Shahrukh Khan,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",164.9,22.64,21.85,31.79,1.888,-0.387
+Namboori Tilak Varma,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",155.19,46.65,19.77,31.31,2.443,0.328
+Glenn Phillips,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",162.91,24.6,19.21,29.8,2.236,0.44
+Darwish Rasooli,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",160.32,25.25,20.63,26.98,1.677,-0.996
+Mohammad Rizwan,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",165.67,22.2,20.9,25.37,2.593,1.228
+Nitish Reddy,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",164.49,29.33,20.56,32.71,2.173,-0.006
+Avesh Khan,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),154.55,17.0,23.64,40.0,0.318,-3.458
+Deepak Chahar,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",160.38,28.33,24.53,43.4,1.058,-2.152
+Jaker Ali Anik,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",141.09,32.33,16.0,34.18,0.8,-0.771
+Ambati Rayudu,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",163.46,14.17,26.92,40.38,1.404,-0.401
+Aiden Markram,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",154.23,23.59,20.0,33.46,1.705,0.258
+Glenn Maxwell,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",172.82,35.6,26.21,35.92,2.579,-0.18
+Akeal Hosein,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),137.57,20.75,18.23,40.88,0.342,-2.004
+Jason Holder,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",147.56,17.29,17.89,36.18,0.747,-0.827
+Heinrich Klaasen,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",161.68,30.0,20.66,26.65,3.363,0.749
+Sameer Rizvi,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",173.08,33.75,23.08,23.08,2.85,-0.264
+Marco Jansen,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),139.46,16.12,18.38,40.0,-0.079,-1.059
+Dinesh Karthik,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",161.54,35.0,24.23,35.77,2.484,-0.022
+Sanju Samson,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",177.67,26.14,25.24,31.07,2.737,0.249
+Iftikhar Ahmed,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",143.8,16.42,18.98,37.96,0.648,0.067
+Matthew Forde,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",155.41,16.43,22.97,39.19,0.956,-0.891
+Mark Adair,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",141.56,21.8,19.48,41.99,0.539,-1.19
+Reeza Hendricks,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",169.79,27.17,26.04,28.12,2.856,0.297
+Mukul Choudhary,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",156.76,29.0,20.27,39.19,1.061,-0.274
+Shimron Hetmyer,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",153.24,25.46,20.14,38.89,1.469,-0.029
+Asif Khan,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",162.35,19.71,25.88,42.35,1.813,0.636
+Marcus Stoinis,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",152.45,24.05,20.75,36.6,1.659,0.507
+Nehal Wadhera,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",147.34,23.08,20.74,36.17,1.119,-0.271
+Jamie Overton,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",148.6,19.88,18.69,32.71,0.642,-1.066
+Riyan Parag,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",151.49,20.4,19.8,35.15,1.201,0.467
+Ravichandran Ashwin,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",147.62,15.5,17.14,28.57,0.657,-0.503
+Mohammad Nabi,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",154.52,22.55,21.18,35.83,2.047,-1.411
+Tashinga Musekiwa,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",127.5,13.91,13.33,36.67,-0.548,-0.252
+Nicholas Pooran,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",151.16,27.86,20.16,36.43,1.482,0.654
+George Linde,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",158.82,13.5,25.88,43.53,1.873,1.066
+Deepak Hooda,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",145.28,17.77,18.24,35.22,0.595,-0.033
+Odean Smith,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),135.23,17.0,18.18,45.45,-0.487,-0.792
+Arshad Khan,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),147.83,27.2,18.48,41.3,0.156,-2.022
+Faraz Akram,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),139.66,27.0,15.52,41.38,-0.542,-2.907
+Luke Jongwe,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),130.63,16.11,18.02,39.64,-0.497,-1.995
+Fakhar Zaman,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",165.12,47.33,22.09,26.74,2.742,-0.748
+Towhid Hridoy,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",136.84,43.33,15.26,31.58,0.915,0.083
+George Dockrell,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",139.73,22.36,17.86,34.38,0.714,0.036
+Pathum Nissanka,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",153.45,11.12,17.24,27.59,0.926,0.609
+Babar Hayat,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",138.71,25.8,15.05,36.56,0.803,0.371
+Wesley Madhevere,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),122.77,15.5,11.88,32.67,-0.849,-0.635
+Daryl Mitchell,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",144.92,20.85,16.58,28.88,1.085,0.502
+Gareth Delany,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",132.76,25.67,16.09,40.8,-0.169,-0.597
+Curtis Campher,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",149.62,24.5,18.32,28.24,1.333,-0.819
+Jitesh Sharma,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",154.42,20.64,19.73,38.1,1.136,0.273
+Axar Patel,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",140.04,20.66,16.74,33.26,0.456,0.049
+Xavier Bartlett,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),126.09,17.4,17.39,44.93,-0.722,-1.401
+Nurul Hasan,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",141.03,33.0,17.09,35.04,0.531,-0.622
+Donovan Ferreira,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",154.1,20.89,20.49,36.07,1.734,0.396
+Sherfane Rutherford,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",142.86,20.0,20.17,42.86,0.069,0.78
+Ijaz Ahmadzai,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",155.07,35.67,21.74,42.03,1.333,-1.5
+Mahendra Singh Dhoni,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",139.29,29.25,19.64,40.77,0.615,0.504
+Suyash Prabhudessai,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),133.9,15.8,16.95,44.07,-0.8,-1.063
+Rassie van der Dussen,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",167.92,29.67,20.75,26.42,1.993,-0.622
+Dasun Shanaka,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",134.72,25.53,17.78,38.06,0.489,-0.085
+Hardik Pandya,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",144.2,25.39,19.01,34.57,0.792,0.693
+Shivam Dube,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",146.31,23.96,19.08,33.33,1.655,0.816
+Harry Tector,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",150.44,18.89,22.12,31.86,1.239,0.09
+Ryan Burl,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",128.98,22.5,14.97,39.17,-0.204,-0.129
+Gudakesh Motie,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",132.56,14.25,18.6,44.96,0.16,0.143
+Dion Myers,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",132.5,26.5,15.0,28.75,0.104,-0.768
+Ravindra Jadeja,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",133.08,41.15,14.68,32.34,0.043,0.596
+Sunil Narine,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",155.77,9.0,25.0,48.08,0.742,0.497
+David Willey,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),125.81,39.0,17.74,38.71,-0.015,-2.422
+Rachin Ravindra,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",147.89,15.0,16.9,22.54,1.059,0.332
+Sai Sudharsan,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",149.57,34.4,18.26,28.7,1.945,1.471
+Shamim Hossain,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",132.12,19.82,15.15,37.58,-0.051,-0.167
+Sam Curran,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",132.18,16.43,14.56,33.33,-0.109,0.469
+Ramandeep Singh,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",141.79,15.83,19.4,35.07,0.959,0.864
+Azmatullah Omarzai,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",137.54,23.0,16.28,35.88,1.117,-0.556
+Harshit Rana,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),117.92,11.36,16.04,51.89,-1.754,-1.451
+Shashank Singh,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",148.21,33.2,19.2,32.59,1.759,1.241
+Anuj Rawat,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",133.33,30.67,18.84,37.68,0.453,-0.487
+Shreyas Iyer,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",157.64,22.7,20.14,26.39,2.042,0.809
+Patrick Kruger,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),130.0,16.25,18.0,42.0,-0.787,-1.937
+Nitish Rana,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",150.0,23.25,20.97,41.13,0.978,0.275
+Barry McCarthy,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),121.43,12.36,16.07,45.54,-1.445,-2.872
+Karim Janat,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),118.69,25.4,14.95,39.25,-0.726,-0.577
+Vijay Shankar,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",137.63,18.29,17.2,30.11,0.521,0.506
+Wellington Masakadza,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),108.84,9.41,11.56,42.18,-1.968,-1.603
+Harpreet Brar,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),122.58,12.67,16.13,37.63,-0.585,-0.706
+Jimmy Neesham,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",137.04,17.27,17.46,34.92,0.48,-0.061
+Kamindu Mendis,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",132.91,14.0,15.82,42.41,-0.33,0.46
+Washington Sundar,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",131.76,28.0,17.25,37.65,0.085,0.418
+Rashid Khan,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",139.15,20.06,19.46,45.41,0.839,0.118
+Najibullah Zadran,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",135.9,22.71,21.37,45.3,0.584,0.355
+Clive Madande,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),106.95,16.67,11.76,41.18,-1.78,-0.378
+Patrick Cummins,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",147.44,17.69,19.23,35.9,1.151,0.322
+Andre Russell,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",150.18,19.18,22.78,47.69,1.324,0.995
+Tanzim Sakib,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),113.14,15.5,13.14,42.34,-1.204,-0.672
+Rahul Tewatia,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",134.58,23.35,19.02,39.19,-0.17,0.975
+Ibrahim Zadran,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",128.89,43.5,14.81,37.78,0.538,0.217
+Shai Hope,3,"High-Variance Disruptive Finisher (High Risk, Explosive Impact)",161.67,19.4,23.33,31.67,1.891,0.585
+Lokesh Rahul,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",147.0,21.0,20.0,31.0,1.43,1.27
+Mahedi Hasan,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),108.12,21.3,13.71,41.12,-1.689,-1.175
+Mohammad Nawaz,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",133.59,18.42,16.03,38.17,-0.049,0.524
+Mitchell Santner,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",119.8,17.55,14.33,38.57,-0.591,0.691
+Yasir Ali Chowdhury,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",134.25,19.6,17.81,38.36,0.222,0.382
+Shubman Gill,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",153.23,38.0,16.94,25.81,2.026,0.926
+Aayan Afzal Khan,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),121.21,26.67,13.64,34.85,-1.048,-2.783
+Kieron Pollard,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),116.67,18.67,13.19,41.67,-1.847,-0.272
+Mohammad Rishad Hossain,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),109.62,8.14,14.1,51.28,-2.224,-1.046
+Bhanuka Rajapaksa,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",148.48,24.5,18.18,33.33,0.886,-0.101
+Kagiso Rabada,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),112.0,10.77,15.2,48.0,-1.421,-0.602
+Abhishek Sharma,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",153.45,14.83,22.41,37.93,1.244,1.501
+Lalit Yadav,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),122.77,15.5,16.83,40.59,-0.835,-0.32
+Muhammad Irfan,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",125.0,16.0,18.75,48.44,-0.463,0.472
+David Warner,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",134.13,28.17,15.08,30.16,0.756,1.463
+Corbin Bosch,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),121.82,26.8,13.64,39.09,-0.712,-0.728
+Gerald Coetzee,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),123.68,10.44,17.11,47.37,-1.06,-0.623
+Shahbaz Ahmed,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",119.23,16.91,13.46,42.95,-1.208,0.772
+Ish Sodhi,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),110.26,7.59,11.11,46.15,-2.19,-0.645
+Romario Shepherd,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",134.37,24.48,17.9,45.58,0.431,0.728
+Kyle Jamieson,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),96.97,9.14,7.58,42.42,-2.713,-1.421
+Adil Rashid,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),97.56,10.0,10.57,43.9,-2.554,-1.468
+Asif Ali,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),130.91,14.4,16.36,38.18,-0.648,-0.561
+Haris Rauf,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),112.84,11.18,13.76,52.29,-2.042,-1.12
+Ishan Kishan,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",146.05,18.5,19.74,35.53,0.837,0.704
+Bjorn Fortuin,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),112.0,18.67,16.0,46.0,-1.625,-1.093
+Johnathan Campbell,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",127.87,11.14,18.03,47.54,-0.093,0.865
+Kinchit Shah,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),115.0,11.5,13.33,43.33,-1.38,-0.539
+Harry Brook,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",127.78,18.4,12.5,37.5,-0.072,1.636
+Suryansh Shedge,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",151.56,19.4,18.75,31.25,1.038,0.164
+Faheem Ashraf,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),119.71,11.71,14.6,47.45,-0.704,1.518
+Quinton de Kock,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",127.96,29.75,11.83,27.96,0.144,1.1
+Ruturaj Gaikwad,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",142.68,29.25,18.29,40.24,0.888,0.795
+Krunal Pandya,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",122.3,12.14,13.67,36.69,-1.075,0.854
+Charith Asalanka,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",125.74,14.11,14.85,35.64,-0.418,0.116
+Alzarri Joseph,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),94.57,17.43,10.08,47.29,-2.746,-2.173
+Cole McConchie,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),111.54,17.4,8.97,34.62,-1.413,-0.353
+Afif Hossain,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",117.07,16.0,10.98,32.93,-0.595,1.024
+Aman Khan,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),108.51,17.0,12.77,50.0,-2.222,-1.063
+Venkatesh Iyer,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",138.1,20.71,19.05,41.9,0.525,0.757
+Chamika Karunaratne,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),100.74,11.42,11.03,47.06,-2.415,0.094
+Rajat Patidar,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",136.21,15.8,17.24,32.76,0.507,1.614
+Abdul Samad,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",122.02,15.77,13.1,39.29,-1.058,1.27
+Mosaddek Hossain,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",128.17,30.33,11.27,22.54,0.254,-0.046
+Dushmantha Chameera,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),89.69,5.8,11.34,56.7,-3.586,-1.158
+Keshav Maharaj,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),91.76,7.09,10.59,54.12,-3.327,-1.647
+Shoriful Islam,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),111.25,8.09,13.75,48.75,-1.232,0.4
+Brad Evans,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),112.07,10.0,12.93,50.0,-2.112,-0.251
+Jaydev Unadkat,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),127.14,22.25,14.29,42.86,-0.573,0.466
+Anrich Nortje,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),84.06,6.44,10.14,52.17,-3.72,-2.725
+Wanindu Hasaranga,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),115.21,8.93,14.75,42.4,-1.28,0.119
+Tadiwanashe Marumani,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),105.17,10.17,10.34,43.1,-2.098,-0.208
+Ravi Bishnoi,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),97.56,8.0,10.98,48.78,-2.941,-0.859
+Shaheen Afridi,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),110.62,11.06,14.37,56.25,-1.962,0.391
+Mehidy Hasan Miraz,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",114.63,18.8,12.2,31.71,-0.728,-0.009
+Rahul Chopra,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),98.85,14.33,11.49,52.87,-2.533,0.324
+Yasim Murtaza,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",107.69,20.0,10.77,41.54,-1.291,0.626
+Rahul Chahar,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),102.35,10.88,16.47,60.0,-2.367,-0.551
+Shadab Khan,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",111.65,19.17,12.62,38.83,-0.86,0.642
+Bhuvneshwar Kumar,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),84.71,11.08,9.55,51.59,-3.396,-0.767
+Dhruv Parashar,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),84.13,10.6,7.94,49.21,-3.472,-0.851
+Trent Boult,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),110.14,12.67,11.59,40.58,-1.219,0.902
+Shardul Thakur,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),113.89,10.25,12.96,40.74,-1.414,0.735
+Roston Chase,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",109.88,12.71,9.88,34.57,-1.401,0.487
+Salman Agha,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",110.47,23.75,11.63,39.53,-1.165,0.704
+Abdul Samad,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),111.27,15.8,14.08,47.89,-1.479,0.255
+Khushdil Shah,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),95.3,11.83,8.72,44.97,-2.404,0.305
+Rahul Tripathi,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",125.33,15.67,17.33,40.0,-0.343,0.835
+Abbas Afridi,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),113.27,10.09,18.37,57.14,-1.051,1.407
+Aizaz Khan,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),67.14,5.88,4.29,50.0,-4.637,-1.252
+Taskin Ahmed,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),105.81,10.11,12.79,51.16,-1.583,1.624
+Cameron Green,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",125.88,15.29,11.76,36.47,-0.406,1.588
+Joshua Clarkson,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",111.63,16.0,11.63,46.51,-0.538,2.846
+Mujeeb Ur Rahman,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),110.29,15.0,17.65,51.47,-0.91,1.648
+Jofra Archer,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),109.52,9.58,11.43,42.86,-1.638,1.059
+Abishek Porel,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",117.82,17.0,14.85,38.61,-0.654,0.927
+Imad Wasim,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",109.09,32.0,10.23,30.68,-0.445,0.666
+Arafat Minhas,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",118.64,23.33,11.86,33.9,1.247,3.659
+Arshdeep Singh,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),89.83,7.57,11.02,56.78,-3.358,-0.407
+Aniket Verma,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",126.32,12.0,15.79,45.61,-0.66,1.327
+Muhammad Arfan,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",105.48,25.67,10.96,41.1,-1.239,0.635
+Chris Jordan,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),104.95,11.78,10.89,46.53,-1.997,0.884
+Nasum Ahmed,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),84.06,5.8,10.14,52.17,-3.017,-0.15
+Michael Bracewell,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",107.34,14.62,11.93,42.2,-1.231,0.95
+Abhinav Manohar,1,Extreme Death Overs Demolisher (Ultra-High SR & Boundary %),107.35,12.17,13.24,42.65,-1.599,0.318
+Umesh Yadav,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),103.09,14.29,11.34,47.42,-1.362,3.289
+Harshal Patel,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),94.69,8.23,12.39,50.44,-2.693,0.035
+Mohammad Mahmudullah,0,"Top-Order Anchor Accumulator (High Avg, Controlled Dot %)",101.82,22.4,8.18,36.36,-1.44,0.91
+Mohammad Saifuddin,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),105.0,31.5,11.67,46.67,-0.985,1.596
+Maheesh Theekshana,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),61.05,4.83,4.21,58.95,-5.67,0.02
+Kuldeep Yadav,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),72.28,9.73,6.93,55.45,-4.33,1.176
+Noor Ahmad,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),77.78,5.6,7.41,59.26,-4.092,0.006
+Mohammed Siraj,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),75.68,7.0,12.16,68.92,-3.66,1.414
+Richard Ngarava,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),80.95,5.1,9.52,53.97,-2.753,3.066
+Mustafizur Rahman,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),82.26,10.2,8.06,53.23,-2.754,0.885
+Lungi Ngidi,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),82.54,17.33,7.94,55.56,-2.725,0.857
+Naveen ul Haq,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),70.0,6.12,8.57,62.86,-3.686,1.1
+Adam Zampa,2,Middle-Overs Spin Squeeze Specialist (High Strike Rotation),52.94,3.38,1.96,52.94,-4.24,3.055

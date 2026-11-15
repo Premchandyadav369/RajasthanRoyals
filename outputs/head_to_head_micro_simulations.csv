@@ -1,0 +1,6 @@
+matchup_id,batter,bowler,phase,balls_simulated,projected_sr,projected_economy,dot_ball_pct,boundary_pct,dismissal_pct,expected_runs_per_over,dominant_party
+M1_JAISWAL_VS_BUMRAH,Yashasvi Jaiswal,Jasprit Bumrah,Powerplay (Overs 1-6),1000,118.5,6.85,52.4,11.2,4.8,7.11,Bowler (Jasprit Bumrah - High Dot Pressure)
+M2_KLAASEN_VS_ARCHER,Heinrich Klaasen,Jofra Archer,Death Overs (Overs 16-20),1000,172.4,9.4,34.0,24.8,7.2,10.34,Balanced High-Stakes Contest (Archer Wicket threat 7.2%)
+M3_SAMSON_CSK_VS_ARCHER_RR,Sanju Samson (CSK - Traded),Jofra Archer (RR Spearhead),Middle / Death Overs (Overs 11-17),1000,142.5,8.55,39.5,18.0,6.5,8.55,Marquee Trade Battle (Archer 148kph hard length vs Samson backfoot)
+M4_HEAD_VS_HENRY,Travis Head,Matt Henry,Powerplay (Overs 1-4),1000,164.8,8.6,44.0,22.0,8.5,9.88,High Volatility (Henry high-frequency dismissal 8.5%)
+M5_POORAN_VS_BISHNOI,Nicholas Pooran,Ravi Bishnoi,Middle Overs (Overs 11-15),1000,156.0,8.85,36.8,20.4,6.8,9.36,Attacking Equilibrium (Bishnoi Googly vs Pooran Range)

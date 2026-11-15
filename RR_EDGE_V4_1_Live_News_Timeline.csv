@@ -1,0 +1,11 @@
+event_date,event_type,franchise_involved,event_summary,status_classification
+2025-10-31,BCCI Official Declaration,All 10 Franchises,Official IPL 2026 Retentions Announced: RR retains 16 players spending Rs 108.95 Cr with Rs 16.05 Cr purse remaining.,CONFIRMED_FACT
+2025-11-05,BCCI Trade Window,RR / CSK,Trade window closes: Ravindra Jadeja traded to RR (revised Rs 14 Cr fee); Sanju Samson traded to CSK (Rs 18 Cr fee).,CONFIRMED_FACT
+2025-12-20,Auction Execution,Rajasthan Royals,"RR signs 9 auction players (Bishnoi, Milne, Sen, Mishra, Punja, Brijesh Sharma, Puthur, Ravi Singh, Perala) spending Rs 13.80 Cr.",CONFIRMED_FACT
+2026-05-28,IPL 2026 Playoffs,Rajasthan Royals,"RR finishes 4th in league stage (8 wins, 6 losses), wins Eliminator vs RCB, falls in Qualifier 2 to Gujarat Titans.",CONFIRMED_FACT
+2026-09-17,Corporate Governance,Rajasthan Royals (EMSH),CCI approves controlling acquisition of Rajasthan Royals parent by Westview Cricket (Mittal family ~75%) and Poonawalla Sports (~18%).,CONFIRMED_FACT
+2026-11-08,IPL 2027 Trade Window,MI / PBKS / DC / LSG / SRH,Blockbuster trades confirmed: Hardik Pandya <-> Arshdeep Singh; Rishabh Pant <-> Kuldeep Yadav; Natarajan to SRH.,CONFIRMED_TRADE
+2026-11-10,IPL 2027 Trade Window,CSK / SRH,Four-player trade: Liam Livingstone & Jack Edwards to CSK; Khaleel Ahmed & Nathan Ellis to SRH.,CONFIRMED_TRADE
+2026-11-11,BCCI Administrative,All 10 Franchises,"IPL Governing Council confirms retention deadline of November 17, 2026 and Mini-Auction on December 16, 2026 in Goa.",CONFIRMED_FACT
+2026-11-12,Trade Negotiation,RR / LSG,Reports surface of talks around Shami and Curran; Jaiswal-to-LSG trade speculation confirmed stalled/closed.,UNCONFIRMED_NEGOTIATION
+2026-11-13,Research Cut-off,Rajasthan Royals,RR-EDGE V4.1 Freeze at 16:37 IST ahead of the November 17 pre-retention deadline.,GOVERNANCE_CUTOFF

@@ -1,0 +1,56 @@
+{
+  "sample_threshold_sensitivity": [
+    {
+      "threshold_balls": 30,
+      "qualifying_batters": 216,
+      "qualifying_bowlers": 283,
+      "batting_top10_overlap": "10/10",
+      "bowling_top10_overlap": "10/10"
+    },
+    {
+      "threshold_balls": 50,
+      "qualifying_batters": 216,
+      "qualifying_bowlers": 283,
+      "batting_top10_overlap": "10/10",
+      "bowling_top10_overlap": "10/10"
+    },
+    {
+      "threshold_balls": 75,
+      "qualifying_batters": 161,
+      "qualifying_bowlers": 232,
+      "batting_top10_overlap": "9/10",
+      "bowling_top10_overlap": "8/10"
+    },
+    {
+      "threshold_balls": 100,
+      "qualifying_batters": 127,
+      "qualifying_bowlers": 208,
+      "batting_top10_overlap": "8/10",
+      "bowling_top10_overlap": "7/10"
+    }
+  ],
+  "spearman_rank_correlation_ipl": 1.0,
+  "bayesian_shrinkage_mean_adjustment": 5.82,
+  "weight_sensitivity_schemes": [
+    {
+      "scheme_name": "Primary RR-EDGE",
+      "top10_retention_rate": "10/10 (100%)",
+      "stability_status": "ROBUST"
+    },
+    {
+      "scheme_name": "Heavy Resilience",
+      "top10_retention_rate": "8/10 (80%)",
+      "stability_status": "ROBUST"
+    },
+    {
+      "scheme_name": "High Volume Reliability",
+      "top10_retention_rate": "9/10 (90%)",
+      "stability_status": "ROBUST"
+    },
+    {
+      "scheme_name": "Extreme Pressure Focused",
+      "top10_retention_rate": "8/10 (80%)",
+      "stability_status": "ROBUST"
+    }
+  ]
+}

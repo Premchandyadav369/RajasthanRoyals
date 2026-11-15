@@ -1,0 +1,16 @@
+ledger_section,line_item_name,amount_cr,squad_slots,overseas_slots,epistemic_classification,accounting_proof
+1. OFFICIAL 2026 SQUAD BASELINE,Pre-Auction Retained Core (16 Players),108.95,16,7,OFFICIALLY_CONFIRMED_FACT,Exact sum of 16 official player contracts (18+14+14+14+12.5+11+6.5+5.8+4+3.5+2.4+1.1+1.0+0.5+0.35+0.3)
+1. OFFICIAL 2026 SQUAD BASELINE,Pre-Auction Remaining Purse (2026),16.05,9,1,OFFICIALLY_CONFIRMED_FACT,Decimal(125.00) - Decimal(108.95) = Decimal(16.05)
+1. OFFICIAL 2026 SQUAD BASELINE,Official 2026 Auction Spend (9 Players),12.15,9,1,OFFICIALLY_CONFIRMED_FACT,Exact sum of 9 auction buys (Bishnoi 7.2 + Milne 2.2 + Sen 0.75 + Mishra 0.5 + 5x0.30)
+1. OFFICIAL 2026 SQUAD BASELINE,Unspent 2026 Purse Surplus,3.9,0,0,OFFICIALLY_CONFIRMED_FACT,Decimal(16.05) - Decimal(12.15) = Decimal(3.90)
+2. 2027 TOTAL PLAYER CAP ARCHITECTURE,Total Franchise Player Cap 2027 (Official),157.0,25,8,OFFICIALLY_CONFIRMED_FACT,BCCI IPL 2025-2027 Regulation Clause 4.1: Total Cap = ₹157.00 Cr
+2. 2027 TOTAL PLAYER CAP ARCHITECTURE,Base Player Contract & Auction Purse Cap (2027),130.0,25,8,OFFICIALLY_CONFIRMED_FACT,Base auction purse allocation for IPL 2027 season
+2. 2027 TOTAL PLAYER CAP ARCHITECTURE,Match Fee Pool (14 League Matches x 12 Players),12.6,0,0,OFFICIALLY_CONFIRMED_FACT,14 matches * 12 playing/impact players * ₹7.5 Lakhs (₹0.075 Cr) = ₹12.60 Cr
+2. 2027 TOTAL PLAYER CAP ARCHITECTURE,"Performance Pay, Playoffs & Incentive Reserve",14.4,0,0,OFFICIALLY_CONFIRMED_FACT,Decimal(157.00) - Decimal(130.00) - Decimal(12.60) = Decimal(14.40)
+3. PRE-RETENTION STRATEGY A (CONSERVATIVE),Plan A Retained Commitment (16 Core),108.95,16,7,HYPOTHETICAL_SCENARIO,Retains entire 16 pre-auction core; releases 9 auction purchases
+3. PRE-RETENTION STRATEGY A (CONSERVATIVE),Plan A Mini-Auction Purse Available,21.05,9,1,HYPOTHETICAL_SCENARIO,Decimal(130.00) - Decimal(108.95) = Decimal(21.05) [or ₹16.05 Cr under ₹125 Cr cap]
+4. PRE-RETENTION STRATEGY B (BOWLING-FIRST OPTIMIZATION) [REC],Plan B Retained Commitment (11 Elite Core),85.0,11,4,HYPOTHETICAL_SCENARIO,"Retains Jaiswal, Jadeja, Parag, Jurel, Archer, Sandeep, Burger, Curran, Sooryavanshi, Ferreira, Maphaka"
+4. PRE-RETENTION STRATEGY B (BOWLING-FIRST OPTIMIZATION) [REC],Plan B Released Salaries Recovered (14 Players),36.1,14,4,HYPOTHETICAL_SCENARIO,"Releases Hetmyer (11.0), Bishnoi (7.2), Deshpande (6.5), Dubey (5.8), Milne (2.2), Sen (0.75), Mishra (0.5), 7x0.3-0.35"
+4. PRE-RETENTION STRATEGY B (BOWLING-FIRST OPTIMIZATION) [REC],Plan B Mini-Auction Purse Available [RECOMMENDED],45.0,14,4,HYPOTHETICAL_SCENARIO,Decimal(130.00) - Decimal(85.00) = Decimal(45.00) [or ₹40.00 Cr under ₹125 Cr cap]
+5. PRE-RETENTION STRATEGY C (TRADE RESTRUCTURE),Plan C Retained Commitment + Trade-In (Shami & Siddharth),96.3,12,4,HYPOTHETICAL_SCENARIO,Plan B Core + Shami (10.0) + Siddharth (0.5) - Curran (2.4) - Dubey (5.8)
+5. PRE-RETENTION STRATEGY C (TRADE RESTRUCTURE),Plan C Mini-Auction Purse Available,33.7,13,4,HYPOTHETICAL_SCENARIO,Decimal(130.00) - Decimal(96.30) = Decimal(33.70) [or ₹28.70 Cr under ₹125 Cr cap]

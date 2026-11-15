@@ -1,0 +1,26 @@
+squad_index,canonical_id,player_name,role,nationality,is_overseas,batting_style,bowling_style,acquisition_phase,official_salary_cr,official_evidence_source
+1,6819,Yashasvi Jaiswal,Top-Order Opener,Indian,False,LHB,Legbreak,Retained Official 2026,18.0,BCCI Official IPL 2026 Retention & Auction Declaration
+2,587,Ravindra Jadeja,Spin All-Rounder,Indian,False,LHB,Slow Left-Arm Orthodox,Retained Official 2026,14.0,BCCI Official IPL 2026 Retention & Auction Declaration
+3,7091,Riyan Parag,Middle-Order Batter,Indian,False,RHB,Right-Arm Offbreak,Retained Official 2026,14.0,BCCI Official IPL 2026 Retention & Auction Declaration
+4,8548,Dhruv Jurel,Wicketkeeper-Finisher,Indian,False,RHB,None,Retained Official 2026,14.0,BCCI Official IPL 2026 Retention & Auction Declaration
+5,4700,Jofra Archer,Pace Spearhead,Overseas,True,RHB,Right-Arm Fast,Retained Official 2026,12.5,BCCI Official IPL 2026 Retention & Auction Declaration
+6,3480,Shimron Hetmyer,Middle Finisher,Overseas,True,LHB,None,Retained Official 2026,11.0,BCCI Official IPL 2026 Retention & Auction Declaration
+7,6223,Tushar Deshpande,Fast Bowler,Indian,False,RHB,Right-Arm Fast-Medium,Retained Official 2026,6.5,BCCI Official IPL 2026 Retention & Auction Declaration
+8,8590,Shubham Dubey,Middle-Order Batter,Indian,False,LHB,Right-Arm Offbreak,Retained Official 2026,5.8,BCCI Official IPL 2026 Retention & Auction Declaration
+9,1803,Sandeep Sharma,Medium-Fast Bowler,Indian,False,RHB,Right-Arm Medium,Retained Official 2026,4.0,BCCI Official IPL 2026 Retention & Auction Declaration
+10,7485,Nandre Burger,Left-Arm Fast Bowler,Overseas,True,LHB,Left-Arm Fast,Retained Official 2026,3.5,BCCI Official IPL 2026 Retention & Auction Declaration
+11,4702,Sam Curran,Pace All-Rounder,Overseas,True,LHB,Left-Arm Medium-Fast,Retained Official 2026,2.4,BCCI Official IPL 2026 Retention & Auction Declaration
+12,9540,Kwena Maphaka,Left-Arm Fast Bowler,Overseas,True,LHB,Left-Arm Fast,Retained Official 2026,0.5,BCCI Official IPL 2026 Retention & Auction Declaration
+13,9620,Vaibhav Sooryavanshi,Top-Order Batter,Indian,False,LHB,Slow Left-Arm Orthodox,Retained Official 2026,1.1,BCCI Official IPL 2026 Retention & Auction Declaration
+14,8515,Donovan Ferreira,Finisher / Wicketkeeper,Overseas,True,RHB,Right-Arm Offbreak,Retained Official 2026,1.0,BCCI Official IPL 2026 Retention & Auction Declaration
+15,8490,Yudhvir Charak,Pace All-Rounder,Indian,False,RHB,Right-Arm Medium-Fast,Retained Official 2026,0.35,BCCI Official IPL 2026 Retention & Auction Declaration
+16,9710,Lhuan-Dre Pretorius,Wicketkeeper-Batter,Overseas,True,LHB,None,Retained Official 2026,0.3,BCCI Official IPL 2026 Retention & Auction Declaration
+17,7099,Ravi Bishnoi,Leg-Spinner,Indian,False,RHB,Right-Arm Legbreak,Auction 2026 Purchase,7.2,BCCI Official IPL 2026 Retention & Auction Declaration
+18,3450,Adam Milne,Fast Bowler,Overseas,True,RHB,Right-Arm Fast,Auction 2026 Purchase,2.2,BCCI Official IPL 2026 Retention & Auction Declaration
+19,7450,Kuldeep Sen,Fast Bowler,Indian,False,RHB,Right-Arm Fast,Auction 2026 Purchase,0.75,BCCI Official IPL 2026 Retention & Auction Declaration
+20,7850,Sushant Mishra,Left-Arm Fast Bowler,Indian,False,LHB,Left-Arm Medium-Fast,Auction 2026 Purchase,0.5,BCCI Official IPL 2026 Retention & Auction Declaration
+21,9510,Yash Raj Punja,Off-Spinner,Indian,False,RHB,Right-Arm Offbreak,Auction 2026 Purchase,0.3,BCCI Official IPL 2026 Retention & Auction Declaration
+22,9511,Brijesh Sharma,Spin All-Rounder,Indian,False,RHB,Right-Arm Offbreak,Auction 2026 Purchase,0.3,BCCI Official IPL 2026 Retention & Auction Declaration
+23,9512,Vignesh Puthur,Left-Arm Spinner,Indian,False,LHB,Slow Left-Arm Orthodox,Auction 2026 Purchase,0.3,BCCI Official IPL 2026 Retention & Auction Declaration
+24,9513,Ravi Singh,Wicketkeeper-Batter,Indian,False,RHB,None,Auction 2026 Purchase,0.3,BCCI Official IPL 2026 Retention & Auction Declaration
+25,9514,Aman Rao Perala,Fast Bowler,Indian,False,RHB,Right-Arm Fast-Medium,Auction 2026 Purchase,0.3,BCCI Official IPL 2026 Retention & Auction Declaration

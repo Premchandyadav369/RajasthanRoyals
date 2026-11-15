@@ -1,0 +1,15 @@
+match_num,opponent,venue,archer_action,projected_release_velocity_kph,fatigue_load_index,tactical_rationale
+1,SRH,"Sawai Mansingh Stadium, Jaipur",START JOFRA ARCHER (Spearhead Attack),148.2,1.2,High Stakes Rival
+2,KKR,"Eden Gardens, Kolkata",START JOFRA ARCHER (Spearhead Attack),148.0,2.4,High Stakes Rival
+3,MI,"Wankhede Stadium, Mumbai",START JOFRA ARCHER (Spearhead Attack),147.7,3.6,High Stakes Rival
+4,CSK,"Sawai Mansingh Stadium, Jaipur",START JOFRA ARCHER (Spearhead Attack),147.4,4.8,High Stakes Rival
+5,PBKS,"Mullanpur, Chandigarh",REST ARCHER (Deploy Gerald Coetzee / Nandre Burger),REST (148.5 kph preserved),2.3,Strategic Rotation Window
+6,DC,"Arun Jaitley Stadium, Delhi",START JOFRA ARCHER (Spearhead Attack),147.7,3.5,Strategic Rotation Window
+7,RCB,"M. Chinnaswamy, Bengaluru",START JOFRA ARCHER (Spearhead Attack),147.5,4.7,High Stakes Rival
+8,GT,"Sawai Mansingh Stadium, Jaipur",START JOFRA ARCHER (Spearhead Attack),147.2,5.9,Strategic Rotation Window
+9,LSG,"Ekana Stadium, Lucknow",REST ARCHER (Deploy Gerald Coetzee / Nandre Burger),REST (148.5 kph preserved),3.4,Strategic Rotation Window
+10,SRH,"Rajiv Gandhi Stadium, Hyderabad",START JOFRA ARCHER (Spearhead Attack),147.5,4.6,High Stakes Rival
+11,KKR,"Sawai Mansingh Stadium, Jaipur",START JOFRA ARCHER (Spearhead Attack),147.2,5.8,High Stakes Rival
+12,MI,"Sawai Mansingh Stadium, Jaipur",START JOFRA ARCHER (Spearhead Attack),147.0,7.0,High Stakes Rival
+13,CSK,"MA Chidambaram, Chepauk",START JOFRA ARCHER (Spearhead Attack),146.7,8.2,High Stakes Rival
+14,RCB,"Sawai Mansingh Stadium, Jaipur",START JOFRA ARCHER (Spearhead Attack),146.4,9.4,High Stakes Rival

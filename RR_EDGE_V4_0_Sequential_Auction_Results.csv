@@ -1,0 +1,7 @@
+lot_id,player_name,role_profile,base_price_cr,rr_walkaway_price_cr,simulated_win_probability,expected_clearing_price_cr,clearing_price_p10,clearing_price_p90,bidding_model,epistemic_status
+1,Mustafizur Rahman,death_pacer,2.0,7.5,0.0123,7.4,7.05,7.5,"Sequential Ascending Auction (Official Increments, Dynamic Purses)",MODEL_ESTIMATE
+2,Nathan Ellis,death_pacer,1.5,2.5,0.1298,2.37,2.2,2.4,"Sequential Ascending Auction (Official Increments, Dynamic Purses)",MODEL_ESTIMATE
+3,Chetan Sakariya,death_pacer,1.0,2.5,0.3427,2.32,2.2,2.4,"Sequential Ascending Auction (Official Increments, Dynamic Purses)",MODEL_ESTIMATE
+4,Rasikh Salam,death_pacer,0.5,2.0,0.7247,1.8,1.6,2.0,"Sequential Ascending Auction (Official Increments, Dynamic Purses)",MODEL_ESTIMATE
+5,Swapnil Singh / Finisher,finisher,0.5,1.8,0.2529,1.74,1.6,1.8,"Sequential Ascending Auction (Official Increments, Dynamic Purses)",MODEL_ESTIMATE
+6,Michael Bracewell,finisher,1.0,2.2,0.4728,2.11,1.9,2.2,"Sequential Ascending Auction (Official Increments, Dynamic Purses)",MODEL_ESTIMATE

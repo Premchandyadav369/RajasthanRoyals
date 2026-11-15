@@ -1,0 +1,21 @@
+over_number,phase,primary_bowler,bowler_role,expected_rr,tactical_goal
+1,Powerplay,Jofra Archer,Strike Spearhead (Pace),6.2,Early wicket; test off-stump discipline
+2,Powerplay,Akash Deep / Mohsin,Indian Seamer (Swing),7.0,Move ball both ways; maintain tight channel
+3,Powerplay,Jofra Archer,Strike Spearhead (Pace),6.5,Attack set batter with hostile pace/bouncers
+4,Powerplay,Akash Deep / Mohsin,Indian Seamer (Pace),7.5,Discipline on 4th stump line; deny boundary
+5,Powerplay,Matheesha Pathirana / Brijesh,Pace Enforcer / Slinger,7.2,Slingy angle into pads; surprise batter before 30-yard ring lifts
+6,Powerplay,Ravindra Jadeja,Left-Arm Orthodox (Control),6.8,Pace off; flat trajectory; end powerplay with dots
+7,Middle (7-11),Yash Raj Punja,Wrist/Control Spin,7.2,Break opening stand; induce false drive
+8,Middle (7-11),Ravindra Jadeja,Left-Arm Orthodox (Choke),6.5,Rapid 90-second over; deny boundary
+9,Middle (7-11),Yash Raj Punja,Wrist/Control Spin,7.5,Vary flight; challenge aggressive middle batter
+10,Middle (7-11),Ravindra Jadeja,Left-Arm Orthodox (Choke),6.8,Dart into pads; restrict scoring to singles
+11,Middle (7-11),Cameron Green / Riyan Parag,6th Bowling Option,7.8,Sneak an over; heavy lengths or off-spin match-up
+12,Middle (12-15),Yash Raj Punja,Wrist/Control Spin,7.5,Bowler 3rd over; force attacking error
+13,Middle (12-15),Ravindra Jadeja,Left-Arm Orthodox (Choke),7.0,Jadeja final over; maintain sub-7.0 economy
+14,Middle (12-15),Jofra Archer,Strike Spearhead (Pace),7.2,Enforcer spell; break dangerous partnership with bouncer
+15,Middle (12-15),Yash Raj Punja / Brijesh,4th Bowler Option,8.0,Close out middle overs without leaking boundary
+16,Death (16-20),Matheesha Pathirana,Death Specialist (Yorkers),8.2,Nail blockhole; suppress starting death surge
+17,Death (16-20),Akash Deep / Mohsin,Indian Death Seamer,8.8,Wide yorkers and slower ball cutters
+18,Death (16-20),Jofra Archer,Strike Spearhead (Pace),8.0,Archer 4th over; 148 km/h toe-crushers
+19,Death (16-20),Matheesha Pathirana,Death Specialist (Yorkers),8.5,Penultimate over squeeze; slingy yorkers
+20,Death (16-20),Matheesha Pathirana / Akash Deep,Death Specialist (Yorkers),8.5,Final over execution; zero full tosses
