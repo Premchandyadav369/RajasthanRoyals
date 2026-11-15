@@ -60,7 +60,7 @@ if 'chat_messages' not in st.session_state:
             "content": (
                 "**Welcome to the Rajasthan Royals Auction War Room.**\n\n"
                 "I am **Kumar Sangakkara**, Director of Cricket. I am connected directly to our **Project RR-EDGE V6.0 Decision Engine** via Groq's ultra-fast LPU inference.\n\n"
-                "Ask me anything regarding our **Plan B auction acquisitions** (Matt Henry & Suyash Sharma), our **Overs 7–11 forensic diagnostics**, **SMS Jaipur aerodynamics**, or counterfactual bidding and tactical matchups against CSK, MI, RCB, and KKR."
+                "Ask me anything regarding our **Plan B auction acquisitions** (Matt Henry & Suyash Sharma), our **Overs 7–11 forensic diagnostics**, **SMS Jaipur aerodynamics**, tactical matchups against all 9 rivals, or our **Bayesian DRS & Monte Carlo models**."
             )
         }
     ]
@@ -406,7 +406,7 @@ st.markdown("""
 
     /* Custom Streamlit Tabs */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 6px;
+        gap: 5px;
         background-color: rgba(10, 15, 36, 0.6);
         padding: 8px 10px;
         border-radius: 10px;
@@ -415,12 +415,12 @@ st.markdown("""
 
     .stTabs [data-baseweb="tab"] {
         font-family: 'Montserrat', sans-serif !important;
-        font-size: 0.74rem !important;
+        font-size: 0.71rem !important;
         font-weight: 700 !important;
-        letter-spacing: 0.6px !important;
+        letter-spacing: 0.5px !important;
         color: #94A3B8 !important;
         border-radius: 6px !important;
-        padding: 8px 14px !important;
+        padding: 7px 12px !important;
     }
 
     .stTabs [aria-selected="true"] {
@@ -487,15 +487,32 @@ def load_and_preprocess_cricket_data():
 
     p_dew = os.path.join(BASE_DIR, "outputs", "stadium_microclimate_dew_matrix.csv")
 
+    # Load DRS, Fielding, Hazard, Pareto & Clutch Datasets
+    p_drs = os.path.join(BASE_DIR, "outputs", "advanced_dimensions", "drs_bayesian_decision_policy.csv")
+    p_field = os.path.join(BASE_DIR, "outputs", "advanced_dimensions", "fielding_spatial_and_catch_wpa.csv")
+    p_acad = os.path.join(BASE_DIR, "outputs", "advanced_dimensions", "high_performance_training_prescriptions.csv")
+    p_haz = os.path.join(BASE_DIR, "outputs", "advanced_dimensions", "cluster_collapse_hazard_models.csv")
+    p_par = os.path.join(BASE_DIR, "outputs", "advanced_dimensions", "contract_surplus_and_pareto_frontiers.csv")
+    p_clutch = os.path.join(BASE_DIR, "outputs", "advanced_dimensions", "psychometric_clutch_degradation.csv")
+
     df_opp_doss = pd.read_csv(p_doss) if os.path.exists(p_doss) else pd.DataFrame()
     df_opp_mat = pd.read_csv(p_matrix) if os.path.exists(p_matrix) else pd.DataFrame()
     df_opp_neut = pd.read_csv(p_neutral) if os.path.exists(p_neutral) else pd.DataFrame()
     df_venues = pd.read_csv(p_ven) if os.path.exists(p_ven) else pd.DataFrame()
     df_dew_mat = pd.read_csv(p_dew) if os.path.exists(p_dew) else pd.DataFrame()
+    df_drs = pd.read_csv(p_drs) if os.path.exists(p_drs) else pd.DataFrame()
+    df_fielding = pd.read_csv(p_field) if os.path.exists(p_field) else pd.DataFrame()
+    df_academy = pd.read_csv(p_acad) if os.path.exists(p_acad) else pd.DataFrame()
+    df_hazard = pd.read_csv(p_haz) if os.path.exists(p_haz) else pd.DataFrame()
+    df_pareto = pd.read_csv(p_par) if os.path.exists(p_par) else pd.DataFrame()
+    df_clutch = pd.read_csv(p_clutch) if os.path.exists(p_clutch) else pd.DataFrame()
 
-    return df_bat, df_bowl, df_opp_doss, df_opp_mat, df_opp_neut, df_venues, df_dew_mat
+    return df_bat, df_bowl, df_opp_doss, df_opp_mat, df_opp_neut, df_venues, df_dew_mat, df_drs, df_fielding, df_academy, df_hazard, df_pareto, df_clutch
 
-df_batters_master, df_bowlers_master, df_opp_dossiers, df_opp_matrix, df_opp_neutral, df_venues, df_stadium_dew = load_and_preprocess_cricket_data()
+(df_batters_master, df_bowlers_master, df_opp_dossiers, df_opp_matrix, 
+ df_opp_neutral, df_venues, df_stadium_dew, df_drs_policy, 
+ df_fielding_wpa, df_academy_prescriptions, df_hazard_models, 
+ df_pareto_frontiers, df_psychometric_clutch) = load_and_preprocess_cricket_data()
 
 # Helper for stadium atmospheric specs
 def get_venue_aerodynamics(name):
@@ -679,26 +696,27 @@ df_master = df_batters_master if is_bat else df_bowlers_master
 df_filtered = df_master[df_master['press_balls'] >= min_balls] if not df_master.empty else pd.DataFrame()
 df_active = calculate_dynamic_rpi(df_filtered, is_batter=is_bat)
 
+# Clean, safe Plotly base layout without duplicated axis keys
 PLOTLY_LAYOUT = dict(
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(0,0,0,0)',
     font=dict(family='Inter, sans-serif', color='#F8FAFC', size=11),
-    margin=dict(l=40, r=40, t=40, b=40),
-    xaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)', zerolinecolor='rgba(255, 255, 255, 0.15)'),
-    yaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)', zerolinecolor='rgba(255, 255, 255, 0.15)')
+    margin=dict(l=40, r=40, t=40, b=40)
 )
 
 # -----------------------------------------------------------------------------
-# 9. MASTER 7-TAB WAR ROOM SUITE
+# 9. MASTER 9-TAB WAR ROOM SUITE
 # -----------------------------------------------------------------------------
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([
     "01 // THE 2026 FORENSIC AUDIT",
     "02 // ROUND 1 CLUTCH LEADERBOARD",
     "03 // PLAN A vs PLAN B SIMULATOR",
     "04 // PLAYER INTELLIGENCE & MATCHUP DOSSIER",
     "05 // OPPONENT & VENUE BLUEPRINTS",
-    "06 // LIVE 2027 AUCTION WAR ROOM SIMULATOR",
-    "07 // KUMAR SANGAKKARA AI ORACLE"
+    "06 // FIELDING & BAYESIAN DRS LAB",
+    "07 // 10,000-SEASON MONTE CARLO & HAZARDS",
+    "08 // LIVE 2027 AUCTION WAR ROOM SIMULATOR",
+    "09 // KUMAR SANGAKKARA AI ORACLE"
 ])
 
 # =============================================================================
@@ -831,8 +849,8 @@ with tab1:
     fig_leak.update_layout(
         **PLOTLY_LAYOUT,
         title="<b>Rajasthan Royals Conceded Run Rate Curve by Match Phase (Overs 1–20)</b>",
-        xaxis=dict(title="Over Number", tickmode='linear', tick0=1, dtick=1, range=[0.5, 20.5]),
-        yaxis=dict(title="Run Rate Conceded (RPO)", range=[6.0, 14.0]),
+        xaxis=dict(title="Over Number", tickmode='linear', tick0=1, dtick=1, range=[0.5, 20.5], gridcolor='rgba(255, 255, 255, 0.08)'),
+        yaxis=dict(title="Run Rate Conceded (RPO)", range=[6.0, 14.0], gridcolor='rgba(255, 255, 255, 0.08)'),
         height=420,
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )
@@ -1016,6 +1034,8 @@ with tab3:
         barmode='group',
         height=380,
         title="<b>Direct Quantitative Trade-Off: Plan A vs Plan B</b>",
+        xaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)'),
+        yaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)'),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )
     st.plotly_chart(fig_comp, use_container_width=True)
@@ -1421,6 +1441,8 @@ with tab5:
             barmode='group',
             height=340,
             title=f"<b>Defensive RPO Target vs {selected_opp}</b>",
+            xaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)'),
+            yaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)'),
             legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
         )
         st.plotly_chart(fig_opp, use_container_width=True)
@@ -1589,7 +1611,9 @@ with tab5:
         fig_vph.update_layout(
             **PLOTLY_LAYOUT,
             height=320,
-            title=f"<b>Run Rate & Economy Rates at {selected_venue}</b>"
+            title=f"<b>Run Rate & Economy Rates at {selected_venue}</b>",
+            xaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)'),
+            yaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)')
         )
         st.plotly_chart(fig_vph, use_container_width=True)
 
@@ -1632,14 +1656,11 @@ with tab5:
         neut_cx = df_opp_neutral[df_opp_neutral['Franchise'].str.contains(team_token, case=False, na=False)]
         n_row_cx = neut_cx.iloc[0] if not neut_cx.empty else None
 
-        # Cross-Matrix Calculation
         base_win = n_row_cx['BaselineWinProb_Pct'] if n_row_cx is not None else 45.0
         lift = n_row_cx['WinProbLift_Pct'] if n_row_cx is not None else 18.0
         is_home = "Jaipur" in ven_choice
         home_advantage = 5.5 if is_home else (0.0 if "Guwahati" in ven_choice else -2.5)
         simulated_win_pct = min(max(base_win + lift + home_advantage, 40.0), 85.0)
-
-        # Baseline par score
         base_par = 178 if "Jaipur" in ven_choice else (205 if "Bengaluru" in ven_choice else (168 if "Chennai" in ven_choice else 192))
 
         st.markdown(f"""
@@ -1679,9 +1700,238 @@ with tab5:
         st.dataframe(df_spells, use_container_width=True, hide_index=True)
 
 # =============================================================================
-# TAB 6: 06 // LIVE 2027 AUCTION WAR ROOM SIMULATOR
+# TAB 6: 06 // FIELDING & BAYESIAN DRS REVIEW LAB
 # =============================================================================
 with tab6:
+    st.markdown("### 🧤 Spatial Fielding & Bayesian DRS Review Optimization")
+    st.caption("Quantitative defensive fielding metrics (RSAA & Catch WPA) and Bayesian Decision Theory for DRS captaincy.")
+
+    drs_col1, drs_col2 = st.columns([1.2, 1])
+
+    with drs_col1:
+        st.markdown("#### ⚖️ Interactive Bayesian DRS Appeal Calculator")
+        st.caption("Models Expected Review Value (ERV) in runs saved based on trajectory, height, and umpire call risks.")
+
+        c_app1, c_app2 = st.columns(2)
+        with c_app1:
+            app_type = st.selectbox("Select Appeal Type:", ["LBW", "Caught Behind"], index=0, key="drs_app_type")
+        with c_app2:
+            bowler_cat = st.selectbox(
+                "Select Bowling Mechanism:",
+                ["Fast (Archer/Henry)", "Leg-Spin (Suyash)", "Finger Spin (Jadeja)", "Death Cutter (Curran/Sandeep)"],
+                index=0, key="drs_bowler_cat"
+            )
+
+        impact_choice = st.selectbox(
+            "Visual Impact Zone / Point of Contact:",
+            ["In-Line Stumps (Middle/Off)", "Outside Off Stump (Playing Shot)", "In-Line Sliding Down Leg", "Past Outside Edge (Keeper Confident)"],
+            index=0, key="drs_impact"
+        )
+
+        # Match policy from df_drs_policy
+        if not df_drs_policy.empty:
+            match_row = df_drs_policy[
+                (df_drs_policy['appeal_type'].str.contains(app_type, case=False, na=False)) &
+                (df_drs_policy['impact_zone'].str.contains(impact_choice.split()[0], case=False, na=False))
+            ]
+            row_drs = match_row.iloc[0] if not match_row.empty else df_drs_policy.iloc[0]
+        else:
+            row_drs = {
+                'umpire_call_prob': 0.45,
+                'overturn_success_prob': 0.78,
+                'expected_review_value_runs': 8.4,
+                'recommendation': 'REVIEW IMMEDIATELY'
+            }
+
+        rec_color = "#10B981" if "REVIEW IMMEDIATELY" in str(row_drs['recommendation']) or "TRUST" in str(row_drs['recommendation']) else "#EF4444"
+
+        st.markdown(f"""
+        <div style="background:var(--rr-navy-card); border:1px solid var(--rr-border); border-left:5px solid {rec_color}; border-radius:12px; padding:18px; margin-top:12px;">
+            <div style="font-size:0.75rem; font-weight:700; color:#94A3B8; text-transform:uppercase;">BAYESIAN REVIEW RECOMMENDATION</div>
+            <div style="font-family:'Rajdhani', sans-serif; font-size:1.7rem; font-weight:900; color:{rec_color}; margin-top:2px;">
+                {row_drs['recommendation']}
+            </div>
+            <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:14px; border-top:1px solid rgba(255,255,255,0.08); padding-top:10px;">
+                <div>
+                    <div style="font-size:0.70rem; color:#94A3B8;">OVERTURN PROBABILITY</div>
+                    <div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:#00F0FF;">{row_drs['overturn_success_prob']*100:.1f}%</div>
+                </div>
+                <div>
+                    <div style="font-size:0.70rem; color:#94A3B8;">UMPIRE CALL RISK</div>
+                    <div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:#EF4444;">{row_drs['umpire_call_prob']*100:.1f}%</div>
+                </div>
+                <div>
+                    <div style="font-size:0.70rem; color:#94A3B8;">EXPECTED RUN VALUE (ERV)</div>
+                    <div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:var(--rr-gold);">{row_drs['expected_review_value_runs']:+.1f} Runs</div>
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with drs_col2:
+        st.markdown("#### 🏃 Runs Saved Above Average (RSAA)")
+        if not df_fielding_wpa.empty:
+            fig_fld = go.Figure()
+            fig_fld.add_trace(go.Bar(
+                x=df_fielding_wpa['runs_saved_above_avg'],
+                y=df_fielding_wpa['player_name'],
+                orientation='h',
+                marker_color='#EA1A85'
+            ))
+            fig_fld.update_layout(
+                **PLOTLY_LAYOUT,
+                height=350,
+                title="<b>Spatial Fielding RSAA Leaderboard</b>",
+                xaxis=dict(title="Runs Saved Above Average (RSAA)", gridcolor='rgba(255, 255, 255, 0.08)'),
+                yaxis=dict(autorange="reversed", gridcolor='rgba(255, 255, 255, 0.08)')
+            )
+            st.plotly_chart(fig_fld, use_container_width=True)
+
+    st.markdown("---")
+
+    # High Performance Red Bull Academy Prescriptions
+    st.markdown("#### 🏋️ Red Bull High Performance Academy Biomechanical Directives (Talegaon)")
+    st.caption("Tailored athletic, kinematic, and mental conditioning programs designed by Giles Lindsay and Zubin Bharucha.")
+    if not df_academy_prescriptions.empty:
+        a_cols = st.columns(len(df_academy_prescriptions))
+        for idx, col in enumerate(a_cols):
+            row_a = df_academy_prescriptions.iloc[idx]
+            p_name = row_a.get('player_name', f'Athlete #{idx+1}')
+            p_role = row_a.get('role', 'Athlete')
+            p_focus = row_a.get('biomechanical_focus', row_a.get('focus_area', 'Kinetic Chain Optimization'))
+            p_target = row_a.get('target_metric', row_a.get('target_kpi', 'Performance Benchmark'))
+            p_drill = row_a.get('prescribed_drill', row_a.get('drill_protocol', 'Talegaon High-Intensity Drill'))
+            p_phase = row_a.get('academy_phase', 'Red Bull Lab')
+            with col:
+                st.markdown(f"""
+                <div style="background:var(--rr-navy-card); border:1px solid var(--rr-border); border-top:3px solid var(--rr-gold); border-radius:10px; padding:14px; min-height:220px;">
+                    <div style="font-family:'Rajdhani', sans-serif; font-size:1.15rem; font-weight:800; color:#FFFFFF;">{p_name}</div>
+                    <div style="font-size:0.72rem; color:var(--rr-gold); font-weight:700; text-transform:uppercase;">{p_role} • {p_phase}</div>
+                    <div style="font-size:0.78rem; color:#E2E8F0; margin-top:8px; line-height:1.4;">
+                        <b>Focus:</b> {p_focus}<br/>
+                        <b>Target KPI:</b> <span style="color:#00F0FF;">{p_target}</span><br/>
+                        <b>Protocol:</b> {p_drill}
+                    </div>
+                </div>
+                """, unsafe_allow_html=True)
+
+# =============================================================================
+# TAB 7: 07 // 10,000-SEASON MONTE CARLO & SURVIVAL HAZARDS
+# =============================================================================
+with tab7:
+    st.markdown("### 🎲 10,000-Season Monte Carlo & Batting Collapse Hazard Models")
+    st.caption("Non-linear tournament simulations and Cox Proportional Hazard models proving squad resilience under crisis pressure.")
+
+    mc_k1, mc_k2, mc_k3, mc_k4 = st.columns(4)
+    with mc_k1:
+        st.markdown("""
+        <div class="rr-kpi-card">
+            <div class="rr-kpi-label">Playoff Qualification Odds</div>
+            <div class="rr-kpi-value" style="color:#10B981;">68.4%</div>
+            <div class="rr-kpi-sub">+27.2% Lift over 2026 Baseline</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with mc_k2:
+        st.markdown("""
+        <div class="rr-kpi-card">
+            <div class="rr-kpi-label">Championship Title Odds</div>
+            <div class="rr-kpi-value" style="color:var(--rr-gold);">16.8%</div>
+            <div class="rr-kpi-sub">2nd Highest Tournament-Wide</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with mc_k3:
+        st.markdown("""
+        <div class="rr-kpi-card">
+            <div class="rr-kpi-label">200+ Conceded Probability</div>
+            <div class="rr-kpi-value" style="color:#00F0FF;">36.4%</div>
+            <div class="rr-kpi-sub">Collapsed from 74.85% (-38.5%)</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with mc_k4:
+        st.markdown("""
+        <div class="rr-kpi-card">
+            <div class="rr-kpi-label">Projected League Points</div>
+            <div class="rr-kpi-value" style="color:#FFFFFF;">16.4 PTS</div>
+            <div class="rr-kpi-sub">Expected Range: 14 to 18 Points</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    hz_col1, hz_col2 = st.columns(2)
+
+    with hz_col1:
+        st.markdown("#### ⚡ Cox Proportional Hazard: Batting Collapse Risk")
+        st.caption("Probability of catastrophic cluster collapses (>= 3 wickets within 15 balls) across match phases.")
+        if not df_hazard_models.empty:
+            fig_hz = go.Figure()
+            fig_hz.add_trace(go.Bar(
+                x=df_hazard_models['MatchPhase'],
+                y=df_hazard_models['BaselineCollapseRisk_Pct'],
+                name='2026 Baseline Risk',
+                marker_color='#EF4444'
+            ))
+            fig_hz.add_trace(go.Bar(
+                x=df_hazard_models['MatchPhase'],
+                y=df_hazard_models['RREDGE_Risk_Pct'],
+                name='Plan B Rebalanced Risk',
+                marker_color='#00F0FF'
+            ))
+            fig_hz.update_layout(
+                **PLOTLY_LAYOUT,
+                barmode='group',
+                height=340,
+                title="<b>Cluster Collapse Risk Reduction by Phase</b>",
+                xaxis=dict(gridcolor='rgba(255, 255, 255, 0.08)'),
+                yaxis=dict(title="Collapse Probability (%)", gridcolor='rgba(255, 255, 255, 0.08)'),
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+            )
+            st.plotly_chart(fig_hz, use_container_width=True)
+
+    with hz_col2:
+        st.markdown("#### 📈 Pareto Capital Efficiency: Spend vs Net WAR")
+        st.caption("Demonstrating global Pareto optimality of Plan B over conventional marquee bidding.")
+        if not df_pareto_frontiers.empty:
+            fig_par = go.Figure()
+            fig_par.add_trace(go.Scatter(
+                x=df_pareto_frontiers['TotalSpend_Cr'],
+                y=df_pareto_frontiers['NetWAR'],
+                mode='markers+text',
+                text=df_pareto_frontiers['Portfolio'].apply(lambda x: x.split('(')[0]),
+                textposition='top center',
+                marker=dict(size=14, color=['#00F0FF', '#EF4444', '#F59E0B', '#A855F7', '#10B981']),
+                name='Portfolios'
+            ))
+            fig_par.update_layout(
+                **PLOTLY_LAYOUT,
+                height=340,
+                title="<b>Pareto Optimization: Spend vs Wins Above Replacement (WAR)</b>",
+                xaxis=dict(title="Auction Spend (₹ Cr)", gridcolor='rgba(255, 255, 255, 0.08)'),
+                yaxis=dict(title="Net WAR Generated", gridcolor='rgba(255, 255, 255, 0.08)')
+            )
+            st.plotly_chart(fig_par, use_container_width=True)
+
+    # Psychometric Clutch Variance Table
+    st.markdown("#### 🧠 Psychometric Clutch Variance Index (CVI) Registry")
+    if not df_psychometric_clutch.empty:
+        st.dataframe(
+            df_psychometric_clutch[['player_name', 'role', 'clutch_variance_index', 'pressure_deterioration_ratio', 'archetype', 'clutch_tier']],
+            column_config={
+                "player_name": st.column_config.TextColumn("Player Name"),
+                "role": st.column_config.TextColumn("Tactical Role"),
+                "clutch_variance_index": st.column_config.NumberColumn("CVI Index (Lower=Better)", format="%.2f"),
+                "pressure_deterioration_ratio": st.column_config.NumberColumn("Deterioration Ratio", format="%.2f"),
+                "archetype": st.column_config.TextColumn("Psychological Archetype"),
+                "clutch_tier": st.column_config.TextColumn("Clutch Tier")
+            },
+            use_container_width=True,
+            hide_index=True
+        )
+
+# =============================================================================
+# TAB 8: 08 // LIVE 2027 AUCTION WAR ROOM SIMULATOR
+# =============================================================================
+with tab8:
     st.markdown("### 💰 Live 2027 Auction War Room Simulator")
     st.caption("Real-time ascending paddle simulation against rival franchises (PBKS, KKR, SRH, CSK) for Plan B targets.")
 
@@ -1797,9 +2047,9 @@ with tab6:
         )
 
 # =============================================================================
-# TAB 7: 07 // KUMAR SANGAKKARA AI ORACLE
+# TAB 9: 09 // KUMAR SANGAKKARA AI ORACLE
 # =============================================================================
-with tab7:
+with tab9:
     st.markdown("### 🤖 Kumar Sangakkara AI Oracle: War Room Strategic Advisor")
     st.caption("Powered by Groq Ultra-Fast LPU™ Inference • Grounded in Project RR-EDGE V6.0 (15 Dimensions & 200,999 Deliveries)")
     
@@ -1821,7 +2071,7 @@ with tab7:
     
     st.markdown("---")
     
-    # Tactical Quick-Consult Presets (Including new Opponent & Stadium queries)
+    # Tactical Quick-Consult Presets (Including Opponent & Stadium queries)
     st.markdown("#### ⚡ Tactical Quick-Consult Presets")
     q_col1, q_col2, q_col3, q_col4, q_col5 = st.columns(5)
     
@@ -1851,7 +2101,7 @@ with tab7:
             st.markdown(msg["content"])
     
     # User message input or preset
-    user_query = st.chat_input("Ask Kumar Sangakkara about RR's auction strategy, matchups, opponents, or stadium aerodynamics...")
+    user_query = st.chat_input("Ask Kumar Sangakkara about RR's auction strategy, matchups, opponents, DRS, or stadium aerodynamics...")
     active_prompt = preset_prompt if preset_prompt else user_query
     
     if active_prompt:

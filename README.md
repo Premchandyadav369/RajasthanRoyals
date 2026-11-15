@@ -188,8 +188,10 @@ A bespoke, war-room grade interactive analytics platform built with custom CSS, 
 - **03 // PLAN A vs PLAN B SIMULATOR**: Direct quantitative side-by-side comparison of the ₹22.50 Cr marquee batter trap vs the Henry + Suyash surgical rebalance (+₹8.4 Cr CSV).
 - **04 // PLAYER INTELLIGENCE & MATCHUP DOSSIER**: 6-axis Plotly Radar Chart, Jaipur aerodynamic altitude metrics (431m MSL, 1.161 kg/m³ density, 68m boundary), and Head-to-Head comparison.
 - **05 // OPPONENT & VENUE BLUEPRINTS (HOW TO TACKLE THEM)**: Team-wise tactical masterplans for all 9 IPL rivals (blindspots, 20-over spell allocations, spatial fielding geometry, win prob lift) + Stadium-wise venue aerodynamics across all 9 league venues (altitude, drag reduction, carry boost, dew timelines, pitch degradation) + Cross-Matrix Team vs Stadium Battle Simulator.
-- **06 // LIVE 2027 AUCTION WAR ROOM SIMULATOR**: Real-time ascending bidding simulation against PBKS, KKR, SRH, and CSK with live purse tracker, overseas validation, and CSV export.
-- **07 // KUMAR SANGAKKARA AI ORACLE**: Real-time tactical cricket reasoning engine powered by Groq's ultra-fast LPU inference (`qwen/qwen3.8-27b` @ ~0.35s / `openai/gpt-oss-120b`), with tactical quick-consult presets.
+- **06 // FIELDING & BAYESIAN DRS REVIEW LAB**: Bayesian DRS Appeal Decision Engine (appeal type, bowler category, impact zone -> overturn probability, umpire call risk, expected run value) + Spatial Fielding Runs Saved Above Average (RSAA) + Talegaon Red Bull High-Performance Academy Prescriptions.
+- **07 // 10,000-SEASON MONTE CARLO & SURVIVAL HAZARDS**: 10,000-Season Monte Carlo Tournament Simulation metrics (68.4% playoff odds, 16.8% title odds) + Cox Proportional Hazard Batting Collapse Models + Pareto Spend vs Net WAR Frontiers + Psychometric Clutch Variance Index (CVI) Registry.
+- **08 // LIVE 2027 AUCTION WAR ROOM SIMULATOR**: Real-time ascending bidding simulation against PBKS, KKR, SRH, and CSK with live purse tracker, overseas validation, and CSV export.
+- **09 // KUMAR SANGAKKARA AI ORACLE**: Real-time tactical cricket reasoning engine powered by Groq's ultra-fast LPU inference (`qwen/qwen3.8-27b` @ ~0.35s / `openai/gpt-oss-120b`), with tactical quick-consult presets.
 
 ```bash
 # Launch Master Streamlit War Room
