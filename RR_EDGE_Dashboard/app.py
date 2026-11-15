@@ -1005,6 +1005,13 @@ with tab3:
     # Automated Rule-Based Scouting Verdict
     st.markdown("#### 📝 Automated Rule-Based Scouting Verdict")
     v_c1, v_c2 = st.columns(2)
+    
+    # Precompute safe formatted strings
+    p1_metric = f"{p1_row['press_sr']:.1f} SR" if is_bat else f"{p1_row['press_econ']:.2f} ER"
+    p1_delta = f"{p1_row['pressure_delta_sr']:+.1f}" if is_bat else f"{p1_row['pressure_delta_econ']:+.2f}"
+    p1_dot = f"{p1_row['press_dot_pct']:.1f}%" if pd.notnull(p1_row.get('press_dot_pct')) else "N/A"
+    p1_role = p1_row.get('tactical_role', 'Specialist')
+
     with v_c1:
         st.markdown(f"""
         <div style="background: var(--rr-navy-card); border: 1px solid var(--rr-border); border-radius: 12px; padding: 18px;">
@@ -1012,9 +1019,9 @@ with tab3:
                 VERDICT: {p1}
             </div>
             <ul style="font-size:0.83rem; color:#E2E8F0; line-height:1.6; margin-top:8px;">
-                <li>🟢 <b>Clutch Execution:</b> Records a <b>{p1_row['press_sr'] if is_bat else p1_row['press_econ']}</b> metric in critical moments with a <b>{p1_row['pressure_delta_sr']:+.1f if is_bat else p1_row['pressure_delta_econ']:+.2f} Δ</b> retention over baseline.</li>
-                <li>🟡 <b>Tactical Vulnerability:</b> Dot-ball frequency sits at <b>{p1_row['press_dot_pct']:.1f}%</b> under pressure; requires tactical rotational strike-partner like Dhruv Jurel.</li>
-                <li>🔵 <b>RR Setup Fit:</b> Aligns directly with Rajasthan Royals' 2027 operational need for an unflappable {p1_row['tactical_role']}.</li>
+                <li>🟢 <b>Clutch Execution:</b> Records a <b>{p1_metric}</b> metric in critical moments with a <b>{p1_delta} Δ</b> retention over baseline.</li>
+                <li>🟡 <b>Tactical Vulnerability:</b> Dot-ball frequency sits at <b>{p1_dot}</b> under pressure; requires tactical rotational strike-partner like Dhruv Jurel.</li>
+                <li>🔵 <b>RR Setup Fit:</b> Aligns directly with Rajasthan Royals' 2027 operational need for an unflappable {p1_role}.</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
@@ -1026,14 +1033,19 @@ with tab3:
 
     with v_c2:
         if compare_mode and p2_row is not None:
+            p2_metric = f"{p2_row['press_sr']:.1f} SR" if is_bat else f"{p2_row['press_econ']:.2f} ER"
+            p2_delta = f"{p2_row['pressure_delta_sr']:+.1f}" if is_bat else f"{p2_row['pressure_delta_econ']:+.2f}"
+            p2_dot = f"{p2_row['press_dot_pct']:.1f}%" if pd.notnull(p2_row.get('press_dot_pct')) else "N/A"
+            p2_role = p2_row.get('tactical_role', 'Specialist')
+            
             st.markdown(f"""
             <div style="background: var(--rr-navy-card); border: 1px solid var(--rr-border-gold); border-radius: 12px; padding: 18px;">
                 <div style="font-family:'Rajdhani', sans-serif; font-size:1.25rem; font-weight:800; color:var(--rr-gold);">
                     VERDICT: {p2}
                 </div>
                 <ul style="font-size:0.83rem; color:#E2E8F0; line-height:1.6; margin-top:8px;">
-                    <li>🟢 <b>Clutch Execution:</b> Records a <b>{p2_row['press_sr'] if is_bat else p2_row['press_econ']}</b> metric in critical moments with a <b>{p2_row['pressure_delta_sr']:+.1f if is_bat else p2_row['pressure_delta_econ']:+.2f} Δ</b> retention over baseline.</li>
-                    <li>🟡 <b>Tactical Vulnerability:</b> Dot-ball frequency sits at <b>{p2_row['press_dot_pct']:.1f}%</b> under pressure; requires structured role boundaries.</li>
+                    <li>🟢 <b>Clutch Execution:</b> Records a <b>{p2_metric}</b> metric in critical moments with a <b>{p2_delta} Δ</b> retention over baseline.</li>
+                    <li>🟡 <b>Tactical Vulnerability:</b> Dot-ball frequency sits at <b>{p2_dot}</b> under pressure; requires structured role boundaries.</li>
                     <li>🔵 <b>RR Setup Fit:</b> Serves as high-upside alternative or rotation partner in Rajasthan Royals' 2027 scheme.</li>
                 </ul>
             </div>
