@@ -2,6 +2,7 @@ RR-EDGE V6.0 OFFICIAL SUBMISSION BUNDLE SHA-256 CHECKSUMS
 ======================================================================
 2bcb40755e4e7c5df25304a8884ab09f546a0e480d2bc0975bb65cdae2ead5dc  RR_EDGE_Judges_Fast_Track_Brief.pdf
 61aeb25de40a955ad5e7a6807d7bdf83d34017c17fc3dbe6d1d71c81c46858ba  RR_EDGE_V6_0_Franchise_Master_Dossier.pdf
+846cfe0e129908a9d349eb7d960632438ee51187127e9b00ab7185000f607a45  RR_EDGE_V6_0_Executive_Presentation.pptx
 61aeb25de40a955ad5e7a6807d7bdf83d34017c17fc3dbe6d1d71c81c46858ba  RR_EDGE_V5_0_Franchise_Master_Dossier.pdf
 846cfe0e129908a9d349eb7d960632438ee51187127e9b00ab7185000f607a45  RR_EDGE_V5_0_Executive_Presentation.pptx
 846cfe0e129908a9d349eb7d960632438ee51187127e9b00ab7185000f607a45  RR_EDGE_V4_2_Presentation.pptx

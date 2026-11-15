@@ -16,6 +16,7 @@ FILES_TO_BUNDLE = [
     # Primary Master Dossiers & Editorial Decks
     "RR_EDGE_Judges_Fast_Track_Brief.pdf",
     "RR_EDGE_V6_0_Franchise_Master_Dossier.pdf",
+    "RR_EDGE_V6_0_Executive_Presentation.pptx",
     "RR_EDGE_V5_0_Franchise_Master_Dossier.pdf",
     "RR_EDGE_V5_0_Executive_Presentation.pptx",
     "RR_EDGE_V4_2_Presentation.pptx",
@@ -95,10 +96,13 @@ FILES_TO_BUNDLE = [
 def resolve_file(rel_path):
     candidates = [
         os.path.join(BASE_DIR, rel_path),
+        os.path.join(BASE_DIR, "src", rel_path),
         os.path.join(BASE_DIR, "reports", rel_path),
+        os.path.join(BASE_DIR, "archive", "v5_iterations", rel_path),
         os.path.join(BASE_DIR, "archive", "v4_iterations", rel_path),
         os.path.join(BASE_DIR, "archive", "v3_iterations", rel_path),
         os.path.join(BASE_DIR, "archive", "v2_iterations", rel_path),
+        os.path.join(BASE_DIR, "archive", "legacy_versions", rel_path),
         os.path.join(BASE_DIR, "data", rel_path),
         os.path.join(BASE_DIR, "docs", rel_path),
     ]

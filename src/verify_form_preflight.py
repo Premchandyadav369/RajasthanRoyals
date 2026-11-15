@@ -47,8 +47,24 @@ def verify():
     print(f"✔ Check 3: Report Remark Length Validated: {char_len} / 500 characters (PASS)")
     
     # Check 4: Upload Report Artifacts
-    pdf_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Executive_Dossier.pdf")
-    pptx_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Presentation.pptx")
+    def resolve_artifact(primary, fallback, sub=""):
+        p1 = os.path.join(BASE_DIR, primary)
+        if os.path.exists(p1): return p1
+        p2 = os.path.join(BASE_DIR, sub, fallback) if sub else os.path.join(BASE_DIR, fallback)
+        if os.path.exists(p2): return p2
+        p3 = os.path.join(BASE_DIR, fallback)
+        if os.path.exists(p3): return p3
+        return p1
+
+    pdf_path = resolve_artifact("RR_EDGE_V6_0_Franchise_Master_Dossier.pdf", "RR_EDGE_V4_2_Executive_Dossier.pdf", "archive/v4_iterations")
+    # Check V6.0 PPTX, then V5.0, then V4.2
+    pptx_candidates = [
+        os.path.join(BASE_DIR, "RR_EDGE_V6_0_Executive_Presentation.pptx"),
+        os.path.join(BASE_DIR, "RR_EDGE_V5_0_Executive_Presentation.pptx"),
+        os.path.join(BASE_DIR, "archive", "v5_iterations", "RR_EDGE_V5_0_Executive_Presentation.pptx"),
+        os.path.join(BASE_DIR, "archive", "v4_iterations", "RR_EDGE_V4_2_Presentation.pptx"),
+    ]
+    pptx_path = next((p for p in pptx_candidates if os.path.exists(p)), pptx_candidates[0])
     zip_path = os.path.join(BASE_DIR, "RR_SupeRR_Selector_S2_Submission_Bundle.zip")
     
     assert os.path.exists(pdf_path) and os.path.getsize(pdf_path) > 5000, "PDF Dossier missing or invalid!"

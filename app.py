@@ -1,23 +1,15 @@
 """
-Streamlit Community Cloud Root Entry Point for Project RR-EDGE
-Bespoke War Room Platform for Rajasthan Royals (SupeRR Selector Season 2)
+Streamlit Community Cloud Entry Point for Project RR-EDGE V6.0
+Points directly to canonical unified war room platform (streamlit_app.py)
 """
 
 import os
 import sys
+import runpy
 
-# Ensure repository root is on sys.path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
 
-dashboard_dir = os.path.join(BASE_DIR, "RR_EDGE_Dashboard")
-if dashboard_dir not in sys.path:
-    sys.path.insert(0, dashboard_dir)
-
-# Execute main dashboard app
-app_path = os.path.join(dashboard_dir, "app.py")
-with open(app_path, "r", encoding="utf-8") as f:
-    code = f.read()
-
-exec(code, globals())
+canonical_app = os.path.join(BASE_DIR, "streamlit_app.py")
+runpy.run_path(canonical_app, run_name="__main__")

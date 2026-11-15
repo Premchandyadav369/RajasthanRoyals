@@ -13,5 +13,9 @@ __MACOSX/
 # Logs
 *.log
 
+# Proprietary Raw Tournament Data Pack (Protected per Unstop NDA)
+6af458274c1e8_data_pack/
+
+# Secrets
 .streamlit/secrets.toml
 

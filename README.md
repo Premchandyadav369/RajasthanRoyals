@@ -9,7 +9,7 @@
 [![BCCI Cap Compliance](https://img.shields.io/badge/BCCI%20Cap-₹157.00%20Cr%20Audited-gold?style=for-the-badge)](RR_EDGE_V4_2_Official_2026_Squad.csv)
 [![Overseas Limit](https://img.shields.io/badge/Overseas%20Limit-8%2F8%20Validated-blue?style=for-the-badge)](RR_EDGE_V4_2_Official_2026_Squad.csv)
 [![Preflight Audit](https://img.shields.io/badge/Preflight%20Audit-6%2F6%20Zero--Defect-magenta?style=for-the-badge)](src/verify_form_preflight.py)
-[![Analytical Dimensions](https://img.shields.io/badge/Multi--Physics-15%20Dimensions-ff007f?style=for-the-badge)](outputs/advanced_dimensions/)
+[![Tactical Dimensions](https://img.shields.io/badge/Sabermetrics-15%20Tactical%20Dimensions-ff007f?style=for-the-badge)](outputs/advanced_dimensions/)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)](LICENSE)
 
 ---
@@ -26,12 +26,13 @@
 - [🏛️ 1. Executive Summary & The 2026 Forensic Diagnosis](#️-1-executive-summary--the-2026-forensic-diagnosis)
 - [🎯 2. The Plan B Moneyball Auction Architecture](#-2-the-plan-b-moneyball-auction-architecture)
 - [📋 3. Canonical Unstop Competition Selections (Round 1)](#-3-canonical-unstop-competition-selections-round-1)
-- [🔬 4. The 15 Deep Multi-Physics Analytical Dimensions](#-4-the-15-deep-multi-physics-analytical-dimensions)
-- [💻 5. Dual Software Ecosystem: Streamlit War Room & Offline HTML5 Suite](#-5-dual-software-ecosystem-streamlit-war-room--offline-html5-suite)
-- [🎨 6. Master Editorial Presentation & 4K Visual Plates (Zero AI Slop)](#-6-master-editorial-presentation--4k-visual-plates-zero-ai-slop)
+- [🔬 4. The 15 Sabermetric & Tactical Pressure Dimensions](#-4-the-15-sabermetric--tactical-pressure-dimensions)
+- [💻 5. Dual Software Ecosystem: Master War Room & Offline HTML5 Suite](#-5-dual-software-ecosystem-master-war-room--offline-html5-suite)
+- [🎨 6. Master Editorial Presentation & 4K Visual Plates](#-6-master-editorial-presentation--4k-visual-plates)
 - [📂 7. Repository Architecture & Clean Directory Layout](#-7-repository-architecture--clean-directory-layout)
 - [⚡ 8. Reproduction, Testing & Verification Quickstart](#-8-reproduction-testing--verification-quickstart)
-- [📜 9. Taskforce Attribution, Checksums & Governance](#-9-taskforce-attribution-checksums--governance)
+- [🔒 9. Data Governance & Regulatory Compliance](#-9-data-governance--regulatory-compliance)
+- [📜 10. Taskforce Attribution, Checksums & Governance](#-10-taskforce-attribution-checksums--governance)
 
 ---
 
@@ -127,13 +128,13 @@ RR-EDGE V4.2 evaluates 200,999 balls (comp_id 3298) via pre-delivery Bayesian sh
 
 ---
 
-## 🔬 4. The 15 Deep Multi-Physics Analytical Dimensions
+## 🔬 4. The 15 Sabermetric & Tactical Pressure Dimensions
 
 Project RR-EDGE moves far beyond superficial batting averages and strike rates by engineering 15 interlocked analytical layers:
 
 ```
                                   PROJECT RR-EDGE V6.0
-                                MULTI-PHYSICS ARCHITECTURE
+                           15 TACTICAL SABERMETRIC DIMENSIONS
                                 
     ┌───────────────────────────────────┬───────────────────────────────────┐
     │     MACRO CAUSAL & ML ENGINES     │    MICRO-PHYSICS & BIOMECHANICS   │
@@ -146,7 +147,7 @@ Project RR-EDGE moves far beyond superficial batting averages and strike rates b
     │ 12. Positional WAR & Fragility    │ 8. Red Bull Academy Prescriptions │
     │ 13. Absorbing Markov Chains       │                                   │
     │ 14. MILP Roster Knapsack Solver   │                                   │
-    │ 15. Dual Software Ecosystem       │                                   │
+    │ 15. Unified War Room Ecosystem    │                                   │
     └───────────────────────────────────┴───────────────────────────────────┘
 ```
 
@@ -174,29 +175,33 @@ $$\text{ERV} = P(\text{Overturn} \mid \text{Trajectory}, \theta) \cdot \Delta \t
 
 ---
 
-## 💻 5. Dual Software Ecosystem: Streamlit War Room & Offline HTML5 Suite
+## 💻 5. Dual Software Ecosystem: Master War Room & Offline HTML5 Suite
 
-### 1. Live Streamlit Auction War Room (`RR_EDGE_Dashboard/app.py`)
-A bespoke, war-room grade interactive analytics application built with custom CSS, neon pink/gold borders, glassmorphic cards, and zero default Streamlit styling:
-- **Tab 1: 🏆 Executive Summary & Methodology (The "Sangakkara" View)**: Interactive dynamic RPI slider formula builder, recalibrating player rankings in real-time.
-- **Tab 2: 🔥 The Pressure Crucible (Macro Scouting & Quadrants)**: Interactive Plotly quadrant scatter plot identifying Clutch Elite vs Flat-Track Bullies.
-- **Tab 3: ⚔️ Tactical Matchup Laboratory (Micro Scouting)**: 6-axis radar charts comparing player metrics across pace, spin, boundary %, and dot %.
-- **Tab 4: 🏟️ Stadium Telemetry & Aerodynamics (Jaipur Fortress)**: 3D interactive SMS Jaipur field layout, wind vector effects, boundary dimensions, and dew-point microclimate simulator.
-- **Tab 5: 💼 Auction War Room & Strategy B Simulator**: Interactive ₹45 Cr purse rebalancer, live roster validator (max 8 overseas, 25 squad cap), and CSV export.
-- **Tab 6: 🤖 Kumar Sangakkara AI Oracle (Groq LPU LLM)**: Real-time tactical cricket reasoning engine powered by Groq's ultra-fast LPU inference (`qwen/qwen3.8-27b` @ ~0.35s and `openai/gpt-oss-120b`), answering auction, matchup, and aerodynamic queries grounded in 15 dimensions.
+### 1. Unified Master War Room (`streamlit_app.py`)
+A bespoke, war-room grade interactive analytics platform built with custom CSS, neon pink/gold borders, glassmorphic cards, and zero default Streamlit styling:
+
+- **Top Sticky Telemetry Ribbon**:
+  `BCCI CAP: ₹157.00 Cr | RETAINED (16): ₹108.95 Cr | AVAILABLE PURSE: ₹45.00 Cr | OVERSEAS SLOTS: 8/8 VALIDATED | LEADERSHIP: RIYAN PARAG (C) • DHRUV JUREL (WK) • RAVINDRA JADEJA (TACTICAL CORE)`
+- **Sidebar Judges' Fast-Track**: 1-click download buttons for `RR_EDGE_Judges_Fast_Track_Brief.pdf` and `RR_EDGE_V6_0_Franchise_Master_Dossier.pdf`.
+- **01 // THE 2026 FORENSIC AUDIT**: Overs 1–20 phase run rate curve with Overs 7–11 leak danger zone + interactive toggle: `"⚡ Activate Plan B Rebalance"`, showing conceded RPO collapsing from 10.29 to 7.42 and playoff odds rising to 68.4%.
+- **02 // ROUND 1 CLUTCH LEADERBOARD**: Live dynamic RPI calculation across all 216 players with real-time sliders and `st.column_config.ProgressColumn`.
+- **03 // PLAN A vs PLAN B SIMULATOR**: Direct quantitative side-by-side comparison of the ₹22.50 Cr marquee batter trap vs the Henry + Suyash surgical rebalance (+₹8.4 Cr CSV).
+- **04 // PLAYER INTELLIGENCE & MATCHUP DOSSIER**: 6-axis Plotly Radar Chart, Jaipur aerodynamic altitude metrics (431m MSL, 1.161 kg/m³ density, 68m boundary), and Head-to-Head comparison.
+- **05 // LIVE 2027 AUCTION WAR ROOM SIMULATOR**: Real-time ascending bidding simulation against PBKS, KKR, SRH, and CSK with live purse tracker, overseas validation, and CSV export.
+- **06 // KUMAR SANGAKKARA AI ORACLE**: Real-time tactical cricket reasoning engine powered by Groq's ultra-fast LPU inference (`qwen/qwen3.8-27b` @ ~0.35s / `openai/gpt-oss-120b`), with 5 tactical quick-consult presets.
 
 ```bash
-# Launch Streamlit Auction War Room (from root or dashboard folder)
+# Launch Master Streamlit War Room
 streamlit run streamlit_app.py --server.port 8501
 ```
 
 #### ☁️ 1-Click Streamlit Community Cloud Deployment (`share.streamlit.io`)
 Deploy directly to Streamlit Community Cloud with zero configuration:
-1. **Repository**: `Premchandyadav369/RajasthanRoyals` (or paste repo URL)
+1. **Repository**: `Premchandyadav369/RajasthanRoyals`
 2. **Branch**: `main`
-3. **Main file path**: `streamlit_app.py` *(or `app.py` / `RR_EDGE_Dashboard/app.py`)*
+3. **Main file path**: `streamlit_app.py` *(or `app.py`)*
 4. **App URL (optional)**: e.g. `rajasthan-royals-edge.streamlit.app`
-5. **Advanced Settings > Python version**: Select `3.11`
+5. **Advanced Settings > Python version**: `3.11`
 6. **Advanced Settings > Secrets**:
 ```toml
 GROQ_API_KEY = "your_groq_api_key_here"
@@ -209,11 +214,11 @@ GROQ_MODEL = "qwen/qwen3.8-27b"
 
 ---
 
-## 🎨 6. Master Editorial Presentation & 4K Visual Plates (Zero AI Slop)
+## 🎨 6. Master Editorial Presentation & 4K Visual Plates
 
-The presentation deliverables strictly adhere to the professional design guidelines in `PPT Image DESIGN.md`—completely eliminating generic "AI slop", stock photography, and noisy SaaS templates in favor of structured editorial visual essays:
+The presentation deliverables strictly adhere to the professional design guidelines in `PPT Image DESIGN.md`—prioritizing clear visual hierarchy, negative space, and publication-grade aesthetics:
 
-- **Primary Editorial Deck**: [`RR_EDGE_V5_0_Executive_Presentation.pptx`](RR_EDGE_V5_0_Executive_Presentation.pptx) (12-Slide 16:9 Widescreen Master Deck).
+- **Primary Editorial Deck**: [`RR_EDGE_V6_0_Executive_Presentation.pptx`](RR_EDGE_V6_0_Executive_Presentation.pptx) (12-Slide 16:9 Widescreen Master Deck).
 - **Seven 4K Editorial Visual Plates (`slide_assets/`)**:
   1. [`hero_cover_plate.png`](slide_assets/hero_cover_plate.png): Royal Midnight Blue cover plate with Rajasthan Royals pink neon accents.
   2. [`bottleneck_comparison_plate.png`](slide_assets/bottleneck_comparison_plate.png): Split-screen macro forensic diagram of the Overs 7–11 leak.
@@ -227,48 +232,38 @@ The presentation deliverables strictly adhere to the professional design guideli
 
 ## 📂 7. Repository Architecture & Clean Directory Layout
 
-All 180+ project files have been clubbed and structured into dedicated, immaculate directories:
+All older project iterations have been organized into `archive/`, leaving only canonical V6.0 deliverables and clean entry points in the root:
 
 ```text
 RajasthanRoyals/
+├── streamlit_app.py                          # Master Unified War Room Application (Streamlit Cloud Entry)
+├── app.py                                    # Clean Root Redirector to streamlit_app.py
 ├── README.md                                 # Master Franchise Documentation (This File)
+├── requirements.txt                          # Production Dependencies for Streamlit Cloud
 ├── LICENSE                                   # Official MIT License
 ├── CHECKSUMS.txt                             # SHA-256 Cryptographic Verification Manifest
 ├── RR_SupeRR_Selector_S2_Submission_Bundle.zip # Definitive All-in-One Submission Archive (7.18 MB)
 ├── RR_EDGE_Judges_Fast_Track_Brief.pdf       # 1-Page High-Density Executive Brief (60-sec Scan)
 ├── RR_EDGE_V6_0_Franchise_Master_Dossier.pdf # 2-Page 15-Dimensional Master Encyclopedia
-├── RR_EDGE_V5_0_Executive_Presentation.pptx  # 12-Slide 16:9 4K Presentation Master Deck
+├── RR_EDGE_V6_0_Executive_Presentation.pptx  # 12-Slide 16:9 4K Presentation Master Deck
 ├── RR_WAR_ROOM_EXECUTIVE_SUITE.html          # Offline Interactive HTML5 Executive War Room (81 KB)
-├── auction_warroom_simulator.py              # Interactive Terminal Auction & Trade CLI Simulator
 ├── RR_EDGE_Batter_Rankings.csv               # Top 10 Batsmen Official Ranking (comp_id 3298)
 ├── RR_EDGE_Bowler_Rankings.csv               # Top 10 Bowlers Official Ranking (comp_id 3298)
 ├── RR_EDGE_Player_Intelligence.csv           # Detailed Pre-Delivery Bayesian Intelligence
 ├── RR_EDGE_V4_2_Official_2026_Squad.csv      # Regulatory Validated 2026 Roster (25 players)
-├── RR_EDGE_V4_2_Executive_Dossier.pdf        # Preflight Audited Dossier
-├── RR_EDGE_V4_2_Presentation.pptx            # Preflight Audited PPTX Deck
-│
-├── RR_EDGE_Dashboard/                        # Live Streamlit War Room Application
-│   ├── app.py                                # Bespoke 5-Tab War Room Engine
-│   └── app_backup_27consoles.py              # 27-Console Historical Engine Backup
 │
 ├── docs/                                     # In-Depth Guides, Methodologies & Logs
 │   ├── RR_EDGE_Methodology.md                # Mathematical Formulations & Statistical Proofs
 │   ├── RR_EDGE_Reproducibility_Guide.md      # Deterministic Reproduction Runbook
-│   ├── RR_EDGE_War_Room_Defense_Guide.md     # Cross-Examination Defense Manual for Judges
-│   ├── VIDEO_RECORDING_CHEAT_SHEET.md        # 5-Minute Pitch Presentation Script
-│   └── changelogs/                           # Release Notes (V4.0.1, V4.1, V4.2)
+│   └── changelogs/                           # Release Notes
 │
 ├── reports/                                  # Executive Reports, Memos & Tactical Playbooks
 │   ├── RR_EDGE_Board_Memorandum.pdf          # C-Suite Memorandum for Manoj Badale & Jake Lush McCrum
 │   ├── RR_Tactical_Coaching_Playbook.pdf     # 9-Franchise Tactical Opposition Playbook
-│   ├── RR_High_Performance_Training_Prescription.pdf # Red Bull Academy Biomechanical Directives
-│   ├── RR_Social_Intelligence_Report.pdf     # Sentiment Analysis & Brand Perception
-│   ├── RR_EDGE_Final_Report.pdf              # Comprehensive Tournament Research Report
-│   └── data_quality_report.html              # Automated Data Hygiene & Provenance Audit
+│   └── RR_High_Performance_Training_Prescription.pdf # Red Bull Academy Directives
 │
 ├── data/                                     # Curated Datasets & Intelligence Models
 │   ├── dictionaries/                         # Data Dictionaries & Coverage Reports
-│   ├── ml_benchmarks/                        # Feature Importance, Archetypes & Regression Curves
 │   └── auction_intelligence/                 # Auction Universe, Trades & Opposition Matchups
 │
 ├── outputs/                                  # 15 Advanced Dimensions & Frontier Analytics
@@ -279,12 +274,15 @@ RajasthanRoyals/
 │
 ├── slide_assets/                             # 7 4K (3840x2160) Presentation Visual Plates
 ├── social_cards/                             # 5 High-Resolution 1080x1080 Infographics
-├── src/                                      # Source Code, Preflight Audits & Bundle Generators
+├── src/                                      # Source Code, Preflight Audits & Auction Engine
+│   ├── auction_warroom_simulator.py          # Bidding Simulation Engine
+│   ├── build_submission_bundle.py            # Automated Bundle Builder & Checksums
+│   └── verify_form_preflight.py              # Automated 6/6 Pre-Flight Audit
 ├── tests/                                    # 19/19 Passing Automated Pytest Test Suite
-└── archive/                                  # Historical Iterations & Legacy Development Logs
-    ├── v2_iterations/                        # Phase 1–4 Legacy Deliverables & 2027 Projections
-    ├── v3_iterations/                        # Phase 5–8 V3.0 and V3.1 Models
-    └── v4_iterations/                        # Phase 9–11 V4.0, V4.0.1, and V4.1 Files
+└── archive/                                  # Clean Historical Archive
+    ├── legacy_versions/                      # V2, V3_0, and Dashboard Iterations
+    ├── v4_iterations/                        # V4.2 Reports and Presentations
+    └── v5_iterations/                        # V5.0 Master Decks and Dossiers
 ```
 
 ---
@@ -306,11 +304,11 @@ python -m pytest
 # 3. Run Pre-Flight Form & Compliance Verification
 python src/verify_form_preflight.py
 
-# 4. Launch the Interactive Streamlit War Room
-python -m streamlit run RR_EDGE_Dashboard/app.py --server.port 8501
+# 4. Launch the Master Streamlit War Room
+python -m streamlit run streamlit_app.py --server.port 8501
 
 # 5. Launch the CLI Auction & Trade Simulator
-python auction_warroom_simulator.py
+python src/auction_warroom_simulator.py
 
 # 6. Rebuild the Submission Bundle & Cryptographic Checksums
 python src/build_submission_bundle.py
@@ -318,7 +316,14 @@ python src/build_submission_bundle.py
 
 ---
 
-## 📜 9. Taskforce Attribution, Checksums & Governance
+## 🔒 9. Data Governance & Regulatory Compliance
+
+- **Competition Terms & NDA**: In strict accordance with the Unstop SupeRR Selector competition regulations, the raw match data pack (`comp_id 3298`) is abstracted and excluded from public version tracking to preserve proprietary tournament rights.
+- **Full Reproducibility**: All derived metrics, pressure indices, tactical models, and player intelligence tables are fully reproducible from the provided scripts in `/src` using the curated feature matrices stored in `/data` and `/outputs`.
+
+---
+
+## 📜 10. Taskforce Attribution, Checksums & Governance
 
 - **Competition**: *Rajasthan Royals SupeRR Selector Season 2 (Round 1: Global Cricket Pressure Intelligence)*
 - **Lead Data Scientist & Author**: **Premchand Yadav** (`Premchandyadav369`)
@@ -331,7 +336,7 @@ python src/build_submission_bundle.py
 RR-EDGE V6.0 OFFICIAL SUBMISSION BUNDLE SHA-256 CHECKSUMS (EXCERPT):
 • RR_EDGE_Judges_Fast_Track_Brief.pdf: 994a55928d32d67768a4e8d2ee37e6fbe5374431e780824b223fffa001ad395f
 • RR_EDGE_V6_0_Franchise_Master_Dossier.pdf: a381cbb46723b7b415e61bf60670d5929661448b28fef6ae52623e1ca039a039
-• RR_EDGE_V5_0_Executive_Presentation.pptx: 039fe65eeea9fb87d46ffb7f7ba79b90c9b689a94145903c73499424cff44e15
+• RR_EDGE_V6_0_Executive_Presentation.pptx: 039fe65eeea9fb87d46ffb7f7ba79b90c9b689a94145903c73499424cff44e15
 • RR_WAR_ROOM_EXECUTIVE_SUITE.html: b11a3d9ae1b29a67e415fb5da6718d0526012658864f1d43a7587efae1176ee6
 • RR_SupeRR_Selector_S2_Submission_Bundle.zip: 7,186,853 bytes verified
 ```
