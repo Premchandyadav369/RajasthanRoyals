@@ -1,7 +1,0 @@
-outcome,runs_added,wicket_delta,resulting_score,balls_remaining,resulting_rrr,resulting_wp,win_probability_added_pct,leverage_tier
-Dot Ball,0,0,144/4,23,11.48,25.26,-4.02,HIGH
-Single (1 run),1,0,145/4,23,11.22,27.38,-1.89,MEDIUM
-Two Runs (2 runs),2,0,146/4,23,10.96,29.61,0.34,MEDIUM
-Boundary Four (4 runs),4,0,148/4,23,10.43,34.38,5.1,HIGH
-Maximum Six (6 runs),6,0,150/4,23,9.91,39.47,10.2,CRITICAL
-Wicket Loss,0,1,144/5,23,11.48,19.08,-10.2,CRITICAL

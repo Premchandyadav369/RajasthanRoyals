@@ -92,6 +92,21 @@ FILES_TO_BUNDLE = [
     "social_cards/RR_Card_5_Monte_Carlo_Tournament_Sim.png"
 ]
 
+def resolve_file(rel_path):
+    candidates = [
+        os.path.join(BASE_DIR, rel_path),
+        os.path.join(BASE_DIR, "reports", rel_path),
+        os.path.join(BASE_DIR, "archive", "v4_iterations", rel_path),
+        os.path.join(BASE_DIR, "archive", "v3_iterations", rel_path),
+        os.path.join(BASE_DIR, "archive", "v2_iterations", rel_path),
+        os.path.join(BASE_DIR, "data", rel_path),
+        os.path.join(BASE_DIR, "docs", rel_path),
+    ]
+    for c in candidates:
+        if os.path.exists(c):
+            return c
+    return os.path.join(BASE_DIR, rel_path)
+
 def get_sha256(path):
     h = hashlib.sha256()
     with open(path, "rb") as f:
@@ -105,7 +120,7 @@ def create_bundle():
     
     with zipfile.ZipFile(ZIP_PATH, 'w', zipfile.ZIP_DEFLATED) as zipf:
         for rel_path in FILES_TO_BUNDLE:
-            full_path = os.path.join(BASE_DIR, rel_path)
+            full_path = resolve_file(rel_path)
             if os.path.exists(full_path):
                 zipf.write(full_path, arcname=rel_path)
                 sha = get_sha256(full_path)

@@ -16,12 +16,37 @@ if BASE_DIR not in sys.path:
 if os.path.join(BASE_DIR, "src") not in sys.path:
     sys.path.insert(0, os.path.join(BASE_DIR, "src"))
 
+
+def resolve_file(*parts):
+    if len(parts) == 1 and os.path.isabs(parts[0]) and os.path.exists(parts[0]):
+        return parts[0]
+    fname = os.path.join(*parts)
+    candidates = [
+        os.path.join(BASE_DIR, fname),
+        os.path.join(BASE_DIR, "archive", fname),
+        os.path.join(BASE_DIR, "archive", "v2_iterations", fname),
+        os.path.join(BASE_DIR, "archive", "v3_iterations", fname),
+        os.path.join(BASE_DIR, "archive", "v4_iterations", fname),
+        os.path.join(BASE_DIR, "reports", fname),
+        os.path.join(BASE_DIR, "docs", fname),
+        os.path.join(BASE_DIR, "docs", "changelogs", fname),
+        os.path.join(BASE_DIR, "data", fname),
+        os.path.join(BASE_DIR, "data", "dictionaries", fname),
+        os.path.join(BASE_DIR, "data", "ml_benchmarks", fname),
+        os.path.join(BASE_DIR, "data", "auction_intelligence", fname),
+        os.path.join(BASE_DIR, "outputs", fname),
+    ]
+    for c in candidates:
+        if os.path.exists(c):
+            return c
+    return os.path.join(BASE_DIR, fname)
+
 class TestRREDGEAnalytics(unittest.TestCase):
 
     def setUp(self):
-        self.bat_top = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_Batter_Rankings.csv"))
-        self.bowl_top = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_Bowler_Rankings.csv"))
-        self.intel = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_Player_Intelligence.csv"))
+        self.bat_top = pd.read_csv(resolve_file("RR_EDGE_Batter_Rankings.csv"))
+        self.bowl_top = pd.read_csv(resolve_file("RR_EDGE_Bowler_Rankings.csv"))
+        self.intel = pd.read_csv(resolve_file("RR_EDGE_Player_Intelligence.csv"))
         self.mapping = pd.read_csv(os.path.join(DATA_DIR, "competition_team_player_mapping.csv"))
 
     def test_top10_distinctness(self):
@@ -112,7 +137,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "RR_EDGE_Executive_Summary.png"
         ]
         for fname in expected_files:
-            fpath = os.path.join(BASE_DIR, fname)
+            fpath = resolve_file(fname)
             self.assertTrue(os.path.exists(fpath), f"Missing file: {fname}")
             self.assertGreater(os.path.getsize(fpath), 0, f"Empty file: {fname}")
 
@@ -131,7 +156,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "RR_EDGE_V2/dashboard/app.py"
         ]
         for v2_file in v2_files:
-            p = os.path.join(BASE_DIR, v2_file)
+            p = resolve_file(v2_file)
             self.assertTrue(os.path.exists(p), f"Missing V2 deliverable: {v2_file}")
             self.assertGreater(os.path.getsize(p), 0, f"Empty V2 file: {v2_file}")
 
@@ -155,18 +180,18 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "RR_2027_Calibrated_Monte_Carlo_Outcomes.csv"
         ]
         for fname in expected_v2_1:
-            p = os.path.join(BASE_DIR, fname)
+            p = resolve_file(fname)
             self.assertTrue(os.path.exists(p), f"Missing V2.1 deliverable: {fname}")
             self.assertGreater(os.path.getsize(p), 0, f"Empty V2.1 deliverable: {fname}")
 
     def test_all_12_stadiums_covered(self):
         """Verify that all 12 IPL grounds are covered in RR_All_Stadiums_Intelligence.csv."""
-        df_stad = pd.read_csv(os.path.join(BASE_DIR, "RR_All_Stadiums_Intelligence.csv"))
+        df_stad = pd.read_csv(resolve_file("RR_All_Stadiums_Intelligence.csv"))
         self.assertEqual(len(df_stad), 12, "Expected exactly 12 stadiums in RR_All_Stadiums_Intelligence.csv")
 
     def test_reconciliation_27_players(self):
         """Verify that all 27 players in RR 2026 squad are reconciled."""
-        df_recon = pd.read_csv(os.path.join(BASE_DIR, "RR_2027_Purse_Reconciliation.csv"))
+        df_recon = pd.read_csv(resolve_file("RR_2027_Purse_Reconciliation.csv"))
         self.assertEqual(len(df_recon), 27, "Expected exactly 27 players in RR_2027_Purse_Reconciliation.csv")
 
     def test_v2_2_validation_and_decision_engine_artifacts(self):
@@ -181,13 +206,13 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "RR_2027_Pressure_Collapse_Predictions.csv"
         ]
         for fname in expected_v2_2:
-            p = os.path.join(BASE_DIR, fname)
+            p = resolve_file(fname)
             self.assertTrue(os.path.exists(p), f"Missing V2.2 deliverable: {fname}")
             self.assertGreater(os.path.getsize(p), 0, f"Empty V2.2 deliverable: {fname}")
 
     def test_strict_overseas_player_limits(self):
         """Verify that NO recommended playing XI exceeds the 4-overseas player ceiling."""
-        df_audit = pd.read_csv(os.path.join(BASE_DIR, "RR_2027_Squad_Constraint_Audit.csv"))
+        df_audit = pd.read_csv(resolve_file("RR_2027_Squad_Constraint_Audit.csv"))
         for _, row in df_audit.iterrows():
             self.assertLessEqual(row['overseas_count'], 4, f"Overseas limit breached in {row['lineup_id']}: {row['overseas_count']} > 4!")
             self.assertEqual(row['wk_compliant'], "YES (Dhruv Jurel)", f"Wicketkeeper missing in {row['lineup_id']}!")
@@ -195,36 +220,36 @@ class TestRREDGEAnalytics(unittest.TestCase):
     def test_v3_0_1_critical_corrections_and_overseas_rules(self):
         """Verify Patch V3.0.1 overseas combinations, squad limits, and financial math."""
         # 1. Overseas combinations
-        df_ovr = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_V3_0_1_Overseas_Rule_Test.csv"))
+        df_ovr = pd.read_csv(resolve_file("RR_EDGE_V3_0_1_Overseas_Rule_Test.csv"))
         self.assertTrue(df_ovr[df_ovr['test_id'] == 'OVR-01']['is_compliant'].iloc[0])
         self.assertFalse(df_ovr[df_ovr['test_id'] == 'OVR-04']['is_compliant'].iloc[0])
         
         # 2. Registered squad limit (<= 25)
-        df_squad = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_V3_0_1_Official_Squad_Registry.csv"))
+        df_squad = pd.read_csv(resolve_file("RR_EDGE_V3_0_1_Official_Squad_Registry.csv"))
         self.assertLessEqual(len(df_squad), 25, "Registered squad exceeds BCCI limit of 25 players!")
         self.assertGreaterEqual(len(df_squad), 18, "Registered squad below BCCI minimum of 18 players!")
         
         # 3. Financial reconciliation exactness
-        df_fin = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_V3_0_1_Financial_Reconciliation.csv"))
+        df_fin = pd.read_csv(resolve_file("RR_EDGE_V3_0_1_Financial_Reconciliation.csv"))
         ret_val = df_fin[df_fin['ledger_component'].str.contains('Retained')]['amount_cr'].iloc[0]
         rel_val = df_fin[df_fin['ledger_component'].str.contains('Freed Purse')]['amount_cr'].iloc[0]
         tot_val = df_fin[df_fin['ledger_component'].str.contains('Total 2026')]['amount_cr'].iloc[0]
         self.assertAlmostEqual(ret_val + rel_val, tot_val, places=2, msg="Financial ledger math does not balance!")
         
         # 4. Death bowling validation
-        df_death = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_V3_0_1_Death_Bowling_Validation.csv"))
+        df_death = pd.read_csv(resolve_file("RR_EDGE_V3_0_1_Death_Bowling_Validation.csv"))
         self.assertIn('Nuwan Thushara', df_death['player_name'].values)
         self.assertIn('Mustafizur Rahman', df_death['player_name'].values)
         
         # 5. V3.0.1 PDF exists
-        pdf_path = os.path.join(BASE_DIR, "RR_EDGE_V3_0_1_Critical_Corrections.pdf")
+        pdf_path = resolve_file("RR_EDGE_V3_0_1_Critical_Corrections.pdf")
         self.assertTrue(os.path.exists(pdf_path))
         self.assertGreater(os.path.getsize(pdf_path), 5000)
 
     def test_v3_1_upgrades(self):
         """Verify Patch V3.1 dual-roster parity, causal ATT bounds, and auction simulation."""
         # 1. Dual-Roster Parity
-        df_dual = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_V3_1_Dual_Roster_Impact.csv"))
+        df_dual = pd.read_csv(resolve_file("RR_EDGE_V3_1_Dual_Roster_Impact.csv"))
         self.assertEqual(len(df_dual), 2)
         for _, row in df_dual.iterrows():
             self.assertEqual(row['retained_commitment_cr'], 83.85)
@@ -234,7 +259,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             self.assertTrue(row['bcci_overseas_limit_compliant'])
 
         # 2. Causal ATT and Covariate Balance
-        df_att = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_V3_1_Causal_Collapse_ATT.csv"))
+        df_att = pd.read_csv(resolve_file("RR_EDGE_V3_1_Causal_Collapse_ATT.csv"))
         for smd in df_att['smd_weighted_after']:
             self.assertLess(smd, 0.10, f"Covariate balance failed with SMD: {smd} >= 0.10")
         att_val = df_att['att_estimate'].iloc[0]
@@ -242,14 +267,14 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertLessEqual(att_val, 0.05)
 
         # 3. Auction Bid Curves and Non-negativity
-        df_bids = pd.read_csv(os.path.join(BASE_DIR, "RR_EDGE_V3_1_Auction_Bid_Curves.csv"))
+        df_bids = pd.read_csv(resolve_file("RR_EDGE_V3_1_Auction_Bid_Curves.csv"))
         self.assertGreater(len(df_bids), 100)
         self.assertTrue((df_bids['win_probability'] >= 0.0).all())
         self.assertTrue((df_bids['win_probability'] <= 1.0).all())
         self.assertTrue((df_bids['expected_clearing_price_cr'] <= df_bids['bid_ceiling_cr'] + 0.1).all())
 
         # 4. Executive Dossier PDF
-        pdf_v3_1 = os.path.join(BASE_DIR, "RR_EDGE_V3_1_Executive_Dossier.pdf")
+        pdf_v3_1 = resolve_file("RR_EDGE_V3_1_Executive_Dossier.pdf")
         self.assertTrue(os.path.exists(pdf_v3_1))
         self.assertGreater(os.path.getsize(pdf_v3_1), 50000)
 
@@ -259,7 +284,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         from decimal import Decimal
 
         # 1. Exact Decimal Financial Reconciliation
-        fin_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_Financial_Reconciliation.csv")
+        fin_csv = resolve_file("RR_EDGE_V4_0_Financial_Reconciliation.csv")
         self.assertTrue(os.path.exists(fin_csv))
         df_fin = pd.read_csv(fin_csv)
 
@@ -280,7 +305,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertEqual(samson_ret + rel_val + res_val, Decimal("127.35"))
 
         # 2. Player Availability Registry & Open Auction Blocking
-        avail_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_Player_Availability_Registry.csv")
+        avail_csv = resolve_file("RR_EDGE_V4_0_Player_Availability_Registry.csv")
         self.assertTrue(os.path.exists(avail_csv))
         df_avail = pd.read_csv(avail_csv)
 
@@ -299,7 +324,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             self.assertTrue(bool(row['auction_bidding_allowed'].iloc[0]))
 
         # 3. Match-Clustered Bootstrap Resampling & Variance Expansion
-        death_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_Death_Bowling_Clustered_Validation.csv")
+        death_csv = resolve_file("RR_EDGE_V4_0_Death_Bowling_Clustered_Validation.csv")
         self.assertTrue(os.path.exists(death_csv))
         df_death = pd.read_csv(death_csv)
 
@@ -314,7 +339,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             self.assertEqual(status, 'RETRACTED_AS_UNVERIFIED_IN_RAW_DATA')
 
         # 4. De-biased Causal Collapse Diagnostics
-        causal_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_Causal_Diagnostics.csv")
+        causal_csv = resolve_file("RR_EDGE_V4_0_Causal_Diagnostics.csv")
         self.assertTrue(os.path.exists(causal_csv))
         df_causal = pd.read_csv(causal_csv)
         causal_res = df_causal.iloc[0]
@@ -327,7 +352,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertEqual(causal_res['epistemic_classification'], 'OBSERVATIONAL_ASSOCIATION')
 
         # 5. Validated Venue-Specific Starting Team Sheets
-        sheets_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_Validated_Venue_Team_Sheets.csv")
+        sheets_csv = resolve_file("RR_EDGE_V4_0_Validated_Venue_Team_Sheets.csv")
         self.assertTrue(os.path.exists(sheets_csv))
         df_sheets = pd.read_csv(sheets_csv)
         self.assertEqual(len(df_sheets), 4)
@@ -354,7 +379,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "RR_EDGE_V4_0_Auction_Strategy_Report.pdf"
         ]
         for pdf_name in v4_pdfs:
-            p = os.path.join(BASE_DIR, pdf_name)
+            p = resolve_file(pdf_name)
             self.assertTrue(os.path.exists(p), f"Missing V4 PDF: {pdf_name}")
             self.assertGreater(os.path.getsize(p), 50000, f"V4 PDF {pdf_name} is too small / incomplete")
 
@@ -364,7 +389,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "charts/v4_0_causal_positivity_overlap.png"
         ]
         for chart_name in v4_charts:
-            p = os.path.join(BASE_DIR, chart_name)
+            p = resolve_file(chart_name)
             self.assertTrue(os.path.exists(p), f"Missing V4 chart: {chart_name}")
             self.assertGreater(os.path.getsize(p), 30000, f"V4 chart {chart_name} is too small")
 
@@ -374,7 +399,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         import re
 
         # 1. Canonical Player Identity & Availability Audit
-        avail_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_1_Player_Availability_Registry.csv")
+        avail_csv = resolve_file("RR_EDGE_V4_0_1_Player_Availability_Registry.csv")
         self.assertTrue(os.path.exists(avail_csv))
         df_avail = pd.read_csv(avail_csv)
 
@@ -402,7 +427,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertFalse(bool(sakariya_row['auction_eligibility']))
 
         # 2. Official 2026 Squad Baseline Balance
-        off_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_1_Official_2026_Squad.csv")
+        off_csv = resolve_file("RR_EDGE_V4_0_1_Official_2026_Squad.csv")
         self.assertTrue(os.path.exists(off_csv))
         df_off = pd.read_csv(off_csv)
         self.assertEqual(len(df_off), 25)
@@ -413,7 +438,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertEqual(ret_16_sum + rem_purse, total_2026_cap)
 
         # 3. Hypothetical 2027 Roster Decimal Mathematics
-        hypo_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_1_Hypothetical_2027_Roster.csv")
+        hypo_csv = resolve_file("RR_EDGE_V4_0_1_Hypothetical_2027_Roster.csv")
         self.assertTrue(os.path.exists(hypo_csv))
         df_hypo = pd.read_csv(hypo_csv)
         self.assertEqual(len(df_hypo), 27)
@@ -428,12 +453,12 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertEqual(d_ret + d_rel + d_res, Decimal("123.35"))
 
         # Verify Excel multi-sheet export exists
-        excel_path = os.path.join(BASE_DIR, "RR_EDGE_V4_0_1_Financial_Reconciliation.xlsx")
+        excel_path = resolve_file("RR_EDGE_V4_0_1_Financial_Reconciliation.xlsx")
         self.assertTrue(os.path.exists(excel_path))
         self.assertGreater(os.path.getsize(excel_path), 5000)
 
         # 4. Clustered Bootstrap Variance Audit
-        clust_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_1_Clustered_Bootstrap_Validation.csv")
+        clust_csv = resolve_file("RR_EDGE_V4_0_1_Clustered_Bootstrap_Validation.csv")
         self.assertTrue(os.path.exists(clust_csv))
         df_clust = pd.read_csv(clust_csv)
 
@@ -445,7 +470,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertEqual(int(df_clust['failed_bootstrap_replicates'].sum()), 0, "No bootstrap replicates may fail!")
 
         # 5. Dual-Specification Causal Diagnostics
-        caus_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_1_Causal_Diagnostics.csv")
+        caus_csv = resolve_file("RR_EDGE_V4_0_1_Causal_Diagnostics.csv")
         self.assertTrue(os.path.exists(caus_csv))
         df_caus = pd.read_csv(caus_csv)
         self.assertEqual(len(df_caus), 2)
@@ -457,7 +482,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             self.assertEqual(row['epistemic_classification'], 'OBSERVATIONAL_ASSOCIATION')
 
         # 6. Segregated Venue Team Sheets
-        sheets_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_0_1_Validated_Team_Sheets.csv")
+        sheets_csv = resolve_file("RR_EDGE_V4_0_1_Validated_Team_Sheets.csv")
         self.assertTrue(os.path.exists(sheets_csv))
         df_sheets = pd.read_csv(sheets_csv)
         self.assertGreaterEqual(len(df_sheets), 4)
@@ -495,7 +520,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "RR_EDGE_V4_0_1_Changelog.md"
         ]
         for fname in v4_0_1_artifacts:
-            p = os.path.join(BASE_DIR, fname)
+            p = resolve_file(fname)
             self.assertTrue(os.path.exists(p), f"Missing V4.0.1 deliverable: {fname}")
             self.assertGreater(os.path.getsize(p), 0, f"Empty V4.0.1 deliverable: {fname}")
 
@@ -511,7 +536,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         7. All 16 deliverable CSVs, Excel workbooks, MD files, and 3 PDFs exist and are non-empty.
         """
         # 1. Nathan Ellis Status & Registry Verification
-        status_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_1_2027_Player_Status_Registry.csv")
+        status_csv = resolve_file("RR_EDGE_V4_1_2027_Player_Status_Registry.csv")
         self.assertTrue(os.path.exists(status_csv))
         df_status = pd.read_csv(status_csv)
         ellis_row = df_status[df_status['player_name'] == 'Nathan Ellis']
@@ -521,18 +546,18 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertFalse(bool(ellis_row.iloc[0]['trade_eligibility']))
 
         # Ensure Ellis is NOT in RR scouting shortlist or auction scenarios
-        scout_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_1_Scouting_Shortlist.csv")
+        scout_csv = resolve_file("RR_EDGE_V4_1_Scouting_Shortlist.csv")
         self.assertTrue(os.path.exists(scout_csv))
         df_scout = pd.read_csv(scout_csv)
         self.assertNotIn("Nathan Ellis", df_scout['candidate_name'].values)
 
-        auc_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_1_Auction_Scenarios.csv")
+        auc_csv = resolve_file("RR_EDGE_V4_1_Auction_Scenarios.csv")
         self.assertTrue(os.path.exists(auc_csv))
         df_auc = pd.read_csv(auc_csv)
         self.assertNotIn("Nathan Ellis", df_auc['target_player'].values)
 
         # 2. Official 2026 Squad Baseline (25 + 2 = 27 entries)
-        squad_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_1_Official_2026_Squad.csv")
+        squad_csv = resolve_file("RR_EDGE_V4_1_Official_2026_Squad.csv")
         self.assertTrue(os.path.exists(squad_csv))
         df_squad = pd.read_csv(squad_csv)
         self.assertEqual(len(df_squad), 27)
@@ -548,7 +573,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             self.assertIn(player, squad_names, f"{player} missing from official 2026 squad baseline!")
 
         # 3. Confirmed Trades Ledger (10 verified trades)
-        trade_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_1_Confirmed_Trades.csv")
+        trade_csv = resolve_file("RR_EDGE_V4_1_Confirmed_Trades.csv")
         self.assertTrue(os.path.exists(trade_csv))
         df_trades = pd.read_csv(trade_csv)
         self.assertEqual(len(df_trades), 10)
@@ -560,7 +585,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertIn("Liam Livingstone", df_trades['player_name'].values)
 
         # 4. RR-LSG Negotiations & Jaiswal Status
-        scenarios_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_1_RR_LSG_Trade_Scenarios.csv")
+        scenarios_csv = resolve_file("RR_EDGE_V4_1_RR_LSG_Trade_Scenarios.csv")
         self.assertTrue(os.path.exists(scenarios_csv))
         df_scenarios = pd.read_csv(scenarios_csv)
         for _, r in df_scenarios.iterrows():
@@ -569,14 +594,14 @@ class TestRREDGEAnalytics(unittest.TestCase):
         jaiswal_row = df_status[df_status['player_name'] == 'Yashasvi Jaiswal'].iloc[0]
         self.assertFalse(bool(jaiswal_row['trade_eligibility']))
 
-        trade_val_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_1_Trade_Valuation.csv")
+        trade_val_csv = resolve_file("RR_EDGE_V4_1_Trade_Valuation.csv")
         self.assertTrue(os.path.exists(trade_val_csv))
         df_tv = pd.read_csv(trade_val_csv)
         jaiswal_tv = df_tv[df_tv['player_name'] == 'Yashasvi Jaiswal'].iloc[0]
         self.assertEqual(jaiswal_tv['trade_feasibility'], 'UNTOUCHABLE_RETAIN')
 
         # 5. 10-Phase Empirical Performance Diagnosis
-        perf_csv = os.path.join(BASE_DIR, "RR_EDGE_V4_1_2026_Performance_Diagnosis.csv")
+        perf_csv = resolve_file("RR_EDGE_V4_1_2026_Performance_Diagnosis.csv")
         self.assertTrue(os.path.exists(perf_csv))
         df_perf = pd.read_csv(perf_csv)
         self.assertEqual(len(df_perf), 10)
@@ -618,7 +643,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "RR_EDGE_V4_1_Changelog.md"
         ]
         for fname in v4_1_artifacts:
-            p = os.path.join(BASE_DIR, fname)
+            p = resolve_file(fname)
             self.assertTrue(os.path.exists(p), f"Missing V4.1 deliverable: {fname}")
             self.assertGreater(os.path.getsize(p), 0, f"Empty V4.1 deliverable: {fname}")
 
@@ -643,7 +668,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         from decimal import Decimal
 
         # 1. Official 2026 Squad Baseline
-        squad_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Official_2026_Squad.csv")
+        squad_path = resolve_file("RR_EDGE_V4_2_Official_2026_Squad.csv")
         self.assertTrue(os.path.exists(squad_path))
         df_sq = pd.read_csv(squad_path)
         self.assertEqual(len(df_sq), 25, "Official registered squad must have exactly 25 players!")
@@ -686,7 +711,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             self.assertNotIn(p, df_sq['player_name'].values, f"Erroneous player {p} must be purged from official squad!")
 
         # 2. 2027 Total Cap Architecture
-        fin_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Financial_Reconciliation.csv")
+        fin_path = resolve_file("RR_EDGE_V4_2_Financial_Reconciliation.csv")
         self.assertTrue(os.path.exists(fin_path))
         df_fin = pd.read_csv(fin_path)
         cap_row = df_fin[df_fin['line_item_name'] == 'Total Franchise Player Cap 2027 (Official)'].iloc[0]
@@ -700,12 +725,12 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertEqual(Decimal(str(base_row['amount_cr'])) + Decimal(str(fee_row['amount_cr'])) + Decimal(str(inc_row['amount_cr'])), Decimal("157.00"))
 
         # Verify Excel multi-sheet export
-        excel_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Financial_Reconciliation.xlsx")
+        excel_path = resolve_file("RR_EDGE_V4_2_Financial_Reconciliation.xlsx")
         self.assertTrue(os.path.exists(excel_path))
         self.assertGreater(os.path.getsize(excel_path), 5000)
 
         # 3. Confirmed Trades & Nathan Ellis Verification
-        trade_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Confirmed_Trades.csv")
+        trade_path = resolve_file("RR_EDGE_V4_2_Confirmed_Trades.csv")
         self.assertTrue(os.path.exists(trade_path))
         df_tr = pd.read_csv(trade_path)
         self.assertEqual(len(df_tr), 10)
@@ -713,7 +738,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertEqual(ellis_tr['destination_franchise'], 'Sunrisers Hyderabad (SRH)')
         self.assertEqual(ellis_tr['official_ipl_confirmation'], 'CONFIRMED')
 
-        status_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Canonical_Player_Registry.csv")
+        status_path = resolve_file("RR_EDGE_V4_2_Canonical_Player_Registry.csv")
         self.assertTrue(os.path.exists(status_path))
         df_canon = pd.read_csv(status_path)
         ellis_stat = df_canon[df_canon['player_name'] == 'Nathan Ellis'].iloc[0]
@@ -727,7 +752,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertFalse(bool(jaiswal_stat['trade_eligibility']))
 
         # 5. RR-LSG Trade Discussions Tracker
-        neg_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Trade_and_Negotiation_Tracker.csv")
+        neg_path = resolve_file("RR_EDGE_V4_2_Trade_and_Negotiation_Tracker.csv")
         self.assertTrue(os.path.exists(neg_path))
         df_neg = pd.read_csv(neg_path)
         self.assertEqual(len(df_neg), 4)
@@ -737,7 +762,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertEqual(sid_row['epistemic_classification'], 'UNCONFIRMED_NEGOTIATION_REPORT')
 
         # 6. Performance Telemetry Discrepancy Reconciliation
-        perf_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Performance_Diagnosis_Reconciliation.csv")
+        perf_path = resolve_file("RR_EDGE_V4_2_Performance_Diagnosis_Reconciliation.csv")
         self.assertTrue(os.path.exists(perf_path))
         df_perf = pd.read_csv(perf_path)
         pp_row = df_perf[df_perf['metric_dimension'].str.contains('Powerplay Batting')].iloc[0]
@@ -748,7 +773,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertIn("9.71", str(mid_row['empirical_telemetry_league_14']))
 
         # 7. 20-Over Bowling Allocation Optimizer
-        bowl_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Bowling_Allocation_Optimizer.csv")
+        bowl_path = resolve_file("RR_EDGE_V4_2_Bowling_Allocation_Optimizer.csv")
         self.assertTrue(os.path.exists(bowl_path))
         df_bowl = pd.read_csv(bowl_path)
         self.assertEqual(len(df_bowl), 4)
@@ -756,7 +781,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             self.assertEqual(float(r['total_overs_allocated']), 20.0, "Every bowling scenario must allocate exactly 20.0 overs!")
 
         # 8. Impact Player Decision Engine
-        impact_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Impact_Player_Engine.csv")
+        impact_path = resolve_file("RR_EDGE_V4_2_Impact_Player_Engine.csv")
         self.assertTrue(os.path.exists(impact_path))
         df_imp = pd.read_csv(impact_path)
         for _, r in df_imp.iterrows():
@@ -764,7 +789,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             self.assertEqual(r['bcci_clause_compliance'], 'COMPLIANT_CLAUSE_1_2_5_6')
 
         # 9. Calibrated Tournament Simulation
-        sim_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Calibrated_Tournament_Simulation.csv")
+        sim_path = resolve_file("RR_EDGE_V4_2_Calibrated_Tournament_Simulation.csv")
         self.assertTrue(os.path.exists(sim_path))
         df_sim = pd.read_csv(sim_path)
         plan_b_sim = df_sim[df_sim['strategic_branch'].str.contains('Plan B')].iloc[0]
@@ -772,7 +797,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
         self.assertIn("68.4%", str(plan_b_sim['playoff_qualification_prob_top_4']))
 
         # 10. Out-of-Time Prediction Validation Centre
-        val_path = os.path.join(BASE_DIR, "RR_EDGE_V4_2_Prediction_Validation_Centre.csv")
+        val_path = resolve_file("RR_EDGE_V4_2_Prediction_Validation_Centre.csv")
         self.assertTrue(os.path.exists(val_path))
         df_val = pd.read_csv(val_path)
         brier_row = df_val[df_val['evaluation_metric'].str.contains('Brier')].iloc[0]
@@ -812,7 +837,7 @@ class TestRREDGEAnalytics(unittest.TestCase):
             "RR_EDGE_V4_2_Changelog.md"
         ]
         for fname in v4_2_artifacts:
-            p = os.path.join(BASE_DIR, fname)
+            p = resolve_file(fname)
             self.assertTrue(os.path.exists(p), f"Missing V4.2 deliverable: {fname}")
             self.assertGreater(os.path.getsize(p), 0, f"Empty V4.2 deliverable: {fname}")
 
