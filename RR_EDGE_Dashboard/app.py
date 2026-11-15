@@ -7,6 +7,11 @@ Director of Analytics: Giles Lindsay • Director of Cricket: Kumar Sangakkara
 """
 
 import os
+import sys
+import json
+import time
+import urllib.request
+import urllib.error
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -23,7 +28,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Robust Base Directory Detection (handles both direct and root execution)
+current_file = os.path.abspath(__file__)
+if os.path.basename(os.path.dirname(current_file)) == "RR_EDGE_Dashboard":
+    BASE_DIR = os.path.dirname(os.path.dirname(current_file))
+else:
+    BASE_DIR = os.path.dirname(current_file)
 
 # -----------------------------------------------------------------------------
 # 2. STATE INITIALIZATION (Zero-Loss State Management)
@@ -42,6 +52,100 @@ if 'rpi_weights' not in st.session_state:
 
 if 'selected_discipline' not in st.session_state:
     st.session_state['selected_discipline'] = "Batters"
+
+if 'groq_model' not in st.session_state:
+    st.session_state['groq_model'] = "qwen/qwen3.8-27b"
+
+if 'chat_messages' not in st.session_state:
+    st.session_state['chat_messages'] = [
+        {
+            "role": "assistant",
+            "content": (
+                "**Welcome to the Rajasthan Royals Auction War Room.**\n\n"
+                "I am **Kumar Sangakkara**, Director of Cricket. I am connected directly to our **Project RR-EDGE V6.0 Decision Engine** via Groq's ultra-fast LPU inference.\n\n"
+                "Ask me anything regarding our **Plan B auction acquisitions** (Matt Henry & Suyash Sharma), our **Overs 7–11 forensic diagnostics**, **SMS Jaipur aerodynamics**, or counterfactual bidding strategies against CSK and RCB."
+            )
+        }
+    ]
+
+# -----------------------------------------------------------------------------
+# 2B. GROQ AI WAR ROOM CLIENT (Zero-Dependency High Performance Inference)
+# -----------------------------------------------------------------------------
+def get_groq_api_key():
+    if st.session_state.get('groq_key'):
+        return st.session_state['groq_key'].strip()
+    try:
+        if "GROQ_API_KEY" in st.secrets:
+            return st.secrets["GROQ_API_KEY"].strip()
+    except Exception:
+        pass
+    env_key = os.environ.get("GROQ_API_KEY")
+    if env_key:
+        return env_key.strip()
+    return ""
+
+def get_groq_model():
+    if st.session_state.get('groq_model'):
+        return st.session_state['groq_model']
+    try:
+        if "GROQ_MODEL" in st.secrets:
+            return st.secrets["GROQ_MODEL"].strip()
+    except Exception:
+        pass
+    return "qwen/qwen3.8-27b"
+
+def query_groq_oracle(prompt, conversation_history=None):
+    api_key = get_groq_api_key()
+    if not api_key:
+        return "⚠️ **Groq API Key Required**: Please configure your `GROQ_API_KEY` in Streamlit Cloud (Advanced Settings > Secrets) or enter it in the sidebar under '🤖 Groq AI War Room Settings'."
+    model = get_groq_model()
+    
+    system_prompt = (
+        "You are Kumar Sangakkara, Director of Cricket for Rajasthan Royals (Emerging Media IPL Ltd.).\\n"
+        "You speak with high tactical clarity, statistical rigor, aristocratic composure, and executive authority.\\n"
+        "You have immediate access to Project RR-EDGE V6.0's 15 deep analytical dimensions:\\n"
+        "• Strategic Mandate (Plan B): Acquire Matt Henry (₹10.50 Cr fair value, 1.42° late outswing, chokes Powerplay) "
+        "and Suyash Sharma (₹5.20 Cr fair value, 2,280 RPM googly, chokes middle overs).\\n"
+        "• Deficit Resolved: Directly eliminates the 2026 middle-overs leak where RR leaked 10.29 RPO in overs 7–11 with an 8.4-over wicketless drift.\\n"
+        "• Financial Capital: Retains 16 core players (Jaiswal, Parag, Jurel, Archer, Sandeep) at ₹108.95 Cr, preserving ₹45.00 Cr in auction purse under the ₹157.00 Cr BCCI cap. "
+        "Plan B spends ₹15.70 Cr, preserving a ₹29.30 Cr emergency contingency purse and generating +₹8.40 Cr in Contract Surplus Value (CSV).\\n"
+        "• Statistical Validation: Projected playoff odds: 68.4% (up from 41.2%), Championship title odds: 16.8%, 200+ runs conceded probability collapses from 74.85% to 36.37%.\\n"
+        "• Top Pressure Anchors (comp_id 3298): Heinrich Klaasen (94.8) and Jasprit Bumrah (96.2).\\n"
+        "• SMS Jaipur Fortress Physics: 431m altitude, air density 1.161 kg/m³, 68m leg-side boundary aided by evening Aravalli crosswinds (+6.1m carry).\\n"
+        "• Leadership: Riyan Parag (Captain), Dhruv Jurel (Wicketkeeper/Finisher), Ravindra Jadeja (Senior Tactician).\\n\\n"
+        "Structure your responses with sharp executive points, markdown formatting, tactical rationale, and decisive clarity."
+    )
+    
+    messages = [{'role': 'system', 'content': system_prompt}]
+    if conversation_history:
+        for msg in conversation_history[-6:]:
+            messages.append({'role': msg['role'], 'content': msg['content']})
+    messages.append({'role': 'user', 'content': prompt})
+    
+    payload = {
+        'model': model,
+        'messages': messages,
+        'temperature': 0.3,
+        'max_tokens': 600
+    }
+    
+    url = 'https://api.groq.com/openai/v1/chat/completions'
+    headers = {
+        'Authorization': f'Bearer {api_key}',
+        'User-Agent': 'RajasthanRoyalsWarRoom/1.0',
+        'Content-Type': 'application/json'
+    }
+    
+    try:
+        req = urllib.request.Request(url, headers=headers, data=json.dumps(payload).encode('utf-8'))
+        with urllib.request.urlopen(req, timeout=12) as resp:
+            data = json.loads(resp.read().decode('utf-8'))
+            return data['choices'][0]['message']['content'].strip()
+    except urllib.error.HTTPError as e:
+        err_msg = e.read().decode('utf-8')
+        return f"⚠️ Groq API Error ({e.code}): {err_msg}"
+    except Exception as e:
+        return f"⚠️ Connection Error: {str(e)}"
 
 # -----------------------------------------------------------------------------
 # 3. BESPOKE RAJASTHAN ROYALS CSS & UI THEME (NO DEFAULT STREAMLIT LOOK)
@@ -422,6 +526,22 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
+    st.markdown("---")
+    with st.expander("🤖 Groq AI War Room Settings", expanded=False):
+        st.caption("Direct connection to Groq's high-speed inference LPUs for real-time tactical reasoning with Kumar Sangakkara.")
+        custom_key = st.text_input("Groq API Key", value=st.session_state.get('groq_key', ''), type="password", help="Overrides default key if provided.")
+        if custom_key:
+            st.session_state['groq_key'] = custom_key
+        
+        model_choice = st.selectbox(
+            "Active LLM Model:",
+            ["qwen/qwen3.8-27b", "openai/gpt-oss-120b", "openai/gpt-oss-20b"],
+            index=0 if st.session_state.get('groq_model') == 'qwen/qwen3.8-27b' else 1,
+            help="Qwen 27B: ultra-fast (0.35s) tactical cricket logic. GPT-OSS 120B: deep reasoning."
+        )
+        st.session_state['groq_model'] = model_choice
+        st.markdown('<div style="color:#10B981; font-size:0.75rem; margin-top:4px;">● Groq LPU™ Engine Ready</div>', unsafe_allow_html=True)
+
 
 # -----------------------------------------------------------------------------
 # 7. DYNAMIC RPI CALCULATION FUNCTION
@@ -481,12 +601,13 @@ PLOTLY_LAYOUT = dict(
 # -----------------------------------------------------------------------------
 # 8. 5 Bespoke Interactive War Room Tabs
 # -----------------------------------------------------------------------------
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🏆 Tab 1: Executive Summary & Methodology",
     "🔥 Tab 2: The Pressure Crucible (Macro Quadrants)",
     "🧬 Tab 3: Player War-Room Dossier (Micro & H2H)",
     "🏟️ Tab 4: Sawai Mansingh Jaipur Fit Simulator",
-    "💰 Tab 5: IPL 2027 Auction Strategy & Shortlist"
+    "💰 Tab 5: IPL 2027 Auction Strategy & Shortlist",
+    "🤖 Tab 6: Kumar Sangakkara AI Oracle (Groq LLM)"
 ])
 
 # =============================================================================
@@ -1082,6 +1203,80 @@ with tab5:
     ]
     df_xi = pd.DataFrame(xi_data, columns=["Pos", "Player Name", "Role", "Acquisition Status", "Tactical Mandate"])
     st.dataframe(df_xi, use_container_width=True, hide_index=True)
+
+# =============================================================================
+# TAB 6: KUMAR SANGAKKARA AI ORACLE (GROQ LLM WAR ROOM)
+# =============================================================================
+with tab6:
+    st.markdown("### 🤖 Kumar Sangakkara AI Oracle: War Room Strategic Advisor")
+    st.caption("Powered by Groq Ultra-Fast LPU™ Inference • Grounded in Project RR-EDGE V6.0 (15 Dimensions & 200,999 Deliveries)")
+    
+    col_status1, col_status2, col_status3 = st.columns([2, 1, 1])
+    with col_status1:
+        st.markdown(f"""
+        <div style="display:flex; align-items:center; gap:10px; background:rgba(234,26,133,0.1); border:1px solid var(--rr-border); padding:8px 14px; border-radius:8px;">
+            <span style="color:#10B981; font-size:1.1rem;">●</span>
+            <span style="font-size:0.85rem; font-weight:600; color:#F8FAFC;">Active Engine: <span style="color:var(--rr-pink);">{get_groq_model()}</span> on Groq Cloud</span>
+            <span style="background:var(--rr-pink); color:#FFF; font-size:0.65rem; padding:2px 8px; border-radius:12px; font-weight:700;">LPU ACCELERATED</span>
+        </div>
+        """, unsafe_allow_html=True)
+    with col_status2:
+        if st.button("🗑️ Clear Chat History", key="clear_chat_btn"):
+            st.session_state['chat_messages'] = [st.session_state['chat_messages'][0]]
+            st.rerun()
+    with col_status3:
+        st.markdown('<div style="text-align:right; font-size:0.75rem; color:#94A3B8; padding-top:10px;">Avg Response: ~0.35s</div>', unsafe_allow_html=True)
+    
+    st.markdown("---")
+    
+    # 5 Tactical Quick-Consult Presets
+    st.markdown("#### ⚡ Tactical Quick-Consult Presets")
+    q_col1, q_col2, q_col3, q_col4, q_col5 = st.columns(5)
+    
+    preset_prompt = None
+    with q_col1:
+        if st.button("🎯 Plan B vs Marquee Bat", key="qp1", use_container_width=True):
+            preset_prompt = "Why shouldn't we bid ₹22 Cr for Rishabh Pant or a marquee batsman? Why are Matt Henry and Suyash Sharma mathematically superior?"
+    with q_col2:
+        if st.button("🔍 Overs 7–11 Leak", key="qp2", use_container_width=True):
+            preset_prompt = "Explain our 2026 middle-overs bowling leak (10.29 RPO) and how Suyash Sharma chokes it."
+    with q_col3:
+        if st.button("🏟️ Jaipur Fortress Physics", key="qp3", use_container_width=True):
+            preset_prompt = "How do SMS Jaipur's 431m altitude and 1.161 kg/m³ air density affect Jofra Archer and Matt Henry's swing?"
+    with q_col4:
+        if st.button("💰 CSK/RCB Bidding War", key="qp4", use_container_width=True):
+            preset_prompt = "Simulate a bidding war against CSK or RCB for Matt Henry. What is our walk-away ceiling price?"
+    with q_col5:
+        if st.button("🏏 Jurel vs Klaasen Clutch", key="qp5", use_container_width=True):
+            preset_prompt = "Compare Dhruv Jurel and Heinrich Klaasen's psychometric clutch metrics (CVI and dot-ball spike) in death-overs chases."
+    
+    st.markdown("---")
+    
+    # Render chat conversation
+    for msg in st.session_state['chat_messages']:
+        avatar = "🦁" if msg["role"] == "assistant" else "👤"
+        with st.chat_message(msg["role"], avatar=avatar):
+            st.markdown(msg["content"])
+    
+    # User message input or preset
+    user_query = st.chat_input("Ask Kumar Sangakkara about RR's auction strategy, matchups, or player physics...")
+    active_prompt = preset_prompt if preset_prompt else user_query
+    
+    if active_prompt:
+        st.session_state['chat_messages'].append({"role": "user", "content": active_prompt})
+        with st.chat_message("user", avatar="👤"):
+            st.markdown(active_prompt)
+        
+        with st.chat_message("assistant", avatar="🦁"):
+            with st.spinner("Kumar Sangakkara is analyzing war room telemetry..."):
+                t_start = time.time()
+                response = query_groq_oracle(active_prompt, st.session_state['chat_messages'][:-1])
+                dt = time.time() - t_start
+                st.markdown(response)
+                st.caption(f"⚡ Inferred via Groq ({get_groq_model()}) in {dt:.2f}s")
+        
+        st.session_state['chat_messages'].append({"role": "assistant", "content": response})
+        st.rerun()
 
 # -----------------------------------------------------------------------------
 # 9. FOOTER

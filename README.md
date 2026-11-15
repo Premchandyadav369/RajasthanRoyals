@@ -183,10 +183,24 @@ A bespoke, war-room grade interactive analytics application built with custom CS
 - **Tab 3: ⚔️ Tactical Matchup Laboratory (Micro Scouting)**: 6-axis radar charts comparing player metrics across pace, spin, boundary %, and dot %.
 - **Tab 4: 🏟️ Stadium Telemetry & Aerodynamics (Jaipur Fortress)**: 3D interactive SMS Jaipur field layout, wind vector effects, boundary dimensions, and dew-point microclimate simulator.
 - **Tab 5: 💼 Auction War Room & Strategy B Simulator**: Interactive ₹45 Cr purse rebalancer, live roster validator (max 8 overseas, 25 squad cap), and CSV export.
+- **Tab 6: 🤖 Kumar Sangakkara AI Oracle (Groq LPU LLM)**: Real-time tactical cricket reasoning engine powered by Groq's ultra-fast LPU inference (`qwen/qwen3.8-27b` @ ~0.35s and `openai/gpt-oss-120b`), answering auction, matchup, and aerodynamic queries grounded in 15 dimensions.
 
 ```bash
-# Launch Streamlit Auction War Room
-streamlit run RR_EDGE_Dashboard/app.py --server.port 8501
+# Launch Streamlit Auction War Room (from root or dashboard folder)
+streamlit run streamlit_app.py --server.port 8501
+```
+
+#### ☁️ 1-Click Streamlit Community Cloud Deployment (`share.streamlit.io`)
+Deploy directly to Streamlit Community Cloud with zero configuration:
+1. **Repository**: `Premchandyadav369/RajasthanRoyals` (or paste repo URL)
+2. **Branch**: `main`
+3. **Main file path**: `streamlit_app.py` *(or `app.py` / `RR_EDGE_Dashboard/app.py`)*
+4. **App URL (optional)**: e.g. `rajasthan-royals-edge.streamlit.app`
+5. **Advanced Settings > Python version**: Select `3.11`
+6. **Advanced Settings > Secrets**:
+```toml
+GROQ_API_KEY = "your_groq_api_key_here"
+GROQ_MODEL = "qwen/qwen3.8-27b"
 ```
 
 ### 2. Standalone Zero-Dependency HTML5 Executive War Room (`RR_WAR_ROOM_EXECUTIVE_SUITE.html`)
