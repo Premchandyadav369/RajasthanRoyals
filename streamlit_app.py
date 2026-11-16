@@ -18,6 +18,17 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+# Global HTML sanitizer wrapper to prevent CommonMark from rendering indented HTML as code blocks
+_orig_st_markdown = st.markdown
+
+def safe_st_markdown(body, *args, **kwargs):
+    if kwargs.get('unsafe_allow_html', False) and isinstance(body, str) and '<' in body and '>' in body:
+        # Strip leading whitespace and remove empty lines to prevent CommonMark 4-space code block triggers
+        body = "\n".join(line.strip() for line in body.splitlines() if line.strip() != "")
+    return _orig_st_markdown(body, *args, **kwargs)
+
+st.markdown = safe_st_markdown
+
 # -----------------------------------------------------------------------------
 # 1. PAGE CONFIGURATION & METADATA
 # -----------------------------------------------------------------------------
@@ -1006,65 +1017,58 @@ with tab1:
         st.warning("⚠️ Plan B Inactive: Rajasthan Royals remain exposed to an unmitigated 10.29 RPO leak in overs 7–11 with a 74.85% probability of conceding 200+ scores.")
 
     # Zero Blindspots & Zero Run Leaks Fortress Matrix
-    st.markdown("""
-    <div style="background:var(--rr-navy-card); border:1px solid var(--rr-border); border-top:3px solid var(--rr-pink); border-radius:12px; padding:18px 22px; margin-top:20px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-            <div>
-                <div style="font-family:'Rajdhani', sans-serif; font-size:1.35rem; font-weight:900; color:#FFFFFF;">
-                    ZERO BLINDSPOTS & ZERO RUN LEAKS: 5-POINT DEFENSIVE FORTRESS MATRIX
-                </div>
-                <div style="font-size:0.80rem; color:#94A3B8; margin-top:3px;">
-                    Exhaustive strategic audit verifying that every operational blindspot and phase run leak has been quantitatively neutralized.
-                </div>
-            </div>
-            <div style="background:rgba(0,240,255,0.12); border:1px solid #00F0FF; border-radius:20px; padding:6px 14px; font-size:0.75rem; font-weight:800; color:#00F0FF;">
-                100% DEFENSIVE INTEGRITY
-            </div>
-        </div>
-
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:14px; margin-top:16px;">
-            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(0,240,255,0.25); border-radius:8px; padding:12px;">
-                <div style="font-size:0.75rem; font-weight:800; color:#00F0FF; text-transform:uppercase;">1. OVERS 7–11 SPIN RUN LEAK (10.29 RPO)</div>
-                <div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
-                    <b>2026 Leak:</b> 8.4-over wicketless drift in middle overs, leaking 10.29 RPO.<br/>
-                    <b>Plugging Weapon:</b> Suyash Sharma (2,280 RPM googly) + Ravindra Jadeja (flat trajectory). Middle overs conceded RPO collapses to <b>7.42 (-27.9%)</b>.
-                </div>
-            </div>
-
-            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(212,175,55,0.25); border-radius:8px; padding:12px;">
-                <div style="font-size:0.75rem; font-weight:800; color:var(--rr-gold); text-transform:uppercase;">2. POWERPLAY SWING DEFICIT LEAK (11.13 RPO)</div>
-                <div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
-                    <b>2026 Leak:</b> Trent Boult's non-retention removed early new-ball breakthroughs in overs 1–3.<br/>
-                    <b>Plugging Weapon:</b> Matt Henry provides 1.42° late outswing with an 18° upright seam, attacking off-stump and capping powerplays at <b>6.85 RPO</b>.
-                </div>
-            </div>
-
-            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(239,68,68,0.25); border-radius:8px; padding:12px;">
-                <div style="font-size:0.75rem; font-weight:800; color:#EF4444; text-transform:uppercase;">3. JOFRA ARCHER WORKLOAD BLINDSPOT</div>
-                <div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
-                    <b>Vulnerability:</b> Over-relying on Archer risks lumbar stress recurrence (L5-S1 breakdown).<br/>
-                    <b>Plugging Mechanism:</b> Capped at strictly 24 match-intensity overs/week via Talegaon Red Bull Protocol. Sam Curran and Sandeep Sharma absorb secondary death duties.
-                </div>
-            </div>
-
-            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(168,85,247,0.25); border-radius:8px; padding:12px;">
-                <div style="font-size:0.75rem; font-weight:800; color:#A855F7; text-transform:uppercase;">4. POST-SAMSON TRANSITION BLINDSPOT</div>
-                <div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
-                    <b>Vulnerability:</b> Trading Sanju Samson to CSK at ₹18.00 Cr creates potential middle-order destabilization.<br/>
-                    <b>Plugging Mechanism:</b> Riyan Parag promoted to Captain & #4 anchor; Dhruv Jurel designated primary finisher; Ravindra Jadeja anchors the core.
-                </div>
-            </div>
-
-            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(16,185,129,0.25); border-radius:8px; padding:12px;">
-                <div style="font-size:0.75rem; font-weight:800; color:#10B981; text-transform:uppercase;">5. AWAY VENUE & DEW BLINDSPOT</div>
-                <div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
-                    <b>Vulnerability:</b> Thin air at Chinnaswamy (920m, +8.4m carry) and heavy coastal dew in Mumbai/Guwahati (28.5% grip loss).<br/>
-                    <b>Plugging Mechanism:</b> Modeled all 9 IPL venues with microclimate dew matrices and spatial field boundary traps.
-                </div>
-            </div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("""<div style="background:var(--rr-navy-card); border:1px solid var(--rr-border); border-top:3px solid var(--rr-pink); border-radius:12px; padding:18px 22px; margin-top:20px;">
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+<div>
+<div style="font-family:'Rajdhani', sans-serif; font-size:1.35rem; font-weight:900; color:#FFFFFF;">
+ZERO BLINDSPOTS & ZERO RUN LEAKS: 5-POINT DEFENSIVE FORTRESS MATRIX
+</div>
+<div style="font-size:0.80rem; color:#94A3B8; margin-top:3px;">
+Exhaustive strategic audit verifying that every operational blindspot and phase run leak has been quantitatively neutralized.
+</div>
+</div>
+<div style="background:rgba(0,240,255,0.12); border:1px solid #00F0FF; border-radius:20px; padding:6px 14px; font-size:0.75rem; font-weight:800; color:#00F0FF;">
+100% DEFENSIVE INTEGRITY
+</div>
+</div>
+<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:14px; margin-top:16px;">
+<div style="background:rgba(255,255,255,0.03); border:1px solid rgba(0,240,255,0.25); border-radius:8px; padding:12px;">
+<div style="font-size:0.75rem; font-weight:800; color:#00F0FF; text-transform:uppercase;">1. OVERS 7–11 SPIN RUN LEAK (10.29 RPO)</div>
+<div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
+<b>2026 Leak:</b> 8.4-over wicketless drift in middle overs, leaking 10.29 RPO.<br/>
+<b>Plugging Weapon:</b> Suyash Sharma (2,280 RPM googly) + Ravindra Jadeja (flat trajectory). Middle overs conceded RPO collapses to <b>7.42 (-27.9%)</b>.
+</div>
+</div>
+<div style="background:rgba(255,255,255,0.03); border:1px solid rgba(212,175,55,0.25); border-radius:8px; padding:12px;">
+<div style="font-size:0.75rem; font-weight:800; color:var(--rr-gold); text-transform:uppercase;">2. POWERPLAY SWING DEFICIT LEAK (11.13 RPO)</div>
+<div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
+<b>2026 Leak:</b> Trent Boult's non-retention removed early new-ball breakthroughs in overs 1–3.<br/>
+<b>Plugging Weapon:</b> Matt Henry provides 1.42° late outswing with an 18° upright seam, attacking off-stump and capping powerplays at <b>6.85 RPO</b>.
+</div>
+</div>
+<div style="background:rgba(255,255,255,0.03); border:1px solid rgba(239,68,68,0.25); border-radius:8px; padding:12px;">
+<div style="font-size:0.75rem; font-weight:800; color:#EF4444; text-transform:uppercase;">3. JOFRA ARCHER WORKLOAD BLINDSPOT</div>
+<div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
+<b>Vulnerability:</b> Over-relying on Archer risks lumbar stress recurrence (L5-S1 breakdown).<br/>
+<b>Plugging Mechanism:</b> Capped at strictly 24 match-intensity overs/week via Talegaon Red Bull Protocol. Sam Curran and Sandeep Sharma absorb secondary death duties.
+</div>
+</div>
+<div style="background:rgba(255,255,255,0.03); border:1px solid rgba(168,85,247,0.25); border-radius:8px; padding:12px;">
+<div style="font-size:0.75rem; font-weight:800; color:#A855F7; text-transform:uppercase;">4. POST-SAMSON TRANSITION BLINDSPOT</div>
+<div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
+<b>Vulnerability:</b> Trading Sanju Samson to CSK at ₹18.00 Cr creates potential middle-order destabilization.<br/>
+<b>Plugging Mechanism:</b> Riyan Parag promoted to Captain & #4 anchor; Dhruv Jurel designated primary finisher; Ravindra Jadeja anchors the core.
+</div>
+</div>
+<div style="background:rgba(255,255,255,0.03); border:1px solid rgba(16,185,129,0.25); border-radius:8px; padding:12px;">
+<div style="font-size:0.75rem; font-weight:800; color:#10B981; text-transform:uppercase;">5. AWAY VENUE & DEW BLINDSPOT</div>
+<div style="font-size:0.78rem; color:#E2E8F0; margin-top:6px; line-height:1.5;">
+<b>Vulnerability:</b> Thin air at Chinnaswamy (920m, +8.4m carry) and heavy coastal dew in Mumbai/Guwahati (28.5% grip loss).<br/>
+<b>Plugging Mechanism:</b> Modeled all 9 IPL venues with microclimate dew matrices and spatial field boundary traps.
+</div>
+</div>
+</div>
+</div>""", unsafe_allow_html=True)
 
 # =============================================================================
 # TAB 2: 02 | ROUND 1 CLUTCH LEADERBOARD
@@ -2287,27 +2291,24 @@ with tab8:
         sim_cushion = 45.00 - sim_spend
 
     with b_col2:
-        st.markdown(f"""
-        <div style="background:var(--rr-navy-card); border:1px solid var(--rr-border); border-radius:12px; padding:20px;">
-            <div style="font-family:'Montserrat', sans-serif; font-size:0.75rem; font-weight:700; color:#94A3B8; text-transform:uppercase;">TOTAL PROJECTED AUCTION SPEND</div>
-            <div style="font-family:'Rajdhani', sans-serif; font-size:2.5rem; font-weight:900; color:#FFFFFF;">₹{sim_spend:.2f} CR</div>
-            
-            <div style="margin-top:14px; display:flex; justify-content:space-between; border-top:1px solid rgba(255,255,255,0.08); padding-top:10px;">
-                <div>
-                    <div style="font-size:0.7rem; color:#94A3B8;">REMAINING LIQUIDITY</div>
-                    <div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:var(--success);">₹{sim_cushion:.2f} CR</div>
-                </div>
-                <div>
-                    <div style="font-size:0.7rem; color:#94A3B8;">PLAYOFF ODDS</div>
-                    <div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:var(--rr-gold);">68.4%</div>
-                </div>
-                <div>
-                    <div style="font-size:0.7rem; color:#94A3B8;">CONTRACT SURPLUS</div>
-                    <div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:var(--rr-pink);">+₹8.40 CR</div>
-                </div>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(f"""<div style="background:var(--rr-navy-card); border:1px solid var(--rr-border); border-radius:12px; padding:20px;">
+<div style="font-family:'Montserrat', sans-serif; font-size:0.75rem; font-weight:700; color:#94A3B8; text-transform:uppercase;">TOTAL PROJECTED AUCTION SPEND</div>
+<div style="font-family:'Rajdhani', sans-serif; font-size:2.5rem; font-weight:900; color:#FFFFFF;">₹{sim_spend:.2f} CR</div>
+<div style="margin-top:14px; display:flex; justify-content:space-between; border-top:1px solid rgba(255,255,255,0.08); padding-top:10px;">
+<div>
+<div style="font-size:0.7rem; color:#94A3B8;">REMAINING LIQUIDITY</div>
+<div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:var(--success);">₹{sim_cushion:.2f} CR</div>
+</div>
+<div>
+<div style="font-size:0.7rem; color:#94A3B8;">PLAYOFF ODDS</div>
+<div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:var(--rr-gold);">68.4%</div>
+</div>
+<div>
+<div style="font-size:0.7rem; color:#94A3B8;">CONTRACT SURPLUS</div>
+<div style="font-size:1.4rem; font-family:'Rajdhani', sans-serif; font-weight:800; color:var(--rr-pink);">+₹8.40 CR</div>
+</div>
+</div>
+</div>""", unsafe_allow_html=True)
 
     st.markdown("---")
 
@@ -2349,14 +2350,14 @@ with tab8:
         ]
 
     if st.session_state['auction_sim_log']:
-        st.markdown("#### 📜 Live Auction Telemetry & Bidding Log")
+        st.markdown("#### Live Auction Telemetry & Bidding Log")
         log_text = "\n".join(st.session_state['auction_sim_log'])
         st.code(log_text, language="markdown")
 
     st.markdown("---")
 
     # Projected 2027 Rajasthan Royals Master Playing XI
-    st.markdown("#### 🦁 Projected Rajasthan Royals 2027 Master Playing XI")
+    st.markdown("#### Projected Rajasthan Royals 2027 Master Playing XI")
     xi_data = [
         ("1", "Yashasvi Jaiswal", "Opener (LH)", "Retained", "Powerplay Demolition (11.13 PP RPO)"),
         ("2", "Jos Buttler / Marquee Target", "Opener (RH / WK)", "Auction Target", "Elite Pace/Spin Anchor"),
