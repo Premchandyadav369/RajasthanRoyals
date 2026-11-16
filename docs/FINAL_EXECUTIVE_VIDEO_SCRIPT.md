@@ -24,7 +24,7 @@
 * **Spoken Script:**  
   > *"Respected Kumar Sangakkara, Giles Lindsay, and the Rajasthan Royals leadership panel.  
   > In IPL 2026, Rajasthan Royals assembled an offensive juggernaut: we struck a tournament-leading 181 sixes and operated at 11.13 runs an over in the Powerplay.  
-  > Yet, we missed playoff qualification.  
+  > Yet, after reaching the playoffs, we were eliminated in the knockouts and fell short of the championship trophy.  
   > Conventional pundits claim we lacked batting firepower. Our forensic audit of 200,999 deliveries across Competition ID 3298 reveals our exact fatal bottleneck: in **Overs 7.1 to 11.0**, Rajasthan Royals leaked **10.29 runs an over** with an **8.4-over wicketless drift**—averaging a catastrophic 0.42 wickets per match in that phase. Opposing batters safely absorbed our pace, then detonated against our middle spin with zero defensive resistance."*
 
 ---
@@ -78,7 +78,7 @@ Respected Kumar Sangakkara, Giles Lindsay, and the Rajasthan Royals leadership p
 
 In IPL 2026, Rajasthan Royals assembled an offensive juggernaut: we struck a tournament-leading 181 sixes and operated at 11.13 runs an over in the Powerplay.
 
-Yet, we missed playoff qualification.
+Yet, after reaching the playoffs, we were eliminated in the knockouts and fell short of the championship trophy.
 
 Conventional pundits claim we lacked batting firepower. Our forensic audit of 200,999 deliveries across Competition ID 3298 reveals our exact fatal bottleneck: in Overs 7.1 to 11.0, Rajasthan Royals leaked 10.29 runs an over with an 8.4-over wicketless drift—averaging a catastrophic 0.42 wickets per match in that phase. Opposing batters safely absorbed our pace, then detonated against our middle spin with zero defensive resistance.
 

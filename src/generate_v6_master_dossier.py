@@ -240,7 +240,7 @@ def build_v6_master_dossier():
     # SECTION 1: EXECUTIVE STRATEGY & REAL-TIME SQUAD REALITY
     elements.append(Paragraph("1. EXECUTIVE FORENSICS & POST-TRADE SQUAD ARCHITECTURE", sec_head))
     p_s1 = (
-        "<b>The 2026 Structural Deficit:</b> RR led IPL 2026 with <b>181 sixes</b> and an <b>11.13 Powerplay RPO</b>, yet missed the playoffs entirely "
+        "<b>The 2026 Structural Deficit:</b> RR led IPL 2026 with <b>181 sixes</b> and an <b>11.13 Powerplay RPO</b>, yet fell short in the playoffs "
         "due to bowling leakage in <b>Overs 7 to 11</b> (10.29 RPO conceded with an 8.4-over wicketless drift). Spending ₹20+ Cr on another marquee bat yields <0.2 net WAR.<br/>"
         "<b>Real-Time Squad Truth:</b> Sanju Samson was traded to CSK (₹18.00 Cr); RR received <b>Ravindra Jadeja</b> (₹14.00 Cr) and <b>Sam Curran</b> (₹2.40 Cr). "
         "RR retains 16 core players committed at ₹108.95 Cr, freeing exactly <b>₹45.00 Cr in liquid purse</b>. <b>Riyan Parag</b> captains, and <b>Dhruv Jurel</b> keeps wickets."

@@ -21,7 +21,7 @@
 ```text
 In IPL 2026, the @rajasthanroyals hit 181 sixes (1st in IPL) and operated at 11.13 runs/over in the Powerplay. 
 
-Yet, we missed the playoffs. Why?
+Yet, we fell short in the playoffs and missed out on the championship trophy. Why?
 
 Conventional wisdom says we missed batting depth. But our forensic audit of 200,999 deliveries (Comp ID 3298) reveals the real culprit:
 
@@ -57,9 +57,9 @@ Data is not an alternative to instinct—it’s the crucible where instinct is s
 ```text
 In IPL 2026, @rajasthanroyals hit 181 sixes (1st in IPL) and scored 11.13 RPO in the Powerplay.
 
-Yet, we missed the playoffs. 
+Yet, we fell short in the playoffs and missed the trophy. 
 
-I audited 200,999 deliveries to uncover the exact flaw that cost us the season—and engineered the strategy to fix it for IPL 2027 🧵👇
+I audited 200,999 deliveries to uncover the exact flaw that cost us the title—and engineered the strategy to fix it for IPL 2027 🧵👇
 
 #HallaBol #SupeRRSelector
 ```
@@ -135,7 +135,7 @@ Halla Bol! 💗👑 (6/6)
 *Best for: Professional visibility, networking with sports analytics teams, and executive evaluation.*
 
 ```text
-What causes a team that hit a tournament-leading 181 sixes to miss playoff qualification?
+What causes a team that hit a tournament-leading 181 sixes to fall short in the playoffs and miss the championship?
 
 For the Rajasthan Royals SupeRR Selector Season 2 competition, I conducted a 200,999-delivery forensic audit across IPL Competition ID 3298 to diagnose the root cause and design the optimal 2027 auction and tactical strategy.
 
@@ -167,9 +167,9 @@ Special thanks to Rajasthan Royals and Unstop for organizing this incredible cha
 *Best for: Engaging Instagram Reels or 10-slide visual carousels.*
 
 ```text
-181 sixes. 11.13 Powerplay run rate. 0 playoff qualification. 🤯
+181 sixes. 11.13 Powerplay run rate. Heartbreak in the playoffs. 🤯
 
-Why did Rajasthan Royals miss out in 2026? 
+Why did Rajasthan Royals fall short of the trophy in 2026? 
 I analyzed 200,999 deliveries to solve the puzzle for @rajasthanroyals SupeRR Selector Season 2! 📊
 
 The culprit wasn’t our batting—it was an 8.4-over wicketless drift in Overs 7–11 leaking 10.29 RPO. 

@@ -23,7 +23,7 @@
 ```text
 How can Rajasthan Royals win the IPL 2027 Trophy? We built a 12-dimensional decision intelligence platform to solve it for the SupeRR Selector Season 2 challenge with @unstop.world!
 
-In IPL 2026, @rajasthanroyals hit a tournament-leading 181 sixes and scored at 11.13 Powerplay RPO. Yet, they missed the playoffs. 
+In IPL 2026, @rajasthanroyals hit a tournament-leading 181 sixes and scored at 11.13 Powerplay RPO. Yet, after reaching the playoffs, they were eliminated in the knockouts. 
 
 Our forensic model revealed why:
 Rajasthan Royals leaked 10.29 RPO in Overs 7–11, with an average wicketless drift of 8.4 overs. Opponents capitalized on this middle-overs defensive vacuum.

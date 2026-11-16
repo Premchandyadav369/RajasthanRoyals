@@ -40,7 +40,7 @@ Judges do not pick applicants who list Python libraries or speak in vague cricke
 * **Visual:** Full face on camera (confident, authoritative, sharp lighting). Transition screen share to **Tab 1: 2026 Forensic Audit**, zooming in on the "181 SIXES" and "10.29 RPO RUN LEAK" cards.
 * **Spoken Script:**  
   *"Respected Kumar Sangakkara, Giles Lindsay, and Rajasthan Royals leadership. In IPL 2026, Rajasthan Royals were an offensive powerhouse: we struck a tournament-leading 181 sixes and scored at 11.13 runs an over in the Powerplay.*  
-  *Yet, we missed the playoffs. Conventional consensus claims we lacked batting depth. The data tells an entirely different story.*  
+  *Yet, after qualifying for the playoffs, we crashed out in the knockouts and fell short of the championship. Conventional consensus claims we lacked batting depth. The data tells an entirely different story.*  
   *Our audit of 200,999 deliveries across Competition ID 3298 reveals our exact fatal bottleneck: in **Overs 7.1 to 11.0**, Rajasthan Royals leaked **10.29 runs an over** with an 8.4-over wicketless drift—averaging just 0.42 wickets per match in that phase. Opposing batters safely absorbed our pace, then detonated against our middle spin."*
 
 #### Phase 2: Auction Game Theory & Plan B Rebalance (0:38 - 1:15)
@@ -112,7 +112,7 @@ Judges do not pick applicants who list Python libraries or speak in vague cricke
 ```text
 🚀 Excited to submit Project RR-EDGE V6.0 for Rajasthan Royals "SupeRR Selector Season 2" with @unstop.world!
 
-In IPL 2026, @rajasthanroyals hit a tournament-leading 181 sixes and scored at 11.13 Powerplay RPO. Yet, we missed the playoffs.
+In IPL 2026, @rajasthanroyals hit a tournament-leading 181 sixes and scored at 11.13 Powerplay RPO. Yet, after qualifying for the playoffs, we fell short of the trophy.
 
 Our forensic audit of 200,999 deliveries (comp_id 3298) revealed why:
 Rajasthan Royals leaked 10.29 RPO in Overs 7–11 with an 8.4-over wicketless drift (0.42 wickets/match).

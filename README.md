@@ -40,7 +40,7 @@
 
 ## 🏛️ 1. Executive Summary & The 2026 Forensic Diagnosis
 
-In the 2026 Indian Premier League, **Rajasthan Royals** assembled the most destructive batting order in franchise history, hitting **181 tournament sixes** and recording an unmatched **11.13 Powerplay run rate**. Yet, the franchise missed playoff qualification.
+In the 2026 Indian Premier League, **Rajasthan Royals** assembled the most destructive batting order in franchise history, hitting **181 tournament sixes** and recording an unmatched **11.13 Powerplay run rate**. Yet, after qualifying for the playoffs, the franchise crashed out in the knockouts and fell short of the championship trophy.
 
 A 200,999-delivery Bayesian forensic audit (`comp_id 3298`) conducted by **Project RR-EDGE** uncovered the hidden structural defect:
 

@@ -228,7 +228,7 @@ def build_board_memorandum():
     elements.append(Paragraph("1. EXECUTIVE FORENSICS: THE 2026 BOTTLENECK & POST-TRADE SQUAD REALITY", heading_style))
     p_diag = (
         "<b>The 2026 Paradox:</b> Rajasthan Royals possessed the most explosive batting lineup in IPL 2026, leading the tournament with "
-        "<b>181 sixes</b> and an unprecedented <b>11.13 Powerplay RPO</b>. However, the franchise missed playoffs due to a catastrophic structural flaw: "
+        "<b>181 sixes</b> and an unprecedented <b>11.13 Powerplay RPO</b>. However, after qualifying for the playoffs, the franchise fell short of the trophy due to a catastrophic structural flaw: "
         "<b>Overs 7–11 Bowling Leakage</b>. In this phase, RR conceded <b>10.29 RPO</b> with an average wicketless drift of <b>8.4 overs</b>. "
         "Opponents systematically weaponized this middle-overs defensive vacuum after surviving initial new-ball bursts.<br/>"
         "<b>Real-Time Post-Trade Reality:</b> Following the 15 Nov 2025 blockbuster trade, <b>Sanju Samson moved to CSK</b> (₹18.00 Cr), while "

@@ -256,8 +256,8 @@ def build_comprehensive_master_dossier():
     story.append(Paragraph(
         "In the 2026 Indian Premier League, Rajasthan Royals assembled what appeared on paper to be an uncontainable "
         "offensive lineup. The franchise struck a tournament-leading <b>181 sixes</b> and operated at an extraordinary "
-        "<b>11.13 runs per over</b> during the Powerplay. Despite this overwhelming boundary output, Rajasthan Royals missed "
-        "qualification for the playoffs. Conventional post-mortem analysis reflexively attributed the failure to middle-order "
+        "<b>11.13 runs per over</b> during the Powerplay. Despite qualifying for the playoffs, Rajasthan Royals was eliminated "
+        "in the knockouts and fell short of the championship trophy. Conventional post-mortem analysis reflexively attributed the failure to middle-order "
         "batting instability. However, our comprehensive forensic audit of all <b>200,999 deliveries</b> across Competition ID 3298 "
         "reveals the actual, mathematically indisputable structural breakdown:",
         style_body
