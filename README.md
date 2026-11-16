@@ -217,7 +217,7 @@ A bespoke, war-room grade interactive analytics platform built with custom CSS, 
 
 - **Top Sticky Telemetry Ribbon**:
   `BCCI CAP: ₹157.00 Cr | RETAINED (16): ₹108.95 Cr | AVAILABLE PURSE: ₹45.00 Cr | OVERSEAS SLOTS: 8/8 VALIDATED | LEADERSHIP: RIYAN PARAG (C) • DHRUV JUREL (WK) • RAVINDRA JADEJA (TACTICAL CORE)`
-- **Sidebar Judges' Fast-Track**: 1-click download buttons for `RR_EDGE_Judges_Fast_Track_Brief.pdf` and `RR_EDGE_V6_0_Franchise_Master_Dossier.pdf`.
+- **Sidebar Judges' Fast-Track**: 1-click download buttons for `RR_EDGE_Judges_Fast_Track_Brief.pdf` and `RR_EDGE_Franchise_Master_Dossier.pdf` (16-Page Comprehensive Strategy Manifesto).
 - **01 // THE 2026 FORENSIC AUDIT**: Overs 1–20 phase run rate curve with Overs 7–11 leak danger zone + interactive toggle: `"⚡ Activate Plan B Rebalance"`, showing conceded RPO collapsing from 10.29 to 7.42 and playoff odds rising to 68.4%.
 - **02 // ROUND 1 CLUTCH LEADERBOARD**: Live dynamic RPI calculation across all 216 players with real-time sliders and `st.column_config.ProgressColumn`.
 - **03 // PLAN A vs PLAN B SIMULATOR**: Direct quantitative side-by-side comparison of the ₹22.50 Cr marquee batter trap vs the Henry + Suyash surgical rebalance (+₹8.4 Cr CSV).
@@ -280,9 +280,10 @@ RajasthanRoyals/
 ├── requirements.txt                          # Production Dependencies for Streamlit Cloud
 ├── LICENSE                                   # Official MIT License
 ├── CHECKSUMS.txt                             # SHA-256 Cryptographic Verification Manifest
-├── RR_SupeRR_Selector_S2_Submission_Bundle.zip # Definitive All-in-One Submission Archive (7.18 MB)
+├── RR_SupeRR_Selector_S2_Submission_Bundle.zip # Definitive All-in-One Submission Archive (17.86 MB)
+├── RR_EDGE_Franchise_Master_Dossier.pdf      # 16-Page Publication-Grade Strategy Manifesto & Technical Dossier
 ├── RR_EDGE_Judges_Fast_Track_Brief.pdf       # 1-Page High-Density Executive Brief (60-sec Scan)
-├── RR_EDGE_V6_0_Franchise_Master_Dossier.pdf # 2-Page 15-Dimensional Master Encyclopedia
+├── RR_EDGE_V6_0_Franchise_Master_Dossier.pdf # Canonical Master Dossier (Mirrored to 16-Page Dossier)
 ├── RR_EDGE_V6_0_Executive_Presentation.pptx  # 12-Slide 16:9 4K Presentation Master Deck
 ├── RR_WAR_ROOM_EXECUTIVE_SUITE.html          # Offline Interactive HTML5 Executive War Room (81 KB)
 ├── RR_EDGE_Batter_Rankings.csv               # Top 10 Batsmen Official Ranking (comp_id 3298)
@@ -371,12 +372,13 @@ python src/build_submission_bundle.py
 - **Cryptographic Verification**: Every deliverable is hashed with SHA-256 in [`CHECKSUMS.txt`](CHECKSUMS.txt).
 
 ```text
-RR-EDGE V6.0 OFFICIAL SUBMISSION BUNDLE SHA-256 CHECKSUMS (EXCERPT):
+RR-EDGE OFFICIAL SUBMISSION BUNDLE SHA-256 CHECKSUMS (EXCERPT):
+• RR_EDGE_Franchise_Master_Dossier.pdf: cbcbc9dbca3d05f4c3eecf537d39698c871486fd31aabfae0a560925bed85d2c (16-Page Master Manifesto)
 • RR_EDGE_Judges_Fast_Track_Brief.pdf: 994a55928d32d67768a4e8d2ee37e6fbe5374431e780824b223fffa001ad395f
-• RR_EDGE_V6_0_Franchise_Master_Dossier.pdf: a381cbb46723b7b415e61bf60670d5929661448b28fef6ae52623e1ca039a039
+• RR_EDGE_V6_0_Franchise_Master_Dossier.pdf: cbcbc9dbca3d05f4c3eecf537d39698c871486fd31aabfae0a560925bed85d2c
 • RR_EDGE_V6_0_Executive_Presentation.pptx: 039fe65eeea9fb87d46ffb7f7ba79b90c9b689a94145903c73499424cff44e15
 • RR_WAR_ROOM_EXECUTIVE_SUITE.html: b11a3d9ae1b29a67e415fb5da6718d0526012658864f1d43a7587efae1176ee6
-• RR_SupeRR_Selector_S2_Submission_Bundle.zip: 7,186,853 bytes verified
+• RR_SupeRR_Selector_S2_Submission_Bundle.zip: 17,863,115 bytes verified
 ```
 
 <div align="center">

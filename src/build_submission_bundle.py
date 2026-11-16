@@ -14,6 +14,7 @@ ZIP_PATH = os.path.join(BASE_DIR, "RR_SupeRR_Selector_S2_Submission_Bundle.zip")
 
 FILES_TO_BUNDLE = [
     # Primary Master Dossiers & Editorial Decks
+    "RR_EDGE_Franchise_Master_Dossier.pdf",
     "RR_EDGE_Judges_Fast_Track_Brief.pdf",
     "RR_EDGE_V6_0_Franchise_Master_Dossier.pdf",
     "RR_EDGE_V6_0_Executive_Presentation.pptx",

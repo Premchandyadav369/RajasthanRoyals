@@ -699,7 +699,9 @@ with st.sidebar:
     # Judges' Fast-Track Export Bar
     st.markdown("### Executive Dossiers")
     fast_track_brief_path = os.path.join(BASE_DIR, "RR_EDGE_Judges_Fast_Track_Brief.pdf")
-    master_dossier_path = os.path.join(BASE_DIR, "RR_EDGE_V6_0_Franchise_Master_Dossier.pdf")
+    master_dossier_path = os.path.join(BASE_DIR, "RR_EDGE_Franchise_Master_Dossier.pdf")
+    if not os.path.exists(master_dossier_path):
+        master_dossier_path = os.path.join(BASE_DIR, "RR_EDGE_V6_0_Franchise_Master_Dossier.pdf")
 
     if os.path.exists(fast_track_brief_path):
         with open(fast_track_brief_path, "rb") as f_brief:
@@ -716,9 +718,9 @@ with st.sidebar:
         with open(master_dossier_path, "rb") as f_master:
             master_bytes = f_master.read()
         st.download_button(
-            label="Master Franchise Dossier V6.0 (PDF)",
+            label="Master Strategy Manifesto (16-Page PDF)",
             data=master_bytes,
-            file_name="RR_EDGE_V6_0_Franchise_Master_Dossier.pdf",
+            file_name="RR_EDGE_Franchise_Master_Dossier.pdf",
             mime="application/pdf",
             use_container_width=True
         )
