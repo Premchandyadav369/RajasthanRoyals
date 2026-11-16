@@ -111,15 +111,22 @@ These exact rankings match the required dropdown fields on the official Unstop c
 | Rank | Player Name | Franchise / Status | RPI Score | Pressure ER | Dot Ball % | High-Leverage Phase |
 |:---:|:---|:---:|:---:|:---:|:---:|:---|
 | **1** | **Jasprit Bumrah** | MI | **96.2** | 6.24 | 52.4% | Universal Weapon (Overs 1, 16, 18, 20) |
-| **2** | **Varun Chakaravarthy** | KKR | **89.7** | 6.82 | 48.1% | Middle-Overs Enigma & Mystery Trapper |
-| **3** | **Harshit Rana** | KKR | **86.4** | 7.95 | 44.2% | Heavy-Ball Slower Bouncer Specialist |
-| **4** | **T Natarajan** | SRH | **85.8** | 7.84 | 46.5% | Block-Hole Pinpoint Yorker Specialist |
-| **5** | **Pat Cummins** | SRH | **84.5** | 8.12 | 43.8% | Tactical Hard-Length Defensive Skipper |
-| **6** | **Arshdeep Singh** | MI | **83.9** | 8.24 | 45.1% | Left-Arm Wide Yorker & Angle Driver |
-| **7** | **Kuldeep Yadav** | LSG | **83.1** | 6.94 | 49.2% | Left-Arm Wrist-Spin Drift & Drop Master |
-| **8** | **Mitchell Starc** | KKR | **82.6** | 8.42 | 47.6% | 145+ kph Knockout Swing Executioner |
-| **9** | **Andre Russell** | KKR | **81.8** | 8.56 | 41.8% | Death-Overs Cramping Bouncer Pacer |
+| **2** | **Sunil Narine** | KKR | **92.5** | 6.29 | 48.6% | Middle-Overs Choke & Dual-Threat Benchmark (Overs 7–15) |
+| **3** | **Varun Chakravarthy** | KKR | **89.7** | 6.82 | 48.1% | Middle-Overs Enigma & Mystery Trapper |
+| **4** | **Harshit Rana** | KKR | **86.4** | 7.95 | 44.2% | Heavy-Ball Slower Bouncer Specialist |
+| **5** | **T Natarajan** | SRH | **85.8** | 7.84 | 46.5% | Block-Hole Pinpoint Yorker Specialist |
+| **6** | **Pat Cummins** | SRH | **84.5** | 8.12 | 43.8% | Tactical Hard-Length Defensive Skipper |
+| **7** | **Arshdeep Singh** | PBKS | **83.9** | 8.24 | 45.1% | Left-Arm Wide Yorker & Angle Driver |
+| **8** | **Kuldeep Yadav** | DC | **83.1** | 6.94 | 49.2% | Left-Arm Wrist-Spin Drift & Drop Master |
+| **9** | **Mitchell Starc** | KKR | **82.6** | 8.42 | 47.6% | 145+ kph Knockout Swing Executioner |
 | **10** | **Matheesha Pathirana** | CSK | **81.2** | 7.64 | 48.9% | Malinga-Action Sling Yorker Executioner |
+
+> **🌟 Special Multi-Phase Highlight: Sunil Narine (The Dual-Threat Unicorn)**  
+> Sunil Narine uniquely qualifies in **both** categories: **Rank #9 in Batting** (82.5 RPI, 186.4 Pressure SR, +24.5 Delta SR) and **Rank #2 in Bowling** (92.5 RPI, 6.29 Pressure ER, 6.47 Death ER, +171.9 Runs Prevented). In RR-EDGE, Narine serves as the foundational multi-phase benchmark proving that pinch-hitting early strike rate coupled with middle-over strangulation breaks standard single-discipline valuations.
+
+### 🎬 Master Video Pitch Script & Executive Presentation
+- **Master Video Recording Blueprint:** [`docs/MASTER_VIDEO_PITCH_SCRIPT.md`](docs/MASTER_VIDEO_PITCH_SCRIPT.md) — includes full 3-minute executive pitch with timecoded on-screen cues and the **climactic final 60-second Top 10 breakdown** featuring iconic matches and head-to-head performance against Rajasthan Royals.
+- **Recording Cheat Sheet & Teleprompter Card:** [`docs/VIDEO_RECORDING_CHEAT_SHEET.md`](docs/VIDEO_RECORDING_CHEAT_SHEET.md) — ready-to-paste teleprompter text.
 
 ### 📝 Official Unstop Submission Remark (474 / 500 Characters)
 ```text

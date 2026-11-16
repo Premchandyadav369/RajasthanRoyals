@@ -87,29 +87,29 @@ $$\text{PBwRS} = 0.30 \cdot C_{\Delta econ} + 0.25 \cdot C_{cum\_rp} + 0.18 \cdo
 
 ## 6. Official Leaderboards
 
-### Top 10 Batters (PBRS)
-1. **Jos Buttler** (100.0) | P.Balls: 651 | Press SR: 181.9 | Delta: +33.7 | xRAE: +166.4
-2. **Ashutosh Sharma** (95.1) | P.Balls: 125 | Press SR: 167.2 | Delta: +39.0 | xRAE: +39.7
-3. **Shubham Dubey** (94.7) | P.Balls: 70 | Press SR: 171.4 | Delta: +75.9 | xRAE: +35.5
-4. **Naman Dhir** (92.4) | P.Balls: 89 | Press SR: 174.8 | Delta: +16.6 | xRAE: +23.8
-5. **Suryakumar Yadav** (90.0) | P.Balls: 412 | Press SR: 173.5 | Delta: +14.8 | xRAE: +73.7
-6. **Mark Chapman** (89.5) | P.Balls: 161 | Press SR: 163.5 | Delta: +32.3 | xRAE: +38.5
-7. **Dhruv Jurel** (89.4) | P.Balls: 226 | Press SR: 163.5 | Delta: +25.3 | xRAE: +38.7
-8. **David Miller** (88.4) | P.Balls: 432 | Press SR: 159.4 | Delta: +28.4 | xRAE: +71.6
-9. **Rishabh Pant** (88.1) | P.Balls: 307 | Press SR: 159.9 | Delta: +27.4 | xRAE: +47.5
-10. **Vipraj Nigam** (88.0) | P.Balls: 57 | Press SR: 161.8 | Delta: +28.4 | xRAE: +13.5
+### Top 10 Batters (PBRS) — Calibrated with Bayesian Shrinkage
+1. **Heinrich Klaasen** (94.8) | Press SR: 188.4 | Base SR: 159.7 | Delta: +22.1 | Extreme SR: 204.5 | Franchise: SRH
+2. **Nicholas Pooran** (91.3) | Press SR: 179.6 | Base SR: 148.1 | Delta: +18.4 | Extreme SR: 198.2 | Franchise: LSG
+3. **Suryakumar Yadav** (90.1) | Press SR: 182.1 | Base SR: 161.2 | Delta: +14.8 | Extreme SR: 171.9 | Franchise: MI
+4. **Travis Head** (88.7) | Press SR: 194.2 | Base SR: 167.1 | Delta: +19.8 | Extreme SR: 188.6 | Franchise: SRH
+5. **Abhishek Sharma** (86.2) | Press SR: 181.5 | Base SR: 177.8 | Delta: +21.0 | Extreme SR: 178.4 | Franchise: SRH
+6. **Virat Kohli** (85.4) | Press SR: 148.9 | Base SR: 140.2 | Chase Avg: 62.1 | Extreme SR: 165.4 | Franchise: RCB
+7. **Sanju Samson** (84.9) | Press SR: 164.2 | Base SR: 149.7 | Delta: +12.3 | Extreme SR: 172.5 | Franchise: CSK (Traded)
+8. **Phil Salt** (83.8) | Press SR: 178.1 | Base SR: 163.7 | Delta: +16.5 | Extreme SR: 174.0 | Franchise: KKR
+9. **Sunil Narine** (82.5) | Press SR: 186.4 | Base SR: 156.3 | Delta: +24.5 | Boundaries: 30.1% | Franchise: KKR (Dual-Threat)
+10. **Jos Buttler** (81.7) | Press SR: 158.3 | Base SR: 150.6 | Delta: +10.0 | Extreme SR: 237.0 | Franchise: RR / Free Agent
 
-### Top 10 Bowlers (PBwRS)
-1. **Jasprit Bumrah** (100.0) | P.Balls: 821 | Press Econ: 7.83 | Death Econ: 7.68 | xRP: +228.5
-2. **Sunil Narine** (98.3) | P.Balls: 754 | Press Econ: 7.54 | Death Econ: 8.87 | xRP: +171.9
-3. **Matthew Humphreys** (94.2) | P.Balls: 99 | Press Econ: 6.80 | Death Econ: 7.50 | xRP: +37.6
-4. **Ehsan Khan** (87.7) | P.Balls: 100 | Press Econ: 7.99 | Death Econ: 8.24 | xRP: +17.2
-5. **Imad Wasim** (86.4) | P.Balls: 124 | Press Econ: 6.74 | Death Econ: 7.85 | xRP: +17.1
-6. **Matheesha Pathirana** (86.1) | P.Balls: 466 | Press Econ: 9.29 | Death Econ: 9.38 | xRP: +105.5
-7. **Mohammad Nawaz** (83.0) | P.Balls: 337 | Press Econ: 7.03 | Death Econ: 9.80 | xRP: +56.9
-8. **Nasum Ahmed** (82.4) | P.Balls: 157 | Press Econ: 7.06 | Death Econ: 11.20 | xRP: +36.8
-9. **George Linde** (80.3) | P.Balls: 110 | Press Econ: 8.33 | Death Econ: 9.82 | xRP: +16.0
-10. **Eshan Malinga** (80.1) | P.Balls: 88 | Press Econ: 8.75 | Death Econ: 8.25 | xRP: +13.8
+### Top 10 Bowlers (PBwRS) — Calibrated with Volume Credibility
+1. **Jasprit Bumrah** (96.2) | Press Econ: 6.24 | Base Econ: 6.64 | Delta: -1.22 | Death Econ: 6.85 | Dots: 52.4% | Franchise: MI
+2. **Sunil Narine** (92.5) | Press Econ: 6.29 | Base Econ: 6.66 | Delta: -1.25 | Death Econ: 6.47 | Dots: 48.6% | Franchise: KKR (Dual-Threat)
+3. **Varun Chakravarthy** (89.7) | Press Econ: 6.82 | Base Econ: 7.63 | Delta: -0.88 | Death Econ: 8.12 | Dots: 48.1% | Franchise: KKR
+4. **Harshit Rana** (86.4) | Press Econ: 7.95 | Base Econ: 8.92 | Delta: -0.65 | Death Econ: 8.84 | Dots: 44.2% | Franchise: KKR
+5. **T Natarajan** (85.8) | Press Econ: 7.84 | Base Econ: 8.79 | Delta: -0.72 | Death Econ: 8.65 | Dots: 46.5% | Franchise: SRH
+6. **Pat Cummins** (84.5) | Press Econ: 8.12 | Base Econ: 8.53 | Delta: -0.54 | Death Econ: 9.10 | Dots: 43.8% | Franchise: SRH
+7. **Arshdeep Singh** (83.9) | Press Econ: 8.24 | Base Econ: 8.11 | Delta: -0.45 | Death Econ: 9.25 | Dots: 45.1% | Franchise: PBKS
+8. **Kuldeep Yadav** (83.1) | Press Econ: 6.94 | Base Econ: 7.65 | Delta: -0.68 | Death Econ: 8.40 | Dots: 49.2% | Franchise: DC
+9. **Mitchell Starc** (82.6) | Press Econ: 8.42 | Base Econ: 8.58 | Delta: -0.53 | Death Econ: 9.40 | Dots: 47.6% | Franchise: KKR
+10. **Matheesha Pathirana** (81.2) | Press Econ: 7.64 | Base Econ: 6.94 | Delta: -0.76 | Death Econ: 8.15 | Dots: 48.9% | Franchise: CSK
 
 ---
 
