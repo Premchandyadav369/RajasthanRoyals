@@ -1,8 +1,8 @@
 """
-PROJECT RR-EDGE: SAWAI MANSINGH STADIUM AERODYNAMICS & ZUBIN BHARUCHA TRAINING LAB
+PROJECT RR-EDGE: SAWAI MANSINGH STADIUM AERODYNAMICS & SHANE BOND TRAINING LAB
 Computes:
 1. Altitude, Air Density (rho), Drag (Cd), Magnus Effect, and Wind Vector Drift at SMS Stadium (Jaipur).
-2. Zubin Bharucha High-Performance Biomechanical Drill Prescriptions for RR Core Assets.
+2. Shane Bond High-Performance Biomechanical Drill Prescriptions for RR Core Assets.
 """
 
 import os
@@ -114,10 +114,10 @@ def compute_stadium_aerodynamics():
     print(f"Saved: {csv_path}")
 
 # -----------------------------------------------------------------------------
-# 2. ZUBIN BHARUCHA HIGH PERFORMANCE RED BULL ACADEMY DRILL PRESCRIPTIONS
+# 2. SHANE BOND HIGH PERFORMANCE RED BULL ACADEMY DRILL PRESCRIPTIONS
 # -----------------------------------------------------------------------------
 def compute_high_performance_prescriptions():
-    print("Computing Zubin Bharucha High Performance Drill Prescriptions...")
+    print("Computing Shane Bond High Performance Drill Prescriptions...")
     drills = [
         {
             "player_name": "Yashasvi Jaiswal",

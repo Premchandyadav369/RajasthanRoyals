@@ -1,7 +1,7 @@
 """
 PROJECT RR-EDGE: CONFIDENTIAL FRANCHISE BOARD MEMORANDUM
 Rajasthan Royals (Emerging Media IPL Ltd.)
-Executive C-Suite Briefing: Manoj Badale, Jake Lush McCrum, Kumar Sangakkara, Zubin Bharucha
+Executive C-Suite Briefing: Manoj Badale, Jake Lush McCrum, Kumar Sangakkara, Shane Bond
 """
 
 import os

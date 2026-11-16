@@ -470,7 +470,7 @@ st.markdown("""
     <div style="text-align: right;">
         <div class="rr-badge-pill">🛡️ Sawai Mansingh Stadium HQ</div>
         <div style="font-size: 0.72rem; color: #94A3B8; margin-top: 5px; font-weight: 600;">
-            KUMAR SANGAKKARA • GILES LINDSAY • ZUBIN BHARUCHA
+            KUMAR SANGAKKARA • GILES LINDSAY • SHANE BOND
         </div>
     </div>
 </div>

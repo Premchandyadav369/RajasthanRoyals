@@ -12,12 +12,12 @@ with open(APP_PATH, "r", encoding="utf-8") as f:
 # 1. Update Navigation Radio Options
 old_nav_block = '''        "22. Squad WAR, Psychometric Clutch & Injury Resilience Hub",
         "23. SMS Jaipur Aerodynamics & Trajectory Flight Physics",
-        "24. Zubin Bharucha High-Performance Academy & Biomechanical Lab"
+        "24. Shane Bond High-Performance Academy & Biomechanical Lab"
     ]'''
 
 new_nav_block = '''        "22. Squad WAR, Psychometric Clutch & Injury Resilience Hub",
         "23. SMS Jaipur Aerodynamics & Trajectory Flight Physics",
-        "24. Zubin Bharucha High-Performance Academy & Biomechanical Lab",
+        "24. Shane Bond High-Performance Academy & Biomechanical Lab",
         "25. Contract Surplus Value & Pareto Frontier Allocation",
         "26. Bayesian Cluster Collapse Hazards & Crisis Survival",
         "27. 9-Franchise Opponent Neutralization & Matchup Predictor"
@@ -29,8 +29,8 @@ if old_nav_block in content:
 else:
     print("Warning: old_nav_block not found directly, checking regex...")
     # try replacing the closing bracket after 24
-    pattern = r'("24\. Zubin Bharucha High-Performance Academy & Biomechanical Lab"\s*\])'
-    replacement = r'''"24. Zubin Bharucha High-Performance Academy & Biomechanical Lab",
+    pattern = r'("24\. Shane Bond High-Performance Academy & Biomechanical Lab"\s*\])'
+    replacement = r'''"24. Shane Bond High-Performance Academy & Biomechanical Lab",
         "25. Contract Surplus Value & Pareto Frontier Allocation",
         "26. Bayesian Cluster Collapse Hazards & Crisis Survival",
         "27. 9-Franchise Opponent Neutralization & Matchup Predictor"

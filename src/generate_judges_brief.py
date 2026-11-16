@@ -1,7 +1,7 @@
 """
 PROJECT RR-EDGE V6.0: THE 60-SECOND JUDGES' EXECUTIVE BRIEF
 Single-Page High-Density Fast-Track Assessment Document (ReportLab PDF)
-Evaluators: Jake Lush McCrum (CEO), Kumar Sangakkara (Director of Cricket), Zubin Bharucha (Director of High Performance)
+Evaluators: Jake Lush McCrum (CEO), Kumar Sangakkara (Director of Cricket), Shane Bond (Director of High Performance)
 """
 
 import os
@@ -181,7 +181,7 @@ def build_judges_brief():
     memo_table_data = [
         [
             Paragraph("<b>EVALUATION PANEL:</b>", memo_meta_bold),
-            Paragraph("Jake Lush McCrum (CEO), Kumar Sangakkara (Dir. Cricket), Zubin Bharucha (High Performance)", memo_meta_style),
+            Paragraph("Jake Lush McCrum (CEO), Kumar Sangakkara (Dir. Cricket), Shane Bond (High Performance)", memo_meta_style),
             Paragraph("<b>DATE:</b>", memo_meta_bold),
             Paragraph("15 November 2026", memo_meta_style)
         ],

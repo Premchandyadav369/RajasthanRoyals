@@ -351,7 +351,7 @@ page = st.sidebar.radio(
         "21. Spatial Fielding Optimization, Catch WPA & DRS Policy",
         "22. Squad WAR, Psychometric Clutch & Injury Resilience Hub",
         "23. SMS Jaipur Aerodynamics & Trajectory Flight Physics",
-        "24. Zubin Bharucha High-Performance Academy & Biomechanical Lab",
+        "24. Shane Bond High-Performance Academy & Biomechanical Lab",
         "25. Contract Surplus Value & Pareto Frontier Allocation",
         "26. Bayesian Cluster Collapse Hazards & Crisis Survival",
         "27. 9-Franchise Opponent Neutralization & Matchup Predictor"
@@ -2081,16 +2081,16 @@ elif page == "23. SMS Jaipur Aerodynamics & Trajectory Flight Physics":
 
 
 # -------------------------------------------------------------
-# PAGE 24: ZUBIN BHARUCHA HIGH-PERFORMANCE ACADEMY & BIOMECHANICAL LAB
+# PAGE 24: SHANE BOND HIGH-PERFORMANCE ACADEMY & BIOMECHANICAL LAB
 # -------------------------------------------------------------
-elif page == "24. Zubin Bharucha High-Performance Academy & Biomechanical Lab":
+elif page == "24. Shane Bond High-Performance Academy & Biomechanical Lab":
     st.markdown("""
     <div class='rr-heritage-banner'>
         <div style='display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;'>
             <div>
                 <span class='rr-badge' style='margin-bottom: 8px;'>🔬 RED BULL HIGH PERFORMANCE CENTRE</span>
                 <div style='font-family: Rajdhani, sans-serif; font-size: 2.2rem; font-weight: 900; letter-spacing: 1.5px; color: #FFFFFF;'>
-                    ZUBIN BHARUCHA <span style='color: #EA1A85;'>SKILL-ACQUISITION & BIOMECHANICS</span>
+                    SHANE BOND <span style='color: #EA1A85;'>SKILL-ACQUISITION & BIOMECHANICS</span>
                 </div>
                 <div style='font-family: Montserrat, sans-serif; font-size: 0.95rem; color: #D4AF37; font-weight: 600; margin-top: 4px;'>
                     10,000-Ball Motor Learning • Kinetic Force Plates • High-Speed Photron 1,000 FPS Eye Tracking
@@ -2113,7 +2113,7 @@ elif page == "24. Zubin Bharucha High-Performance Academy & Biomechanical Lab":
         st.dataframe(df_dr, use_container_width=True)
         
         st.markdown("---")
-        st.subheader("🏆 The Zubin Bharucha Method: 3 Pillars of Development")
+        st.subheader("🏆 The Shane Bond Method: 3 Pillars of Development")
         b1, b2, b3 = st.columns(3)
         b1.success("**1. Compressed Decision Time**\n\n16-yard side-arm machine drills at 148 kph force Jaiswal to process ball seam line under 0.34s.")
         b2.warning("**2. Ballistic Heavy Pull**\n\nOver-weighted cricket balls for Riyan Parag to roll wrists on 140+ kph rising chest deliveries.")

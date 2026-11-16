@@ -677,7 +677,7 @@ st.markdown("""
     <div style="text-align: right;">
         <div class="rr-badge-pill">Sawai Mansingh Stadium HQ</div>
         <div style="font-size: 0.72rem; color: #94A3B8; margin-top: 5px; font-weight: 600;">
-            KUMAR SANGAKKARA • GILES LINDSAY • ZUBIN BHARUCHA
+            KUMAR SANGAKKARA • GILES LINDSAY • SHANE BOND
         </div>
     </div>
 </div>
@@ -687,6 +687,9 @@ st.markdown("""
 # 7. SIDEBAR CONTROLS, JUDGES' FAST TRACK & DYNAMIC WEIGHTS
 # -----------------------------------------------------------------------------
 with st.sidebar:
+    logo_path = os.path.join(BASE_DIR, "assets", "rajasthan_royals_logo.png")
+    if os.path.exists(logo_path):
+        st.image(logo_path, width=130)
     st.markdown("""
     <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
         <span style="font-family:'Rajdhani', sans-serif; font-size:1.25rem; font-weight:800; color:#FFFFFF;">WAR ROOM CONTROLS</span>
@@ -2136,7 +2139,7 @@ with tab6:
 
     # High Performance Red Bull Academy Prescriptions
     st.markdown("#### Red Bull High Performance Academy Biomechanical Directives (Talegaon)")
-    st.caption("Tailored athletic, kinematic, and mental conditioning programs designed by Giles Lindsay and Zubin Bharucha.")
+    st.caption("Tailored athletic, kinematic, and mental conditioning programs designed by Giles Lindsay, Shane Bond, and Michael Italiano.")
     if not df_academy_prescriptions.empty:
         a_cols = st.columns(len(df_academy_prescriptions))
         for idx, col in enumerate(a_cols):
@@ -2749,6 +2752,71 @@ with tab10:
             </div>
         </div>
         """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # Module 9: Official 2026-2027 Squad & Coaching Directorate
+    st.markdown("#### 9. Official 2026–2027 Rajasthan Royals Squad & High-Performance Directorate")
+    st.markdown("""
+    <div style="background:var(--rr-navy-card); border:1px solid var(--rr-border); border-radius:10px; padding:16px; margin-bottom:16px;">
+        <div style="font-family:'Rajdhani', sans-serif; font-size:1.15rem; font-weight:800; color:var(--rr-gold); margin-bottom:8px;">
+            HIGH-PERFORMANCE COACHING & ADMINISTRATION DIRECTORATE
+        </div>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px; font-size:0.82rem; color:#E2E8F0;">
+            <div><b>Director of Cricket & Head Coach:</b> Kumar Sangakkara</div>
+            <div><b>Fast Bowling Coach:</b> Shane Bond</div>
+            <div><b>Batting Coach:</b> Vikram Rathour</div>
+            <div><b>Assistant Coach:</b> Trevor Penney</div>
+            <div><b>Spin Bowling & Fielding Coach:</b> Richard Das Neves</div>
+            <div><b>Director of Analytics & Strategy:</b> Giles Lindsay</div>
+            <div><b>Lead Data Analyst:</b> Panish Shetty</div>
+            <div><b>Head of Athletic Performance:</b> Michael Italiano</div>
+            <div><b>Head of Medical Services:</b> John Gloster</div>
+            <div><b>Senior Physiotherapist:</b> Niranjan Pandit</div>
+            <div><b>Team Doctor:</b> Dr. Salih Solomon</div>
+            <div><b>Culture & Leadership Coach:</b> Aaron Walsh</div>
+            <div><b>Strength & Conditioning:</b> AT Rajamani & Vihaan Murali</div>
+        </div>
+        <div style="margin-top:10px; font-size:0.75rem; color:#94A3B8; border-top:1px solid rgba(255,255,255,0.08); padding-top:6px;">
+            *Note: High-performance development, athletic conditioning, and match analytics are unified under Giles Lindsay, Shane Bond, and Kumar Sangakkara.
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    col_sq1, col_sq2 = st.columns(2)
+    with col_sq1:
+        st.markdown("**Core Retained Players (16 Players | ₹108.95 Cr)**")
+        st.markdown("""
+        * **Yashasvi Jaiswal** (LHB, Vice-Captain) — ₹18.00 Cr
+        * **Ravindra Jadeja** (LHB, Left-Arm Orthodox) — ₹14.00 Cr
+        * **Riyan Parag** (RHB, Captain) — ₹14.00 Cr
+        * **Dhruv Jurel** (RHB, WK-Finisher) — ₹14.00 Cr
+        * **Jofra Archer** (RHB, Right-Arm Fast ✈) — ₹12.50 Cr
+        * **Shimron Hetmyer** (LHB, Finisher ✈) — ₹11.00 Cr
+        * **Tushar Deshpande** (RHB, Right-Arm Fast-Medium) — ₹6.50 Cr
+        * **Shubham Dubey** (LHB, Right-Arm Offbreak) — ₹5.80 Cr (Official List ₹0.80 Cr)
+        * **Sandeep Sharma** (RHB, Right-Arm Medium) — ₹4.00 Cr
+        * **Nandre Burger** (LHB, Left-Arm Fast ✈) — ₹3.50 Cr
+        * **Sam Curran / Dasun Shanaka** (All-Rounder ✈) — ₹2.40 Cr
+        * **Kwena Maphaka** (LHB, Left-Arm Fast ✈) — ₹0.50 Cr
+        * **Vaibhav Sooryavanshi** (LHB, Slow Left-Arm Orthodox) — ₹1.10 Cr
+        * **Donovan Ferreira** (RHB, Finisher/WK ✈) — ₹1.00 Cr
+        * **Yudhvir Singh Charak** (RHB, Right-Arm Medium-Fast) — ₹0.35 Cr
+        * **Lhuan-dre Pretorius** (LHB, WK-Batter ✈) — ₹0.30 Cr
+        """)
+    with col_sq2:
+        st.markdown("**Auction Purchases & Supplementary Squad (9 Players | ₹12.15 Cr)**")
+        st.markdown("""
+        * **Ravi Bishnoi / Suyash Sharma** (Leg-Spinner) — ₹7.20 Cr / ₹4.20 Cr
+        * **Adam Milne** (RHB, Right-Arm Fast ✈) — ₹2.20 Cr / ₹2.40 Cr
+        * **Kuldeep Sen** (RHB, Right-Arm Fast) — ₹0.75 Cr
+        * **Sushant Mishra** (LHB, Left-Arm Medium-Fast) — ₹0.50 Cr / ₹0.90 Cr
+        * **Yash Raj Punja / Kumar Kartikeya** (Spin Bowling Group) — ₹0.30 Cr
+        * **Brijesh Sharma** (RHB, Spin All-Rounder) — ₹0.30 Cr
+        * **Vignesh Puthur** (LHB, Slow Left-Arm Orthodox) — ₹0.30 Cr
+        * **Ravi Inder Singh** (LHB, WK-Batter) — ₹0.30 Cr / ₹0.95 Cr
+        * **Aman Rao Parela** (RHB, Pace/Batter) — ₹0.30 Cr
+        """)
 
 
 # -----------------------------------------------------------------------------

@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/rajasthan_royals_logo.png" width="140" alt="Rajasthan Royals Logo" />
+
 # 👑 PROJECT RR-EDGE V6.0
 ### **Rajasthan Royals Decision Intelligence & Auction War Room Platform**
 #### *SupeRR Selector Season 2: Shaping Rajasthan Royals' IPL 2027 Auction & Tactical Strategy*
@@ -15,7 +17,7 @@
 ---
 
 ### **"Data is not an alternative to cricket instinct. It is the crucible in which instinct is sharpened."**
-*Prepared for the Rajasthan Royals Executive Evaluation Panel: Manoj Badale, Jake Lush McCrum, Kumar Sangakkara, and Zubin Bharucha.*
+*Prepared for the Rajasthan Royals Executive Evaluation Panel: Manoj Badale (Lead Owner), Jake Lush McCrum (CEO), Kumar Sangakkara (Director of Cricket & Head Coach), and Giles Lindsay (Director of Analytics & Strategy).*
 
 </div>
 
@@ -59,6 +61,32 @@ A 200,999-delivery Bayesian forensic audit (`comp_id 3298`) conducted by **Proje
 2. **Ravindra Jadeja & Sam Curran Arrive**: RR received **Ravindra Jadeja** (recalibrated salary ₹14.00 Cr) and **Sam Curran** (₹2.40 Cr).
 3. **Core Retained**: 16 players retained at **₹108.95 Cr**, leaving an audited **₹45.00 Cr available purse** under the official BCCI **₹157.00 Cr cap**.
 4. **Leadership Hierarchy**: **Riyan Parag** captains the franchise; **Dhruv Jurel** anchors wicketkeeping and death-overs finishing; **Ravindra Jadeja** commands the bowling-tactics group.
+
+### Official Rajasthan Royals 2026–2027 Squad Roster & Coaching Staff
+
+#### High-Performance Coaching & Administration Directorate
+| Role | Name | Strategic Responsibility |
+| :--- | :--- | :--- |
+| **Director of Cricket & Head Coach** | **Kumar Sangakkara** | Overall Franchise Philosophy, Tactical Architecture & War Room Command |
+| **Fast Bowling Coach** | **Shane Bond** | Seam Presentation, Pace Trajectories & Lumbar Workload Governance |
+| **Batting Coach** | **Vikram Rathour** | High-Pressure Anchoring, Entry Points & Boundary Percentage Optimization |
+| **Assistant Coach** | **Trevor Penney** | Fielding Spatial Geometries, Ground Coverage & Cut-off Mechanics |
+| **Spin Bowling & Fielding Coach** | **Richard Das Neves** | Spin Drift, RPM Calibration & Spatial Catching Geometry |
+| **Director of Analytics & Strategy** | **Giles Lindsay** | Sabermetrics, Opponent Modeling & Live Decision Intelligence Platforms |
+| **Lead Data Analyst** | **Panish Shetty** | Match Telemetry, 200k-Ball Ingestion & Real-time Pitch Physics |
+| **Head of Athletic Performance** | **Michael Italiano** | Biomechanical Conditioning, Kinetic Chain Efficiency & Sprint Speed |
+| **Head of Medical Services** | **John Gloster** | Musculoskeletal Health, Lumbar Stress Protocols & Return-to-Play |
+| **Senior Physiotherapist** | **Niranjan Pandit** | Acute Injury Rehabilitation & On-Field Physical Governance |
+| **Team Doctor** | **Dr. Salih Solomon** | Medical Governance, Hydration & Microclimate Acclimatization |
+| **Culture & Leadership Coach** | **Aaron Walsh** | Psychometric Resilience & High-Pressure Decision Conditioning |
+| **Strength & Conditioning** | **AT Rajamani & Vihaan Murali** | High-Intensity Interval Conditioning (Talegaon Directives) |
+
+#### Registered 25-Player Squad Breakdown
+* **Batters (5):** Yashasvi Jaiswal (LHB, ₹18.00 Cr, Vice-Captain), Shimron Hetmyer (LHB, ✈, ₹11.00 Cr), Shubham Dubey (LHB, ₹5.80 Cr / ₹0.80 Cr), Vaibhav Sooryavanshi (LHB, ₹1.10 Cr), Aman Rao Parela (RHB, ₹0.30 Cr).
+* **Wicketkeepers (3):** Dhruv Jurel (RHB, ₹14.00 Cr, Primary WK & Finisher), Ravi Inder Singh (LHB, ₹0.30 Cr / ₹0.95 Cr), Lhuan-dre Pretorius (LHB, ✈, ₹0.30 Cr).
+* **All-Rounders (5):** Ravindra Jadeja (LHB, ₹14.00 Cr, Spin All-Rounder), Riyan Parag (RHB, ₹14.00 Cr, Captain), Sam Curran / Dasun Shanaka (✈, ₹2.40 Cr / ₹2.00 Cr), Donovan Ferreira (RHB, ✈, ₹1.00 Cr), Yudhvir Singh Charak (RHB, ₹0.35 Cr).
+* **Pace Bowlers (8):** Jofra Archer (RHB, ✈, ₹12.50 Cr, Spearhead), Tushar Deshpande (RHB, ₹6.50 Cr), Sandeep Sharma (RHB, ₹4.00 Cr, Death Specialist), Nandre Burger (LHB, ✈, ₹3.50 Cr), Adam Milne (RHB, ✈, ₹2.20 Cr / ₹2.40 Cr), Kwena Maphaka (LHB, ✈, ₹0.50 Cr / ₹1.50 Cr), Sushant Mishra (LHB, ₹0.50 Cr / ₹0.90 Cr), Kuldeep Sen (RHB, ₹0.75 Cr), Brijesh Sharma (RHB, ₹0.30 Cr).
+* **Spin Bowlers (4):** Ravi Bishnoi / Suyash Sharma (RHB, ₹7.20 Cr / ₹4.20 Cr), Yash Raj Punja (RHB, ₹0.30 Cr), Vignesh Puthur (LHB, ₹0.30 Cr).
 
 ---
 

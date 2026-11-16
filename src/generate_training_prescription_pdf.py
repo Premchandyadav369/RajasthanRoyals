@@ -2,7 +2,7 @@
 PROJECT RR-EDGE: HIGH-PERFORMANCE TRAINING PRESCRIPTION & BIOMECHANICAL BLUEPRINT
 Publication-Grade ReportLab PDF (2 Pages)
 Red Bull High Performance Centre (Talegaon) & Sawai Mansingh Stadium (Jaipur)
-Authored for: Zubin Bharucha, Kumar Sangakkara, Shane Bond, Trevor Penney
+Authored for: Shane Bond, Kumar Sangakkara, Shane Bond, Trevor Penney
 """
 
 import os
@@ -73,7 +73,7 @@ class TrainingCanvas(canvas.Canvas):
         # Footer Text
         self.setFont("Helvetica", 7.5)
         self.setFillColor(SLATE_MUTED)
-        self.drawString(36, 26, "PROJECT RR-EDGE | High Performance & Skill-Acquisition Lab | Zubin Bharucha Method")
+        self.drawString(36, 26, "PROJECT RR-EDGE | High Performance & Skill-Acquisition Lab | Shane Bond Method")
         page_str = f"Page {self._pageNumber} of {num_pages}"
         self.drawRightString(576, 26, page_str)
         self.restoreState()
@@ -175,7 +175,7 @@ def build_training_pdf():
     # Title & Metadata
     elements.append(Paragraph("HIGH PERFORMANCE & BIOMECHANICAL TRAINING DIRECTIVE: 2027 CAMPAIGN", title_style))
     p_intro = (
-        "<b>ACADEMY CHARTER:</b> Formulated by Zubin Bharucha (Director of High Performance) and Kumar Sangakkara (Director of Cricket). "
+        "<b>ACADEMY CHARTER:</b> Formulated by Shane Bond (Director of High Performance) and Kumar Sangakkara (Director of Cricket). "
         "At the Red Bull High Performance Centre in Talegaon, skill acquisition is engineered through high-repetition motor learning, "
         "kinetic force-plate analysis, and visual reaction training under extreme physiological pressure."
     )
@@ -302,7 +302,7 @@ def build_training_pdf():
     callout_box = [
         [
             Paragraph(
-                "<b>THE ZUBIN BHARUCHA HIGH PERFORMANCE CREED:</b> 'Genius is not born; it is engineered delivery by delivery. "
+                "<b>THE SHANE BOND HIGH PERFORMANCE CREED:</b> 'Genius is not born; it is engineered delivery by delivery. "
                 "By pairing kinetic telemetry with 10,000-ball simulations, we turn raw instinct into cold-blooded mechanical mastery. "
                 "With Parag, Jaiswal, Jurel, and Jadeja leading this curriculum, Rajasthan Royals will out-execute every opponent under high pressure.'",
                 callout_style
@@ -322,7 +322,7 @@ def build_training_pdf():
     elements.append(Spacer(1, 4))
 
     signoff_p = (
-        "<b>CERTIFIED BY:</b> Zubin Bharucha (Director of High Performance) & Kumar Sangakkara (Director of Cricket)<br/>"
+        "<b>CERTIFIED BY:</b> Shane Bond (Director of High Performance) & Kumar Sangakkara (Director of Cricket)<br/>"
         "<b>FACILITIES:</b> Red Bull High Performance Centre (Talegaon) • Sawai Mansingh Stadium (Jaipur)"
     )
     elements.append(Paragraph(signoff_p, ParagraphStyle('SignOff', parent=styles['Normal'], fontName='Helvetica', fontSize=7.5, leading=10, textColor=SLATE_MUTED)))

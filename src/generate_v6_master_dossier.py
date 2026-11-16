@@ -2,7 +2,7 @@
 PROJECT RR-EDGE V6.0: THE FRANCHISE DECISION INTELLIGENCE ENCYCLOPEDIA
 Master Publication-Grade Strategic Dossier (ReportLab PDF)
 Rajasthan Royals (Emerging Media IPL Ltd.)
-C-Suite Leadership: Manoj Badale, Jake Lush McCrum, Kumar Sangakkara, Zubin Bharucha
+C-Suite Leadership: Manoj Badale, Jake Lush McCrum, Kumar Sangakkara, Shane Bond
 """
 
 import os

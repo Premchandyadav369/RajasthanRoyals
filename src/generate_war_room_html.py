@@ -657,7 +657,7 @@ html_content = """<!DOCTYPE html>
             </div>
 
             <div class="card">
-                <h2>📋 Zubin Bharucha High-Performance Tactical Directives</h2>
+                <h2>📋 Shane Bond High-Performance Tactical Directives</h2>
                 <div id="mu-tactic" style="font-size:0.9rem; line-height:1.6; color:#E2E8F0;">
                     • <b>Field Manipulation:</b> Target deep backward point and third man using open-face dab against 145+ kph incoming angles.<br/>
                     • <b>Footwork Discipline:</b> Stay balanced in crease; refrain from charging length deliveries early in spell.<br/>
