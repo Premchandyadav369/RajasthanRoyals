@@ -15,8 +15,8 @@
 
 ---
 
-## 🚀 OPTION 1: HIGH-IMPACT LONG-FORM X (TWITTER) POST (X PREMIUM / 1-POST FORMAT)
-*Best for: A single, comprehensive, visually arresting post accompanied by your video link or attached video.*
+## 🚀 OPTION 1: HIGH-IMPACT LONG-FORM X (TWITTER) POST (X PREMIUM ONLY)
+*Note: This version is ~1,900 characters and requires an X Premium subscription.*
 
 ```text
 In IPL 2026, the @rajasthanroyals hit 181 sixes (1st in IPL) and operated at 11.13 runs/over in the Powerplay. 
@@ -46,6 +46,41 @@ Here is my full 3-minute executive video walkthrough & war room breakdown for @r
 Data is not an alternative to instinct—it’s the crucible where instinct is sharpened. Let's bring the trophy home to Jaipur! 🦁💗
 
 #HallaBol #SupeRRSelector #RajasthanRoyals #IPL2027 #CricketAnalytics #Moneyball #DataScience
+```
+
+---
+
+## ⚡ OPTION 1B: STRICTLY UNDER 280 CHARACTERS (STANDARD FREE X / TWITTER ACCOUNT)
+*Use this if your X account is on the free tier (no X Premium). Character count is exactly 250 / 280, leaving 30 characters of safety cushion!*
+
+```text
+In 2026, @rajasthanroyals made playoffs, but fell short.
+
+Our 200k audit found the flaw: 10.29 RPO leak in overs 7-11.
+
+Fix: Matt Henry + Suyash Sharma (+144% title odds)!
+
+Full breakdown for @unstop_world:
+[PASTE_YOUR_LINK_HERE]
+
+#HallaBol #IPL2027
+```
+
+---
+
+## ⚡ OPTION 1C: NATIVE VIDEO TWEET (UNDER 280 CHARACTERS — UPLOAD MP4 DIRECTLY)
+*If you upload your video file directly to the tweet via the media button, use this (269 / 280 characters):*
+
+```text
+In 2026, @rajasthanroyals made playoffs, but fell short.
+
+Our 200k-ball audit found the flaw: 10.29 RPO leak in overs 7-11.
+
+Our 2027 fix: Matt Henry + Suyash Sharma (+144% title odds)!
+
+Watch my full breakdown for @unstop_world! 🎬
+
+#HallaBol #IPL2027 #CricketAnalytics
 ```
 
 ---
