@@ -15,9 +15,9 @@ BATSMEN_10 = [
 ]
 
 BOWLERS_10 = [
-    "Jasprit Bumrah", "Varun Chakaravarthy", "Harshit Rana", "T Natarajan",
-    "Pat Cummins", "Arshdeep Singh", "Kuldeep Yadav", "Mitchell Starc",
-    "Andre Russell", "Matheesha Pathirana"
+    "Jasprit Bumrah", "Sunil Narine", "Varun Chakravarthy", "Harshit Rana",
+    "T Natarajan", "Pat Cummins", "Arshdeep Singh", "Kuldeep Yadav",
+    "Mitchell Starc", "Matheesha Pathirana"
 ]
 
 REMARK_TEXT = (

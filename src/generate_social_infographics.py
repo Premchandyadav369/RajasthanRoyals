@@ -55,16 +55,16 @@ def make_card_1():
     add_header(ax, "TOP 10 BATTERS UNDER PRESSURE", "Pre-Delivery Contextual Pressure Rating (PBRS)")
     
     batters = [
-        ("1", "Heinrich Klaasen", "SRH", "171.4 SR", "100.0 PBRS"),
-        ("2", "Nicholas Pooran", "LSG", "178.2 SR", "97.4 PBRS"),
-        ("3", "Suryakumar Yadav", "MI", "178.3 SR", "95.8 PBRS"),
-        ("4", "Travis Head", "SRH", "191.6 SR", "94.1 PBRS"),
-        ("5", "Abhishek Sharma", "SRH", "182.4 SR", "92.5 PBRS"),
-        ("6", "Virat Kohli", "RCB", "148.5 SR", "91.2 PBRS"),
-        ("7", "Sanju Samson", "CSK (Traded)", "177.7 SR", "89.8 PBRS"),
-        ("8", "Phil Salt", "KKR", "182.0 SR", "88.6 PBRS"),
-        ("9", "Sunil Narine", "KKR", "180.5 SR", "87.5 PBRS"),
-        ("10", "Jos Buttler", "Free Agent", "197.8 SR", "86.9 PBRS"),
+        ("1", "Heinrich Klaasen", "SRH", "188.4 SR", "94.8 PBRS"),
+        ("2", "Nicholas Pooran", "LSG", "179.6 SR", "91.3 PBRS"),
+        ("3", "Suryakumar Yadav", "MI", "182.1 SR", "90.1 PBRS"),
+        ("4", "Travis Head", "SRH", "194.2 SR", "88.7 PBRS"),
+        ("5", "Abhishek Sharma", "SRH", "181.5 SR", "86.2 PBRS"),
+        ("6", "Virat Kohli", "RCB", "148.9 SR", "85.4 PBRS"),
+        ("7", "Sanju Samson", "CSK (Traded)", "164.2 SR", "84.9 PBRS"),
+        ("8", "Phil Salt", "KKR", "178.1 SR", "83.8 PBRS"),
+        ("9", "Sunil Narine", "KKR", "186.4 SR", "82.5 PBRS"),
+        ("10", "Jos Buttler", "RR / Free Agent", "158.3 SR", "81.7 PBRS"),
     ]
     
     start_y = 860
@@ -100,16 +100,16 @@ def make_card_2():
     add_header(ax, "TOP 10 BOWLERS UNDER PRESSURE", "Expected Wickets & Death Economy Rating (PBwRS)")
     
     bowlers = [
-        ("1", "Jasprit Bumrah", "MI", "6.48 Econ", "100.0 PBwRS"),
-        ("2", "Varun Chakaravarthy", "KKR", "6.95 Econ", "96.8 PBwRS"),
-        ("3", "Harshit Rana", "KKR", "8.20 Econ", "94.5 PBwRS"),
-        ("4", "T Natarajan", "SRH (Traded)", "8.35 Econ", "93.2 PBwRS"),
-        ("5", "Pat Cummins", "SRH", "8.40 Econ", "91.8 PBwRS"),
-        ("6", "Arshdeep Singh", "MI (Traded)", "8.55 Econ", "90.5 PBwRS"),
-        ("7", "Kuldeep Yadav", "LSG (Traded)", "7.15 Econ", "89.2 PBwRS"),
-        ("8", "Mitchell Starc", "KKR", "8.65 Econ", "88.0 PBwRS"),
-        ("9", "Andre Russell", "KKR", "8.75 Econ", "87.1 PBwRS"),
-        ("10", "Matheesha Pathirana", "CSK", "8.22 Econ", "86.4 PBwRS"),
+        ("1", "Jasprit Bumrah", "MI", "6.24 Econ", "96.2 PBwRS"),
+        ("2", "Sunil Narine", "KKR", "6.29 Econ", "92.5 PBwRS"),
+        ("3", "Varun Chakravarthy", "KKR", "6.82 Econ", "89.7 PBwRS"),
+        ("4", "Harshit Rana", "KKR", "7.95 Econ", "86.4 PBwRS"),
+        ("5", "T Natarajan", "SRH", "7.84 Econ", "85.8 PBwRS"),
+        ("6", "Pat Cummins", "SRH", "8.12 Econ", "84.5 PBwRS"),
+        ("7", "Arshdeep Singh", "PBKS", "8.24 Econ", "83.9 PBwRS"),
+        ("8", "Kuldeep Yadav", "DC", "6.94 Econ", "83.1 PBwRS"),
+        ("9", "Mitchell Starc", "KKR", "8.42 Econ", "82.6 PBwRS"),
+        ("10", "Matheesha Pathirana", "CSK", "7.64 Econ", "81.2 PBwRS"),
     ]
     
     start_y = 860
