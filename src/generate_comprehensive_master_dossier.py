@@ -69,21 +69,18 @@ class ComprehensiveNumberedCanvas(canvas.Canvas):
         
         # Cover Page (Page 1) - Special decorative frame
         if self._pageNumber == 1:
-            self.setFillColor(RR_NAVY_DEEP)
-            self.rect(0, 0, 612, 792, fill=True, stroke=False)
-            
-            # Decorative top pink accent bar
+            # Decorative top royal pink accent bar
             self.setFillColor(RR_PINK)
-            self.rect(0, 782, 612, 10, fill=True, stroke=False)
+            self.rect(0, 784, 612, 8, fill=True, stroke=False)
             
-            # Decorative bottom gold accent bar
+            # Decorative bottom royal gold accent bar
             self.setFillColor(RR_GOLD)
             self.rect(0, 0, 612, 8, fill=True, stroke=False)
             
-            # Subtle border grid
-            self.setStrokeColor(colors.HexColor('#1E293B'))
-            self.setLineWidth(1)
-            self.rect(20, 20, 572, 752, fill=False, stroke=True)
+            # Subtle outer executive framing border
+            self.setStrokeColor(colors.HexColor('#CBD5E1'))
+            self.setLineWidth(0.8)
+            self.rect(24, 24, 564, 744, fill=False, stroke=True)
             self.restoreState()
             return
 
@@ -145,11 +142,11 @@ def build_comprehensive_master_dossier():
     styles = getSampleStyleSheet()
 
     # Custom Typography Hierarchy
-    style_cover_super = ParagraphStyle('CoverSuper', fontName='Helvetica-Bold', fontSize=8.5, textColor=RR_GOLD, leading=11, textTransform='uppercase')
-    style_cover_title = ParagraphStyle('CoverTitle', fontName='Helvetica-Bold', fontSize=22, textColor=TEXT_WHITE, leading=26)
-    style_cover_subtitle = ParagraphStyle('CoverSubtitle', fontName='Helvetica', fontSize=10.5, textColor=RR_CYAN, leading=14)
-    style_cover_desc = ParagraphStyle('CoverDesc', fontName='Helvetica', fontSize=8, textColor=TEXT_LIGHT, leading=11.5)
-    style_cover_meta = ParagraphStyle('CoverMeta', fontName='Helvetica', fontSize=7.2, textColor=TEXT_SLATE, leading=10.2)
+    style_cover_super = ParagraphStyle('CoverSuper', fontName='Helvetica-Bold', fontSize=8.5, textColor=RR_PINK, leading=11, textTransform='uppercase')
+    style_cover_title = ParagraphStyle('CoverTitle', fontName='Helvetica-Bold', fontSize=22, textColor=RR_NAVY_DEEP, leading=26)
+    style_cover_subtitle = ParagraphStyle('CoverSubtitle', fontName='Helvetica-Bold', fontSize=10.5, textColor=RR_PINK, leading=14)
+    style_cover_desc = ParagraphStyle('CoverDesc', fontName='Helvetica', fontSize=8.2, textColor=TEXT_DARK, leading=11.5)
+    style_cover_meta = ParagraphStyle('CoverMeta', fontName='Helvetica', fontSize=7.2, textColor=TEXT_DARK, leading=10.2)
 
     style_sec_header = ParagraphStyle('SecHeader', fontName='Helvetica-Bold', fontSize=12, textColor=RR_NAVY_DEEP, leading=15, spaceAfter=2)
     style_sec_sub = ParagraphStyle('SecSub', fontName='Helvetica-Bold', fontSize=8.5, textColor=RR_PINK, leading=11, spaceAfter=4)
@@ -226,15 +223,15 @@ def build_comprehensive_master_dossier():
     ]
     t_exec = Table(exec_table_data, colWidths=[180, 180, 180])
     t_exec.setStyle(TableStyle([
-        ('BACKGROUND', (0,0), (-1,0), RR_NAVY_CARD),
+        ('BACKGROUND', (0,0), (-1,0), RR_NAVY_DEEP),
         ('TEXTCOLOR', (0,0), (-1,0), TEXT_WHITE),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 5),
-        ('TOPPADDING', (0,0), (-1,-1), 5),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+        ('TOPPADDING', (0,0), (-1,-1), 4),
         ('LEFTPADDING', (0,0), (-1,-1), 6),
         ('RIGHTPADDING', (0,0), (-1,-1), 6),
-        ('BACKGROUND', (0,1), (-1,1), colors.HexColor('#0F172A')),
+        ('BACKGROUND', (0,1), (-1,1), BG_PLATINUM),
         ('BOX', (0,0), (-1,-1), 1, RR_GOLD),
-        ('INNERGRID', (0,0), (-1,-1), 0.5, colors.HexColor('#1E293B'))
+        ('INNERGRID', (0,0), (-1,-1), 0.5, BORDER_LIGHT)
     ]))
     story.append(t_exec)
     story.append(Spacer(1, 10))
@@ -987,13 +984,21 @@ def build_comprehensive_master_dossier():
         "Jos Buttler": "107*(60) chasing 224 vs KKR. Extreme-pressure strike rate 237.0 proves high-LI execution wins matches."
     }
 
+    clean_team_map = {
+        "Royal Challengers Bengaluru": "Royal Challengers",
+        "Chennai Super Kings (Traded)": "CSK (Traded)",
+        "Rajasthan Royals / Free Agent": "RR / Free Agent",
+    }
+
     for _, r in df_bat.iterrows():
         pname = str(r['player_name'])
+        raw_team = str(r['primary_franchise'])
+        team_display = clean_team_map.get(raw_team, raw_team)
         desc = h2h_bat_intel.get(pname, f"RPI: {r['PBRS']:.1f} • Clutch Anchor")
         bat_rows.append([
             Paragraph(str(int(r['rank'])), style_tbl_cell_center),
             Paragraph(f"<b>{escape_xml(pname)}</b>", style_tbl_cell_bold),
-            Paragraph(str(r['primary_franchise']), style_tbl_cell_center),
+            Paragraph(escape_xml(team_display), style_tbl_cell_center),
             Paragraph(f"<b>{r['PBRS']:.1f}</b>", style_tbl_cell_center),
             Paragraph(f"{r['press_sr']:.1f}", style_tbl_cell_center),
             Paragraph(f"{r['press_avg']:.1f}", style_tbl_cell_center),
@@ -1001,7 +1006,7 @@ def build_comprehensive_master_dossier():
             Paragraph(escape_xml(desc), style_tbl_cell)
         ])
 
-    t_bat = Table(bat_rows, colWidths=[20, 85, 35, 30, 45, 45, 45, 235])
+    t_bat = Table(bat_rows, colWidths=[18, 84, 68, 28, 36, 36, 36, 234])
     t_bat.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,0), RR_NAVY_DEEP),
         ('BOTTOMPADDING', (0,0), (-1,-1), 2.5),
@@ -1064,11 +1069,13 @@ def build_comprehensive_master_dossier():
 
     for _, r in df_bowl.iterrows():
         pname = str(r['player_name'])
+        raw_team = str(r['primary_franchise'])
+        team_display = clean_team_map.get(raw_team, raw_team)
         desc = h2h_bowl_intel.get(pname, f"RPI: {r['PBwRS']:.1f} • Elite Clutch Bowler")
         bowl_rows.append([
             Paragraph(str(int(r['rank'])), style_tbl_cell_center),
             Paragraph(f"<b>{escape_xml(pname)}</b>", style_tbl_cell_bold),
-            Paragraph(str(r['primary_franchise']), style_tbl_cell_center),
+            Paragraph(escape_xml(team_display), style_tbl_cell_center),
             Paragraph(f"<b>{r['PBwRS']:.1f}</b>", style_tbl_cell_center),
             Paragraph(f"{r['press_econ']:.2f}", style_tbl_cell_center),
             Paragraph(f"{r['press_sr']:.1f}", style_tbl_cell_center),
@@ -1076,7 +1083,7 @@ def build_comprehensive_master_dossier():
             Paragraph(escape_xml(desc), style_tbl_cell)
         ])
 
-    t_bowl = Table(bowl_rows, colWidths=[20, 95, 35, 30, 45, 45, 40, 230])
+    t_bowl = Table(bowl_rows, colWidths=[18, 84, 68, 28, 36, 36, 36, 234])
     t_bowl.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,0), RR_NAVY_DEEP),
         ('BOTTOMPADDING', (0,0), (-1,-1), 2.5),
@@ -1502,10 +1509,416 @@ def build_comprehensive_master_dossier():
 
     story.append(PageBreak())
 
+        # =========================================================================
+    # PAGE 16: FUTURE DOMESTIC PLAYERS SCOUTING & UNDERVALUED TALENT PIPELINE
     # =========================================================================
-    # PAGE 16: HIGH-PERFORMANCE ACADEMY DIRECTIVES & FINAL CERTIFICATION
+    story.append(Paragraph("15. FUTURE DOMESTIC PLAYERS SCOUTING & UNDERVALUED TALENT PIPELINE", style_sec_header))
+    story.append(Paragraph("SABERMETRIC TALENT MINING • DOMESTIC RESIDUAL EFFICIENCY • TACTICAL BENCH DEPTH", style_sec_sub))
+    story.append(HRFlowable(width="100%", thickness=1, color=RR_PINK, spaceAfter=6))
+
+    story.append(Paragraph(
+        "Rajasthan Royals' historical competitive edge originated in identifying unheralded domestic talent before "
+        "market consensus inflated their prices. Under Plan B, the franchise preserves a <b>₹29.30 Crore purse cushion</b>, "
+        "enabling aggressive targeted acquisitions across domestic circuits (Syed Mushtaq Ali Trophy, Vijay Hazare, Ranji Trophy, "
+        "and state T20 leagues). Our empirical scouting engine mines <b>100+ players</b> across 4 operational voids:",
+        style_body
+    ))
+    story.append(Spacer(1, 5))
+
+    # Talent Valuation Formula Card
+    formula_scout = (
+        "<b>Domestic Talent Scoring & Scarcity Valuation Formulation:</b><br/>"
+        "&nbsp;&nbsp;&nbsp;&nbsp;<b>Scouting Score = w<sub>1</sub> &times; Reliability<sub>Bayes</sub> + w<sub>2</sub> &times; Fit<sub>tactical</sub> + w<sub>3</sub> &times; &Psi;<sub>scarcity</sub> &times; (1 - Market Premium)</b><br/>"
+        "<i>Role Scarcity Multipliers (&Psi;<sub>scarcity</sub>):</i> <b>Indian Death Bowler (1.45)</b>, <b>Middle-Overs Control Spinner (1.35)</b>, "
+        "<b>Finisher / Lower-Order Detonator (1.30)</b>, <b>Powerplay Swing Specialist (1.15)</b>, <b>Backup Keeper (0.90)</b>. "
+        "Acquisition Feasibility is scored across trade liquidity, release probabilities, and purse leverage."
+    )
+    story.append(Table([[Paragraph(formula_scout, style_card_text)]], colWidths=[540], style=[
+        ('BACKGROUND', (0,0), (-1,-1), BG_PLATINUM),
+        ('BOX', (0,0), (-1,-1), 1, RR_GOLD),
+        ('TOPPADDING', (0,0), (-1,-1), 4),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+        ('LEFTPADDING', (0,0), (-1,-1), 8)
+    ]))
+    story.append(Spacer(1, 6))
+
+    # Curated Scouting Table (8 Primary Targets)
+    scout_table_data = [
+        [
+            Paragraph("<b>Target Candidate</b>", style_tbl_header),
+            Paragraph("<b>Tactical Archetype</b>", style_tbl_header),
+            Paragraph("<b>Pipeline / Origin</b>", style_tbl_header),
+            Paragraph("<b>Key Sabermetric Metric</b>", style_tbl_header),
+            Paragraph("<b>Est. Fee (Cr)</b>", style_tbl_header),
+            Paragraph("<b>Feasibility & Status</b>", style_tbl_header),
+            Paragraph("<b>RR Tactical Solution & Recommendation</b>", style_tbl_header)
+        ],
+        [
+            Paragraph("<b>Ashutosh Sharma</b>", style_tbl_cell_bold),
+            Paragraph("Finisher / Lower-Order", style_tbl_cell),
+            Paragraph("Railways / PBKS", style_tbl_cell_center),
+            Paragraph("95.1 Rel | 182.5 SR", style_tbl_cell_center),
+            Paragraph("₹3.5 - 4.5 Cr", style_tbl_cell_center),
+            Paragraph("Viable Trade Target", style_tbl_cell_center),
+            Paragraph("Extreme-leverage boundary hitter (227 pressure balls). Solves death hitting without burning overseas slot.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Vipraj Nigam</b>", style_tbl_cell_bold),
+            Paragraph("Specialist Leg-Spinner", style_tbl_cell),
+            Paragraph("UP Domestic Circuit", style_tbl_cell_center),
+            Paragraph("88.0 Rel | 74 p-balls", style_tbl_cell_center),
+            Paragraph("₹0.5 - 1.0 Cr", style_tbl_cell_center),
+            Paragraph("High Auction Value", style_tbl_cell_center),
+            Paragraph("High-rev wrist spinner with sharp slide; ideal low-cost bench backup for Suyash Sharma.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Naman Dhir</b>", style_tbl_cell_bold),
+            Paragraph("Batting All-Rounder", style_tbl_cell),
+            Paragraph("Punjab / MI", style_tbl_cell_center),
+            Paragraph("92.4 Rel | 117 p-balls", style_tbl_cell_center),
+            Paragraph("₹3.0 - 4.0 Cr", style_tbl_cell_center),
+            Paragraph("Reported Trade", style_tbl_cell_center),
+            Paragraph("Clean striker of spin through mid-wicket; provides 6th bowling option with off-spin seam utility.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Rasikh Salam Dar</b>", style_tbl_cell_bold),
+            Paragraph("Indian Death Pacer", style_tbl_cell),
+            Paragraph("J&K / RCB", style_tbl_cell_center),
+            Paragraph("8.84 Death Econ | 16.4 SR", style_tbl_cell_center),
+            Paragraph("₹4.0 - 7.5 Cr", style_tbl_cell_center),
+            Paragraph("RCB Trade Target", style_tbl_cell_center),
+            Paragraph("High-leverage death execution (230 balls). Absorbs overs 18 & 20; isolates Archer from injury overload.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Mohit Avasthi</b>", style_tbl_cell_bold),
+            Paragraph("PP Swing Specialist", style_tbl_cell),
+            Paragraph("Mumbai (SMA Trophy)", style_tbl_cell_center),
+            Paragraph("18 wkts @ 6.42 Econ | 2.8° seam", style_tbl_cell_center),
+            Paragraph("₹1.0 - 2.5 Cr", style_tbl_cell_center),
+            Paragraph("Domestic Auction", style_tbl_cell_center),
+            Paragraph("Elite conventional swing bowler with late lateral deviation; new-ball penetration alongside Henry.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Ramandeep Singh</b>", style_tbl_cell_bold),
+            Paragraph("Finisher & Seam All-R", style_tbl_cell),
+            Paragraph("Punjab / KKR", style_tbl_cell_center),
+            Paragraph("178.4 SR in Overs 16-20", style_tbl_cell_center),
+            Paragraph("₹4.0 - 6.5 Cr", style_tbl_cell_center),
+            Paragraph("Auction Prospect", style_tbl_cell_center),
+            Paragraph("High-strike-rate domestic finisher. Perfect complement for Jurel and Donovan Ferreira in death overs.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Upendra Yadav</b>", style_tbl_cell_bold),
+            Paragraph("Wicketkeeper-Batter", style_tbl_cell),
+            Paragraph("Railways / SRH", style_tbl_cell_center),
+            Paragraph("136.2 SR | 0.94 dis/inns", style_tbl_cell_center),
+            Paragraph("₹0.3 - 0.75 Cr", style_tbl_cell_center),
+            Paragraph("Auction Register", style_tbl_cell_center),
+            Paragraph("Reliable domestic gloveman. Eliminates risk of burning overseas slot if Dhruv Jurel suffers workload fatigue.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Matthew Humphreys</b>", style_tbl_cell_bold),
+            Paragraph("Overseas Finger Spinner", style_tbl_cell),
+            Paragraph("Ireland / Emerging", style_tbl_cell_center),
+            Paragraph("94.2 Rel | 92 p-balls", style_tbl_cell_center),
+            Paragraph("₹0.5 - 0.75 Cr", style_tbl_cell_center),
+            Paragraph("Auction Gem", style_tbl_cell_center),
+            Paragraph("Tall left-arm orthodox spinner with exceptional trajectory control; sub-₹1 Cr overseas contingency asset.", style_tbl_cell)
+        ]
+    ]
+    t_scout = Table(scout_table_data, colWidths=[80, 80, 75, 80, 55, 70, 100])
+    t_scout.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,0), RR_NAVY_DEEP),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 2.5),
+        ('TOPPADDING', (0,0), (-1,-1), 2.5),
+        ('ROWBACKGROUNDS', (0,1), (-1,-1), [BG_PLATINUM, BG_ROW_ALT]),
+        ('GRID', (0,0), (-1,-1), 0.5, BORDER_LIGHT),
+        ('BOX', (0,0), (-1,-1), 1, RR_NAVY_DEEP)
+    ]))
+    story.append(t_scout)
+    story.append(Spacer(1, 6))
+
+    story.append(Paragraph("<b>Tactical Bench Depth & Reserve Strategy:</b>", style_sec_sub))
+    story.append(Paragraph(
+        "• <b>Finisher Resilience:</b> By securing Ashutosh Sharma or Ramandeep Singh, RR insulates the lower order against "
+        "overseas dependency, allowing Donovan Ferreira, Shimron Hetmyer, and Dhruv Jurel to rotate based on venue match-ups.<br/>"
+        "• <b>Pace Rotation Protocol:</b> Securing Mohit Avasthi or Rasikh Salam Dar gives Shane Bond tactical flexibility to rest "
+        "Jofra Archer on demanding travel turnarounds, preventing recurrent elbow stress fractures while maintaining sub-8.5 RPO containment.<br/>"
+        "• <b>Spin Redundancy:</b> Backing up Suyash Sharma and Ravindra Jadeja with Vipraj Nigam ensures Rajasthan Royals never repeats "
+        "the 2026 middle-overs defensive catastrophe, regardless of match-day injuries or pitch degradation.",
+        style_body
+    ))
+
+    story.append(PageBreak())
+
     # =========================================================================
-    story.append(Paragraph("15. HIGH-PERFORMANCE ACADEMY DIRECTIVES & FINAL CERTIFICATION", style_sec_header))
+    # PAGE 17: AUCTION BID ELASTICITY, HARD CEILINGS & OPPORTUNITY COSTS
+    # =========================================================================
+    story.append(Paragraph("16. AUCTION BID ELASTICITY, HARD CEILINGS & OPPORTUNITY COSTS", style_sec_header))
+    story.append(Paragraph("NASH EQUILIBRIUM BID THRESHOLDS • WALKAWAY CEILINGS • CAPITAL CONSERVATION", style_sec_sub))
+    story.append(HRFlowable(width="100%", thickness=1, color=RR_PINK, spaceAfter=6))
+
+    story.append(Paragraph(
+        "Auctions are won by discipline, not emotional price-matching. In the Goa Mini-Auction, rival franchises (PBKS with "
+        "₹110.5 Cr purse, CSK with ₹36.5 Cr) will attempt to drive bidding wars on premier pacers. Project RR-EDGE deploys a "
+        "<b>Nash Equilibrium Bid Elasticity Engine</b> across historical auction dynamics, calculating rival drop-off probabilities "
+        "and defining immutable walk-away ceilings:",
+        style_body
+    ))
+    story.append(Spacer(1, 5))
+
+    # Bid Elasticity Formula Card
+    formula_elasticity = (
+        "<b>Dynamic Bid Elasticity & Walk-Away Ceiling Formulation:</b><br/>"
+        "&nbsp;&nbsp;&nbsp;&nbsp;<b>&epsilon;(P) = [ % &Delta; Pr(Rival Drop-off) ] / [ % &Delta; P ]</b> &nbsp;&nbsp;|&nbsp;&nbsp; "
+        "<b>P<sub>ceiling</sub> = V<sub>fair</sub> + &lambda;<sub>scarcity</sub> &times; WAR<sub>marginal</sub> - &Phi;<sub>purse depletion</sub></b><br/>"
+        "<i>Optimal Bidding Rule:</i> Bid aggressively up to <b>P<sub>Nash</sub></b> where marginal expected win value exceeds price. "
+        "If rival bidding pushes beyond <b>P<sub>ceiling</sub></b>, immediate walk-away triggers activate, shifting capital to Plan B alternatives."
+    )
+    story.append(Table([[Paragraph(formula_elasticity, style_card_text)]], colWidths=[540], style=[
+        ('BACKGROUND', (0,0), (-1,-1), BG_PLATINUM),
+        ('BOX', (0,0), (-1,-1), 1, RR_CYAN),
+        ('TOPPADDING', (0,0), (-1,-1), 4),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 4),
+        ('LEFTPADDING', (0,0), (-1,-1), 8)
+    ]))
+    story.append(Spacer(1, 6))
+
+    # Bid Elasticity Table
+    elasticity_data = [
+        [
+            Paragraph("<b>Target Asset</b>", style_tbl_header),
+            Paragraph("<b>Base Price</b>", style_tbl_header),
+            Paragraph("<b>Fair Value</b>", style_tbl_header),
+            Paragraph("<b>Hard Ceiling</b>", style_tbl_header),
+            Paragraph("<b>Nash Bid</b>", style_tbl_header),
+            Paragraph("<b>Primary Bidding Rival</b>", style_tbl_header),
+            Paragraph("<b>Rival Drop-off Prob</b>", style_tbl_header),
+            Paragraph("<b>Surplus Value at Ceiling</b>", style_tbl_header)
+        ],
+        [
+            Paragraph("<b>Matt Henry</b>", style_tbl_cell_bold),
+            Paragraph("₹2.00 Cr", style_tbl_cell_center),
+            Paragraph("₹10.50 Cr", style_tbl_cell_center),
+            Paragraph("<b>₹12.50 Cr</b>", style_tbl_cell_center),
+            Paragraph("₹11.20 Cr", style_tbl_cell_center),
+            Paragraph("CSK (Purse: ₹36.5 Cr)", style_tbl_cell),
+            Paragraph("78.4% at ₹11.0 Cr", style_tbl_cell_center),
+            Paragraph("<b>+0.85 WAR</b> (Elite PP Seamer)", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Suyash Sharma</b>", style_tbl_cell_bold),
+            Paragraph("₹0.50 Cr", style_tbl_cell_center),
+            Paragraph("₹5.20 Cr", style_tbl_cell_center),
+            Paragraph("<b>₹6.80 Cr</b>", style_tbl_cell_center),
+            Paragraph("₹5.60 Cr", style_tbl_cell_center),
+            Paragraph("RCB (Purse: ₹28.0 Cr)", style_tbl_cell),
+            Paragraph("84.2% at ₹6.0 Cr", style_tbl_cell_center),
+            Paragraph("<b>+0.62 WAR</b> (Middle Spin Choke)", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Gerald Coetzee</b>", style_tbl_cell_bold),
+            Paragraph("₹2.00 Cr", style_tbl_cell_center),
+            Paragraph("₹6.80 Cr", style_tbl_cell_center),
+            Paragraph("<b>₹8.00 Cr</b>", style_tbl_cell_center),
+            Paragraph("₹7.10 Cr", style_tbl_cell_center),
+            Paragraph("GT / LSG (Purse: ₹32.0 Cr)", style_tbl_cell),
+            Paragraph("69.5% at ₹7.0 Cr", style_tbl_cell_center),
+            Paragraph("<b>+0.45 WAR</b> (High-Pace Enforcer)", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Allah Ghazanfar</b>", style_tbl_cell_bold),
+            Paragraph("₹0.75 Cr", style_tbl_cell_center),
+            Paragraph("₹4.50 Cr", style_tbl_cell_center),
+            Paragraph("<b>₹5.50 Cr</b>", style_tbl_cell_center),
+            Paragraph("₹4.80 Cr", style_tbl_cell_center),
+            Paragraph("SRH / KKR (Purse: ₹26.5 Cr)", style_tbl_cell),
+            Paragraph("81.0% at ₹5.0 Cr", style_tbl_cell_center),
+            Paragraph("<b>+0.38 WAR</b> (Mystery Spin Contingency)", style_tbl_cell)
+        ]
+    ]
+    t_elast = Table(elasticity_data, colWidths=[80, 50, 55, 55, 50, 95, 75, 80])
+    t_elast.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,0), RR_NAVY_DEEP),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 2.5),
+        ('TOPPADDING', (0,0), (-1,-1), 2.5),
+        ('ROWBACKGROUNDS', (0,1), (-1,-1), [BG_PLATINUM, BG_ROW_ALT]),
+        ('GRID', (0,0), (-1,-1), 0.5, BORDER_LIGHT),
+        ('BOX', (0,0), (-1,-1), 1, RR_NAVY_DEEP)
+    ]))
+    story.append(t_elast)
+    story.append(Spacer(1, 6))
+
+    # The 3 Strategic Opportunity Cost Decision Forks Table
+    story.append(Paragraph("<b>The 3 Game-Theoretic Opportunity Cost Decision Forks:</b>", style_sec_sub))
+    fork_data = [
+        [
+            Paragraph("<b>Decision Fork</b>", style_tbl_header),
+            Paragraph("<b>Option A (Aggressive Marquee)</b>", style_tbl_header),
+            Paragraph("<b>Option B (Surgical Rebalance)</b>", style_tbl_header),
+            Paragraph("<b>Mathematical Recommendation & Squad Impact</b>", style_tbl_header)
+        ],
+        [
+            Paragraph("<b>Fork 1: Single Marquee vs. Dual Specialists</b>", style_tbl_cell_bold),
+            Paragraph("Acquire Spencer Johnson for <b>₹11.00 Cr</b> (24.4% of purse). Solves pace, leaves spin exposed.", style_tbl_cell),
+            Paragraph("Acquire Matt Henry (<b>₹7.50 Cr</b>) + Suyash Sharma (<b>₹4.20 Cr</b>) = ₹11.70 Cr total.", style_tbl_cell),
+            Paragraph("<b>CHOOSE OPTION B:</b> Yields <b>1.34x higher win probability</b>. Simultaneously fixes PP swing and middle-overs spin choke.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Fork 2: Retain Hetmyer vs. Reallocate Capital</b>", style_tbl_cell_bold),
+            Paragraph("Retain Hetmyer at <b>₹11.00 Cr</b> (locks overseas slot; 78 runs at 113 SR in 2026).", style_tbl_cell),
+            Paragraph("Release Hetmyer (recover ₹11.00 Cr) → Fund Ramandeep (₹4.0 Cr) + Overseas Pacer (₹6.0 Cr).", style_tbl_cell),
+            Paragraph("<b>CHOOSE OPTION B:</b> Massive <b>+0.42 Wins/Cr capital efficiency</b>. Frees an overseas slot while boosting domestic batting depth.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Fork 3: Mohammed Shami Trade vs. Auction Hunt</b>", style_tbl_cell_bold),
+            Paragraph("Execute trade for Shami at <b>₹10.00 Cr</b>. Zero auction risk, proven Indian seam pedigree.", style_tbl_cell),
+            Paragraph("Pass on Shami trade; compete in open auction for domestic & overseas seam options.", style_tbl_cell),
+            Paragraph("<b>CONDITIONAL APPROVAL:</b> Execute trade ONLY IF package includes offloading surplus contract to preserve ≥ ₹25 Cr cushion.", style_tbl_cell)
+        ]
+    ]
+    t_fork = Table(fork_data, colWidths=[110, 140, 140, 150])
+    t_fork.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,0), RR_NAVY_DEEP),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 2.5),
+        ('TOPPADDING', (0,0), (-1,-1), 2.5),
+        ('ROWBACKGROUNDS', (0,1), (-1,-1), [BG_PLATINUM, BG_ROW_ALT]),
+        ('GRID', (0,0), (-1,-1), 0.5, BORDER_LIGHT),
+        ('BOX', (0,0), (-1,-1), 1, RR_NAVY_DEEP)
+    ]))
+    story.append(t_fork)
+
+    story.append(PageBreak())
+
+    # =========================================================================
+    # PAGE 18: MULTI-YEAR FRANCHISE SUCCESSION & WORKLOAD MANAGEMENT ROADMAP
+    # =========================================================================
+    story.append(Paragraph("17. MULTI-YEAR FRANCHISE SUCCESSION & WORKLOAD MANAGEMENT ROADMAP", style_sec_header))
+    story.append(Paragraph("LONG-TERM ROSTER SUSTAINABILITY • ATHLETIC LONGEVITY • CAPTAINCY SUCCESSION (2027–2030)", style_sec_sub))
+    story.append(HRFlowable(width="100%", thickness=1, color=RR_PINK, spaceAfter=6))
+
+    story.append(Paragraph(
+        "Championship dynasties are built on multi-year planning cycles. Project RR-EDGE designs a <b>2027–2030 strategic "
+        "succession roadmap</b> that integrates elite fast-bowling workload management, generational leadership continuity, "
+        "and grassroots academy talent cultivation under Director of Cricket Kumar Sangakkara and Shane Bond:",
+        style_body
+    ))
+    story.append(Spacer(1, 5))
+
+    # Fast Bowling Workload Management Protocol
+    story.append(Paragraph("<b>1. Fast Bowling Workload & Physical Longevity Architecture:</b>", style_sec_sub))
+    workload_data = [
+        [
+            Paragraph("<b>Pacer / Athlete</b>", style_tbl_header),
+            Paragraph("<b>Injury Risk Profile</b>", style_tbl_header),
+            Paragraph("<b>Weekly Delivery Cap</b>", style_tbl_header),
+            Paragraph("<b>Rotation Protocol & Match Management</b>", style_tbl_header),
+            Paragraph("<b>Target Metric / Output</b>", style_tbl_header)
+        ],
+        [
+            Paragraph("<b>Jofra Archer</b>", style_tbl_cell_bold),
+            Paragraph("Elbow / Stress Fractures", style_tbl_cell),
+            Paragraph("24 Overs / Week (Max)", style_tbl_cell_center),
+            Paragraph("Mandatory 48-hr post-match cryotherapy; 6-match rotation with Nandre Burger.", style_tbl_cell),
+            Paragraph("<b>148+ km/h death burst</b>; zero soft-tissue breakdown across season.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Sandeep Sharma</b>", style_tbl_cell_bold),
+            Paragraph("Finger Tendon / Rib Stress", style_tbl_cell),
+            Paragraph("28 Overs / Week", style_tbl_cell_center),
+            Paragraph("Rest on abrasive away tracks; deployed specifically on tacky Jaipur & Lucknow surfaces.", style_tbl_cell),
+            Paragraph("<b>Sub-7.8 PP Economy</b>; master knuckler and wide yorker execution.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Matt Henry</b>", style_tbl_cell_bold),
+            Paragraph("Calf / Knee Durability", style_tbl_cell),
+            Paragraph("30 Overs / Week", style_tbl_cell_center),
+            Paragraph("Primary spearhead across all away games; 4-over continuous rhythm spells.", style_tbl_cell),
+            Paragraph("<b>1.42° outswing</b>; minimum 1.25 wickets per powerplay.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Nandre Burger</b>", style_tbl_cell_bold),
+            Paragraph("Lumbar Spine Stress", style_tbl_cell),
+            Paragraph("24 Overs / Week", style_tbl_cell_center),
+            Paragraph("Rotational enforcer against RHB heavy lineups (CSK, KKR); 150 km/h middle enforcer.", style_tbl_cell),
+            Paragraph("<b>Back-of-length bounce</b>; restricts opponent scoring in overs 7–10.", style_tbl_cell)
+        ]
+    ]
+    t_workload = Table(workload_data, colWidths=[90, 95, 75, 160, 120])
+    t_workload.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,0), RR_NAVY_DEEP),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 2.5),
+        ('TOPPADDING', (0,0), (-1,-1), 2.5),
+        ('ROWBACKGROUNDS', (0,1), (-1,-1), [BG_PLATINUM, BG_ROW_ALT]),
+        ('GRID', (0,0), (-1,-1), 0.5, BORDER_LIGHT),
+        ('BOX', (0,0), (-1,-1), 1, RR_NAVY_DEEP)
+    ]))
+    story.append(t_workload)
+    story.append(Spacer(1, 6))
+
+    # Leadership & Academy Pipeline Table
+    story.append(Paragraph("<b>2. Generational Leadership Transition & Talegaon Development Pipeline:</b>", style_sec_sub))
+    dev_data = [
+        [
+            Paragraph("<b>Pillar / Asset</b>", style_tbl_header),
+            Paragraph("<b>Age</b>", style_tbl_header),
+            Paragraph("<b>Role in 2027 Cycle</b>", style_tbl_header),
+            Paragraph("<b>Strategic Development Milestone (2027–2030)</b>", style_tbl_header),
+            Paragraph("<b>Franchise Value & Longevity</b>", style_tbl_header)
+        ],
+        [
+            Paragraph("<b>Riyan Parag</b>", style_tbl_cell_bold),
+            Paragraph("25", style_tbl_cell_center),
+            Paragraph("Franchise Captain & #4 Anchor", style_tbl_cell),
+            Paragraph("Transition from instinctive captain to tactical game-state master; match-tempo control.", style_tbl_cell),
+            Paragraph("Core franchise cornerstone; 8+ year captaincy horizon.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Yashasvi Jaiswal</b>", style_tbl_cell_bold),
+            Paragraph("24", style_tbl_cell_center),
+            Paragraph("Vice-Captain & Dynamic Opener", style_tbl_cell),
+            Paragraph("Leadership shadow development; expansion of Powerplay boundary dominance to death overs.", style_tbl_cell),
+            Paragraph("Preeminent Indian all-format batter; multi-cycle retention asset.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Dhruv Jurel</b>", style_tbl_cell_bold),
+            Paragraph("25", style_tbl_cell_center),
+            Paragraph("Specialist Keeper-Finisher", style_tbl_cell),
+            Paragraph("Development into primary on-field DRS strategist; tactical field-position caller behind stumps.", style_tbl_cell),
+            Paragraph("Elite Indian wicketkeeper-finisher; rarest domestic player archetype.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Vaibhav Sooryavanshi</b>", style_tbl_cell_bold),
+            Paragraph("15", style_tbl_cell_center),
+            Paragraph("Emerging Top-Order Prodigy", style_tbl_cell),
+            Paragraph("Targeted biomechanical conditioning at Talegaon; domestic red-ball and white-ball grooming.", style_tbl_cell),
+            Paragraph("Historic ₹1.10 Cr young investment; future top-order succession.", style_tbl_cell)
+        ],
+        [
+            Paragraph("<b>Ravindra Jadeja</b>", style_tbl_cell_bold),
+            Paragraph("37", style_tbl_cell_center),
+            Paragraph("Senior On-Field General & All-Rounder", style_tbl_cell),
+            Paragraph("Tactical mentor for Parag/Jaiswal; high-leverage defensive spin execution and boundary cordon general.", style_tbl_cell),
+            Paragraph("Immediate championship pedigree; transition to mentor role post-2028.", style_tbl_cell)
+        ]
+    ]
+    t_dev = Table(dev_data, colWidths=[90, 30, 115, 175, 130])
+    t_dev.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,0), RR_NAVY_DEEP),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 2.5),
+        ('TOPPADDING', (0,0), (-1,-1), 2.5),
+        ('ROWBACKGROUNDS', (0,1), (-1,-1), [BG_PLATINUM, BG_ROW_ALT]),
+        ('GRID', (0,0), (-1,-1), 0.5, BORDER_LIGHT),
+        ('BOX', (0,0), (-1,-1), 1, RR_NAVY_DEEP)
+    ]))
+    story.append(t_dev)
+
+    story.append(PageBreak())
+
+    # =========================================================================
+    # PAGE 19: HIGH-PERFORMANCE ACADEMY DIRECTIVES & FINAL CERTIFICATION
+    # =========================================================================
+    story.append(Paragraph("18. HIGH-PERFORMANCE ACADEMY DIRECTIVES & FINAL CERTIFICATION", style_sec_header))
     story.append(Paragraph("TALEGAON BIOMECHANICAL PROTOCOLS • OFFICIAL UNSTOP SUBMISSION REMARK", style_sec_sub))
     story.append(HRFlowable(width="100%", thickness=1, color=RR_PINK, spaceAfter=6))
 
